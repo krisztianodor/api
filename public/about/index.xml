@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on IGDB API Documentation</title>
+    <link>https://igdb.github.io/api/about/index.xml</link>
+    <description>Recent content in Abouts on IGDB API Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Jan 2017 10:20:09 +0100</lastBuildDate>
+    <atom:link href="https://igdb.github.io/api/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://igdb.github.io/api/about/welcome/</link>
+      <pubDate>Mon, 09 Jan 2017 10:20:09 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/about/welcome/</guid>
+      <description>
+
+&lt;h1 id=&#34;internet-game-database-api-documentation&#34;&gt;Internet Game Database API Documentation&lt;/h1&gt;
+
+&lt;p&gt;One of the principles behind IGDB.com is accessibility of data. We wish to share the data with anyone who wants to build cool videogame oriented websites, apps and services. This means that the information you contribute to IGDB.com can be used by other projects as well.&lt;/p&gt;
+
+&lt;p&gt;Thus, you are not only contributing to the value of this site but to hundreds of other projects as well. We are looking forward to see what exciting game related projects you come up with. Happy coding!&lt;/p&gt;
+
+&lt;p&gt;Our video game database has loads of video game metadata. That includes release dates, descriptions, media, etc.&lt;/p&gt;
+
+&lt;a  href=&#34;https://market.mashape.com/signup&#34; target=&#34;_blank&#34;  class=&#34;btn btn-default&#34;&gt;
+  
+  
+  
+  GET FREE KEY
+  
+&lt;/a&gt;
+
+
+&lt;hr /&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;IGDB.com&lt;/th&gt;
+&lt;th&gt;GiantBomb&lt;/th&gt;
+&lt;th&gt;thegamesdb.net&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Total unique games&lt;/td&gt;
+&lt;td&gt;+25,592&lt;/td&gt;
+&lt;td&gt;+48,000&lt;/td&gt;
+&lt;td&gt;+25,000&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Allowed to use commercially&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Requests per day&lt;/td&gt;
+&lt;td&gt;7,000 - 700,000&lt;/td&gt;
+&lt;td&gt;4,800&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Allowed to build competing product&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;SSL support&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Protocol / Formats&lt;/td&gt;
+&lt;td&gt;JSON, REST&lt;/td&gt;
+&lt;td&gt;JSON, JSONP, XML, REST&lt;/td&gt;
+&lt;td&gt;XML, REST&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The API is really fast, has an amazing up-time, scaled images and it is very easy for users to add new games to their beautiful website.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;- Tommy Uytterhaegen from &lt;a href=&#34;http://igdb.com/r/api-mgc&#34;&gt;My Game Collection&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I must say that your API is incredibly good and complete. Congratulations on that, as it is helping me a lot to get the work done!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;- Jorge from &lt;a href=&#34;http://thegamenetworkapp.com/&#34;&gt;The Game Network&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

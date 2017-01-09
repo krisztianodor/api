@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IGDB API Documentation</title>
+    <link>https://igdb.github.io/api/index.xml</link>
+    <description>Recent content on IGDB API Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Jan 2017 10:23:15 +0100</lastBuildDate>
+    <atom:link href="https://igdb.github.io/api/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fields</title>
+      <link>https://igdb.github.io/api/references/fields/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:15 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/fields/</guid>
+      <description>
+
+&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
+
+&lt;p&gt;Fields are properties of an entity. For example, a Game field would be &lt;code&gt;rating&lt;/code&gt; or &lt;code&gt;release_dates&lt;/code&gt;. Some fields have properties of their own, for example, the &lt;code&gt;esrb&lt;/code&gt; field has the property &lt;code&gt;synopsis&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
+
+&lt;p&gt;Fields can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
+
+&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
+
+&lt;p&gt;Fields are requested in a comma separated list. For example, to get some information for some Games, Genres, Themes or anything else, you could request it like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/games/4356,189,444?fields=name,release_dates,esrb.synopsis,rating&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Note the &lt;code&gt;synopsis&lt;/code&gt; property of &lt;code&gt;esrb&lt;/code&gt; can be accessed directly with a dot.&lt;/p&gt;
+
+&lt;h3 id=&#34;age-rating&#34;&gt;Age Rating&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;esrb.rating&lt;/code&gt; Is an integer constant with this conversion table:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;ID&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;RP&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;EC&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;E&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;E10+&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;T&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;M&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;AO&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;code&gt;pegi.rating&lt;/code&gt; Is an integer constant with this conversion table:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;th&gt;ID&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;games-category&#34;&gt;Games category&lt;/h3&gt;
+
+&lt;p&gt;The Games field &lt;code&gt;category&lt;/code&gt; Is an integer constant with this conversion table:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;ID&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Main Game&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;DLC / Addon&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Expansion&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Bundle&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Standalone Expansion&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;date-category&#34;&gt;Date Category&lt;/h3&gt;
+
+&lt;p&gt;The Company and Games field &lt;code&gt;change_date_category&lt;/code&gt;, &lt;code&gt;start_date_category&lt;/code&gt; and &lt;code&gt;release_date_category&lt;/code&gt; are integers constant with this conversion table:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;ID&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;YYYY-MM-DD&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;YYYY-MM&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;YYYY&lt;/td&gt;
+&lt;td&gt;[2,7]&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;YYYY-Qn&lt;/td&gt;
+&lt;td&gt;[3,4,5,6]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;game-status&#34;&gt;Game Status&lt;/h3&gt;
+
+&lt;p&gt;The Games field &lt;code&gt;status&lt;/code&gt; are integers constant with this conversion table:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Status&lt;/th&gt;
+&lt;th&gt;ID&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;ALPHA&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BETA&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Early-access&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Offline&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Cancelled&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;region&#34;&gt;Region&lt;/h3&gt;
+
+&lt;p&gt;The Games field &lt;code&gt;release_date_region&lt;/code&gt; are integers constant with this conversion table:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Region&lt;/th&gt;
+&lt;th&gt;ID&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Worldwide [WW]&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Europe [EU]&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;North America [NA]&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Australia [AU]&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;New Zealand [NZ]&amp;rsquo;&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Japan [JP]&amp;rsquo;&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;China [CH]&amp;rsquo;&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Asia [AS]&amp;rsquo;&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;pulse&#34;&gt;Pulse&lt;/h3&gt;
+
+&lt;p&gt;The Pulse field &lt;code&gt;category&lt;/code&gt; are integers constant with this conversion table:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Category&lt;/th&gt;
+&lt;th&gt;ID&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;reddit&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;kickstarter&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;kotaku&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;polygon&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;killscreen&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;gameinformer&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;rock_paper_shotgun&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;wired_game_life&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;n4g&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;escapist&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;pcgamer&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;ign&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;indie_games&lt;/td&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;destructoid&lt;/td&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;nichegamer&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Countries is following the &lt;a href=&#34;http://en.wikipedia.org/wiki/ISO_3166-1_numeric&#34;&gt;http://en.wikipedia.org/wiki/ISO_3166-1_numeric&lt;/a&gt; standard.&lt;/li&gt;
+&lt;li&gt;The timestamps/dates is always measured in milliseconds since unix epoch.&lt;/li&gt;
+&lt;li&gt;The platforms are now attached to the release dates.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A full list of fields can be obtained by passing a &lt;code&gt;*&lt;/code&gt; as a field. Alternatively you can use the &lt;code&gt;meta&lt;/code&gt; postfix: &lt;code&gt;/games/meta&lt;/code&gt; to get a list of all fields.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Filters</title>
+      <link>https://igdb.github.io/api/references/filters/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:47 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/filters/</guid>
+      <description>
+
+&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
+
+&lt;p&gt;Filters are used to sift through results to get what you want. You can exclude and include results based on their properties. For example you could remove all Games where the &lt;code&gt;rating&lt;/code&gt; was below 80 (&lt;code&gt;filter[rating][gte]=80&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
+
+&lt;p&gt;Filters are parameter arrays so must be added using special keys like this: &lt;code&gt;/games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;filter[release_dates.date][gt]=YYYY-MM-DD&lt;/code&gt;
+The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and the &lt;code&gt;postfix&lt;/code&gt;. Fields are described in the section on the left, postfixes are described below.&lt;/p&gt;
+
+&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
+
+&lt;p&gt;Filters can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
+
+&lt;h2 id=&#34;available-postfixes&#34;&gt;Available Postfixes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;eq&lt;/code&gt; Equal: Exact match equal.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;not_eq&lt;/code&gt; Not Equal: Exact match equal.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gt&lt;/code&gt; Greater than works only on numbers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gte&lt;/code&gt; Greater than or equal to works only on numbers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lt&lt;/code&gt; Less than works only on numbers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lte&lt;/code&gt; Less than or equal to works only on numbers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;prefix&lt;/code&gt; Prefix of a value only works on strings.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;exists&lt;/code&gt; The value is not null.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;not_exists&lt;/code&gt; The value is null.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;in&lt;/code&gt; The value exists within the (comma separated) array.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;text-search&#34;&gt;Text search&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;search&lt;/code&gt; This parameter is not like other filters. It is an independant parameter that performs a full text search.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;/games/?search=zelda&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Endpoints</title>
+      <link>https://igdb.github.io/api/basics/endpoints/</link>
+      <pubDate>Mon, 09 Jan 2017 10:22:39 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/basics/endpoints/</guid>
+      <description>
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;Test endpoints using the &lt;a href=&#34;https://market.mashape.com/igdbcom/internet-game-database&#34;&gt;Mashape sandbox&lt;/a&gt;. Alternatively, we highly recommend &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;postman&lt;/a&gt; to perfect your requests.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;In order to communicate with the server, you will have to send these headers.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;HTTP Header&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;X-Mashape-Key&lt;/td&gt;
+&lt;td&gt;The key from your Mashape account&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Accept&lt;/td&gt;
+&lt;td&gt;application/json&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;game&#34;&gt;Game&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/games/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;summary: string&lt;/li&gt;
+&lt;li&gt;storyline: string&lt;/li&gt;
+&lt;li&gt;regions: integer&lt;/li&gt;
+&lt;li&gt;parent: integer&lt;/li&gt;
+&lt;li&gt;collection: integer&lt;/li&gt;
+&lt;li&gt;franchise: integer&lt;/li&gt;
+&lt;li&gt;hypes: integer&lt;/li&gt;
+&lt;li&gt;rating: double&lt;/li&gt;
+&lt;li&gt;popularity: double&lt;/li&gt;
+&lt;li&gt;aggregated_rating: double&lt;/li&gt;
+&lt;li&gt;rating_count: integer&lt;/li&gt;
+&lt;li&gt;game: integer&lt;/li&gt;
+&lt;li&gt;developers: integer&lt;/li&gt;
+&lt;li&gt;publishers: integer&lt;/li&gt;
+&lt;li&gt;game_engines: integer&lt;/li&gt;
+&lt;li&gt;category: integer&lt;/li&gt;
+&lt;li&gt;time_to_beat:
+
+&lt;ul&gt;
+&lt;li&gt;hastly: integer&lt;/li&gt;
+&lt;li&gt;normally: integer&lt;/li&gt;
+&lt;li&gt;completely: integer&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;player_perspectives: integer&lt;/li&gt;
+&lt;li&gt;game_modes: integer&lt;/li&gt;
+&lt;li&gt;keywords: integer&lt;/li&gt;
+&lt;li&gt;themes: integer&lt;/li&gt;
+&lt;li&gt;genres: integer&lt;/li&gt;
+&lt;li&gt;first_release_date: date&lt;/li&gt;
+&lt;li&gt;status: integer&lt;/li&gt;
+&lt;li&gt;release_dates(array):
+
+&lt;ul&gt;
+&lt;li&gt;category: integer&lt;/li&gt;
+&lt;li&gt;platform: integer&lt;/li&gt;
+&lt;li&gt;date: date&lt;/li&gt;
+&lt;li&gt;region: integer&lt;/li&gt;
+&lt;li&gt;human: string&lt;/li&gt;
+&lt;li&gt;y: integer&lt;/li&gt;
+&lt;li&gt;m: integer&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;alternative_names(array):
+
+&lt;ul&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;comment: string&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;screenshots(array):
+
+&lt;ul&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;cloudinary_id: string&lt;/li&gt;
+&lt;li&gt;width: integer&lt;/li&gt;
+&lt;li&gt;height: integer&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;videos(array):
+
+&lt;ul&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;video_id: string&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;cover:
+
+&lt;ul&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;cloudinary_id: string&lt;/li&gt;
+&lt;li&gt;width: integer&lt;/li&gt;
+&lt;li&gt;height: integer&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;esrb:
+
+&lt;ul&gt;
+&lt;li&gt;synopsis: string&lt;/li&gt;
+&lt;li&gt;rating: integer&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;pegi:
+
+&lt;ul&gt;
+&lt;li&gt;synopsis: string&lt;/li&gt;
+&lt;li&gt;rating: integer&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;character&#34;&gt;Character&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/characters/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;mug_shot:
+
+&lt;ul&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;cloudinary_id: string&lt;/li&gt;
+&lt;li&gt;width: integer&lt;/li&gt;
+&lt;li&gt;height: integer&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;gender: integer&lt;/li&gt;
+&lt;li&gt;country_name: string&lt;/li&gt;
+&lt;li&gt;akas: string&lt;/li&gt;
+&lt;li&gt;species: integer&lt;/li&gt;
+&lt;li&gt;games: integer&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;company&#34;&gt;Company&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/companies/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;logo:
+
+&lt;ul&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;cloudinary_id: string&lt;/li&gt;
+&lt;li&gt;width: integer&lt;/li&gt;
+&lt;li&gt;height: integer&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;description: string&lt;/li&gt;
+&lt;li&gt;start_date: date&lt;/li&gt;
+&lt;li&gt;start_date_category: integer&lt;/li&gt;
+&lt;li&gt;country: integer&lt;/li&gt;
+&lt;li&gt;website: string&lt;/li&gt;
+&lt;li&gt;parent: integer&lt;/li&gt;
+&lt;li&gt;changed_company_id: integer&lt;/li&gt;
+&lt;li&gt;change_date: date&lt;/li&gt;
+&lt;li&gt;change_date_category: integer&lt;/li&gt;
+&lt;li&gt;twitter: string&lt;/li&gt;
+&lt;li&gt;facebook: string&lt;/li&gt;
+&lt;li&gt;published: integer&lt;/li&gt;
+&lt;li&gt;developed: integer&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;gameengine&#34;&gt;GameEngine&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/game_engines/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;logo:
+
+&lt;ul&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;cloudinary_id: string&lt;/li&gt;
+&lt;li&gt;width: integer&lt;/li&gt;
+&lt;li&gt;height: integer&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;games: integer&lt;/li&gt;
+&lt;li&gt;platforms: integer&lt;/li&gt;
+&lt;li&gt;companies: integer&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;gamemode&#34;&gt;GameMode&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/game_modes/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;games: integer&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;keyword&#34;&gt;Keyword&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/keywords/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;games: integer&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;person&#34;&gt;Person&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/people/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;dob: date&lt;/li&gt;
+&lt;li&gt;gender: integer&lt;/li&gt;
+&lt;li&gt;country: integer&lt;/li&gt;
+&lt;li&gt;mug_shot:
+
+&lt;ul&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;cloudinary_id: string&lt;/li&gt;
+&lt;li&gt;width: integer&lt;/li&gt;
+&lt;li&gt;height: integer&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;bio: string&lt;/li&gt;
+&lt;li&gt;description: string&lt;/li&gt;
+&lt;li&gt;parent: integer&lt;/li&gt;
+&lt;li&gt;homepage: string&lt;/li&gt;
+&lt;li&gt;twitter: string&lt;/li&gt;
+&lt;li&gt;linkedin: string&lt;/li&gt;
+&lt;li&gt;google_plus: string&lt;/li&gt;
+&lt;li&gt;facebook: string&lt;/li&gt;
+&lt;li&gt;instagram: string&lt;/li&gt;
+&lt;li&gt;tumblr: string&lt;/li&gt;
+&lt;li&gt;soundcloud: string&lt;/li&gt;
+&lt;li&gt;pinterest: string&lt;/li&gt;
+&lt;li&gt;youtube: string&lt;/li&gt;
+&lt;li&gt;nicknames: string&lt;/li&gt;
+&lt;li&gt;loves_count: integer&lt;/li&gt;
+&lt;li&gt;voice_acted: integer&lt;/li&gt;
+&lt;li&gt;games: integer&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;platform&#34;&gt;Platform&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/platforms/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;logo:
+
+&lt;ul&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;cloudinary_id: string&lt;/li&gt;
+&lt;li&gt;width: integer&lt;/li&gt;
+&lt;li&gt;height: integer&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;shortcut: string&lt;/li&gt;
+&lt;li&gt;website: string&lt;/li&gt;
+&lt;li&gt;summary: string&lt;/li&gt;
+&lt;li&gt;category: integer&lt;/li&gt;
+&lt;li&gt;product_family: integer&lt;/li&gt;
+&lt;li&gt;alternative_name: string&lt;/li&gt;
+&lt;li&gt;generation: integer&lt;/li&gt;
+&lt;li&gt;games: integer&lt;/li&gt;
+&lt;li&gt;versions(array):
+
+&lt;ul&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;summary: string&lt;/li&gt;
+&lt;li&gt;manufacturer: integer&lt;/li&gt;
+&lt;li&gt;os: string&lt;/li&gt;
+&lt;li&gt;cpu: string&lt;/li&gt;
+&lt;li&gt;storage: string&lt;/li&gt;
+&lt;li&gt;memory: string&lt;/li&gt;
+&lt;li&gt;graphics: string&lt;/li&gt;
+&lt;li&gt;sound: string&lt;/li&gt;
+&lt;li&gt;online: string&lt;/li&gt;
+&lt;li&gt;media: string&lt;/li&gt;
+&lt;li&gt;connectivity: string&lt;/li&gt;
+&lt;li&gt;resolutions: string&lt;/li&gt;
+&lt;li&gt;output: string&lt;/li&gt;
+&lt;li&gt;release_dates(array):&lt;/li&gt;
+&lt;li&gt;date: date&lt;/li&gt;
+&lt;li&gt;region: integer&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;pulse&#34;&gt;Pulse&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/pulses/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;category: integer&lt;/li&gt;
+&lt;li&gt;title: string&lt;/li&gt;
+&lt;li&gt;summary: string&lt;/li&gt;
+&lt;li&gt;image: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;uid: string&lt;/li&gt;
+&lt;li&gt;author: string&lt;/li&gt;
+&lt;li&gt;published_at: date&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;theme&#34;&gt;Theme&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/themes/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;games: integer&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;collection&#34;&gt;Collection&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/collections/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;games: integer&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;playerperspective&#34;&gt;PlayerPerspective&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/player_perspectives/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;games: integer&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/reviews/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;username: string&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;title: string&lt;/li&gt;
+&lt;li&gt;game: integer&lt;/li&gt;
+&lt;li&gt;category: integer&lt;/li&gt;
+&lt;li&gt;likes: integer&lt;/li&gt;
+&lt;li&gt;views: integer&lt;/li&gt;
+&lt;li&gt;rating_category: integer&lt;/li&gt;
+&lt;li&gt;platform: integer&lt;/li&gt;
+&lt;li&gt;video: string&lt;/li&gt;
+&lt;li&gt;introduction: string&lt;/li&gt;
+&lt;li&gt;content: string&lt;/li&gt;
+&lt;li&gt;conclusion: string&lt;/li&gt;
+&lt;li&gt;positive_points: string&lt;/li&gt;
+&lt;li&gt;negative_points: string&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;franchise&#34;&gt;Franchise&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/franchises/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;games: integer&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;genre&#34;&gt;Genre&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/genres/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;name: string&lt;/li&gt;
+&lt;li&gt;created_at: date&lt;/li&gt;
+&lt;li&gt;updated_at: date&lt;/li&gt;
+&lt;li&gt;slug: string&lt;/li&gt;
+&lt;li&gt;url: string&lt;/li&gt;
+&lt;li&gt;games: integer&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;releasedate&#34;&gt;ReleaseDate&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/release_dates/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;id u64&lt;/li&gt;
+&lt;li&gt;game: integer&lt;/li&gt;
+&lt;li&gt;category: integer&lt;/li&gt;
+&lt;li&gt;platform: integer&lt;/li&gt;
+&lt;li&gt;date: date&lt;/li&gt;
+&lt;li&gt;region: integer&lt;/li&gt;
+&lt;li&gt;y: integer&lt;/li&gt;
+&lt;li&gt;m: integer&lt;/li&gt;
+&lt;li&gt;human: string&lt;/li&gt;
+&lt;li&gt;_score: float (Optional)&lt;/li&gt;
+&lt;li&gt;error: Array of strings&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Examples</title>
+      <link>https://igdb.github.io/api/basics/examples/</link>
+      <pubDate>Mon, 09 Jan 2017 10:30:17 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/basics/examples/</guid>
+      <description>
+
+&lt;h2 id=&#34;get-all-information-from-a-specific-game&#34;&gt;Get all information from a specific game&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/games/1942?fields=*&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;1942, is the ID of the game.&lt;/p&gt;
+
+&lt;h2 id=&#34;get-all-games-from-a-specific-genre&#34;&gt;Get all games from a specific genre&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/genres/12?fields=*&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;count-total-games-that-have-a-rating-higher-than-75&#34;&gt;Count total games that have a rating higher than 75&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/games/count?filter[rating][gt]=75&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;popularity&#34;&gt;Popularity&lt;/h2&gt;
+
+&lt;p&gt;Popularity parameter for games. You can access it like this:
+&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/games/?fields=name,popularity&amp;amp;order=popularity:desc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The popularity number is calculated using usage statistics of game pages at &lt;a href=&#34;https://www.igdb.com&#34;&gt;https://www.igdb.com&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ordering</title>
+      <link>https://igdb.github.io/api/references/ordering/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:54 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/ordering/</guid>
+      <description>
+
+&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
+
+&lt;p&gt;Ordering (Sorting) is used to order results by a specific field.&lt;/p&gt;
+
+&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
+
+&lt;p&gt;You can order results like this: &lt;code&gt;/games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;order=release_dates.date:desc&lt;/code&gt;. Notice the appended &lt;code&gt;:desc&lt;/code&gt; which could also be &lt;code&gt;:asc&lt;/code&gt; if required.&lt;/p&gt;
+
+&lt;p&gt;You can also subfilter arrays by appending &amp;ldquo;max&amp;rdquo;, &amp;ldquo;min&amp;rdquo;, &amp;ldquo;sum&amp;rdquo;, &amp;ldquo;avg&amp;rdquo; or &amp;ldquo;median&amp;rdquo;.
+For example, you can order games based on it&amp;rsquo;s earliest release date like this: &lt;code&gt;/games/?search=zelda&amp;amp;order=release_dates.date:desc:min&amp;amp;limit=5&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
+
+&lt;p&gt;Ordering can be used on any entity.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pagination</title>
+      <link>https://igdb.github.io/api/references/pagination/</link>
+      <pubDate>Mon, 09 Jan 2017 10:24:00 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/pagination/</guid>
+      <description>
+
+&lt;h3 id=&#34;simple-pagination&#34;&gt;Simple Pagination&lt;/h3&gt;
+
+&lt;p&gt;Here is an example for how to paginate: (the default limit is 10)
+&lt;code&gt;/platforms/?limit=33&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;There is also an offset:
+&lt;code&gt;/platforms/?limit=33&amp;amp;offset=22&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;scroll-api&#34;&gt;Scroll API&lt;/h3&gt;
+
+&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;This is only available for &lt;a href=&#34;https://market.mashape.com/igdbcom/internet-game-database/pricing&#34;&gt;Ultra subscribers&lt;/a&gt; on Mashape.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;In order to get more than 10,000 results and get blazing fast response times you need to use the new Scroll extension.&lt;/p&gt;
+
+&lt;p&gt;To use it you need to supply a scroll param to the search like this:
+&lt;code&gt;/games?order=rating&amp;amp;scroll=1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;It will return results and include a couple of extra headers: &lt;strong&gt;X-Next-Page&lt;/strong&gt; and &lt;strong&gt;X-Count&lt;/strong&gt;.&lt;br /&gt;
+&lt;strong&gt;X-Next-Page&lt;/strong&gt; includes a path for the next page:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/games/scroll/cXVlcnlBbmRGZXRjaDsxOzE5OkhBck1wUUZsUnpPUDgwMGtDN0hSdEE7MDs=&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;X-Count&lt;/strong&gt; has the number of results: &lt;code&gt;1337&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;For each call it will take new parts of the list until you get to the end of the list.
+There is a timeout on the list which is 3 minutes and for each subsequent call it refreshes this timeout.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Images</title>
+      <link>https://igdb.github.io/api/references/images/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:50 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/images/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Image url structure:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dfgkfivjrhcksyymh9vw.jpg&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Original image url&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;https://images.igdb.com/igdb/image/upload/dfgkfivjrhcksyymh9vw.png&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Break down:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;https://images.igdb.com/igdb/image/upload/t_{size}/{hash}.jpg&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;size&lt;/code&gt; is one of the interchangeable size types listed below.
+&lt;code&gt;hash&lt;/code&gt; is the id of the image.
+The image sizes are all maximum size but by appending &lt;code&gt;_2x&lt;/code&gt; to any size, you can get retina (DPR 2.0) sizes (&lt;code&gt;cover_small_2x&lt;/code&gt;).&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Size&lt;/th&gt;
+&lt;th&gt;Extra&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;cover_small&lt;/td&gt;
+&lt;td&gt;90 x 128&lt;/td&gt;
+&lt;td&gt;Fit&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;screenshot_med&lt;/td&gt;
+&lt;td&gt;569 x 320&lt;/td&gt;
+&lt;td&gt;Lfill, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;cover_big&lt;/td&gt;
+&lt;td&gt;227 x 320&lt;/td&gt;
+&lt;td&gt;Fit&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;logo_med&lt;/td&gt;
+&lt;td&gt;284 x 160&lt;/td&gt;
+&lt;td&gt;Fit&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;screenshot_big&lt;/td&gt;
+&lt;td&gt;889 x 500&lt;/td&gt;
+&lt;td&gt;Lfill, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;screenshot_huge&lt;/td&gt;
+&lt;td&gt;1280 x 720&lt;/td&gt;
+&lt;td&gt;Lfill, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;thumb&lt;/td&gt;
+&lt;td&gt;90 x 90&lt;/td&gt;
+&lt;td&gt;Thumb, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;micro&lt;/td&gt;
+&lt;td&gt;35 x 35&lt;/td&gt;
+&lt;td&gt;Thumb, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/games/1942?fields=screenshots&lt;/code&gt;&lt;br /&gt;
+Here we retrieve the image properties of the game with the id &amp;ldquo;1942&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Response:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[
+  {
+    &amp;quot;id&amp;quot;: 1942,
+    &amp;quot;screenshots&amp;quot;: [
+      {
+        &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&amp;quot;,
+        &amp;quot;cloudinary_id&amp;quot;: &amp;quot;z5t0yuhyiiui1ickwhgj&amp;quot;,
+        &amp;quot;width&amp;quot;: 1920,
+        &amp;quot;height&amp;quot;: 1080
+      },
+      {
+        &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&amp;quot;,
+        &amp;quot;cloudinary_id&amp;quot;: &amp;quot;mnljdjtrh44x4snmierh&amp;quot;,
+        &amp;quot;width&amp;quot;: 1920,
+        &amp;quot;height&amp;quot;: 1080
+      }
+    ]
+  }
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Replace the hashes above with &lt;code&gt;cloudinary_id&lt;/code&gt;, provided by the API.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reference</title>
+      <link>https://igdb.github.io/api/references/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:01 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/</guid>
+      <description>
+
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+
+&lt;p&gt;This section describes all available data points and the means to retrieve them.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://igdb.github.io/api/api/references/fields&#34;&gt;Fields&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://igdb.github.io/api/api/references/filters&#34;&gt;Filters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://igdb.github.io/api/api/references/ordering&#34;&gt;Ordering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://igdb.github.io/api/api/references/pagination&#34;&gt;Pagination&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://igdb.github.io/api/api/references/images&#34;&gt;Images&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Basics</title>
+      <link>https://igdb.github.io/api/basics/</link>
+      <pubDate>Mon, 09 Jan 2017 10:21:23 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/basics/</guid>
+      <description>
+
+&lt;h3 id=&#34;the-basics&#34;&gt;The Basics&lt;/h3&gt;
+
+&lt;p&gt;In order to use our API, you must have a &lt;a href=&#34;https://market.mashape.com/signup&#34;&gt;mashape market account&lt;/a&gt; and be subscribed to a plan on the &lt;a href=&#34;https://market.mashape.com/igdbcom/internet-game-database&#34;&gt;IGDB Mashape API&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The IGDB.com API is free for non-commercial &amp;amp; commercial usage.&lt;/p&gt;
+
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;You can find some examples by &lt;a href=&#34;https://igdb.github.io/api/api/basics/examples&#34;&gt;clicking here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;found-a-bug&#34;&gt;Found a bug?&lt;/h3&gt;
+
+&lt;p&gt;Create a &lt;a href=&#34;https://market.mashape.com/igdbcom/internet-game-database/support&#34;&gt;ticket on Mashape&lt;/a&gt; if you have problems.&lt;/p&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;All endpoints support &lt;code&gt;limit&lt;/code&gt; and &lt;code&gt;offset&lt;/code&gt; &lt;a href=&#34;https://igdb.github.io/api/api/references/pagination&#34;&gt;pagination&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://igdb.github.io/api/about/welcome/</link>
+      <pubDate>Mon, 09 Jan 2017 10:20:09 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/about/welcome/</guid>
+      <description>
+
+&lt;h1 id=&#34;internet-game-database-api-documentation&#34;&gt;Internet Game Database API Documentation&lt;/h1&gt;
+
+&lt;p&gt;One of the principles behind IGDB.com is accessibility of data. We wish to share the data with anyone who wants to build cool videogame oriented websites, apps and services. This means that the information you contribute to IGDB.com can be used by other projects as well.&lt;/p&gt;
+
+&lt;p&gt;Thus, you are not only contributing to the value of this site but to hundreds of other projects as well. We are looking forward to see what exciting game related projects you come up with. Happy coding!&lt;/p&gt;
+
+&lt;p&gt;Our video game database has loads of video game metadata. That includes release dates, descriptions, media, etc.&lt;/p&gt;
+
+&lt;a  href=&#34;https://market.mashape.com/signup&#34; target=&#34;_blank&#34;  class=&#34;btn btn-default&#34;&gt;
+  
+  
+  
+  GET FREE KEY
+  
+&lt;/a&gt;
+
+
+&lt;hr /&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;IGDB.com&lt;/th&gt;
+&lt;th&gt;GiantBomb&lt;/th&gt;
+&lt;th&gt;thegamesdb.net&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Total unique games&lt;/td&gt;
+&lt;td&gt;+25,592&lt;/td&gt;
+&lt;td&gt;+48,000&lt;/td&gt;
+&lt;td&gt;+25,000&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Allowed to use commercially&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Requests per day&lt;/td&gt;
+&lt;td&gt;7,000 - 700,000&lt;/td&gt;
+&lt;td&gt;4,800&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Allowed to build competing product&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;SSL support&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Protocol / Formats&lt;/td&gt;
+&lt;td&gt;JSON, REST&lt;/td&gt;
+&lt;td&gt;JSON, JSONP, XML, REST&lt;/td&gt;
+&lt;td&gt;XML, REST&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The API is really fast, has an amazing up-time, scaled images and it is very easy for users to add new games to their beautiful website.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;- Tommy Uytterhaegen from &lt;a href=&#34;http://igdb.com/r/api-mgc&#34;&gt;My Game Collection&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I must say that your API is incredibly good and complete. Congratulations on that, as it is helping me a lot to get the work done!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;- Jorge from &lt;a href=&#34;http://thegamenetworkapp.com/&#34;&gt;The Game Network&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

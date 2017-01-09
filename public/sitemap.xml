@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://igdb.github.io/api/references/fields/</loc>
+    <lastmod>2017-01-09T10:23:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/references/filters/</loc>
+    <lastmod>2017-01-09T10:23:47+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/basics/endpoints/</loc>
+    <lastmod>2017-01-09T10:22:39+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/basics/examples/</loc>
+    <lastmod>2017-01-09T10:30:17+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/references/ordering/</loc>
+    <lastmod>2017-01-09T10:23:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/references/pagination/</loc>
+    <lastmod>2017-01-09T10:24:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/references/images/</loc>
+    <lastmod>2017-01-09T10:23:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/references/</loc>
+    <lastmod>2017-01-09T10:23:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/basics/</loc>
+    <lastmod>2017-01-09T10:21:23+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/about/welcome/</loc>
+    <lastmod>2017-01-09T10:20:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/about/</loc>
+    <lastmod>2017-01-09T10:20:09+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/basics/</loc>
+    <lastmod>2017-01-09T10:21:23+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/</loc>
+    <lastmod>2017-01-09T10:23:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/references/</loc>
+    <lastmod>2017-01-09T10:23:01+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
