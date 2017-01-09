@@ -1,7 +1,8 @@
 #!/bin/bash
 
 hugo
-cp -rf public /tmp/igdb-api-public
+rm -rf /tmp/igdb-api/*
+cp -rf public /tmp/igdb-api
 git checkout gh-pages
 rm -rf *
-cp -rf /tmp/igdb-api-public/* .
+cp -rf /tmp/igdb-api/public/* .
