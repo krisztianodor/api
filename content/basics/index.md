@@ -19,11 +19,12 @@ The IGDB.com API is free for non-commercial & commercial usage.
 
 You can find some examples by [clicking here](/api/basics/examples).
 
-### Language Wrappers
+### API Wrappers
 
 Wrappers in good standing:
 
-- [Node](https://github.com/igdb/igdb-api-node)
+- [NodeJS](https://github.com/igdb/igdb-api-node)
+- [Laravel](https://github.com/messerli90/igdb)
 
 Stale wrappers:
 
