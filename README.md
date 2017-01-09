@@ -9,3 +9,5 @@ Documentation for Internet Game Database API: https://igdb.github.io/api/
 - `cd api`
 - Run `hugo serve` for development
 - or `hugo` for building the project into the `public` directory
+
+More hugo documentation here: https://gohugo.io/content/organization/
