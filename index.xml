@@ -1216,12 +1216,13 @@ Here we retrieve the image properties of the game with the id &amp;ldquo;1942&am
 
 &lt;p&gt;You can find some examples by &lt;a href=&#34;https://igdb.github.io/api/api/basics/examples&#34;&gt;clicking here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;language-wrappers&#34;&gt;Language Wrappers&lt;/h3&gt;
+&lt;h3 id=&#34;api-wrappers&#34;&gt;API Wrappers&lt;/h3&gt;
 
 &lt;p&gt;Wrappers in good standing:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/igdb/igdb-api-node&#34;&gt;Node&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/igdb/igdb-api-node&#34;&gt;NodeJS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/messerli90/igdb&#34;&gt;Laravel&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Stale wrappers:&lt;/p&gt;
