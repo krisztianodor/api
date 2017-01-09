@@ -1,0 +1,4 @@
+languageCode = "en-us"
+title = "IGDB API Documentation"
+theme = "hugo-theme-learn"
+baseurl = "https://igdb.github.io/api/"
