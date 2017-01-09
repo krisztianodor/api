@@ -3,8 +3,8 @@ weight = 4
 title = "Pagination"
 date = "2017-01-09T10:24:00+01:00"
 toc = true
-next = "/next/path"
-prev = "/prev/path"
+next = "/references/images"
+prev = "/references/ordering"
 
 +++
 

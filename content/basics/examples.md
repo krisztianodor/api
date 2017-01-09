@@ -1,8 +1,8 @@
 +++
 date = "2017-01-09T10:30:17+01:00"
 toc = true
-next = "/next/path"
-prev = "/prev/path"
+next = "/references"
+prev = "/basics/endpoints"
 weight = 3
 title = "Examples"
 

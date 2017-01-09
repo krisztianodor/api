@@ -2,8 +2,8 @@
 weight = 1
 title = "Fields"
 date = "2017-01-09T10:23:15+01:00"
-next = "/next/path"
-prev = "/prev/path"
+next = "/references/filters"
+prev = "/references"
 
 +++
 

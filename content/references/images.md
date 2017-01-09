@@ -2,8 +2,7 @@
 title = "Images"
 date = "2017-01-09T10:23:50+01:00"
 toc = true
-next = "/next/path"
-prev = "/prev/path"
+prev = "/references/pagination"
 weight = 5
 
 +++

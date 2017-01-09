@@ -1,7 +1,7 @@
 +++
 chapter = true
-next = "/next/path"
-prev = "/prev/path"
+next = "/basics/endpoints"
+prev = "/about/welcome"
 weight = 0
 title = "Basics"
 date = "2017-01-09T10:21:23+01:00"
@@ -15,9 +15,20 @@ In order to use our API, you must have a [mashape market account](https://market
   
 The IGDB.com API is free for non-commercial & commercial usage.
 
-### Examples
+### REST Examples
 
 You can find some examples by [clicking here](/api/basics/examples).
+
+### Language Wrappers
+
+Wrappers in good standing:
+
+- [Node](https://github.com/igdb/igdb-api-node)
+
+Stale wrappers:
+
+- [Ruby](https://github.com/ahmetabdi/igdb)
+- [PHP](https://github.com/igdb/igdb-api-php)
 
 ### Found a bug?
 

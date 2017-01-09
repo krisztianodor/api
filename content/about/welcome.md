@@ -2,8 +2,7 @@
 date = "2017-01-09T10:20:09+01:00"
 icon = "<b class='fa fa-hand-peace-o'></b>"
 chapter = true
-next = "/next/path"
-prev = "/prev/path"
+next = "/basics"
 weight = 0
 title = "Welcome"
 

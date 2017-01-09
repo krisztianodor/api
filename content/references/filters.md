@@ -1,7 +1,7 @@
 +++
 toc = true
-next = "/next/path"
-prev = "/prev/path"
+next = "/references/ordering"
+prev = "/references/fields"
 weight = 2
 title = "Filters"
 date = "2017-01-09T10:23:47+01:00"
