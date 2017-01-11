@@ -10,31 +10,6 @@ title = "Endpoints"
 
 **This page is deprecated and it's content is being migrated to other pages.**
 
-## Character 
-
-> /characters/
-
-* id u64
-* name: string
-* created_at: date
-* updated_at: date
-* slug: string
-* url: string
-* mug_shot:
-  * url: string
-  * cloudinary_id: string
-  * width: integer
-  * height: integer
-* gender: integer
-* country_name: string
-* akas: string
-* species: integer
-* games: integer
-* _score: float (Optional)
-* error: Array of strings
-
-
-
 ## GameEngine 
 
 > /game_engines/

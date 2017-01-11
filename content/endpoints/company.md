@@ -2,8 +2,8 @@
 date = "2017-01-11T17:44:12+10:00"
 toc = true
 next = "/endpoints/game"
-prev = "/endpoints"
-weight = 1
+prev = "/endpoints/character"
+weight = 2
 title = "Company"
 
 +++
@@ -34,7 +34,7 @@ title = "Company"
 | url                  | string                            |     +     ||
 | created_at           | unsigned 64-bit integer           |     +     | Unix epoch |
 | updated_at           | unsigned 64-bit integer           |     +     | Unix epoch |
-| logo                 | object                            |     -     | See the [Logo](../../misc-objects/logo) object reference |
+| logo                 | object                            |     -     | See the [Image](../../misc-objects/image) object reference |
 | description          | string                            |     -     ||
 | country              | integer                           |     -     | Please see the [ISO-3316-1](https://en.wikipedia.org/wiki/ISO_3166-1_numeric) reference |
 | website              | string                            |     -     ||

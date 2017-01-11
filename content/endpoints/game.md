@@ -3,7 +3,7 @@ date = "2017-01-10T19:08:39+10:00"
 toc = true
 next = "/endpoints/genre"
 prev = "/endpoints/company"
-weight = 2
+weight = 3
 title = "Game"
 
 +++
@@ -62,6 +62,6 @@ title = "Game"
 | alternative_names   | array of objects                  |     -     | See the [Alternative name](../../misc-objects/alternative-name) object reference |
 | screenshots         | array of objects                  |     -     | See the [Screenshot](../../misc-objects/screenshot) object reference |
 | videos              | array of objects                  |     -     | See the [Video](../../misc-objects/video) object reference |
-| cover               | array of objects                  |     -     | See the [Cover](../../misc-objects/cover) object reference |
+| cover               | array of objects                  |     -     | See the [Image](../../misc-objects/image) object reference |
 | esrb                | object                            |     -     | See the [ESRB](../../misc-objects/esrb) object reference |
 | pegi                | object                            |     -     | See the [PEGI](../../misc-objects/pegi) object reference |

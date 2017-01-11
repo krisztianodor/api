@@ -3,7 +3,7 @@ date = "2017-01-11T20:46:03+10:00"
 toc = true
 next = "/references"
 prev = "/endpoints/genre"
-weight = 4
+weight = 5
 title = "Platform"
 
 +++
@@ -39,10 +39,10 @@ title = "Platform"
 | url              | string                            |     +     ||
 | created_at       | unsigned 64-bit integer           |     +     | Unix epoch |
 | updated_at       | unsigned 64-bit integer           |     +     | Unix epoch |
-| logo             | object                            |     -     | See the [Logo](../../misc-objects/logo) object reference |
+| logo             | object                            |     -     | See the [Image](../../misc-objects/image) object reference |
 | shortcut         | string                            |     -     | Not used? |
 | website          | string                            |     -     ||
-| summary          | long string                       |     -     ||
+| summary          | text (long string)                |     -     ||
 | category         | integer                           |     -     | Not used? |
 | product_family   | integer                           |     -     | Not used? |
 | alternative_name | string                            |     -     ||
