@@ -1,9 +1,9 @@
 +++
 date = "2017-01-11T17:01:41+10:00"
 toc = true
-next = "/endpoints/game"
-prev = "/endpoints"
-weight = 2
+next = "/references"
+prev = "/endpoints/game"
+weight = 3
 title = "Genre"
 
 +++
@@ -39,4 +39,4 @@ title = "Genre"
 | url        | string                            |     +     ||
 | created_at | unsigned 64-bit integer           |     +     | Unix epoch |
 | updated_at | unsigned 64-bit integer           |     +     | Unix epoch |
-| games      | array of unsigned 64-bit integers |           | IDs of [Game](../game) records |
+| games      | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |

@@ -2,8 +2,8 @@
 date = "2017-01-10T19:08:39+10:00"
 toc = true
 next = "/endpoints/genre"
-prev = "/endpoints"
-weight = 1
+prev = "/endpoints/company"
+weight = 2
 title = "Game"
 
 +++
@@ -46,8 +46,8 @@ title = "Game"
 | aggregated_rating   | double                            |           ||
 | rating_count        | integer                           |           ||
 | game                | unsigned 64-bit integer           |           | The base game's ID if this record is a DLC |
-| developers          | array of unsigned 64-bit integers |           ||
-| publishers          | array of unsigned 64-bit integers |           ||
+| developers          | array of unsigned 64-bit integers |           | IDs of [Company](../company) records |
+| publishers          | array of unsigned 64-bit integers |           | IDs of [Company](../company) records |
 | game_engines        | array of unsigned 64-bit integers |           | IDs of [Game engine](../game-engine) records |
 | category            | integer                           |           ||
 | time_to_beat        | object                            |           | See the [Time to beat](../../misc-objects/time-to-beat) object reference |

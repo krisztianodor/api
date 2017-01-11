@@ -35,39 +35,6 @@ title = "Endpoints"
 
 
 
-## Company 
-
-> /companies/
-
-* id u64
-* name: string
-* created_at: date
-* updated_at: date
-* slug: string
-* url: string
-* logo:
-  * url: string
-  * cloudinary_id: string
-  * width: integer
-  * height: integer
-* description: string
-* start_date: date
-* start_date_category: integer
-* country: integer
-* website: string
-* parent: integer
-* changed_company_id: integer
-* change_date: date
-* change_date_category: integer
-* twitter: string
-* facebook: string
-* published: integer
-* developed: integer
-* _score: float (Optional)
-* error: Array of strings
-
-
-
 ## GameEngine 
 
 > /game_engines/
