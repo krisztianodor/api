@@ -130,54 +130,6 @@ title = "Endpoints"
 
 
 
-## Platform 
-
-> /platforms/
-
-* id u64
-* name: string
-* logo:
-  * url: string
-  * cloudinary_id: string
-  * width: integer
-  * height: integer
-* slug: string
-* url: string
-* created_at: date
-* updated_at: date
-* shortcut: string
-* website: string
-* summary: string
-* category: integer
-* product_family: integer
-* alternative_name: string
-* generation: integer
-* games: integer
-* versions(array):
-  * name: string
-  * slug: string
-  * url: string
-  * summary: string
-  * manufacturer: integer
-  * os: string
-  * cpu: string
-  * storage: string
-  * memory: string
-  * graphics: string
-  * sound: string
-  * online: string
-  * media: string
-  * connectivity: string
-  * resolutions: string
-  * output: string
-  * release_dates(array):
-    * date: date
-    * region: integer
-* _score: float (Optional)
-* error: Array of strings
-
-
-
 ## Pulse 
 
 > /pulses/
