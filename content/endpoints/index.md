@@ -9,6 +9,8 @@ icon = "<b class='fa fa-sitemap'></b>"
 
 +++
 
+##General information
+
 {{% notice tip %}}
 Test endpoints using the [Mashape sandbox](https://market.mashape.com/igdbcom/internet-game-database). Alternatively, we highly recommend [postman](https://www.getpostman.com/) to perfect your requests.
 {{% /notice %}}
@@ -19,3 +21,10 @@ In order to communicate with the server, you will have to send these headers.
 | --- | --- |
 | X-Mashape-Key | The key from your Mashape account|
 | Accept | application/json |
+
+##Common fields in responses
+
+All the responses may contain the following fields in the result:
+
+_score
+error

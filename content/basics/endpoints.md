@@ -321,22 +321,6 @@ title = "Endpoints"
 
 
 
-## Genre 
-
-> /genres/
-
-* id u64
-* name: string
-* created_at: date
-* updated_at: date
-* slug: string
-* url: string
-* games: integer
-* _score: float (Optional)
-* error: Array of strings
-
-
-
 ## ReleaseDate 
 
 > /release_dates/

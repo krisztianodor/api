@@ -1,7 +1,7 @@
 +++
 date = "2017-01-10T19:08:39+10:00"
 toc = true
-next = "/references"
+next = "/endpoints/genre"
 prev = "/endpoints"
 weight = 1
 title = "Game"
