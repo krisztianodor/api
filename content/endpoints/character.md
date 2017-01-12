@@ -4,7 +4,7 @@ toc = true
 next = "/endpoints/company"
 prev = "/endpoints"
 weight = 1
-title = "Characters"
+title = "Character"
 
 +++
 

@@ -10,45 +10,6 @@ title = "Endpoints"
 
 **This page is deprecated and it's content is being migrated to other pages.**
 
-## GameEngine 
-
-> /game_engines/
-
-* id u64
-* name: string
-* created_at: date
-* updated_at: date
-* logo:
-  * url: string
-  * cloudinary_id: string
-  * width: integer
-  * height: integer
-* slug: string
-* url: string
-* games: integer
-* platforms: integer
-* companies: integer
-* _score: float (Optional)
-* error: Array of strings
-
-
-
-## GameMode 
-
-> /game_modes/
-
-* id u64
-* name: string
-* created_at: date
-* updated_at: date
-* slug: string
-* url: string
-* games: integer
-* _score: float (Optional)
-* error: Array of strings
-
-
-
 ## Keyword 
 
 > /keywords/

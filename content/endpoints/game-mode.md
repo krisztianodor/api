@@ -1,26 +1,31 @@
 +++
-date = "2017-01-12T16:55:43+10:00"
+date = "2017-01-12T20:44:16+10:00"
 toc = true
-next = "/endpoints/game-mode"
-prev = "/endpoints/game"
-weight = 4
-title = "Game engine"
+next = "/endpoints/genre"
+prev = "/endpoints/game-engine"
+weight = 5
+title = "Game mode"
 
 +++
 
-***URL path:*** /game_engines/
+***URL path:*** /game_modes/
 
 ***Example response***
 
 ```json
 {
-    "id": 2,
-    "name": "Frostbite",
-    "slug": "frostbite",
-    "url": "https://www.igdb.com/game_engines/frostbite",
+    "id": 1,
+    "name": "Single player",
+    "slug": "single-player",
+    "url": "https://www.igdb.com/game_modes/single-player",
     "created_at": 123456789,
     "updated_at": 123456789,
-    ...
+    "games": [
+        1,
+        2,
+        3,
+        ...
+    ]
 }
 ```
 
@@ -34,7 +39,4 @@ title = "Game engine"
 | url        | string                            |     +     ||
 | created_at | unsigned 64-bit integer           |     +     | Unix epoch |
 | updated_at | unsigned 64-bit integer           |     +     | Unix epoch |
-| logo       | object                            |     -     | See the [Image](../../misc-objects/image) object reference |
 | games      | array of 64-bit unsigned integers |     -     | IDs of [Game](../game) records |
-| companies  | array of 64-bit unsigned integers |     -     | IDs of [Company](../company) records |
-| platforms  | array of 64-bit unsigned integers |     -     | IDs of [Platforms](../platform) records |
