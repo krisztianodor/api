@@ -1,31 +1,26 @@
 +++
-date = "2017-01-11T17:01:41+10:00"
+date = "2017-01-12T16:55:43+10:00"
 toc = true
-next = "/endpoints/platform"
-prev = "/endpoints/game-engine"
-weight = 5
-title = "Genre"
+next = "/endpoints/genre"
+prev = "/endpoints/game"
+weight = 4
+title = "Game engine"
 
 +++
 
-***URL path:*** /genres/
+***URL path:*** /game_engines/
 
 ***Example response***
 
 ```json
 {
     "id": 2,
-    "name": "Point-and-click",
-    "slug": "point-and-click",
-    "url": "https://www.igdb.com/genres/point-and-click",
+    "name": "Frostbite",
+    "slug": "frostbite",
+    "url": "https://www.igdb.com/game_engines/frostbite",
     "created_at": 123456789,
     "updated_at": 123456789,
-    "games": [
-      1,
-      2,
-      3,
-      ...
-    ]
+    ...
 }
 ```
 
@@ -39,4 +34,7 @@ title = "Genre"
 | url        | string                            |     +     ||
 | created_at | unsigned 64-bit integer           |     +     | Unix epoch |
 | updated_at | unsigned 64-bit integer           |     +     | Unix epoch |
-| games      | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |
+| logo       | object                            |     -     | See the [Image](../../misc-objects/image) object reference |
+| games      | array of 64-bit unsigned integers |     -     | IDs of [Game](../game) records |
+| companies  | array of 64-bit unsigned integers |     -     | IDs of [Company](../company) records |
+| platforms  | array of 64-bit unsigned integers |     -     | IDs of [Platforms](../platform) records |
