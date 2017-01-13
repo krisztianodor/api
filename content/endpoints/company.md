@@ -2,8 +2,8 @@
 date = "2017-01-11T17:44:12+10:00"
 toc = true
 next = "/endpoints/game"
-prev = "/endpoints/character"
-weight = 2
+prev = "/endpoints/collection"
+weight = 3
 title = "Company"
 
 +++

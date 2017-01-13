@@ -1,7 +1,7 @@
 +++
 date = "2017-01-11T17:44:12+10:00"
 toc = true
-next = "/endpoints/company"
+next = "/endpoints/collection"
 prev = "/endpoints"
 weight = 1
 title = "Character"

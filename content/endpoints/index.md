@@ -1,10 +1,10 @@
 +++
-chapter = true
+date = "2017-01-10T19:03:21+10:00"
+toc = true
 next = "/endpoints/character"
 prev = "/basics/examples"
 weight = 0
 title = "Endpoints"
-date = "2017-01-10T19:03:21+10:00"
 icon = "<b class='fa fa-sitemap'></b>"
 
 +++

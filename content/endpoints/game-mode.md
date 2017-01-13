@@ -3,7 +3,7 @@ date = "2017-01-12T20:44:16+10:00"
 toc = true
 next = "/endpoints/genre"
 prev = "/endpoints/game-engine"
-weight = 5
+weight = 6
 title = "Game mode"
 
 +++
