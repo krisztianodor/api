@@ -1,30 +1,30 @@
 +++
-date = "2017-01-11T17:01:41+10:00"
+date = "2017-01-12T20:44:16+10:00"
 toc = true
-next = "/endpoints/keyword"
-prev = "/endpoints/game-mode"
-weight = 6
-title = "Genre"
+next = "/endpoints/platform"
+prev = "/endpoints/genre"
+weight = 7
+title = "Keyword"
 
 +++
 
-***URL path:*** /genres/
+***URL path:*** /keywords/
 
 ***Example response***
 
 ```json
 {
-    "id": 2,
-    "name": "Point-and-click",
-    "slug": "point-and-click",
-    "url": "https://www.igdb.com/genres/point-and-click",
+    "id": 1,
+    "name": "modern warfare",
+    "slug": "modern-warfare",
+    "url": "https://www.igdb.com/categories/modern-warfare",
     "created_at": 123456789,
     "updated_at": 123456789,
     "games": [
-      1,
-      2,
-      3,
-      ...
+        1,
+        2,
+        3,
+        ...
     ]
 }
 ```
@@ -39,4 +39,4 @@ title = "Genre"
 | url        | string                            |     +     ||
 | created_at | unsigned 64-bit integer           |     +     | Unix epoch |
 | updated_at | unsigned 64-bit integer           |     +     | Unix epoch |
-| games      | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |
+| games      | array of 64-bit unsigned integers |     -     | IDs of [Game](../game) records |

@@ -10,22 +10,6 @@ title = "Endpoints"
 
 **This page is deprecated and it's content is being migrated to other pages.**
 
-## Keyword 
-
-> /keywords/
-
-* id u64
-* name: string
-* created_at: date
-* updated_at: date
-* slug: string
-* url: string
-* games: integer
-* _score: float (Optional)
-* error: Array of strings
-
-
-
 ## Person 
 
 > /people/
