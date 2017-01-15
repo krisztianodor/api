@@ -17,7 +17,7 @@ The IGDB.com API is free for non-commercial & commercial usage.
 
 ### REST Examples
 
-You can find some examples by [clicking here](/api/basics/examples).
+You can find some examples by [clicking here](./examples).
 
 ### API Wrappers
 

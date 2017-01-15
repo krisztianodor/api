@@ -20,14 +20,16 @@ Our video game database has loads of video game metadata. That includes release 
 
 ---
 
-|  | IGDB.com | GiantBomb  | thegamesdb.net |
-|---|---|---|---|
-| Total unique games                 | +25,592         | +48,000                | +25,000        |
-| Allowed to use commercially        | Y               |                        |                |
-| Requests per day                   | 7,000 - 700,000 | 4,800                  |                |
-| Allowed to build competing product | Y               | N                      | N              |
-| SSL support                        | Y               |                        | Y              |
-| Protocol / Formats                 | JSON, REST      | JSON, JSONP, XML, REST | XML, REST      |
+|                                    | IGDB.com        | GiantBomb               | thegamesdb.net      | MobyGames&nbsp;(alpha)     |
+| ---------------------------------- |:---------------:|:-----------------------:|:-------------------:|:--------------------------:|
+| Total unique games                 | +25,000         | +48,000                 | +40,000             | +40,000                    |
+| Allowed to use commercially        | Yes             | No                      | Yes, after approval | N/A                        |
+| Requests per day                   | 7,000 - 700,000 | 86400 ( 1 per second)   | N/A                 | 8640                       |
+| Request throttling                 | No              | 1 per second            | N/A                 | 1 per second, 360 per hour |
+| Allowed to build competing product | Yes             | No                      | No                  | N/A                        |
+| SSL (HTTPS) support                | Yes             | Yes                     | Yes                 | Yes                        |
+| API key location/security          | Header/Secure   | URL/Insecure            | N/A                 | URL/Insecure               |
+| REST API Formats                   | JSON            | JSON, JSONP, XML        | XML                 | JSON                       |
 
 > The API is really fast, has an amazing up-time, scaled images and it is very easy for users to add new games to their beautiful website.
 > 

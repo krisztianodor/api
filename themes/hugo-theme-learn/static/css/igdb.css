@@ -41,3 +41,8 @@ a:hover {
   color: #333;
   font-weight: 500;
 }
+
+/* Centre-alignment of the non-first header fields of all the tables */
+table tr th:not(:first-child) {
+  text-align: center;
+}
