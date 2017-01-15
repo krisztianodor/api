@@ -1,7 +1,7 @@
 +++
 date = "2017-01-15T16:24:05+10:00"
 toc = true
-next = "/endpoints/theme"
+next = "/endpoints/release-date"
 prev = "/endpoints/player-perspective"
 weight = 13
 title = "Pulse"
