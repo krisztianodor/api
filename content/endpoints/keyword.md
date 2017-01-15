@@ -1,7 +1,7 @@
 +++
 date = "2017-01-12T20:44:16+10:00"
 toc = true
-next = "/endpoints/platform"
+next = "/endpoints/person"
 prev = "/endpoints/genre"
 weight = 9
 title = "Keyword"

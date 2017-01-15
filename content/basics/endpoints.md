@@ -10,46 +10,6 @@ title = "Endpoints"
 
 **This page is deprecated and it's content is being migrated to other pages.**
 
-## Person 
-
-> /people/
-
-* id u64
-* name: string
-* created_at: date
-* updated_at: date
-* slug: string
-* url: string
-* dob: date
-* gender: integer
-* country: integer
-* mug_shot:
-  * url: string
-  * cloudinary_id: string
-  * width: integer
-  * height: integer
-* bio: string
-* description: string
-* parent: integer
-* homepage: string
-* twitter: string
-* linkedin: string
-* google_plus: string
-* facebook: string
-* instagram: string
-* tumblr: string
-* soundcloud: string
-* pinterest: string
-* youtube: string
-* nicknames: string
-* loves_count: integer
-* voice_acted: integer
-* games: integer
-* _score: float (Optional)
-* error: Array of strings
-
-
-
 ## Pulse 
 
 > /pulses/
@@ -91,22 +51,6 @@ title = "Endpoints"
 * conclusion: string
 * positive_points: string
 * negative_points: string
-* _score: float (Optional)
-* error: Array of strings
-
-
-
-## Franchise 
-
-> /franchises/
-
-* id u64
-* name: string
-* created_at: date
-* updated_at: date
-* slug: string
-* url: string
-* games: integer
 * _score: float (Optional)
 * error: Array of strings
 
