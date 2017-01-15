@@ -30,3 +30,5 @@ All the responses may contain the following fields in the result:
 | ------ |:----------------:|:---------:|
 | _score | float            |     -     |
 | error  | array of strings |     -     |
+
+* Note: all unix epoch fields' values are in milliseconds.

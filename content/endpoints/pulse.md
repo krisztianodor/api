@@ -31,7 +31,7 @@ title = "Pulse"
 | Name         | Type                    | Mandatory | Comment |
 | ------------ |:-----------------------:|:---------:| ------- |
 | id           | unsigned 64-bit integer |     +     ||
-| category     | integer                 |     +     ||
+| category     | integer                 |     +     | See the [Pulse category](../../enum-fields/pulse-category) value reference |
 | title        | string                  |     +     ||
 | summary      | text (long string)      |     +     | Can contain HTML markup |
 | url          | string                  |     +     | Publisher's pulse URL, can be path only. |

@@ -57,7 +57,7 @@ title = "Game"
 | status              | integer                           |     -     | See the [Game status](../../enum-fields/game-status) value reference |
 | release_dates       | array of objects                  |     -     | See the [Release date](../../misc-objects/release-date) object reference |
 | alternative_names   | array of objects                  |     -     | See the [Alternative name](../../misc-objects/alternative-name) object reference |
-| screenshots         | array of objects                  |     -     | See the [Screenshot](../../misc-objects/screenshot) object reference |
+| screenshots         | array of objects                  |     -     | See the [Image](../../misc-objects/image) object reference |
 | videos              | array of objects                  |     -     | See the [Video](../../misc-objects/video) object reference |
 | cover               | array of objects                  |     -     | See the [Image](../../misc-objects/image) object reference |
 | esrb                | object                            |     -     | See the [ESRB](../../misc-objects/esrb) object reference |

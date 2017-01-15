@@ -30,7 +30,7 @@ title = "Release date"
 | game     | unsigned 64-bit integer |     +     | ID of a [Game](../game) record |
 | category | unsigned integer        |     +     | See the [Date category](../../enum-fields/date-category) value reference |
 | platform | unsigned 64-bit integer |     +     | ID of a [Platform](../platform) record |
-| human    | string                  |     +     | The release date in human readable format. Can be "TBD" as well. |
+| human    | string                  |     +     | The release date in human readable format. |
 | date     | 64-bit integer          |     -     | Unix epoch |
 | y        | unsigned integer        |     -     | The year in 4-digit format |
 | m        | unsigned integer        |     -     | The month in no-leading-zero format (1-12) |
