@@ -32,8 +32,8 @@ title = "Game"
 | name                | string                            |     +     ||
 | slug                | string                            |     +     ||
 | url                 | string                            |     +     ||
-| created_at          | unsigned 64-bit integer           |     +     | Unix epoch |
-| updated_at          | unsigned 64-bit integer           |     +     | Unix epoch |
+| created_at          | 64-bit integer                    |     +     | Unix epoch |
+| updated_at          | 64-bit integer                    |     +     | Unix epoch |
 | summary             | text (long string)                |     -     ||
 | storyline           | text (long string)                |     -     ||
 | regions             | integer                           |     -     | Not used ? |
@@ -56,7 +56,7 @@ title = "Game"
 | keywords            | array of unsigned 64-bit integers |     -     | IDs of [Keyword](../keyword) records |
 | themes              | array of unsigned 64-bit integers |     -     | IDs of [Theme](../theme) records |
 | genres              | array of unsigned 64-bit integers |     -     | IDs of [Genre](../genre) records |
-| first_release_date  | unsigned 64-bit integer           |     -     | Unix epoch |
+| first_release_date  | 64-bit integer                    |     -     | Unix epoch |
 | status              | integer                           |     -     | See the [Game status](../../enum-fields/game-status) value reference |
 | release_dates       | array of objects                  |     -     | See the [Release date](../../misc-objects/release-date) object reference |
 | alternative_names   | array of objects                  |     -     | See the [Alternative name](../../misc-objects/alternative-name) object reference |

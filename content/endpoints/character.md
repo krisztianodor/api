@@ -32,11 +32,11 @@ title = "Character"
 | name         | string                            |     +     ||
 | slug         | string                            |     +     ||
 | url          | string                            |     +     ||
-| created_at   | unsigned 64-bit integer           |     +     | Unix epoch |
-| updated_at   | unsigned 64-bit integer           |     +     | Unix epoch |
+| created_at   | 64-bit integer                    |     +     | Unix epoch |
+| updated_at   | 64-bit integer                    |     +     | Unix epoch |
 | mug_shot     | object                            |     -     | See the [Image](../../misc-objects/image) object reference |
 | gender       | integer                           |     -     | See the [Gender](../../enum-fields/gender) value reference |
 | country_name | string                            |     -     | Not used ? |
 | akas         | array of strings                  |     -     | Name aliases - 'also known as' |
 | species      | integer                           |     -     | See the [Species](../../enum-fields/species) value reference |
-| games        | array of 64-bit unsigned integers |     -     | IDs of [Game](../game) records |
+| games        | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |

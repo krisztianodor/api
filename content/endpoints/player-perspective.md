@@ -37,6 +37,6 @@ title = "Player perspective"
 | name       | string                            |     +     ||
 | slug       | string                            |     +     ||
 | url        | string                            |     +     ||
-| created_at | unsigned 64-bit integer           |     +     | Unix epoch |
-| updated_at | unsigned 64-bit integer           |     +     | Unix epoch |
-| games      | array of 64-bit unsigned integers |     -     | IDs of [Game](../game) records |
+| created_at | 64-bit integer                    |     +     | Unix epoch |
+| updated_at | 64-bit integer                    |     +     | Unix epoch |
+| games      | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |

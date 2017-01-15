@@ -32,19 +32,19 @@ title = "Company"
 | name                 | string                            |     +     ||
 | slug                 | string                            |     +     ||
 | url                  | string                            |     +     ||
-| created_at           | unsigned 64-bit integer           |     +     | Unix epoch |
-| updated_at           | unsigned 64-bit integer           |     +     | Unix epoch |
+| created_at           | 64-bit integer                    |     +     | Unix epoch |
+| updated_at           | 64-bit integer                    |     +     | Unix epoch |
 | logo                 | object                            |     -     | See the [Image](../../misc-objects/image) object reference |
 | description          | string                            |     -     ||
 | country              | integer                           |     -     | Please see the [ISO-3316-1](https://en.wikipedia.org/wiki/ISO_3166-1_numeric) reference |
 | website              | string                            |     -     ||
 | parent               | unsigned 64-bit integer           |     -     | ID of a [Company](../company) record |
-| start_date           | unsigned 64-bit integer           |     -     | Unix epoch |
+| start_date           | 64-bit integer                    |     -     | Unix epoch |
 | start_date_category  | integer                           |     -     | See the [Date category](../../enum-fields/date-category) value reference |
 | changed_company_id   | unsigned 64-bit integer           |     -     | ID of a [Company](../company) record |
-| change_date          | unsigned 64-bit integer           |     -     | Unix epoch |
+| change_date          | 64-bit integer                    |     -     | Unix epoch |
 | change_date_category | integer                           |     -     | See the [Date category](../../enum-fields/date-category) value reference |
 | twitter              | string                            |     -     | The URL of the Twitter profile |
 | facebook             | string                            |     -     | The URL of the facebook profile |
-| published            | array of 64-bit unsigned integers |     -     | IDs of [Game](../game) records |
-| developed            | array of 64-bit unsigned integers |     -     | IDs of [Game](../game) records |
+| published            | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |
+| developed            | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |

@@ -10,34 +10,6 @@ title = "Endpoints"
 
 **This page is deprecated and it's content is being migrated to other pages.**
 
-## Review 
-
-> /reviews/
-
-* id u64
-* created_at: date
-* updated_at: date
-* username: string
-* slug: string
-* url: string
-* title: string
-* game: integer
-* category: integer
-* likes: integer
-* views: integer
-* rating_category: integer
-* platform: integer
-* video: string
-* introduction: string
-* content: string
-* conclusion: string
-* positive_points: string
-* negative_points: string
-* _score: float (Optional)
-* error: Array of strings
-
-
-
 ## ReleaseDate 
 
 > /release_dates/

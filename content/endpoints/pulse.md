@@ -28,14 +28,14 @@ title = "Pulse"
 
 ***Fields***
 
-| Name         | Type                              | Mandatory | Comment |
-| ------------ |:---------------------------------:|:---------:| ------- |
-| id           | unsigned 64-bit integer           |     +     ||
-| category     | integer                           |     +     ||
-| title        | string                            |     +     ||
-| summary      | text (long string)                |     +     | Can contain HTML markup |
-| url          | string                            |     +     | Publisher's pulse URL, can be path only. |
-| uid          | string                            |     +     | Publisher's pulse entry uid |
-| published_at | unsigned 64-bit integer           |     +     | Unix epoch |
-| image        | string                            |     -     | URL pointing to the image |
-| author       | string                            |     -     ||
+| Name         | Type                    | Mandatory | Comment |
+| ------------ |:-----------------------:|:---------:| ------- |
+| id           | unsigned 64-bit integer |     +     ||
+| category     | integer                 |     +     ||
+| title        | string                  |     +     ||
+| summary      | text (long string)      |     +     | Can contain HTML markup |
+| url          | string                  |     +     | Publisher's pulse URL, can be path only. |
+| uid          | string                  |     +     | Publisher's pulse entry uid |
+| published_at | 64-bit integer          |     +     | Unix epoch |
+| image        | string                  |     -     | URL pointing to the image |
+| author       | string                  |     -     ||

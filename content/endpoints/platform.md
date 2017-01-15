@@ -37,8 +37,8 @@ title = "Platform"
 | name             | string                            |     +     ||
 | slug             | string                            |     +     ||
 | url              | string                            |     +     ||
-| created_at       | unsigned 64-bit integer           |     +     | Unix epoch |
-| updated_at       | unsigned 64-bit integer           |     +     | Unix epoch |
+| created_at       | 64-bit integer                    |     +     | Unix epoch |
+| updated_at       | 64-bit integer                    |     +     | Unix epoch |
 | logo             | object                            |     -     | See the [Image](../../misc-objects/image) object reference |
 | shortcut         | string                            |     -     | Not used? |
 | website          | string                            |     -     ||
