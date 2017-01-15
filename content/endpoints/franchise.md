@@ -1,23 +1,23 @@
 +++
-date = "2017-01-13T21:35:46+10:00"
+date = "2017-01-14T19:07:25+10:00"
 toc = true
-next = "/references"
-prev = "/endpoints/player-perspective"
-weight = 12
-title = "Theme"
+next = "/endpoints/game"
+prev = "/endpoints/company"
+weight = 4
+title = "Franchise"
 
 +++
 
-***URL path:*** /themes/
+***URL path:*** /franchises/
 
 ***Example response***
 
 ```json
 {
     "id": 1,
-    "name": "Action",
-    "slug": "action",
-    "url": "https://www.igdb.com/themes/action",
+    "name": "Star Wars",
+    "slug": "star-wars",
+    "url": "https://www.igdb.com/franchises/star-wars",
     "created_at": 123456789,
     "updated_at": 123456789,
     "games": [
