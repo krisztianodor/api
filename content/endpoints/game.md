@@ -19,8 +19,7 @@ title = "Game"
     "slug": "/games/test-game",
     "url": "https://www.igdb.com/games/test-game",
     "created_at": 123456789,
-    "updated_at": 123456789,
-    ...
+    "updated_at": 123456789
 }
 ```
 
@@ -36,8 +35,6 @@ title = "Game"
 | updated_at          | 64-bit integer                    |     +     | Unix epoch |
 | summary             | text (long string)                |     -     ||
 | storyline           | text (long string)                |     -     ||
-| regions             | integer                           |     -     | Not used ? |
-| parent              | integer                           |     -     | Not used ? |
 | collection          | unsigned 64-bit integer           |     -     | ID of a [Collection](../collection) record |
 | franchise           | unsigned 64-bit integer           |     -     | ID of a [Franchise](../franchise) record |
 | hypes               | integer                           |     -     ||
@@ -65,3 +62,12 @@ title = "Game"
 | cover               | array of objects                  |     -     | See the [Image](../../misc-objects/image) object reference |
 | esrb                | object                            |     -     | See the [ESRB](../../misc-objects/esrb) object reference |
 | pegi                | object                            |     -     | See the [PEGI](../../misc-objects/pegi) object reference |
+
+***Unused fields***
+
+These fields are present in the meta field list but has no data for any of the entities.
+
+| Name |
+| ---- |
+| regions |
+| parent |

@@ -19,8 +19,7 @@ title = "Game engine"
     "slug": "frostbite",
     "url": "https://www.igdb.com/game_engines/frostbite",
     "created_at": 123456789,
-    "updated_at": 123456789,
-    ...
+    "updated_at": 123456789
 }
 ```
 

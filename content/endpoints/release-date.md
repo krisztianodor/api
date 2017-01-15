@@ -34,3 +34,11 @@ title = "Release date"
 | date     | 64-bit integer          |     -     | Unix epoch |
 | y        | unsigned integer        |     -     | The year in 4-digit format |
 | m        | unsigned integer        |     -     | The month in no-leading-zero format (1-12) |
+
+***Unused fields***
+
+These fields are present in the meta field list but has no data for any of the entities.
+
+| Name |
+| ---- |
+| region |

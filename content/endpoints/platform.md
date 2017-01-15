@@ -40,12 +40,20 @@ title = "Platform"
 | created_at       | 64-bit integer                    |     +     | Unix epoch |
 | updated_at       | 64-bit integer                    |     +     | Unix epoch |
 | logo             | object                            |     -     | See the [Image](../../misc-objects/image) object reference |
-| shortcut         | string                            |     -     | Not used? |
 | website          | string                            |     -     ||
 | summary          | text (long string)                |     -     ||
-| category         | integer                           |     -     | Not used? |
-| product_family   | integer                           |     -     | Not used? |
 | alternative_name | string                            |     -     ||
 | generation       | integer                           |     -     ||
 | games            | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |
 | versions         | array of objects                  |     -     | See the [Platform version](../../misc-objects/platform-version) object reference |
+
+***Unused fields***
+
+These fields are present in the meta field list but has no data for any of the entities.
+
+| Name |
+| ---- |
+| shortcut |
+| category |
+| product_family 
+|

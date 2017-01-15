@@ -42,3 +42,27 @@ title = "Person"
 | mug_shot    | object                            |     -     | See the [Image](../../misc-objects/image) object reference |
 | games       | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |
 | voice_acted | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |
+
+***Unused fields***
+
+These fields are present in the meta field list but has no data for any of the entities.
+
+| Name |
+| ---- |
+| bio |
+| country |
+| description |
+| dob |
+| parent |
+| homepage |
+| twitter |
+| linkedin |
+| google_plus |
+| facebook |
+| instagram |
+| tumblr |
+| soundcloud |
+| pinterest |
+| youtube |
+| nicknames |
+| loves_count |

@@ -19,13 +19,7 @@ title = "Game mode"
     "slug": "single-player",
     "url": "https://www.igdb.com/game_modes/single-player",
     "created_at": 123456789,
-    "updated_at": 123456789,
-    "games": [
-        1,
-        2,
-        3,
-        ...
-    ]
+    "updated_at": 123456789
 }
 ```
 
