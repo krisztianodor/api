@@ -10,24 +10,6 @@ title = "Endpoints"
 
 **This page is deprecated and it's content is being migrated to other pages.**
 
-## Pulse 
-
-> /pulses/
-
-* id u64
-* category: integer
-* title: string
-* summary: string
-* image: string
-* url: string
-* uid: string
-* author: string
-* published_at: date
-* _score: float (Optional)
-* error: Array of strings
-
-
-
 ## Review 
 
 > /reviews/
