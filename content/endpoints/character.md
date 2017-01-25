@@ -38,6 +38,7 @@ title = "Character"
 | akas         | array of strings                  |     -     | Name aliases - 'also known as' |
 | species      | integer                           |     -     | See the [Species](../../enum-fields/species) value reference |
 | games        | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |
+| people       | array of unsigned 64-bit integers |     -     | IDs of [Person](../person) records |
 
 ***Unused fields***
 

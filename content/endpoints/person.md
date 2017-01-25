@@ -41,6 +41,7 @@ title = "Person"
 | updated_at  | 64-bit integer                    |     +     | Unix epoch |
 | mug_shot    | object                            |     -     | See the [Image](../../misc-objects/image) object reference |
 | games       | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |
+| characters  | array of unsigned 64-bit integers |     -     | IDs of [Character](../character) records |
 | voice_acted | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |
 
 ***Unused fields***
