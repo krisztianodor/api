@@ -868,28 +868,6 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Unused fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;These fields are present in the meta field list but has no data for any of the entities.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;regions&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;parent&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
 </description>
     </item>
     
@@ -1910,6 +1888,13 @@
 &lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td&gt;Unix epoch&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;region&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;ID of a &lt;a href=&#34;../region&#34;&gt;Region&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
