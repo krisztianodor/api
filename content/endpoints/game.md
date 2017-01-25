@@ -63,11 +63,3 @@ title = "Game"
 | esrb                | object                            |     -     | See the [ESRB](../../misc-objects/esrb) object reference |
 | pegi                | object                            |     -     | See the [PEGI](../../misc-objects/pegi) object reference |
 
-***Unused fields***
-
-These fields are present in the meta field list but has no data for any of the entities.
-
-| Name |
-| ---- |
-| regions |
-| parent |
