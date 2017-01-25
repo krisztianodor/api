@@ -189,6 +189,13 @@
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td&gt;IDs of &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; records&lt;/td&gt;
 &lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;people&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;IDs of &lt;a href=&#34;../person&#34;&gt;Person&lt;/a&gt; records&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -1359,6 +1366,13 @@
 &lt;/tr&gt;
 
 &lt;tr&gt;
+&lt;td&gt;characters&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;IDs of &lt;a href=&#34;../character&#34;&gt;Character&lt;/a&gt; records&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
 &lt;td&gt;voice_acted&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
@@ -1875,6 +1889,20 @@
 &lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
 &lt;td&gt;The release date in human readable format.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;updated_at&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;When the release_date was updated.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;created_at&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;When the release_date was created.&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
