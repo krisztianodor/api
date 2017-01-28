@@ -1,6 +1,6 @@
 +++
 chapter = true
-next = "/basics/endpoints"
+next = "/basics/examples"
 prev = "/about/welcome"
 weight = 0
 title = "Basics"
