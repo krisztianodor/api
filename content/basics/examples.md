@@ -2,7 +2,7 @@
 date = "2017-01-09T10:30:17+01:00"
 toc = true
 next = "/endpoints"
-prev = "/basics/endpoints"
+prev = "/basics"
 weight = 3
 title = "Examples"
 
