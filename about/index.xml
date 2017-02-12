@@ -67,7 +67,7 @@
 &lt;tr&gt;
 &lt;td&gt;Requests per day&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;7,000 - 700,000&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;86400 ( 1 per second)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;86400&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;N/A&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;8640&lt;/td&gt;
 &lt;/tr&gt;
