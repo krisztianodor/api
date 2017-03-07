@@ -18,8 +18,7 @@ title = "Pulse"
     "category": 1,
     "title": "End of 2015 Discussions Megathread",
     "summary": "<!-- SC_OFF --><div class=\"md\"><h3>December 31</h3> ...",
-    "published_at": 123456789,
-    "url": "/r/Games/comments/3uuqv6/end_of_2015_discussions_megathread/"
+    "url": "/r/Games/comments/3uuqv6/end_of_2015_discussions_megathread/",
     "uid": "3uuqv6",
     "author": "Forestl",
     "published_at": 1448892803000
