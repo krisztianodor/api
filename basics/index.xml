@@ -61,6 +61,14 @@
       <guid>https://igdb.github.io/api/basics/examples/</guid>
       <description>
 
+&lt;h2 id=&#34;an-example-request-in-java&#34;&gt;An example request in Java&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;HttpResponse&amp;lt;JsonNode&amp;gt; response = Unirest.get(&amp;quot;https://igdbcom-internet-game-database-v1.p.mashape.com/characters/?fields=*&amp;amp;limit=10&amp;quot;)
+.header(&amp;quot;X-Mashape-Key&amp;quot;, &amp;quot;YOUR_KEY&amp;quot;)
+.header(&amp;quot;Accept&amp;quot;, &amp;quot;application/json&amp;quot;)
+.asJson();
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;get-all-information-from-a-specific-game&#34;&gt;Get all information from a specific game&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/games/1942?fields=*&lt;/code&gt;&lt;/p&gt;

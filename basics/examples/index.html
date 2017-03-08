@@ -611,6 +611,7 @@ API
 <ul>
 <li>
 <ul>
+<li><a href="#an-example-request-in-java">An example request in Java</a></li>
 <li><a href="#get-all-information-from-a-specific-game">Get all information from a specific game</a></li>
 <li><a href="#get-all-games-from-a-specific-genre">Get all games from a specific genre</a></li>
 <li><a href="#count-total-games-that-have-a-rating-higher-than-75">Count total games that have a rating higher than 75</a></li>
@@ -631,6 +632,14 @@ API
                 
 
 
+
+<h2 id="an-example-request-in-java">An example request in Java</h2>
+
+<pre><code>HttpResponse&lt;JsonNode&gt; response = Unirest.get(&quot;https://igdbcom-internet-game-database-v1.p.mashape.com/characters/?fields=*&amp;limit=10&quot;)
+.header(&quot;X-Mashape-Key&quot;, &quot;YOUR_KEY&quot;)
+.header(&quot;Accept&quot;, &quot;application/json&quot;)
+.asJson();
+</code></pre>
 
 <h2 id="get-all-information-from-a-specific-game">Get all information from a specific game</h2>
 
