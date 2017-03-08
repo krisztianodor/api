@@ -40,3 +40,9 @@ Our video game database has loads of video game metadata. That includes release 
 > I must say that your API is incredibly good and complete. Congratulations on that, as it is helping me a lot to get the work done!
 > 
 > _- Jorge from [The Game Network](http://thegamenetworkapp.com/)_
+
+---
+
+> IGDB offers a great, easy to use API with a fair number of requests per day. It's the main scraper source in my project.
+>
+> _- Danny Glover from [GameEnd](http://gameend.net)
