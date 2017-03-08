@@ -45,4 +45,4 @@ Our video game database has loads of video game metadata. That includes release 
 
 > IGDB offers a great, easy to use API with a fair number of requests per day. It's the main scraper source in my project.
 >
-> - Danny Glover from [GameEnd](http://gameend.net)
+> _- Danny Glover from [GameEnd](http://gameend.net)
