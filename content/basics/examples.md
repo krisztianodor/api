@@ -8,6 +8,15 @@ title = "Examples"
 
 +++
 
+## An example request in Java
+
+```
+HttpResponse<JsonNode> response = Unirest.get("https://igdbcom-internet-game-database-v1.p.mashape.com/characters/?fields=*&limit=10")
+.header("X-Mashape-Key", "YOUR_KEY")
+.header("Accept", "application/json")
+.asJson();
+```
+
 ## Get all information from a specific game
 
 `https://igdbcom-internet-game-database-v1.p.mashape.com/games/1942?fields=*`
