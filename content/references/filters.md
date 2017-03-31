@@ -33,6 +33,7 @@ Filters can be used on any entity that has sub-properties such as Games, Compani
 - `exists` The value is not null.
 - `not_exists` The value is null.
 - `in` The value exists within the (comma separated) array.
+- `not_in` The values must not exists within the (comma separated) array.
 
 ## Text search
 
