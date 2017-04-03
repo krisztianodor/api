@@ -1,8 +1,8 @@
 +++
 date = "2017-01-10T19:08:39+10:00"
 toc = true
-next = "/endpoints/franchise"
-prev = "/endpoints/company"
+next = "/endpoints/game"
+prev = "/endpoints/franchise"
 weight = 5
 title = "Feed"
 
