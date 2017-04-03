@@ -97,7 +97,17 @@
   </url>
   
   <url>
+    <loc>https://igdb.github.io/api/endpoints/feed/</loc>
+    <lastmod>2017-01-10T19:08:39+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://igdb.github.io/api/endpoints/game/</loc>
+    <lastmod>2017-01-10T19:08:39+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/endpoints/page/</loc>
     <lastmod>2017-01-10T19:08:39+10:00</lastmod>
   </url>
   

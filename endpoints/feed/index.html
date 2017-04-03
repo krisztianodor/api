@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://www.igdb.com/favicon.ico" type="image/x-icon" />
 
     
-    <title>Image</title>
+    <title>Feed</title>
     <link href="https://igdb.github.io/api//css/nucleus.css" rel="stylesheet">
     <link href="https://igdb.github.io/api//css/font-awesome.min.css" rel="stylesheet">
     <link href="https://igdb.github.io/api//css/hybrid.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     
 <link href="https://igdb.github.io/api//css/igdb.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/api/misc-objects/image/">
+  <body class="" data-url="/api/endpoints/feed/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -131,7 +131,7 @@ API
       
       
 
-      <li class="dd-item  " data-nav-id="/api/endpoints/">
+      <li class="dd-item  parent" data-nav-id="/api/endpoints/">
         <a href="/api/endpoints/">
           <span>
             
@@ -179,7 +179,7 @@ API
           
           
           
-            <li class="dd-item " data-nav-id="/api/endpoints/feed/">
+            <li class="dd-item active" data-nav-id="/api/endpoints/feed/">
               <a href="/api/endpoints/feed/">
                 <span>Feed     </i></span>
               </a>
@@ -403,7 +403,7 @@ API
       
       
 
-      <li class="dd-item  parent" data-nav-id="/api/misc-objects/">
+      <li class="dd-item  " data-nav-id="/api/misc-objects/">
         <a href="/api/misc-objects/">
           <span>
             
@@ -435,7 +435,7 @@ API
           
           
           
-            <li class="dd-item active" data-nav-id="/api/misc-objects/image/">
+            <li class="dd-item " data-nav-id="/api/misc-objects/image/">
               <a href="/api/misc-objects/image/">
                 <span>Image     </i></span>
               </a>
@@ -582,7 +582,7 @@ API
                 
                 
               <div id="top-github-link">
-                  <a class="github-link" href="https://github.com/igdb/api/blob/master/content/misc-objects/image.md" target="blank">
+                  <a class="github-link" href="https://github.com/igdb/api/blob/master/content/endpoints/feed.md" target="blank">
                     <i class="fa fa-code-fork"></i>
                     Edit this page
                   </a>
@@ -606,19 +606,19 @@ API
                   
                 
                   
-                
-                  
-                
-                  
                     
                     
-                <a href="/api/misc-objects/" itemprop="url"><span itemprop="title">Miscellaneous objects</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/api/endpoints/" itemprop="url"><span itemprop="title">Endpoints</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
                   
                 
-                <span itemprop="title"> Image</span>
+                  
+                
+                  
+                
+                <span itemprop="title"> Feed</span>
               </div>
               
                   <div class="progress">
@@ -633,17 +633,21 @@ API
             
     	        <div id="body-inner">
                 
-                <h1>Image</h1>
+                <h1>Feed</h1>
                 
 
-<p><strong><em>Example</em></strong></p>
+<p><strong><em>URL path:</em></strong> /feeds/</p>
+
+<p><strong><em>Example response</em></strong></p>
 
 <pre><code class="language-json">{
-  &quot;url&quot;: &quot;//images.igdb.com/igdb/image/upload/t_thumb/l3n0zuklmgkloi1udslt.png&quot;,
-  &quot;width&quot;: 339,
-  &quot;height&quot;: 393,
-  &quot;cloudinary_id&quot;: &quot;l3n0zuklmgkloi1udslt&quot;
-}
+    &quot;id&quot;: 1234,
+    &quot;created_at&quot;: 1489255204000,
+    &quot;updated_at&quot;: 1490353040531,
+    &quot;url&quot;: &quot;https://www.igdb.com/feed/ya&quot;,
+    &quot;content&quot;: &quot;Testing the new feed items.&quot;,
+    &quot;category&quot;: 7
+  }
 </code></pre>
 
 <p><strong><em>Fields</em></strong></p>
@@ -660,31 +664,73 @@ API
 
 <tbody>
 <tr>
+<td>id</td>
+<td align="center">unsigned 64-bit integer</td>
+<td align="center">+</td>
+<td></td>
+</tr>
+
+<tr>
 <td>url</td>
 <td align="center">string</td>
 <td align="center">+</td>
-<td>Can be non-IGDB URL</td>
+<td></td>
 </tr>
 
 <tr>
-<td>cloudinary_id</td>
+<td>created_at</td>
+<td align="center">64-bit integer</td>
+<td align="center">+</td>
+<td>Unix epoch</td>
+</tr>
+
+<tr>
+<td>updated_at</td>
+<td align="center">64-bit integer</td>
+<td align="center">+</td>
+<td>Unix epoch</td>
+</tr>
+
+<tr>
+<td>content</td>
+<td align="center">text (long string)</td>
+<td align="center">-</td>
+<td></td>
+</tr>
+
+<tr>
+<td>category</td>
+<td align="center">unsigned 64-bit integer</td>
+<td align="center">-</td>
+<td></td>
+</tr>
+
+<tr>
+<td>user</td>
+<td align="center">unsigned 64-bit integer</td>
+<td align="center">-</td>
+<td>ID of a <a href="../user">User</a> record</td>
+</tr>
+
+<tr>
+<td>games</td>
+<td align="center">array of unsigned 64-bit integer</td>
+<td align="center">-</td>
+<td>ID of a <a href="../game">Game</a> record</td>
+</tr>
+
+<tr>
+<td>title</td>
 <td align="center">string</td>
 <td align="center">-</td>
-<td>Cloudinary slug</td>
+<td></td>
 </tr>
 
 <tr>
-<td>width</td>
-<td align="center">unsigned integer</td>
+<td>feed_likes_count</td>
+<td align="center">64-bit integer</td>
 <td align="center">-</td>
-<td>The image&rsquo;s width in pixels</td>
-</tr>
-
-<tr>
-<td>height</td>
-<td align="center">unsigned integer</td>
-<td align="center">-</td>
-<td>The image&rsquo;s height in pixels</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -696,8 +742,8 @@ API
 
     <div id="navigation">
         
-        <a class="nav nav-prev" href="https://igdb.github.io/api//misc-objects/esrb"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="https://igdb.github.io/api//misc-objects/pegi" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="https://igdb.github.io/api//endpoints/franchise"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="https://igdb.github.io/api//endpoints/game" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
