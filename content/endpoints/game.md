@@ -62,4 +62,5 @@ title = "Game"
 | cover               | array of objects                  |     -     | See the [Image](../../misc-objects/image) object reference |
 | esrb                | object                            |     -     | See the [ESRB](../../misc-objects/esrb) object reference |
 | pegi                | object                            |     -     | See the [PEGI](../../misc-objects/pegi) object reference |
+| websites            | array of objects                  |     -     | See the [Website](../../misc-objects/website) object reference |
 

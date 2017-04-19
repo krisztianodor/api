@@ -36,6 +36,7 @@ title = "Platform version"
 | name          | string             |     +     ||
 | slug          | string             |     +     ||
 | cpu           | string             |     -     ||
+| os           | string             |     -     ||
 | media         | string             |     -     ||
 | memory        | string             |     -     ||
 | online        | string             |     -     ||
@@ -43,6 +44,9 @@ title = "Platform version"
 | storage       | string             |     -     ||
 | graphics      | string             |     -     ||
 | resolutions   | string             |     -     ||
+| connectivity   | string             |     -     ||
 | logo          | object             |     -     | See the [Image](../../misc-objects/image) object reference |
 | summary       | text (long string) |     -     ||
 | release_dates | array of objects   |     -     | See the [Platform version release date](../../misc-objects/platform-version-release-date) object reference |
+| developers | array of objects   |     -     | See the [Platform company](../../misc-objects/platform-company) object reference |
+| manufacturers | array of objects   |     -     | See the [Platform company](../../misc-objects/platform-company) object reference |
