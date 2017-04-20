@@ -1,7 +1,7 @@
 +++
 date = "2017-01-15T16:24:05+10:00"
 toc = true
-next = "/endpoints/release-date"
+next = "/endpoints/pulse-source"
 prev = "/endpoints/player-perspective"
 weight = 13
 title = "Pulse"
@@ -30,7 +30,7 @@ title = "Pulse"
 | Name         | Type                    | Mandatory | Comment |
 | ------------ |:-----------------------:|:---------:| ------- |
 | id           | unsigned 64-bit integer |     +     ||
-| category     | integer                 |     +     | See the [Pulse category](../../enum-fields/pulse-category) value reference |
+| pulse_source_id | integer              |     +     | ID of a [Pulse Source](../../endpoints/pulse-source) |
 | title        | string                  |     +     ||
 | summary      | text (long string)      |     +     | Can contain HTML markup |
 | url          | string                  |     +     | Publisher's pulse URL, can be path only. |
