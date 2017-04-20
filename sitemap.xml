@@ -47,6 +47,11 @@
   </url>
   
   <url>
+    <loc>https://igdb.github.io/api/enum-fields/website-category/</loc>
+    <lastmod>2017-01-15T18:35:20+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://igdb.github.io/api/misc-objects/image/</loc>
     <lastmod>2017-01-15T18:27:42+10:00</lastmod>
   </url>
@@ -167,7 +172,17 @@
   </url>
   
   <url>
+    <loc>https://igdb.github.io/api/misc-objects/platform-company/</loc>
+    <lastmod>2017-01-15T18:35:12+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://igdb.github.io/api/misc-objects/video/</loc>
+    <lastmod>2017-01-15T18:35:12+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/misc-objects/website/</loc>
     <lastmod>2017-01-15T18:35:12+10:00</lastmod>
   </url>
   
@@ -193,6 +208,11 @@
   
   <url>
     <loc>https://igdb.github.io/api/endpoints/pulse/</loc>
+    <lastmod>2017-01-15T16:24:05+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/endpoints/pulse-source/</loc>
     <lastmod>2017-01-15T16:24:05+10:00</lastmod>
   </url>
   

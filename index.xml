@@ -565,6 +565,87 @@ The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and t
     </item>
     
     <item>
+      <title>Website category</title>
+      <link>https://igdb.github.io/api/enum-fields/website-category/</link>
+      <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
+      
+      <guid>https://igdb.github.io/api/enum-fields/website-category/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Category&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;official&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;wikia&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;wikipedia&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;facebook&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;twitter&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;twitch&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;instagram&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;youtube&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;iphone&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ipad&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;android&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;steam&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Image</title>
       <link>https://igdb.github.io/api/misc-objects/image/</link>
       <pubDate>Sun, 15 Jan 2017 18:27:42 +1000</pubDate>
@@ -920,51 +1001,6 @@ For example, you can order games based on it&amp;rsquo;s earliest release date l
 &lt;tr&gt;
 &lt;td&gt;6&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;Cancelled&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>PEGI</title>
-      <link>https://igdb.github.io/api/misc-objects/pegi/</link>
-      <pubDate>Sun, 15 Jan 2017 18:35:11 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/misc-objects/pegi/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-  &amp;quot;rating&amp;quot;: &amp;quot;4&amp;quot;,
-  &amp;quot;synopsis&amp;quot;: &amp;quot;The content of this game is suitable for persons aged 16 years and over only.\nIt contains: Realistic looking violence.&amp;quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
-&lt;th&gt;Comment&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;rating&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;See the &lt;a href=&#34;../../enum-fields/pegi-rating&#34;&gt;PEGI rating&lt;/a&gt; value reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;synopsis&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

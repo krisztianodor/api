@@ -281,6 +281,13 @@ or as an array of objects.&lt;/p&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
+&lt;td&gt;os&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
 &lt;td&gt;media&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
@@ -330,6 +337,13 @@ or as an array of objects.&lt;/p&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
+&lt;td&gt;connectivity&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
 &lt;td&gt;logo&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;object&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
@@ -348,6 +362,20 @@ or as an array of objects.&lt;/p&gt;
 &lt;td align=&#34;center&#34;&gt;array of objects&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td&gt;See the &lt;a href=&#34;../../misc-objects/platform-version-release-date&#34;&gt;Platform version release date&lt;/a&gt; object reference&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;developers&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;array of objects&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;See the &lt;a href=&#34;../../misc-objects/platform-company&#34;&gt;Platform company&lt;/a&gt; object reference&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;manufacturers&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;array of objects&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;See the &lt;a href=&#34;../../misc-objects/platform-company&#34;&gt;Platform company&lt;/a&gt; object reference&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -464,6 +492,51 @@ it doesn&amp;rsquo;t have an ID.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Platform company</title>
+      <link>https://igdb.github.io/api/misc-objects/platform-company/</link>
+      <pubDate>Sun, 15 Jan 2017 18:35:12 +1000</pubDate>
+      
+      <guid>https://igdb.github.io/api/misc-objects/platform-company/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+  &amp;quot;company&amp;quot;: 12,
+  &amp;quot;comment&amp;quot;: &amp;quot;Developed stuff!&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
+&lt;th&gt;Comment&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;company&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;comment&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;What does that company do.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Video</title>
       <link>https://igdb.github.io/api/misc-objects/video/</link>
       <pubDate>Sun, 15 Jan 2017 18:35:12 +1000</pubDate>
@@ -502,6 +575,51 @@ it doesn&amp;rsquo;t have an ID.&lt;/p&gt;
 &lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
 &lt;td&gt;Youtube slug&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>https://igdb.github.io/api/misc-objects/website/</link>
+      <pubDate>Sun, 15 Jan 2017 18:35:12 +1000</pubDate>
+      
+      <guid>https://igdb.github.io/api/misc-objects/website/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+  &amp;quot;category&amp;quot;: 1,
+  &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
+&lt;th&gt;Comment&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;category&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;See the &lt;a href=&#34;../../enum-fields/website-category&#34;&gt;Website category&lt;/a&gt; value reference&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;Url to website&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

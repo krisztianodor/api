@@ -973,6 +973,13 @@
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td&gt;See the &lt;a href=&#34;../../misc-objects/pegi&#34;&gt;PEGI&lt;/a&gt; object reference&lt;/td&gt;
 &lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;websites&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;array of objects&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;See the &lt;a href=&#34;../../misc-objects/website&#34;&gt;Website&lt;/a&gt; object reference&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 </description>
