@@ -32,8 +32,9 @@ Filters can be used on any entity that has sub-properties such as Games, Compani
 - `prefix` Prefix of a value only works on strings.
 - `exists` The value is not null.
 - `not_exists` The value is null.
-- `in` The value exists within the (comma separated) array.
-- `not_in` The values must not exists within the (comma separated) array.
+- `in` The value exists within the (comma separated) array (AND between values).
+- `not_in` The values must not exists within the (comma separated) array (AND between values).
+- `any` The value has any within the (comma separated) array (OR between values).
 
 ## Text search
 

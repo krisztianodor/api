@@ -35,6 +35,9 @@ title = "Pulse"
 | summary      | text (long string)      |     +     | Can contain HTML markup |
 | url          | string                  |     +     | Publisher's pulse URL, can be path only. |
 | uid          | string                  |     +     | Publisher's pulse entry uid |
+| created_at   | 64-bit integer                    |     +     | Unix epoch |
+| updated_at   | 64-bit integer                    |     +     | Unix epoch |
 | published_at | 64-bit integer          |     +     | Unix epoch |
 | image        | string                  |     -     | URL pointing to the image |
 | author       | string                  |     -     ||
+| tags         | array of unsigned 32-bit integers |     -     | This the tag system. The prefixes is: 0 = theme, 1 << 28 = genre, 2 << 28 = keyword, 3 << 28 = game, 4 << 28 = player_perspective  |
