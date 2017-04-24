@@ -467,6 +467,14 @@ API
           
           
           
+            <li class="dd-item " data-nav-id="/api/misc-objects/tagnumbers/">
+              <a href="/api/misc-objects/tagnumbers/">
+                <span>Tag Numbers     </i></span>
+              </a>
+            </li>
+          
+          
+          
             <li class="dd-item " data-nav-id="/api/misc-objects/platform-version-release-date/">
               <a href="/api/misc-objects/platform-version-release-date/">
                 <span>Platform version release date     </i></span>
@@ -666,11 +674,11 @@ API
 
 <pre><code class="language-json">{
     &quot;id&quot;: 1,
-    &quot;category&quot;: 1,
+    &quot;pulse_source&quot;: 1,
     &quot;title&quot;: &quot;End of 2015 Discussions Megathread&quot;,
     &quot;summary&quot;: &quot;&lt;!-- SC_OFF --&gt;&lt;div class=\&quot;md\&quot;&gt;&lt;h3&gt;December 31&lt;/h3&gt; ...&quot;,
-    &quot;url&quot;: &quot;/r/Games/comments/3uuqv6/end_of_2015_discussions_megathread/&quot;,
-    &quot;uid&quot;: &quot;3uuqv6&quot;,
+    &quot;url&quot;: &quot;https://www.pcgamer.com/super-cool-article&quot;,
+    &quot;uid&quot;: &quot;g87d799g520fhu2hk45jhk&quot;,
     &quot;author&quot;: &quot;Forestl&quot;,
     &quot;published_at&quot;: 1448892803000
 }
@@ -697,7 +705,7 @@ API
 </tr>
 
 <tr>
-<td>pulse_source_id</td>
+<td>pulse_source</td>
 <td align="center">integer</td>
 <td align="center">+</td>
 <td>ID of a <a href="../../endpoints/pulse-source">Pulse Source</a></td>
@@ -728,7 +736,7 @@ API
 <td>uid</td>
 <td align="center">string</td>
 <td align="center">+</td>
-<td>Publisher&rsquo;s pulse entry uid</td>
+<td>Publisher&rsquo;s pulse entry unique id</td>
 </tr>
 
 <tr>
@@ -770,7 +778,7 @@ API
 <td>tags</td>
 <td align="center">array of unsigned 32-bit integers</td>
 <td align="center">-</td>
-<td>This the tag system. The prefixes is: 0 = theme, 1 &lt;&lt; 28 = genre, 2 &lt;&lt; 28 = keyword, 3 &lt;&lt; 28 = game, 4 &lt;&lt; 28 = player_perspective</td>
+<td>An array of <a href="../../misc-objects/tagnumbers">Tag Numbers</a></td>
 </tr>
 </tbody>
 </table>

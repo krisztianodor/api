@@ -383,6 +383,39 @@ or as an array of objects.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Tag Numbers</title>
+      <link>https://igdb.github.io/api/misc-objects/tagnumbers/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:50 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/misc-objects/tagnumbers/</guid>
+      <description>&lt;p&gt;Tag numbers are a compact and fast way to do complex filtering on the IGDB API. The number calculation can be easily achieved with any programming language.&lt;/p&gt;
+
+&lt;p&gt;For example, take the genre filter option (reference list below) and the ID of a genre and you can create a tag number like this&amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Javascript
+const genreTag = 1 &amp;lt;&amp;lt; 28 // 268435456 - Note the bitshifting! Id (1) taken from the reference list below.
+const shooterId = 5 // Can get this ID from the genres endpoint
+const tagNumber = genreTag | shooterId // 268435461 - Use this tag number to filter by the shooter genre
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;An example query:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/pulse/?filter[tags][any]=268435461,425266432
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;0 = theme&lt;/li&gt;
+&lt;li&gt;1 = genre&lt;/li&gt;
+&lt;li&gt;2 = keyword&lt;/li&gt;
+&lt;li&gt;3 = game&lt;/li&gt;
+&lt;li&gt;4 = player_perspective&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Platform version release date</title>
       <link>https://igdb.github.io/api/misc-objects/platform-version-release-date/</link>
       <pubDate>Sun, 15 Jan 2017 19:59:47 +1000</pubDate>
