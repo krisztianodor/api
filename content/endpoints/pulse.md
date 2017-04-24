@@ -15,11 +15,11 @@ title = "Pulse"
 ```json
 {
     "id": 1,
-    "category": 1,
+    "pulse_source_id": 1,
     "title": "End of 2015 Discussions Megathread",
     "summary": "<!-- SC_OFF --><div class=\"md\"><h3>December 31</h3> ...",
-    "url": "/r/Games/comments/3uuqv6/end_of_2015_discussions_megathread/",
-    "uid": "3uuqv6",
+    "url": "https://www.pcgamer.com/super-cool-article",
+    "uid": "g87d799g520fhu2hk45jhk",
     "author": "Forestl",
     "published_at": 1448892803000
 }
@@ -34,10 +34,10 @@ title = "Pulse"
 | title        | string                  |     +     ||
 | summary      | text (long string)      |     +     | Can contain HTML markup |
 | url          | string                  |     +     | Publisher's pulse URL, can be path only. |
-| uid          | string                  |     +     | Publisher's pulse entry uid |
+| uid          | string                  |     +     | Publisher's pulse entry unique id |
 | created_at   | 64-bit integer                    |     +     | Unix epoch |
 | updated_at   | 64-bit integer                    |     +     | Unix epoch |
 | published_at | 64-bit integer          |     +     | Unix epoch |
 | image        | string                  |     -     | URL pointing to the image |
 | author       | string                  |     -     ||
-| tags         | array of unsigned 32-bit integers |     -     | This the tag system. The prefixes is: 0 = theme, 1 << 28 = genre, 2 << 28 = keyword, 3 << 28 = game, 4 << 28 = player_perspective  |
+| tags         | array of unsigned 32-bit integers |     -     | An array of [Tag Numbers](../../misc-objects/tagnumbers)  |

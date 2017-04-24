@@ -1,7 +1,7 @@
 +++
 date = "2017-01-15T19:46:33+10:00"
 toc = true
-next = "/misc-objects/platform-version-release-date"
+next = "/misc-objects/tagnumbers"
 prev = "/misc-objects/pegi"
 weight = 5
 title = "Platform version"
