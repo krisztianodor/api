@@ -383,14 +383,6 @@ API
           
           
           
-            <li class="dd-item " data-nav-id="/api/enum-fields/pulse-category/">
-              <a href="/api/enum-fields/pulse-category/">
-                <span>Pulse category     </i></span>
-              </a>
-            </li>
-          
-          
-          
             <li class="dd-item " data-nav-id="/api/enum-fields/region/">
               <a href="/api/enum-fields/region/">
                 <span>Region     </i></span>
@@ -706,8 +698,9 @@ The filter itself comprises of 2 parts; The <code>field</code> and the <code>pos
 <li><code>prefix</code> Prefix of a value only works on strings.</li>
 <li><code>exists</code> The value is not null.</li>
 <li><code>not_exists</code> The value is null.</li>
-<li><code>in</code> The value exists within the (comma separated) array.</li>
-<li><code>not_in</code> The values must not exists within the (comma separated) array.</li>
+<li><code>in</code> The value exists within the (comma separated) array (AND between values).</li>
+<li><code>not_in</code> The values must not exists within the (comma separated) array (AND between values).</li>
+<li><code>any</code> The value has any within the (comma separated) array (OR between values).</li>
 </ul>
 
 <h2 id="text-search">Text search</h2>

@@ -92,8 +92,9 @@ The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and t
 &lt;li&gt;&lt;code&gt;prefix&lt;/code&gt; Prefix of a value only works on strings.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;exists&lt;/code&gt; The value is not null.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;not_exists&lt;/code&gt; The value is null.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;in&lt;/code&gt; The value exists within the (comma separated) array.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;not_in&lt;/code&gt; The values must not exists within the (comma separated) array.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;in&lt;/code&gt; The value exists within the (comma separated) array (AND between values).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;not_in&lt;/code&gt; The values must not exists within the (comma separated) array (AND between values).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;any&lt;/code&gt; The value has any within the (comma separated) array (OR between values).&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;text-search&#34;&gt;Text search&lt;/h2&gt;

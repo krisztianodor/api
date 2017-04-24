@@ -383,14 +383,6 @@ API
           
           
           
-            <li class="dd-item " data-nav-id="/api/enum-fields/pulse-category/">
-              <a href="/api/enum-fields/pulse-category/">
-                <span>Pulse category     </i></span>
-              </a>
-            </li>
-          
-          
-          
             <li class="dd-item " data-nav-id="/api/enum-fields/region/">
               <a href="/api/enum-fields/region/">
                 <span>Region     </i></span>
@@ -705,10 +697,10 @@ API
 </tr>
 
 <tr>
-<td>category</td>
+<td>pulse_source_id</td>
 <td align="center">integer</td>
 <td align="center">+</td>
-<td>See the <a href="../../enum-fields/pulse-category">Pulse category</a> value reference</td>
+<td>ID of a <a href="../../endpoints/pulse-source">Pulse Source</a></td>
 </tr>
 
 <tr>
@@ -740,6 +732,20 @@ API
 </tr>
 
 <tr>
+<td>created_at</td>
+<td align="center">64-bit integer</td>
+<td align="center">+</td>
+<td>Unix epoch</td>
+</tr>
+
+<tr>
+<td>updated_at</td>
+<td align="center">64-bit integer</td>
+<td align="center">+</td>
+<td>Unix epoch</td>
+</tr>
+
+<tr>
 <td>published_at</td>
 <td align="center">64-bit integer</td>
 <td align="center">+</td>
@@ -759,6 +765,13 @@ API
 <td align="center">-</td>
 <td></td>
 </tr>
+
+<tr>
+<td>tags</td>
+<td align="center">array of unsigned 32-bit integers</td>
+<td align="center">-</td>
+<td>This the tag system. The prefixes is: 0 = theme, 1 &lt;&lt; 28 = genre, 2 &lt;&lt; 28 = keyword, 3 &lt;&lt; 28 = game, 4 &lt;&lt; 28 = player_perspective</td>
+</tr>
 </tbody>
 </table>
 
@@ -770,7 +783,7 @@ API
     <div id="navigation">
         
         <a class="nav nav-prev" href="https://igdb.github.io/api//endpoints/player-perspective"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="https://igdb.github.io/api//endpoints/release-date" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-next" href="https://igdb.github.io/api//endpoints/pulse-source" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
