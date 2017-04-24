@@ -15,7 +15,9 @@ title = "Pulse Source"
 ```json
 {
     "id": 1,
-    "name": "Kotaku"
+    "name": "Kotaku",
+    "game": 4536,
+    "page": 345
 }
 ```
 

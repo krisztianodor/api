@@ -17,7 +17,11 @@ For example, take the genre filter option (reference list below) and the ID of a
 const genreTag = 1 << 28 // 268435456 - Note the bitshifting! Id (1) taken from the reference list below.
 const shooterId = 5 // Can get this ID from the genres endpoint
 const tagNumber = genreTag | shooterId // 268435461 - Use this tag number to filter by the shooter genre
+```
 
+An example query:
+```
+/pulse/?filter[tags][any]=268435461,425266432
 ```
 
 **Reference**

@@ -15,7 +15,7 @@ title = "Pulse"
 ```json
 {
     "id": 1,
-    "pulse_source_id": 1,
+    "pulse_source": 1,
     "title": "End of 2015 Discussions Megathread",
     "summary": "<!-- SC_OFF --><div class=\"md\"><h3>December 31</h3> ...",
     "url": "https://www.pcgamer.com/super-cool-article",
@@ -30,7 +30,7 @@ title = "Pulse"
 | Name         | Type                    | Mandatory | Comment |
 | ------------ |:-----------------------:|:---------:| ------- |
 | id           | unsigned 64-bit integer |     +     ||
-| pulse_source_id | integer              |     +     | ID of a [Pulse Source](../../endpoints/pulse-source) |
+| pulse_source | integer              |     +     | ID of a [Pulse Source](../../endpoints/pulse-source) |
 | title        | string                  |     +     ||
 | summary      | text (long string)      |     +     | Can contain HTML markup |
 | url          | string                  |     +     | Publisher's pulse URL, can be path only. |
