@@ -25,10 +25,10 @@ Wrappers in good standing:
 
 - [NodeJS](https://github.com/igdb/igdb-api-node)
 - [Laravel](https://github.com/messerli90/igdb)
+- [Ruby](https://github.com/tastycake/igdb_api)
 
 Stale wrappers:
 
-- [Ruby](https://github.com/ahmetabdi/igdb)
 - [PHP](https://github.com/igdb/igdb-api-php)
 
 ### Found a bug?
