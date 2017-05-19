@@ -980,6 +980,13 @@
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td&gt;See the &lt;a href=&#34;../../misc-objects/website&#34;&gt;Website&lt;/a&gt; object reference&lt;/td&gt;
 &lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;tags&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;array of unsigned 32-bit integers&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;An array of &lt;a href=&#34;../../misc-objects/tagnumbers&#34;&gt;Tag Numbers&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 </description>

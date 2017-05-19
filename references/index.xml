@@ -103,6 +103,10 @@ The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and t
 &lt;li&gt;&lt;code&gt;search&lt;/code&gt; This parameter is not like other filters. It is an independant parameter that performs a full text search.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;Setting the &lt;code&gt;order&lt;/code&gt; parameter will override the default &lt;code&gt;relevance&lt;/code&gt; ordering of search results.&lt;/p&gt;
+&lt;/div&gt;
+
+
 &lt;p&gt;&lt;code&gt;/games/?search=zelda&lt;/code&gt;&lt;/p&gt;
 </description>
     </item>
