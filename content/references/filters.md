@@ -40,4 +40,8 @@ Filters can be used on any entity that has sub-properties such as Games, Compani
 
 - `search` This parameter is not like other filters. It is an independant parameter that performs a full text search.
 
+{{% notice warning %}}
+Setting the `order` parameter will override the default `relevance` ordering of search results.
+{{% /notice %}}
+
 `/games/?search=zelda`
