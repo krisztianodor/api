@@ -23,10 +23,11 @@ HttpResponse<JsonNode> response = Unirest.get("https://igdbcom-internet-game-dat
 
 1942, is the ID of the game.
 
-## Get all games from a specific genre
+## Get all games from specific genres
 
-`https://igdbcom-internet-game-database-v1.p.mashape.com/genres/12?fields=*`
+`https://igdbcom-internet-game-database-v1.p.mashape.com/genres/12,9,11?fields=*`
 
+Notice you can comma separate multiple IDs (12, 9 and 11). You can do this with games, companies and anything else.
 
 ## Count total games that have a rating higher than 75
 
