@@ -16,7 +16,7 @@ Thus, you are not only contributing to the value of this site but to hundreds of
 
 Our video game database has loads of video game metadata. That includes release dates, descriptions, media, etc.
 
-{{% button href="https://market.mashape.com/signup" %}}GET FREE KEY{{% /button %}}
+{{% button href="https://dashboard.rapidapi.com/signup" %}}GET FREE KEY{{% /button %}}
 
 ---
 

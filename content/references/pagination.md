@@ -17,7 +17,7 @@ There is also an offset:
 
 ### Scroll API
 {{% notice warning %}}
-This is only available for [Ultra subscribers](https://market.mashape.com/igdbcom/internet-game-database/pricing) on Mashape.
+This is only available for [Ultra subscribers](https://rapidapi.com/user/igdbcom/package/Internet%20Game%20Database/pricing) on RapidAPI.
 {{% /notice %}}
 
 In order to get more than 10,000 results and get blazing fast response times you need to use the new Scroll extension. 

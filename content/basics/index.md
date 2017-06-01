@@ -11,7 +11,7 @@ icon = "<b class='fa fa-cube'></b>"
 
 ### The Basics
 
-In order to use our API, you must have a [mashape market account](https://market.mashape.com/signup) and be subscribed to a plan on the [IGDB Mashape API](https://market.mashape.com/igdbcom/internet-game-database).
+In order to use our API, you must have a [RapidAPI account](https://dashboard.rapidapi.com/signup) and be subscribed to a plan on the [IGDB RapidAPI API](https://rapidapi.com/user/igdbcom/package/Internet%20Game%20Database).
   
 The IGDB.com API is free for non-commercial & commercial usage.
 
@@ -33,7 +33,7 @@ Stale wrappers:
 
 ### Found a bug?
 
-Create a [ticket on Mashape](https://market.mashape.com/igdbcom/internet-game-database/support) if you have problems.
+Use our [contact form](https://www.igdb.com/feedbacks/new) or [join us on discord](https://discord.gg/JKsh9R7) if you have problems.
 
 {{% notice tip %}}
 All endpoints support `limit` and `offset` [pagination](/api/references/pagination).
