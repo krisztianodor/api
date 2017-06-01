@@ -1,9 +1,9 @@
 +++
 date = "2017-01-15T18:35:20+10:00"
 toc = true
-next = "/enum-fields/game-status"
-prev = "/enum-fields/esrb-rating"
-weight = 3
+next = "/misc-objects"
+prev = "/enum-fields/species"
+weight = 10
 title = "Website category"
 
 +++

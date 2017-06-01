@@ -32,7 +32,7 @@ title = "Feed"
 | created_at          | 64-bit integer                    |     +     | Unix epoch |
 | updated_at          | 64-bit integer                    |     +     | Unix epoch |
 | content             | text (long string)                |     -     ||
-| category            | unsigned 64-bit integer           |     -     ||
+| category            | unsigned 64-bit integer           |     -     | ID of a [Feed Item Category](../../enum-fields/feed-item-category) |
 | user                | unsigned 64-bit integer           |     -     | ID of a [User](../user) record |
 | games               | array of unsigned 64-bit integer  |     -     | ID of a [Game](../game) record |
 | title               | string                            |     -     ||

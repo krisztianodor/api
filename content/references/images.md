@@ -3,6 +3,7 @@ title = "Images"
 date = "2017-01-09T10:23:50+01:00"
 toc = true
 prev = "/references/pagination"
+next = "/references/expander"
 weight = 5
 
 +++
