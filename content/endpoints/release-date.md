@@ -3,7 +3,7 @@ date = "2017-01-15T17:38:45+10:00"
 toc = true
 next = "/endpoints/review"
 prev = "/endpoints/pulse-source"
-weight = 14
+weight = 16
 title = "Release date"
 
 +++
