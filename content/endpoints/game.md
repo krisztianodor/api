@@ -38,10 +38,13 @@ title = "Game"
 | collection          | unsigned 64-bit integer           |     -     | ID of a [Collection](../collection) record |
 | franchise           | unsigned 64-bit integer           |     -     | ID of a [Franchise](../franchise) record |
 | hypes               | integer                           |     -     ||
-| rating              | double                            |     -     ||
 | popularity          | double                            |     -     ||
-| aggregated_rating   | double                            |     -     ||
-| rating_count        | integer                           |     -     ||
+| rating              | double                            |     -     | Average user rating |
+| rating_count        | integer                           |     -     | Number of user ratings |
+| aggregated_rating   | double                            |     -     | Rating based on external critic scores |
+| aggregated_rating_count | integer                       |     -     | Number of external critic scores |
+| total_rating        | double                            |     -     | Average rating based on both IGDB user and external critic scores |
+| total_rating_count  | integer                           |     -     | Total number of user and external critic scores |
 | game                | unsigned 64-bit integer           |     -     | ID of a [Game](../game) record if this record is a DLC/expansion |
 | developers          | array of unsigned 64-bit integers |     -     | IDs of [Company](../company) records |
 | publishers          | array of unsigned 64-bit integers |     -     | IDs of [Company](../company) records |
