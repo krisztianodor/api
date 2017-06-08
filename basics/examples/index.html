@@ -343,17 +343,17 @@ API
           
           
           
-            <li class="dd-item " data-nav-id="/api/enum-fields/game-category/">
-              <a href="/api/enum-fields/game-category/">
-                <span>Game category     </i></span>
+            <li class="dd-item " data-nav-id="/api/enum-fields/feed-item-category/">
+              <a href="/api/enum-fields/feed-item-category/">
+                <span>Feed Item Category     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/api/enum-fields/website-category/">
-              <a href="/api/enum-fields/website-category/">
-                <span>Website category     </i></span>
+            <li class="dd-item " data-nav-id="/api/enum-fields/game-category/">
+              <a href="/api/enum-fields/game-category/">
+                <span>Game category     </i></span>
               </a>
             </li>
           
@@ -394,6 +394,14 @@ API
             <li class="dd-item " data-nav-id="/api/enum-fields/species/">
               <a href="/api/enum-fields/species/">
                 <span>Species     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/api/enum-fields/website-category/">
+              <a href="/api/enum-fields/website-category/">
+                <span>Website category     </i></span>
               </a>
             </li>
           
@@ -590,6 +598,14 @@ API
             </li>
           
           
+          
+            <li class="dd-item " data-nav-id="/api/references/expander/">
+              <a href="/api/references/expander/">
+                <span>Expander     </i></span>
+              </a>
+            </li>
+          
+          
         </ul>
         
       </li>
@@ -661,7 +677,7 @@ API
 <ul>
 <li><a href="#an-example-request-in-java">An example request in Java</a></li>
 <li><a href="#get-all-information-from-a-specific-game">Get all information from a specific game</a></li>
-<li><a href="#get-all-games-from-a-specific-genre">Get all games from a specific genre</a></li>
+<li><a href="#get-all-games-from-specific-genres">Get all games from specific genres</a></li>
 <li><a href="#count-total-games-that-have-a-rating-higher-than-75">Count total games that have a rating higher than 75</a></li>
 <li><a href="#popularity">Popularity</a></li>
 </ul></li>
@@ -695,9 +711,11 @@ API
 
 <p>1942, is the ID of the game.</p>
 
-<h2 id="get-all-games-from-a-specific-genre">Get all games from a specific genre</h2>
+<h2 id="get-all-games-from-specific-genres">Get all games from specific genres</h2>
 
-<p><code>https://igdbcom-internet-game-database-v1.p.mashape.com/genres/12?fields=*</code></p>
+<p><code>https://igdbcom-internet-game-database-v1.p.mashape.com/genres/12,9,11?fields=*</code></p>
+
+<p>Notice you can comma separate multiple IDs (12, 9 and 11). You can do this with games, companies and anything else.</p>
 
 <h2 id="count-total-games-that-have-a-rating-higher-than-75">Count total games that have a rating higher than 75</h2>
 

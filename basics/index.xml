@@ -19,7 +19,7 @@
 
 &lt;h3 id=&#34;the-basics&#34;&gt;The Basics&lt;/h3&gt;
 
-&lt;p&gt;In order to use our API, you must have a &lt;a href=&#34;https://market.mashape.com/signup&#34;&gt;mashape market account&lt;/a&gt; and be subscribed to a plan on the &lt;a href=&#34;https://market.mashape.com/igdbcom/internet-game-database&#34;&gt;IGDB Mashape API&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In order to use our API, you must have a &lt;a href=&#34;https://dashboard.rapidapi.com/signup&#34;&gt;RapidAPI account&lt;/a&gt; and be subscribed to a plan on the &lt;a href=&#34;https://rapidapi.com/user/igdbcom/package/Internet%20Game%20Database&#34;&gt;IGDB RapidAPI API&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The IGDB.com API is free for non-commercial &amp;amp; commercial usage.&lt;/p&gt;
 
@@ -45,7 +45,7 @@
 
 &lt;h3 id=&#34;found-a-bug&#34;&gt;Found a bug?&lt;/h3&gt;
 
-&lt;p&gt;Create a &lt;a href=&#34;https://market.mashape.com/igdbcom/internet-game-database/support&#34;&gt;ticket on Mashape&lt;/a&gt; if you have problems.&lt;/p&gt;
+&lt;p&gt;Use our &lt;a href=&#34;https://www.igdb.com/feedbacks/new&#34;&gt;contact form&lt;/a&gt; or &lt;a href=&#34;https://discord.gg/JKsh9R7&#34;&gt;join us on discord&lt;/a&gt; if you have problems.&lt;/p&gt;
 
 &lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;All endpoints support &lt;code&gt;limit&lt;/code&gt; and &lt;code&gt;offset&lt;/code&gt; &lt;a href=&#34;https://igdb.github.io/api/api/references/pagination&#34;&gt;pagination&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -75,9 +75,11 @@
 
 &lt;p&gt;1942, is the ID of the game.&lt;/p&gt;
 
-&lt;h2 id=&#34;get-all-games-from-a-specific-genre&#34;&gt;Get all games from a specific genre&lt;/h2&gt;
+&lt;h2 id=&#34;get-all-games-from-specific-genres&#34;&gt;Get all games from specific genres&lt;/h2&gt;
 
-&lt;p&gt;&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/genres/12?fields=*&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/genres/12,9,11?fields=*&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice you can comma separate multiple IDs (12, 9 and 11). You can do this with games, companies and anything else.&lt;/p&gt;
 
 &lt;h2 id=&#34;count-total-games-that-have-a-rating-higher-than-75&#34;&gt;Count total games that have a rating higher than 75&lt;/h2&gt;
 

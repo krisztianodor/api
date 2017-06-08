@@ -343,17 +343,17 @@ API
           
           
           
-            <li class="dd-item " data-nav-id="/api/enum-fields/game-category/">
-              <a href="/api/enum-fields/game-category/">
-                <span>Game category     </i></span>
+            <li class="dd-item " data-nav-id="/api/enum-fields/feed-item-category/">
+              <a href="/api/enum-fields/feed-item-category/">
+                <span>Feed Item Category     </i></span>
               </a>
             </li>
           
           
           
-            <li class="dd-item " data-nav-id="/api/enum-fields/website-category/">
-              <a href="/api/enum-fields/website-category/">
-                <span>Website category     </i></span>
+            <li class="dd-item " data-nav-id="/api/enum-fields/game-category/">
+              <a href="/api/enum-fields/game-category/">
+                <span>Game category     </i></span>
               </a>
             </li>
           
@@ -394,6 +394,14 @@ API
             <li class="dd-item " data-nav-id="/api/enum-fields/species/">
               <a href="/api/enum-fields/species/">
                 <span>Species     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/api/enum-fields/website-category/">
+              <a href="/api/enum-fields/website-category/">
+                <span>Website category     </i></span>
               </a>
             </li>
           
@@ -590,6 +598,14 @@ API
             </li>
           
           
+          
+            <li class="dd-item " data-nav-id="/api/references/expander/">
+              <a href="/api/references/expander/">
+                <span>Expander     </i></span>
+              </a>
+            </li>
+          
+          
         </ul>
         
       </li>
@@ -773,13 +789,6 @@ API
 </tr>
 
 <tr>
-<td>rating</td>
-<td align="center">double</td>
-<td align="center">-</td>
-<td></td>
-</tr>
-
-<tr>
 <td>popularity</td>
 <td align="center">double</td>
 <td align="center">-</td>
@@ -787,17 +796,45 @@ API
 </tr>
 
 <tr>
-<td>aggregated_rating</td>
+<td>rating</td>
 <td align="center">double</td>
 <td align="center">-</td>
-<td></td>
+<td>Average user rating</td>
 </tr>
 
 <tr>
 <td>rating_count</td>
 <td align="center">integer</td>
 <td align="center">-</td>
-<td></td>
+<td>Number of user ratings</td>
+</tr>
+
+<tr>
+<td>aggregated_rating</td>
+<td align="center">double</td>
+<td align="center">-</td>
+<td>Rating based on external critic scores</td>
+</tr>
+
+<tr>
+<td>aggregated_rating_count</td>
+<td align="center">integer</td>
+<td align="center">-</td>
+<td>Number of external critic scores</td>
+</tr>
+
+<tr>
+<td>total_rating</td>
+<td align="center">double</td>
+<td align="center">-</td>
+<td>Average rating based on both IGDB user and external critic scores</td>
+</tr>
+
+<tr>
+<td>total_rating_count</td>
+<td align="center">integer</td>
+<td align="center">-</td>
+<td>Total number of user and external critic scores</td>
 </tr>
 
 <tr>

@@ -524,6 +524,62 @@ The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and t
     </item>
     
     <item>
+      <title>Feed Item Category</title>
+      <link>https://igdb.github.io/api/enum-fields/feed-item-category/</link>
+      <pubDate>Sat, 01 Jul 2017 18:44:22 +1000</pubDate>
+      
+      <guid>https://igdb.github.io/api/enum-fields/feed-item-category/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Category&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Pulse Article&lt;/td&gt;
+&lt;td&gt;Kotaku news article&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Coming Soon&lt;/td&gt;
+&lt;td&gt;Final Fantasy XXXVIII is releasing in 7 days&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;New Trailer&lt;/td&gt;
+&lt;td&gt;New trailer added to a game&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;User Contributed Item&lt;/td&gt;
+&lt;td&gt;New feed item created by a user&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;User contributions item&lt;/td&gt;
+&lt;td&gt;User has changed a game release date&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;Page Contributed Item&lt;/td&gt;
+&lt;td&gt;New feed item created by a page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Game category</title>
       <link>https://igdb.github.io/api/enum-fields/game-category/</link>
       <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
@@ -563,87 +619,6 @@ The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and t
 &lt;tr&gt;
 &lt;td&gt;4&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;Standalone expansion&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Website category</title>
-      <link>https://igdb.github.io/api/enum-fields/website-category/</link>
-      <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/enum-fields/website-category/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Category&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;official&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;wikia&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;wikipedia&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;facebook&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;twitter&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;twitch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;8&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;instagram&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;9&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;youtube&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;10&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;iphone&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;11&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;ipad&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;12&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;android&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;13&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;steam&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -919,9 +894,11 @@ The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and t
 
 &lt;p&gt;1942, is the ID of the game.&lt;/p&gt;
 
-&lt;h2 id=&#34;get-all-games-from-a-specific-genre&#34;&gt;Get all games from a specific genre&lt;/h2&gt;
+&lt;h2 id=&#34;get-all-games-from-specific-genres&#34;&gt;Get all games from specific genres&lt;/h2&gt;
 
-&lt;p&gt;&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/genres/12?fields=*&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/genres/12,9,11?fields=*&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice you can comma separate multiple IDs (12, 9 and 11). You can do this with games, companies and anything else.&lt;/p&gt;
 
 &lt;h2 id=&#34;count-total-games-that-have-a-rating-higher-than-75&#34;&gt;Count total games that have a rating higher than 75&lt;/h2&gt;
 

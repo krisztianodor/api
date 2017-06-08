@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://www.igdb.com/favicon.ico" type="image/x-icon" />
 
     
-    <title>Filters</title>
+    <title>Expander</title>
     <link href="https://igdb.github.io/api//css/nucleus.css" rel="stylesheet">
     <link href="https://igdb.github.io/api//css/font-awesome.min.css" rel="stylesheet">
     <link href="https://igdb.github.io/api//css/hybrid.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     
 <link href="https://igdb.github.io/api//css/igdb.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/api/references/filters/">
+  <body class="" data-url="/api/references/expander/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -567,7 +567,7 @@ API
           
           
           
-            <li class="dd-item active" data-nav-id="/api/references/filters/">
+            <li class="dd-item " data-nav-id="/api/references/filters/">
               <a href="/api/references/filters/">
                 <span>Filters     </i></span>
               </a>
@@ -599,7 +599,7 @@ API
           
           
           
-            <li class="dd-item " data-nav-id="/api/references/expander/">
+            <li class="dd-item active" data-nav-id="/api/references/expander/">
               <a href="/api/references/expander/">
                 <span>Expander     </i></span>
               </a>
@@ -630,7 +630,7 @@ API
                 
                 
               <div id="top-github-link">
-                  <a class="github-link" href="https://github.com/igdb/api/blob/master/content/references/filters.md" target="blank">
+                  <a class="github-link" href="https://github.com/igdb/api/blob/master/content/references/expander.md" target="blank">
                     <i class="fa fa-code-fork"></i>
                     Edit this page
                   </a>
@@ -643,8 +643,6 @@ API
                         <i class="fa fa-bars"></i>
                       </a>
                   </span>
-                
-                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
                 
                 
                 
@@ -666,78 +664,115 @@ API
                     
                   
                 
-                <span itemprop="title"> Filters</span>
+                <span itemprop="title"> Expander</span>
               </div>
-              
-                  <div class="progress">
-    <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#what">What?</a></li>
-<li><a href="#how">How?</a></li>
-<li><a href="#where">Where?</a></li>
-<li><a href="#available-postfixes">Available Postfixes</a></li>
-<li><a href="#text-search">Text search</a></li>
-</ul></li>
-</ul>
-</nav>
-    </div>
-</div>
-
               
 
             </div>
             
     	        <div id="body-inner">
                 
-                <h1>Filters</h1>
+                <h1>Expander</h1>
                 
 
 
 
-<h2 id="what">What?</h2>
+<h3 id="expander">Expander</h3>
 
-<p>Filters are used to sift through results to get what you want. You can exclude and include results based on their properties. For example you could remove all Games where the <code>rating</code> was below 80 (<code>filter[rating][gte]=80</code>).</p>
-
-<h2 id="how">How?</h2>
-
-<p>Filters are parameter arrays so must be added using special keys like this: <code>/games/?search=zelda&amp;filter[rating][gte]=80&amp;filter[release_dates.date][gt]=YYYY-MM-DD</code>
-The filter itself comprises of 2 parts; The <code>field</code> and the <code>postfix</code>. Fields are described in the section on the left, postfixes are described below.</p>
-
-<h2 id="where">Where?</h2>
-
-<p>Filters can be used on any entity that has sub-properties such as Games, Companies, People etc.</p>
-
-<h2 id="available-postfixes">Available Postfixes</h2>
-
-<ul>
-<li><code>eq</code> Equal: Exact match equal.</li>
-<li><code>not_eq</code> Not Equal: Exact match equal.</li>
-<li><code>gt</code> Greater than works only on numbers.</li>
-<li><code>gte</code> Greater than or equal to works only on numbers.</li>
-<li><code>lt</code> Less than works only on numbers.</li>
-<li><code>lte</code> Less than or equal to works only on numbers.</li>
-<li><code>prefix</code> Prefix of a value only works on strings.</li>
-<li><code>exists</code> The value is not null.</li>
-<li><code>not_exists</code> The value is null.</li>
-<li><code>in</code> The value exists within the (comma separated) array (AND between values).</li>
-<li><code>not_in</code> The values must not exists within the (comma separated) array (AND between values).</li>
-<li><code>any</code> The value has any within the (comma separated) array (OR between values).</li>
-</ul>
-
-<h2 id="text-search">Text search</h2>
-
-<ul>
-<li><code>search</code> This parameter is not like other filters. It is an independant parameter that performs a full text search.</li>
-</ul>
-
-<div class="notices warning" ><p>Setting the <code>order</code> parameter will override the default <code>relevance</code> ordering of search results.</p>
+<div class="notices warning" ><p>This is only available for <a href="https://rapidapi.com/user/igdbcom/package/Internet%20Game%20Database/pricing">Ultra Subscribers</a> on RapidAPI.</p>
 </div>
 
 
-<p><code>/games/?search=zelda</code></p>
+<h2 id="what">What?</h2>
+
+<p>The expander feature is used to combine multiple requests. For example, a game provides a list of company IDs which in turn need to be requested to reach the company data. Using the expander parameter, the company ID will instead be an object containing that data.</p>
+
+<h2 id="where">Where?</h2>
+
+<p>The expander can be used on any entity that has sub-properties such as Games, Companies, People etc.</p>
+
+<h2 id="how">How?</h2>
+
+<p><strong>Example</strong>: <code>{{api_url}}/games/1838,828,1337?fields=name,themes.name,game.name&amp;expand=game,themes</code></p>
+
+<p>We start with this simple URL.</p>
+
+<p><code>/games/1838,828,1337</code>
+First we have the resource part of the url. In this case we get the games with ID: 1838, 828 and 1337</p>
+
+<p><code>expand=game,themes</code>
+With this parameter, we will expand: game (parent game) and themes (the themes that the game has).</p>
+
+<p><code>fields=name,themes.name,game.name</code>
+We also have to specify all the fields we want to have expanded. If you don&rsquo;t specify the fields it will give you the full object.</p>
+
+<ul>
+<li>name: The field on the root game model.</li>
+<li>game.name: The field on the parent game model.</li>
+<li>themes.name: The field on the theme model.</li>
+</ul>
+
+<p>The result will be:</p>
+
+<pre><code class="language-json">
+[
+  {
+    &quot;id&quot;: 1838,
+    &quot;name&quot;: &quot;Painkiller: Redemption&quot;,
+    &quot;game&quot;: {
+      &quot;id&quot;: 828,
+      &quot;name&quot;: &quot;Painkiller&quot;
+    },
+    &quot;themes&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Action&quot;
+      },
+      {
+        &quot;id&quot;: 19,
+        &quot;name&quot;: &quot;Horror&quot;
+      }
+    ]
+  }
+]
+
+</code></pre>
+
+<p>Now for the more advanced expander:</p>
+
+<p><code>{{api_url}}/pulses/19357?fields=title,pulse_source.name,pulse_source.page.name,pulse_source.page.logo&amp;expand=pulse_source.page</code></p>
+
+<p>We get the pulse news article with ID = 19357.</p>
+
+<p><code>expand=pulse_source.page</code>
+We want the pulse_source and it&rsquo;s page with associated logo&rsquo;s and deeper information.</p>
+
+<p><code>fields=title,pulse_source.name,pulse_source.page.name,pulse_source.page.logo</code>
+Because the pulse_source is inferred, you can also specify fields on the pulse_source as well.</p>
+
+<p>The result is:</p>
+
+<pre><code class="language-json">[
+  {
+    &quot;id&quot;: 19357,
+    &quot;title&quot;: &quot;Today’s selection of articles from Kotaku’s reader-run community: Anatomy of a Fire Emblem Character&quot;,
+    &quot;pulse_source&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Kotaku&quot;,
+      &quot;page&quot;: {
+        &quot;id&quot;: 501,
+        &quot;name&quot;: &quot;Kotaku&quot;,
+        &quot;logo&quot;: {
+          &quot;url&quot;: &quot;//images.igdb.com/igdb/image/upload/t_thumb/ns8o3b99iwdbyee8wu9c.png&quot;,
+          &quot;cloudinary_id&quot;: &quot;ns8o3b99iwdbyee8wu9c&quot;,
+          &quot;width&quot;: 240,
+          &quot;height&quot;: 240
+        }
+      }
+    }
+  }
+]
+</code></pre>
 
 
       
@@ -746,8 +781,8 @@ The filter itself comprises of 2 parts; The <code>field</code> and the <code>pos
 
     <div id="navigation">
         
-        <a class="nav nav-prev" href="https://igdb.github.io/api//references/fields"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="https://igdb.github.io/api//references/ordering" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="https://igdb.github.io/api//references/images"> <i class="fa fa-chevron-left"></i></a>
+        
     </div>
 
     </section>

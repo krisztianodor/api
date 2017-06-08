@@ -19,7 +19,7 @@
 
 &lt;h2 id=&#34;general-information&#34;&gt;General information&lt;/h2&gt;
 
-&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;Test endpoints using the &lt;a href=&#34;https://market.mashape.com/igdbcom/internet-game-database&#34;&gt;Mashape sandbox&lt;/a&gt;. Alternatively, we highly recommend &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;postman&lt;/a&gt; to perfect your requests.&lt;/p&gt;
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;Test endpoints using the &lt;a href=&#34;https://rapidapi.com/user/igdbcom/package/Internet%20Game%20Database&#34;&gt;RapidAPI sandbox&lt;/a&gt;. Alternatively, we highly recommend &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;postman&lt;/a&gt; to perfect your requests.&lt;/p&gt;
 &lt;/div&gt;
 
 
@@ -36,7 +36,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;X-Mashape-Key&lt;/td&gt;
-&lt;td&gt;The key from your Mashape account&lt;/td&gt;
+&lt;td&gt;The key from your RapidAPI account&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -661,7 +661,7 @@
 &lt;td&gt;category&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;ID of a &lt;a href=&#34;../../enum-fields/feed-item-category&#34;&gt;Feed Item Category&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -807,13 +807,6 @@
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;rating&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;double&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
 &lt;td&gt;popularity&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;double&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
@@ -821,17 +814,45 @@
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;aggregated_rating&lt;/td&gt;
+&lt;td&gt;rating&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;double&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Average user rating&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;rating_count&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;integer&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Number of user ratings&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;aggregated_rating&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;Rating based on external critic scores&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;aggregated_rating_count&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;Number of external critic scores&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;total_rating&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;double&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;Average rating based on both IGDB user and external critic scores&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;total_rating_count&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;Total number of user and external critic scores&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
