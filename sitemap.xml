@@ -216,12 +216,17 @@
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/endpoints/pulse/</loc>
-    <lastmod>2017-01-15T16:24:05+10:00</lastmod>
+    <loc>https://igdb.github.io/api/endpoints/pulse-group/</loc>
+    <lastmod>2017-06-08T14:05:08+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://igdb.github.io/api/endpoints/pulse-source/</loc>
+    <lastmod>2017-01-15T16:24:05+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/endpoints/pulse/</loc>
     <lastmod>2017-01-15T16:24:05+10:00</lastmod>
   </url>
   
