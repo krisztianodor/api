@@ -37,8 +37,8 @@ title = "Game"
 | storyline           | text (long string)                |     -     ||
 | collection          | unsigned 64-bit integer           |     -     | ID of a [Collection](../collection) record |
 | franchise           | unsigned 64-bit integer           |     -     | ID of a [Franchise](../franchise) record |
-| hypes               | integer                           |     -     ||
-| popularity          | double                            |     -     ||
+| hypes               | integer                           |     -     | Number of follows a game gets before release |
+| popularity          | double                            |     -     | A number based on traffic to that game page |
 | rating              | double                            |     -     | Average user rating |
 | rating_count        | integer                           |     -     | Number of user ratings |
 | aggregated_rating   | double                            |     -     | Rating based on external critic scores |
