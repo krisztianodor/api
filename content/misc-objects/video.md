@@ -13,7 +13,7 @@ title = "Video"
 ```json
 {
   "name": "Trailer",
-  "id": "9C543B6uJ88"
+  "video_id": "9C543B6uJ88"
 }
 ```
 
@@ -22,4 +22,4 @@ title = "Video"
 | Name | Type   | Mandatory | Comment |
 | ---- |:------:|:---------:| ------- |
 | name | string |     +     ||
-| id   | string |     +     | Youtube slug |
+| video_id   | string |     +     | Youtube slug |
