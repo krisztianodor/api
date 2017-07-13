@@ -23,7 +23,7 @@ This is only available for [Ultra subscribers](https://rapidapi.com/user/igdbcom
 In order to get more than 10,000 results and get blazing fast response times you need to use the new Scroll extension. 
 
 To use it you need to supply a scroll param to the search like this:
-`/games?order=rating&scroll=1`
+`/games/?order=rating&scroll=1`
 
 It will return results and include a couple of extra headers: **X-Next-Page** and **X-Count**.   
 **X-Next-Page** includes a path for the next page: 
