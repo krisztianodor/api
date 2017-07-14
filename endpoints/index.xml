@@ -803,14 +803,14 @@
 &lt;td&gt;hypes&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;integer&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Number of follows a game gets before release&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;popularity&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;double&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;A number based on traffic to that game page&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;

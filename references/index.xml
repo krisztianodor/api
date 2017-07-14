@@ -162,7 +162,7 @@ For example, you can order games based on it&amp;rsquo;s earliest release date l
 &lt;p&gt;In order to get more than 10,000 results and get blazing fast response times you need to use the new Scroll extension.&lt;/p&gt;
 
 &lt;p&gt;To use it you need to supply a scroll param to the search like this:
-&lt;code&gt;/games?order=rating&amp;amp;scroll=1&lt;/code&gt;&lt;/p&gt;
+&lt;code&gt;/games/?order=rating&amp;amp;scroll=1&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;It will return results and include a couple of extra headers: &lt;strong&gt;X-Next-Page&lt;/strong&gt; and &lt;strong&gt;X-Count&lt;/strong&gt;.&lt;br /&gt;
 &lt;strong&gt;X-Next-Page&lt;/strong&gt; includes a path for the next page:&lt;/p&gt;

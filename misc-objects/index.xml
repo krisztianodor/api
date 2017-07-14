@@ -579,7 +579,7 @@ it doesn&amp;rsquo;t have an ID.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
   &amp;quot;name&amp;quot;: &amp;quot;Trailer&amp;quot;,
-  &amp;quot;id&amp;quot;: &amp;quot;9C543B6uJ88&amp;quot;
+  &amp;quot;video_id&amp;quot;: &amp;quot;9C543B6uJ88&amp;quot;
 }
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -604,7 +604,7 @@ it doesn&amp;rsquo;t have an ID.&lt;/p&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;id&lt;/td&gt;
+&lt;td&gt;video_id&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
 &lt;td&gt;Youtube slug&lt;/td&gt;
