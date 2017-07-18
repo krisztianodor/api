@@ -24,7 +24,6 @@ Our video game database has loads of video game metadata. That includes release 
 | ---------------------------------- |:---------------:|:----------------:|:-------------------:|:--------------------------:|
 | Total unique games                 | +50,000         | +48,000          | +40,000             | +40,000                    |
 | Allowed to use commercially        | Yes             | No               | Yes, after approval | N/A                        |
-| Requests per day                   | 7,000 - 700,000 | 86400            | N/A                 | 8640                       |
 | Request throttling                 | No              | 1 per second     | N/A                 | 1 per second, 360 per hour |
 | Allowed to build competing product | Yes             | No               | No                  | N/A                        |
 | SSL (HTTPS) support                | Yes             | Yes              | Yes                 | Yes                        |
