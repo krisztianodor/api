@@ -31,3 +31,15 @@ An example query:
 * 2 = keyword
 * 3 = game
 * 4 = player_perspective
+
+**Example 2**
+
+```python
+#Python
+gameTag = 3 << 28 #We use 3 since we want to search for a game
+gameId = 26196 #This is the gameid of the game /games/crash-bandicoot-n-sane-trilogy
+print(gameTag | gameId )
+```
+
+The end result is `805332564`.
+We can then search inside the tags of `/pulses/241395` to see if it has this tag.
