@@ -1,7 +1,6 @@
 +++
 weight = 6
 title = "Expander"
-date = "2017-06-31T10:23:15+01:00"
 prev = "/references/images"
 +++
 
