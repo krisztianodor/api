@@ -16,13 +16,13 @@ Thus, you are not only contributing to the value of this site but to hundreds of
 
 Our video game database has loads of video game metadata. That includes release dates, descriptions, media, etc.
 
-{{% button href="https://dashboard.rapidapi.com/signup" %}}GET FREE KEY{{% /button %}}
+{{% button href="https://api.igdb.com" %}}GET FREE KEY{{% /button %}}
 
 ---
 
 ### The Basics
 
-In order to use our API, you must have a [RapidAPI account](https://dashboard.rapidapi.com/signup) and be subscribed to a plan on the [IGDB RapidAPI API](https://rapidapi.com/user/igdbcom/package/Internet%20Game%20Database).
+In order to use our API, you must have a [account and key](api.igdb.com).
   
 The IGDB.com API is free for non-commercial & commercial usage.
 
@@ -37,14 +37,17 @@ Wrappers in good standing:
 - [NodeJS](https://github.com/igdb/igdb-api-node)
 - [Laravel](https://github.com/messerli90/igdb)
 - [Ruby](https://github.com/tastycake/igdb_api)
+- [Python] (https://github.com/igdb/igdb-api-python)
 
 Stale wrappers:
 
 - [PHP](https://github.com/igdb/igdb-api-php)
 
-### Found a bug?
+### Need support?
 
-Use our [contact form](https://www.igdb.com/feedbacks/new) or [join us on discord](https://discord.gg/JKsh9R7) if you have problems.
+Access community support by either using our [Discord](https://discord.gg/JKsh9R7) channel or report an issue on [Github](https://github.com/igdb/api).   
+
+Or contact us directly by chatting with us. [Click the little green box on the bottom right](https://api.igdb.com/)
 
 {{% notice tip %}}
 All endpoints support `limit` and `offset` [pagination](/api/references/pagination).
