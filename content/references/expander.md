@@ -5,9 +5,6 @@ prev = "/references/images"
 +++
 
 ### Expander
-{{% notice warning %}}
-This is only available for [Ultra Subscribers](https://rapidapi.com/user/igdbcom/package/Internet%20Game%20Database/pricing) on RapidAPI.
-{{% /notice %}}
 
 ## What?
 
@@ -19,7 +16,7 @@ The expander can be used on any entity that has sub-properties such as Games, Co
 
 ## How?
 
-**Example**: `{{api_url}}/games/1838,828,1337?fields=name,themes.name,game.name&expand=game,themes`
+**Example**: `/games/1838,828,1337?fields=name,themes.name,game.name&expand=game,themes`
 
 We start with this simple URL.
 
@@ -63,7 +60,7 @@ The result will be:
 ```
 Now for the more advanced expander:
 
-`{{api_url}}/pulses/19357?fields=title,pulse_source.name,pulse_source.page.name,pulse_source.page.logo&expand=pulse_source.page`
+`/pulses/19357?fields=title,pulse_source.name,pulse_source.page.name,pulse_source.page.logo&expand=pulse_source.page`
 
 We get the pulse news article with ID = 19357.
 
