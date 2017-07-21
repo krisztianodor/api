@@ -1,8 +1,9 @@
 +++
 date = "2017-01-09T10:30:17+01:00"
 toc = true
-next = "/endpoints"
-prev = "/basics"
+icon = "<b class='fa fa-smile-o'></b>"
+next = "/misc-objects"
+prev = "/enum-fields"
 weight = 3
 title = "Examples"
 

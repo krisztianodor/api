@@ -2,7 +2,7 @@
 date = "2017-01-09T10:20:09+01:00"
 icon = "<b class='fa fa-hand-peace-o'></b>"
 chapter = true
-next = "/basics"
+next = "/endpoints"
 weight = 0
 title = "Welcome"
 
@@ -20,28 +20,32 @@ Our video game database has loads of video game metadata. That includes release 
 
 ---
 
-|                                    | IGDB.com        | GiantBomb        | thegamesdb.net      | MobyGames&nbsp;(alpha)     |
-| ---------------------------------- |:---------------:|:----------------:|:-------------------:|:--------------------------:|
-| Total unique games                 | +50,000         | +48,000          | +40,000             | +40,000                    |
-| Allowed to use commercially        | Yes             | No               | Yes, after approval | N/A                        |
-| Request throttling                 | No              | 1 per second     | N/A                 | 1 per second, 360 per hour |
-| Allowed to build competing product | Yes             | No               | No                  | N/A                        |
-| SSL (HTTPS) support                | Yes             | Yes              | Yes                 | Yes                        |
-| API key location/security          | Header/Secure   | URL/Insecure     | N/A                 | URL/Insecure               |
-| REST API Formats                   | JSON            | JSON, JSONP, XML | XML                 | JSON                       |
+### The Basics
 
-> The API is really fast, has an amazing up-time, scaled images and it is very easy for users to add new games to their beautiful website.
-> 
-> _- Tommy Uytterhaegen from [My Game Collection](http://igdb.com/r/api-mgc)_
+In order to use our API, you must have a [RapidAPI account](https://dashboard.rapidapi.com/signup) and be subscribed to a plan on the [IGDB RapidAPI API](https://rapidapi.com/user/igdbcom/package/Internet%20Game%20Database).
+  
+The IGDB.com API is free for non-commercial & commercial usage.
 
----
+### REST Examples
 
-> I must say that your API is incredibly good and complete. Congratulations on that, as it is helping me a lot to get the work done!
-> 
-> _- Jorge from [The Game Network](http://thegamenetworkapp.com/)_
+You can find some examples by [clicking here](./examples).
 
----
+### API Wrappers
 
-> IGDB offers a great, easy to use API with a fair number of requests per day. It's the main scraper source in my project.
->
-> _- Danny Glover from [GameEnd](http://gameend.net)_
+Wrappers in good standing:
+
+- [NodeJS](https://github.com/igdb/igdb-api-node)
+- [Laravel](https://github.com/messerli90/igdb)
+- [Ruby](https://github.com/tastycake/igdb_api)
+
+Stale wrappers:
+
+- [PHP](https://github.com/igdb/igdb-api-php)
+
+### Found a bug?
+
+Use our [contact form](https://www.igdb.com/feedbacks/new) or [join us on discord](https://discord.gg/JKsh9R7) if you have problems.
+
+{{% notice tip %}}
+All endpoints support `limit` and `offset` [pagination](/api/references/pagination).
+{{% /notice %}}
