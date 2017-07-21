@@ -48,5 +48,5 @@ The popularity number is calculated using usage statistics of game pages at http
 
    `/release_dates/?fields=*&filter[platform][eq]=48&order=date:asc&filter[date][gt]=1500619813000`
 
-1500619813000: Is the timestamp in miliseconds of today (This you need to generate yourself)
+1500619813000: Is the timestamp in miliseconds of today (This you need to generate yourself)  
 48 Is the platform id of Playstation 4.
