@@ -412,6 +412,17 @@ const tagNumber = genreTag | shooterId // 268435461 - Use this tag number to fil
 &lt;li&gt;3 = game&lt;/li&gt;
 &lt;li&gt;4 = player_perspective&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#Python
+gameTag = 3 &amp;lt;&amp;lt; 28 #We use 3 since we want to search for a game
+gameId = 26196 #This is the gameid of the game /games/crash-bandicoot-n-sane-trilogy
+print(gameTag | gameId )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The end result is &lt;code&gt;805332564&lt;/code&gt;.
+We can then search inside the tags of &lt;code&gt;/pulses/241395&lt;/code&gt; to see if it has this tag.&lt;/p&gt;
 </description>
     </item>
     

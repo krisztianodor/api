@@ -95,42 +95,6 @@ API
       
       
 
-      <li class="dd-item  " data-nav-id="/api/basics/">
-        <a href="/api/basics/">
-          <span>
-            
-              <b class='fa fa-cube'></b>
-            
-             Basics
-            
-           </span>
-        </a>
-        
-        <ul>
-          
-          
-          
-          
-            <li class="dd-item " data-nav-id="/api/basics/examples/">
-              <a href="/api/basics/examples/">
-                <span>Examples     </i></span>
-              </a>
-            </li>
-          
-          
-        </ul>
-        
-      </li>
-      
-      
-      
-
-      
-        
-      
-      
-      
-
       <li class="dd-item  " data-nav-id="/api/endpoints/">
         <a href="/api/endpoints/">
           <span>
@@ -427,6 +391,28 @@ API
       
       
 
+      <li class="dd-item  " data-nav-id="/api/examples/">
+        <a href="/api/examples/">
+          <span>
+            
+              <b class='fa fa-smile-o'></b>
+            
+             Examples
+            
+           </span>
+        </a>
+        
+      </li>
+      
+      
+      
+
+      
+        
+      
+      
+      
+
       <li class="dd-item  " data-nav-id="/api/misc-objects/">
         <a href="/api/misc-objects/">
           <span>
@@ -702,105 +688,39 @@ API
 
 <hr />
 
-<table>
-<thead>
-<tr>
-<th></th>
-<th align="center">IGDB.com</th>
-<th align="center">GiantBomb</th>
-<th align="center">thegamesdb.net</th>
-<th align="center">MobyGames&nbsp;(alpha)</th>
-</tr>
-</thead>
+<h3 id="the-basics">The Basics</h3>
 
-<tbody>
-<tr>
-<td>Total unique games</td>
-<td align="center">+35,000</td>
-<td align="center">+48,000</td>
-<td align="center">+40,000</td>
-<td align="center">+40,000</td>
-</tr>
+<p>In order to use our API, you must have a <a href="https://dashboard.rapidapi.com/signup">RapidAPI account</a> and be subscribed to a plan on the <a href="https://rapidapi.com/user/igdbcom/package/Internet%20Game%20Database">IGDB RapidAPI API</a>.</p>
 
-<tr>
-<td>Allowed to use commercially</td>
-<td align="center">Yes</td>
-<td align="center">No</td>
-<td align="center">Yes, after approval</td>
-<td align="center">N/A</td>
-</tr>
+<p>The IGDB.com API is free for non-commercial &amp; commercial usage.</p>
 
-<tr>
-<td>Requests per day</td>
-<td align="center">7,000 - 700,000</td>
-<td align="center">86400</td>
-<td align="center">N/A</td>
-<td align="center">8640</td>
-</tr>
+<h3 id="rest-examples">REST Examples</h3>
 
-<tr>
-<td>Request throttling</td>
-<td align="center">No</td>
-<td align="center">1 per second</td>
-<td align="center">N/A</td>
-<td align="center">1 per second, 360 per hour</td>
-</tr>
+<p>You can find some examples by <a href="/api/examples">clicking here</a>.</p>
 
-<tr>
-<td>Allowed to build competing product</td>
-<td align="center">Yes</td>
-<td align="center">No</td>
-<td align="center">No</td>
-<td align="center">N/A</td>
-</tr>
+<h3 id="api-wrappers">API Wrappers</h3>
 
-<tr>
-<td>SSL (HTTPS) support</td>
-<td align="center">Yes</td>
-<td align="center">Yes</td>
-<td align="center">Yes</td>
-<td align="center">Yes</td>
-</tr>
+<p>Wrappers in good standing:</p>
 
-<tr>
-<td>API key location/security</td>
-<td align="center">Header/Secure</td>
-<td align="center">URL/Insecure</td>
-<td align="center">N/A</td>
-<td align="center">URL/Insecure</td>
-</tr>
+<ul>
+<li><a href="https://github.com/igdb/igdb-api-node">NodeJS</a></li>
+<li><a href="https://github.com/messerli90/igdb">Laravel</a></li>
+<li><a href="https://github.com/tastycake/igdb_api">Ruby</a></li>
+</ul>
 
-<tr>
-<td>REST API Formats</td>
-<td align="center">JSON</td>
-<td align="center">JSON, JSONP, XML</td>
-<td align="center">XML</td>
-<td align="center">JSON</td>
-</tr>
-</tbody>
-</table>
+<p>Stale wrappers:</p>
 
-<blockquote>
-<p>The API is really fast, has an amazing up-time, scaled images and it is very easy for users to add new games to their beautiful website.</p>
+<ul>
+<li><a href="https://github.com/igdb/igdb-api-php">PHP</a></li>
+</ul>
 
-<p><em>- Tommy Uytterhaegen from <a href="http://igdb.com/r/api-mgc">My Game Collection</a></em></p>
-</blockquote>
+<h3 id="found-a-bug">Found a bug?</h3>
 
-<hr />
+<p>Use our <a href="https://www.igdb.com/feedbacks/new">contact form</a> or <a href="https://discord.gg/JKsh9R7">join us on discord</a> if you have problems.</p>
 
-<blockquote>
-<p>I must say that your API is incredibly good and complete. Congratulations on that, as it is helping me a lot to get the work done!</p>
+<div class="notices tip" ><p>All endpoints support <code>limit</code> and <code>offset</code> <a href="/api/references/pagination">pagination</a>.</p>
+</div>
 
-<p><em>- Jorge from <a href="http://thegamenetworkapp.com/">The Game Network</a></em></p>
-</blockquote>
-
-<hr />
-
-<blockquote>
-<p>IGDB offers a great, easy to use API with a fair number of requests per day. It&rsquo;s the main scraper source in my project.</p>
-
-<p><em>- Danny Glover from <a href="http://gameend.net">GameEnd</a></em></p>
-</blockquote>
 
 
       
@@ -812,7 +732,7 @@ API
     <div id="navigation">
         
         
-        <a class="nav nav-next" href="https://igdb.github.io/api//basics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-next" href="https://igdb.github.io/api//endpoints" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

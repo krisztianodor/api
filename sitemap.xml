@@ -62,7 +62,7 @@
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/basics/examples/</loc>
+    <loc>https://igdb.github.io/api/examples/</loc>
     <lastmod>2017-01-09T10:30:17+01:00</lastmod>
   </url>
   
@@ -266,11 +266,6 @@
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/basics/</loc>
-    <lastmod>2017-01-09T10:21:23+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://igdb.github.io/api/about/welcome/</loc>
     <lastmod>2017-01-09T10:20:09+01:00</lastmod>
   </url>
@@ -278,12 +273,6 @@
   <url>
     <loc>https://igdb.github.io/api/about/</loc>
     <lastmod>2017-01-09T10:20:09+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/basics/</loc>
-    <lastmod>2017-01-09T10:21:23+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -296,6 +285,12 @@
   <url>
     <loc>https://igdb.github.io/api/enum-fields/</loc>
     <lastmod>2017-01-15T18:23:12+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/examples/</loc>
+    <lastmod>2017-01-09T10:30:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   

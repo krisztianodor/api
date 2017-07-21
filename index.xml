@@ -874,10 +874,10 @@ The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and t
     
     <item>
       <title>Examples</title>
-      <link>https://igdb.github.io/api/basics/examples/</link>
+      <link>https://igdb.github.io/api/examples/</link>
       <pubDate>Mon, 09 Jan 2017 10:30:17 +0100</pubDate>
       
-      <guid>https://igdb.github.io/api/basics/examples/</guid>
+      <guid>https://igdb.github.io/api/examples/</guid>
       <description>
 
 &lt;h2 id=&#34;an-example-request-in-java&#34;&gt;An example request in Java&lt;/h2&gt;

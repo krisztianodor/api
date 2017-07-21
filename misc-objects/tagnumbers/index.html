@@ -95,42 +95,6 @@ API
       
       
 
-      <li class="dd-item  " data-nav-id="/api/basics/">
-        <a href="/api/basics/">
-          <span>
-            
-              <b class='fa fa-cube'></b>
-            
-             Basics
-            
-           </span>
-        </a>
-        
-        <ul>
-          
-          
-          
-          
-            <li class="dd-item " data-nav-id="/api/basics/examples/">
-              <a href="/api/basics/examples/">
-                <span>Examples     </i></span>
-              </a>
-            </li>
-          
-          
-        </ul>
-        
-      </li>
-      
-      
-      
-
-      
-        
-      
-      
-      
-
       <li class="dd-item  " data-nav-id="/api/endpoints/">
         <a href="/api/endpoints/">
           <span>
@@ -415,6 +379,28 @@ API
           
           
         </ul>
+        
+      </li>
+      
+      
+      
+
+      
+        
+      
+      
+      
+
+      <li class="dd-item  " data-nav-id="/api/examples/">
+        <a href="/api/examples/">
+          <span>
+            
+              <b class='fa fa-smile-o'></b>
+            
+             Examples
+            
+           </span>
+        </a>
         
       </li>
       
@@ -716,6 +702,17 @@ const tagNumber = genreTag | shooterId // 268435461 - Use this tag number to fil
 <li>3 = game</li>
 <li>4 = player_perspective</li>
 </ul>
+
+<p><strong>Example 2</strong></p>
+
+<pre><code class="language-python">#Python
+gameTag = 3 &lt;&lt; 28 #We use 3 since we want to search for a game
+gameId = 26196 #This is the gameid of the game /games/crash-bandicoot-n-sane-trilogy
+print(gameTag | gameId )
+</code></pre>
+
+<p>The end result is <code>805332564</code>.
+We can then search inside the tags of <code>/pulses/241395</code> to see if it has this tag.</p>
 
 
       
