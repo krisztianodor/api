@@ -12,14 +12,14 @@ icon = "<b class='fa fa-sitemap'></b>"
 ## General information
 
 {{% notice tip %}}
-Test endpoints using the [RapidAPI sandbox](https://rapidapi.com/user/igdbcom/package/Internet%20Game%20Database). Alternatively, we highly recommend [postman](https://www.getpostman.com/) to perfect your requests.
+Test endpoints using the [Live test](https://api.igdb.com/livetest). Alternatively, we highly recommend [postman](https://www.getpostman.com/) to perfect your requests.
 {{% /notice %}}
 
 In order to communicate with the server, you will have to send these headers.
 
 | HTTP Header   | Value |
 | ------------- | ----- |
-| X-Mashape-Key | The key from your RapidAPI account |
+| user-key | Your key |
 | Accept        | application/json |
 
 ## Common fields in responses
