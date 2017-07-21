@@ -17,7 +17,7 @@ There is also an offset:
 
 ### Scroll API
 {{% notice warning %}}
-This is only available for [Ultra subscribers](https://rapidapi.com/user/igdbcom/package/Internet%20Game%20Database/pricing) on RapidAPI.
+This is only available for Ultra subscribers.
 {{% /notice %}}
 
 In order to get more than 10,000 results and get blazing fast response times you need to use the new Scroll extension. 
@@ -28,7 +28,7 @@ To use it you need to supply a scroll param to the search like this:
 It will return results and include a couple of extra headers: **X-Next-Page** and **X-Count**.   
 **X-Next-Page** includes a path for the next page: 
 
-`https://igdbcom-internet-game-database-v1.p.mashape.com/games/scroll/cXVlcnlBbmRGZXRjaDsxOzE5OkhBck1wUUZsUnpPUDgwMGtDN0hSdEE7MDs=`  
+`/games/scroll/cXVlcnlBbmRGZXRjaDsxOzE5OkhBck1wUUZsUnpPUDgwMGtDN0hSdEE7MDs=`  
 
 **X-Count** has the number of results: `1337`  
 
