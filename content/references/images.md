@@ -37,7 +37,7 @@ The image sizes are all maximum size but by appending `_2x` to any size, you can
 
 ## Examples
 
-`https://igdbcom-internet-game-database-v1.p.mashape.com/games/1942?fields=screenshots`  
+`/games/1942?fields=screenshots`  
 Here we retrieve the image properties of the game with the id "1942"
 
 **Response:**  
