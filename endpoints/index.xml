@@ -19,7 +19,7 @@
 
 &lt;h2 id=&#34;general-information&#34;&gt;General information&lt;/h2&gt;
 
-&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;Test endpoints using the &lt;a href=&#34;https://rapidapi.com/user/igdbcom/package/Internet%20Game%20Database&#34;&gt;RapidAPI sandbox&lt;/a&gt;. Alternatively, we highly recommend &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;postman&lt;/a&gt; to perfect your requests.&lt;/p&gt;
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;Test endpoints using the &lt;a href=&#34;https://api.igdb.com/livetest&#34;&gt;Live test&lt;/a&gt;. Alternatively, we highly recommend &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;postman&lt;/a&gt; to perfect your requests.&lt;/p&gt;
 &lt;/div&gt;
 
 
@@ -35,8 +35,8 @@
 
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;X-Mashape-Key&lt;/td&gt;
-&lt;td&gt;The key from your RapidAPI account&lt;/td&gt;
+&lt;td&gt;user-key&lt;/td&gt;
+&lt;td&gt;Your key&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;

@@ -880,36 +880,55 @@ The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and t
       <guid>https://igdb.github.io/api/examples/</guid>
       <description>
 
-&lt;h2 id=&#34;an-example-request-in-java&#34;&gt;An example request in Java&lt;/h2&gt;
+&lt;h4 id=&#34;an-example-request-in-java&#34;&gt;An example request in Java&lt;/h4&gt;
 
-&lt;pre&gt;&lt;code&gt;HttpResponse&amp;lt;JsonNode&amp;gt; response = Unirest.get(&amp;quot;https://igdbcom-internet-game-database-v1.p.mashape.com/characters/?fields=*&amp;amp;limit=10&amp;quot;)
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;HttpResponse&amp;lt;JsonNode&amp;gt; response = Unirest.get(&amp;quot;hhttps://api-2445582011268.apicast.io/characters/?fields=*&amp;amp;limit=10&amp;quot;)
 .header(&amp;quot;X-Mashape-Key&amp;quot;, &amp;quot;YOUR_KEY&amp;quot;)
 .header(&amp;quot;Accept&amp;quot;, &amp;quot;application/json&amp;quot;)
 .asJson();
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;get-all-information-from-a-specific-game&#34;&gt;Get all information from a specific game&lt;/h2&gt;
+&lt;h4 id=&#34;get-all-information-from-a-specific-game&#34;&gt;Get all information from a specific game&lt;/h4&gt;
 
-&lt;p&gt;&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/games/1942?fields=*&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code&gt;/games/1942?fields=*&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;1942, is the ID of the game.&lt;/p&gt;
 
-&lt;h2 id=&#34;get-all-games-from-specific-genres&#34;&gt;Get all games from specific genres&lt;/h2&gt;
+&lt;h4 id=&#34;get-all-games-from-specific-genres&#34;&gt;Get all games from specific genres&lt;/h4&gt;
 
-&lt;p&gt;&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/genres/12,9,11?fields=*&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code&gt;/genres/12,9,11?fields=*&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Notice you can comma separate multiple IDs (12, 9 and 11). You can do this with games, companies and anything else.&lt;/p&gt;
 
-&lt;h2 id=&#34;count-total-games-that-have-a-rating-higher-than-75&#34;&gt;Count total games that have a rating higher than 75&lt;/h2&gt;
+&lt;h4 id=&#34;count-total-games-that-have-a-rating-higher-than-75&#34;&gt;Count total games that have a rating higher than 75&lt;/h4&gt;
 
-&lt;p&gt;&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/games/count?filter[rating][gt]=75&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;h2 id=&#34;popularity&#34;&gt;Popularity&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;/games/count?filter[rating][gt]=75&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;order-by-popularity&#34;&gt;Order by popularity&lt;/h4&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;Popularity parameter for games. You can access it like this:
-&lt;code&gt;https://igdbcom-internet-game-database-v1.p.mashape.com/games/?fields=name,popularity&amp;amp;order=popularity:desc&lt;/code&gt;&lt;/p&gt;
+&lt;code&gt;/games/?fields=name,popularity&amp;amp;order=popularity:desc&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;The popularity number is calculated using usage statistics of game pages at &lt;a href=&#34;https://www.igdb.com&#34;&gt;https://www.igdb.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;coming-soon-games-for-playstation-4&#34;&gt;Coming soon games for Playstation 4&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code&gt;/release_dates/?fields=*&amp;amp;filter[platform][eq]=48&amp;amp;order=date:asc&amp;amp;filter[date][gt]=1500619813000&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;1500619813000: Is the timestamp in miliseconds of today (This you need to generate yourself)&lt;br /&gt;
+48 Is the platform id of Playstation 4.&lt;/p&gt;
 </description>
     </item>
     

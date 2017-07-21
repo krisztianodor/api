@@ -667,11 +667,18 @@ API
 <ul>
 <li>
 <ul>
+<li>
+<ul>
+<li>
+<ul>
 <li><a href="#an-example-request-in-java">An example request in Java</a></li>
 <li><a href="#get-all-information-from-a-specific-game">Get all information from a specific game</a></li>
 <li><a href="#get-all-games-from-specific-genres">Get all games from specific genres</a></li>
 <li><a href="#count-total-games-that-have-a-rating-higher-than-75">Count total games that have a rating higher than 75</a></li>
-<li><a href="#popularity">Popularity</a></li>
+<li><a href="#order-by-popularity">Order by popularity</a></li>
+<li><a href="#coming-soon-games-for-playstation-4">Coming soon games for Playstation 4</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -689,36 +696,55 @@ API
 
 
 
-<h2 id="an-example-request-in-java">An example request in Java</h2>
+<h4 id="an-example-request-in-java">An example request in Java</h4>
 
-<pre><code>HttpResponse&lt;JsonNode&gt; response = Unirest.get(&quot;https://igdbcom-internet-game-database-v1.p.mashape.com/characters/?fields=*&amp;limit=10&quot;)
+<hr />
+
+<pre><code>HttpResponse&lt;JsonNode&gt; response = Unirest.get(&quot;hhttps://api-2445582011268.apicast.io/characters/?fields=*&amp;limit=10&quot;)
 .header(&quot;X-Mashape-Key&quot;, &quot;YOUR_KEY&quot;)
 .header(&quot;Accept&quot;, &quot;application/json&quot;)
 .asJson();
 </code></pre>
 
-<h2 id="get-all-information-from-a-specific-game">Get all information from a specific game</h2>
+<h4 id="get-all-information-from-a-specific-game">Get all information from a specific game</h4>
 
-<p><code>https://igdbcom-internet-game-database-v1.p.mashape.com/games/1942?fields=*</code></p>
+<hr />
+
+<p><code>/games/1942?fields=*</code></p>
 
 <p>1942, is the ID of the game.</p>
 
-<h2 id="get-all-games-from-specific-genres">Get all games from specific genres</h2>
+<h4 id="get-all-games-from-specific-genres">Get all games from specific genres</h4>
 
-<p><code>https://igdbcom-internet-game-database-v1.p.mashape.com/genres/12,9,11?fields=*</code></p>
+<hr />
+
+<p><code>/genres/12,9,11?fields=*</code></p>
 
 <p>Notice you can comma separate multiple IDs (12, 9 and 11). You can do this with games, companies and anything else.</p>
 
-<h2 id="count-total-games-that-have-a-rating-higher-than-75">Count total games that have a rating higher than 75</h2>
+<h4 id="count-total-games-that-have-a-rating-higher-than-75">Count total games that have a rating higher than 75</h4>
 
-<p><code>https://igdbcom-internet-game-database-v1.p.mashape.com/games/count?filter[rating][gt]=75</code></p>
+<hr />
 
-<h2 id="popularity">Popularity</h2>
+<p><code>/games/count?filter[rating][gt]=75</code></p>
+
+<h4 id="order-by-popularity">Order by popularity</h4>
+
+<hr />
 
 <p>Popularity parameter for games. You can access it like this:
-<code>https://igdbcom-internet-game-database-v1.p.mashape.com/games/?fields=name,popularity&amp;order=popularity:desc</code></p>
+<code>/games/?fields=name,popularity&amp;order=popularity:desc</code></p>
 
 <p>The popularity number is calculated using usage statistics of game pages at <a href="https://www.igdb.com">https://www.igdb.com</a></p>
+
+<h4 id="coming-soon-games-for-playstation-4">Coming soon games for Playstation 4</h4>
+
+<hr />
+
+<p><code>/release_dates/?fields=*&amp;filter[platform][eq]=48&amp;order=date:asc&amp;filter[date][gt]=1500619813000</code></p>
+
+<p>1500619813000: Is the timestamp in miliseconds of today (This you need to generate yourself)<br />
+48 Is the platform id of Playstation 4.</p>
 
 
       
