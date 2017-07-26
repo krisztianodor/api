@@ -15,9 +15,9 @@ title = "Platform"
 ```json
 {
     "id": 2,
-    "name": "Point-and-click",
-    "slug": "point-and-click",
-    "url": "https://www.igdb.com/genres/point-and-click",
+    "name": "Wii",
+    "slug": "wii",
+    "url": "https://www.igdb.com/platform/wii",
     "created_at": 123456789,
     "updated_at": 123456789,
     "games": [
