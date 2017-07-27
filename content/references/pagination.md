@@ -16,9 +16,6 @@ There is also an offset:
 `/platforms/?limit=33&offset=22`
 
 ### Scroll API
-{{% notice warning %}}
-This is only available for Ultra subscribers.
-{{% /notice %}}
 
 In order to get more than 10,000 results and get blazing fast response times you need to use the new Scroll extension. 
 
