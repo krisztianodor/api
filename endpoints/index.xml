@@ -1880,9 +1880,9 @@
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
     &amp;quot;id&amp;quot;: 2,
-    &amp;quot;name&amp;quot;: &amp;quot;Point-and-click&amp;quot;,
-    &amp;quot;slug&amp;quot;: &amp;quot;point-and-click&amp;quot;,
-    &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/genres/point-and-click&amp;quot;,
+    &amp;quot;name&amp;quot;: &amp;quot;Wii&amp;quot;,
+    &amp;quot;slug&amp;quot;: &amp;quot;wii&amp;quot;,
+    &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/platform/wii&amp;quot;,
     &amp;quot;created_at&amp;quot;: 123456789,
     &amp;quot;updated_at&amp;quot;: 123456789,
     &amp;quot;games&amp;quot;: [

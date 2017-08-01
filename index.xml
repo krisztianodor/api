@@ -951,6 +951,15 @@ The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and t
 &lt;p&gt;You can also subfilter arrays by appending &amp;ldquo;max&amp;rdquo;, &amp;ldquo;min&amp;rdquo;, &amp;ldquo;sum&amp;rdquo;, &amp;ldquo;avg&amp;rdquo; or &amp;ldquo;median&amp;rdquo;.
 For example, you can order games based on it&amp;rsquo;s earliest release date like this: &lt;code&gt;/games/?search=zelda&amp;amp;order=release_dates.date:desc:min&amp;amp;limit=5&lt;/code&gt;&lt;/p&gt;
 
+&lt;h4 id=&#34;order-by-popularity&#34;&gt;Order by popularity&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Popularity parameter for games. You can access it like this:
+&lt;code&gt;/games/?fields=name,popularity&amp;amp;order=popularity:desc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The popularity number is calculated using usage statistics of game pages at &lt;a href=&#34;https://www.igdb.com&#34;&gt;https://www.igdb.com&lt;/a&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
 
 &lt;p&gt;Ordering can be used on any entity.&lt;/p&gt;

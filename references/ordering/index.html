@@ -670,7 +670,13 @@ API
 <li>
 <ul>
 <li><a href="#what">What?</a></li>
-<li><a href="#how">How?</a></li>
+<li><a href="#how">How?</a>
+<ul>
+<li>
+<ul>
+<li><a href="#order-by-popularity">Order by popularity</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#where">Where?</a></li>
 </ul></li>
 </ul>
@@ -699,6 +705,15 @@ API
 
 <p>You can also subfilter arrays by appending &ldquo;max&rdquo;, &ldquo;min&rdquo;, &ldquo;sum&rdquo;, &ldquo;avg&rdquo; or &ldquo;median&rdquo;.
 For example, you can order games based on it&rsquo;s earliest release date like this: <code>/games/?search=zelda&amp;order=release_dates.date:desc:min&amp;limit=5</code></p>
+
+<h4 id="order-by-popularity">Order by popularity</h4>
+
+<hr />
+
+<p>Popularity parameter for games. You can access it like this:
+<code>/games/?fields=name,popularity&amp;order=popularity:desc</code></p>
+
+<p>The popularity number is calculated using usage statistics of game pages at <a href="https://www.igdb.com">https://www.igdb.com</a></p>
 
 <h2 id="where">Where?</h2>
 
