@@ -22,7 +22,7 @@ Our video game database has loads of video game metadata. That includes release 
 
 ### The Basics
 
-In order to use our API, you must have a [account and key](api.igdb.com).
+In order to use our API, you must have a [account and key](https://api.igdb.com).
   
 The IGDB.com API is free for non-commercial & commercial usage.
 
@@ -32,16 +32,13 @@ You can find some examples by [clicking here](/api/examples).
 
 ### API Wrappers
 
-Wrappers in good standing:
+Wrappers:
 
 - [NodeJS](https://github.com/igdb/igdb-api-node)
 - [Laravel](https://github.com/messerli90/igdb)
 - [Ruby](https://github.com/tastycake/igdb_api)
-- [Python] (https://github.com/igdb/igdb-api-python)
+- [Python](https://github.com/igdb/igdb-api-python)
 
-Stale wrappers:
-
-- [PHP](https://github.com/igdb/igdb-api-php)
 
 ### Need support?
 
