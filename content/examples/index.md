@@ -13,7 +13,7 @@ title = "Examples"
 ----------
 ```
 HttpResponse<JsonNode> response = Unirest.get("hhttps://api-2445582011268.apicast.io/characters/?fields=*&limit=10")
-.header("X-Mashape-Key", "YOUR_KEY")
+.header("user-key", "YOUR_KEY")
 .header("Accept", "application/json")
 .asJson();
 ```
