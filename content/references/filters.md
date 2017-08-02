@@ -45,3 +45,17 @@ Setting the `order` parameter will override the default `relevance` ordering of 
 {{% /notice %}}
 
 `/games/?search=zelda`
+
+## Examples
+
+#### Filter by multiple platforms
+----------
+
+If you checkout the platforms endpoint:
+`/platforms/?fields=name&limit=50`  
+You will find the names and id's of the platform. Select the ones you want.  
+Then when you know the ID's of the platform:
+
+`/games/?fields=*&filter[release_dates.platform][eq]=48&filter[release_dates.platform][eq]=6&filter[release_dates.platform][eq]=49&`
+
+This will give you games that are released on PS4 or XBOX ONE or PC
