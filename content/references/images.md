@@ -33,7 +33,9 @@ The image sizes are all maximum size but by appending `_2x` to any size, you can
 | screenshot_big |889 x 500  | Lfill, Center gravity |
 | screenshot_huge | 1280 x 720 | Lfill, Center gravity |
 | thumb | 90 x 90 | Thumb, Center gravity  |
-| micro| 35 x 35 | Thumb, Center gravity  |
+| micro | 35 x 35 | Thumb, Center gravity  |
+| 720p | 1280 x 720 | Fit, Center gravity  |
+| 1080p | 1920 x 1080 | Fit, Center gravity  |
 
 ## Examples
 
