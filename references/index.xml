@@ -109,6 +109,21 @@ The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and t
 
 
 &lt;p&gt;&lt;code&gt;/games/?search=zelda&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h4 id=&#34;filter-by-multiple-platforms&#34;&gt;Filter by multiple platforms&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;If you checkout the platforms endpoint:
+&lt;code&gt;/platforms/?fields=name&amp;amp;limit=50&lt;/code&gt;&lt;br /&gt;
+You will find the names and id&amp;rsquo;s of the platform. Select the ones you want.&lt;br /&gt;
+Then when you know the ID&amp;rsquo;s of the platform:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/games/?fields=*&amp;amp;filter[release_dates.platform][eq]=48&amp;amp;filter[release_dates.platform][eq]=6&amp;amp;filter[release_dates.platform][eq]=49&amp;amp;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will give you games that are released on PS4 or XBOX ONE or PC&lt;/p&gt;
 </description>
     </item>
     
@@ -261,6 +276,18 @@ The image sizes are all maximum size but by appending &lt;code&gt;_2x&lt;/code&g
 &lt;td&gt;micro&lt;/td&gt;
 &lt;td&gt;35 x 35&lt;/td&gt;
 &lt;td&gt;Thumb, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;720p&lt;/td&gt;
+&lt;td&gt;1280 x 720&lt;/td&gt;
+&lt;td&gt;Fit, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1080p&lt;/td&gt;
+&lt;td&gt;1920 x 1080&lt;/td&gt;
+&lt;td&gt;Fit, Center gravity&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

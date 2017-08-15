@@ -674,6 +674,13 @@ API
 <li><a href="#where">Where?</a></li>
 <li><a href="#available-postfixes">Available Postfixes</a></li>
 <li><a href="#text-search">Text search</a></li>
+<li><a href="#examples">Examples</a>
+<ul>
+<li>
+<ul>
+<li><a href="#filter-by-multiple-platforms">Filter by multiple platforms</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -732,6 +739,21 @@ The filter itself comprises of 2 parts; The <code>field</code> and the <code>pos
 
 
 <p><code>/games/?search=zelda</code></p>
+
+<h2 id="examples">Examples</h2>
+
+<h4 id="filter-by-multiple-platforms">Filter by multiple platforms</h4>
+
+<hr />
+
+<p>If you checkout the platforms endpoint:
+<code>/platforms/?fields=name&amp;limit=50</code><br />
+You will find the names and id&rsquo;s of the platform. Select the ones you want.<br />
+Then when you know the ID&rsquo;s of the platform:</p>
+
+<p><code>/games/?fields=*&amp;filter[release_dates.platform][eq]=48&amp;filter[release_dates.platform][eq]=6&amp;filter[release_dates.platform][eq]=49&amp;</code></p>
+
+<p>This will give you games that are released on PS4 or XBOX ONE or PC</p>
 
 
       

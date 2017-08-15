@@ -520,6 +520,21 @@ The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and t
 
 
 &lt;p&gt;&lt;code&gt;/games/?search=zelda&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h4 id=&#34;filter-by-multiple-platforms&#34;&gt;Filter by multiple platforms&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;If you checkout the platforms endpoint:
+&lt;code&gt;/platforms/?fields=name&amp;amp;limit=50&lt;/code&gt;&lt;br /&gt;
+You will find the names and id&amp;rsquo;s of the platform. Select the ones you want.&lt;br /&gt;
+Then when you know the ID&amp;rsquo;s of the platform:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/games/?fields=*&amp;amp;filter[release_dates.platform][eq]=48&amp;amp;filter[release_dates.platform][eq]=6&amp;amp;filter[release_dates.platform][eq]=49&amp;amp;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will give you games that are released on PS4 or XBOX ONE or PC&lt;/p&gt;
 </description>
     </item>
     
@@ -885,7 +900,7 @@ The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and t
 &lt;hr /&gt;
 
 &lt;pre&gt;&lt;code&gt;HttpResponse&amp;lt;JsonNode&amp;gt; response = Unirest.get(&amp;quot;hhttps://api-2445582011268.apicast.io/characters/?fields=*&amp;amp;limit=10&amp;quot;)
-.header(&amp;quot;X-Mashape-Key&amp;quot;, &amp;quot;YOUR_KEY&amp;quot;)
+.header(&amp;quot;user-key&amp;quot;, &amp;quot;YOUR_KEY&amp;quot;)
 .header(&amp;quot;Accept&amp;quot;, &amp;quot;application/json&amp;quot;)
 .asJson();
 &lt;/code&gt;&lt;/pre&gt;
