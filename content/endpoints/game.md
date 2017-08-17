@@ -72,4 +72,5 @@ title = "Game"
 | expansions          | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
 | standalone_expansions          | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
 | bundles          | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
+| games          | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records that are similar to this game. (expandable) |
 
