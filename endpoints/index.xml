@@ -88,6 +88,8 @@
       <guid>https://igdb.github.io/api/endpoints/character/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /characters/&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Video game characters&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
@@ -227,6 +229,8 @@
       <guid>https://igdb.github.io/api/endpoints/collection/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /collections/&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Collection, AKA Series&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
@@ -318,6 +322,8 @@
       
       <guid>https://igdb.github.io/api/endpoints/company/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /companies/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Video game companies. Both publishers &amp;amp; developers&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -505,6 +511,8 @@
       <guid>https://igdb.github.io/api/endpoints/credit/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /credits/&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Contains all employees responsible for working on the game.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;    {
@@ -656,6 +664,8 @@
       <guid>https://igdb.github.io/api/endpoints/feed/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /feeds/&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Feed items are a social feed of status updates, media and news articles.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
@@ -762,6 +772,8 @@
       
       <guid>https://igdb.github.io/api/endpoints/game/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /games/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Video Games!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -1122,6 +1134,8 @@
       <guid>https://igdb.github.io/api/endpoints/page/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /pages/&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Our multipurpose page system is currently used for youtubers and media organisations.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
@@ -1405,6 +1419,8 @@
       <guid>https://igdb.github.io/api/endpoints/franchise/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /franchises/&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; A list of video game franchises such as Star Wars.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
@@ -1496,6 +1512,8 @@
       
       <guid>https://igdb.github.io/api/endpoints/game-engine/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /game_engines/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Video game engines such as unreal engine.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -1603,6 +1621,8 @@
       
       <guid>https://igdb.github.io/api/endpoints/game-mode/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /game_modes/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Single player, Multiplayer etc&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -1782,6 +1802,8 @@
       <guid>https://igdb.github.io/api/endpoints/keyword/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /keywords/&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Keywords are words or phrases that get tagged to a game such as &amp;ldquo;world war 2&amp;rdquo; or &amp;ldquo;steampunk&amp;rdquo;.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
@@ -1873,6 +1895,8 @@
       
       <guid>https://igdb.github.io/api/endpoints/person/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /people/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Individuals who are in the video games industry&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -2068,6 +2092,8 @@
       
       <guid>https://igdb.github.io/api/endpoints/platform/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /platforms/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; The hardware used to run the game or game delivery network&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 

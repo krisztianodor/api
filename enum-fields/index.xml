@@ -27,7 +27,9 @@
       <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
       
       <guid>https://igdb.github.io/api/enum-fields/date-category/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; The format of the value in the release date.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -486,7 +488,9 @@
       <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
       
       <guid>https://igdb.github.io/api/enum-fields/credit-category/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; The type of entry in an end credits list.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
