@@ -143,9 +143,9 @@ API
           
           
           
-            <li class="dd-item " data-nav-id="/api/endpoints/franchise/">
-              <a href="/api/endpoints/franchise/">
-                <span>Franchise     </i></span>
+            <li class="dd-item " data-nav-id="/api/endpoints/credit/">
+              <a href="/api/endpoints/credit/">
+                <span>Credits     </i></span>
               </a>
             </li>
           
@@ -170,6 +170,14 @@ API
             <li class="dd-item " data-nav-id="/api/endpoints/page/">
               <a href="/api/endpoints/page/">
                 <span>Page     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/api/endpoints/franchise/">
+              <a href="/api/endpoints/franchise/">
+                <span>Franchise     </i></span>
               </a>
             </li>
           
@@ -278,6 +286,14 @@ API
             </li>
           
           
+          
+            <li class="dd-item " data-nav-id="/api/endpoints/title/">
+              <a href="/api/endpoints/title/">
+                <span>Titles     </i></span>
+              </a>
+            </li>
+          
+          
         </ul>
         
       </li>
@@ -374,6 +390,14 @@ API
             <li class="dd-item " data-nav-id="/api/enum-fields/species/">
               <a href="/api/enum-fields/species/">
                 <span>Species     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/api/enum-fields/credit-category/">
+              <a href="/api/enum-fields/credit-category/">
+                <span>Credit category     </i></span>
               </a>
             </li>
           
@@ -840,24 +864,31 @@ API
 </tr>
 
 <tr>
+<td>weighted_rating</td>
+<td align="center">double</td>
+<td align="center">-</td>
+<td>A number to sort on in order to get the weighted top lists for instance.</td>
+</tr>
+
+<tr>
 <td>game</td>
 <td align="center">unsigned 64-bit integer</td>
 <td align="center">-</td>
-<td>ID of a <a href="../game">Game</a> record if this record is a DLC/expansion</td>
+<td>ID of a <a href="../game">Game</a> record if this record is a DLC/expansion (expandable)</td>
 </tr>
 
 <tr>
 <td>developers</td>
 <td align="center">array of unsigned 64-bit integers</td>
 <td align="center">-</td>
-<td>IDs of <a href="../company">Company</a> records</td>
+<td>IDs of <a href="../company">Company</a> records (expandable)</td>
 </tr>
 
 <tr>
 <td>publishers</td>
 <td align="center">array of unsigned 64-bit integers</td>
 <td align="center">-</td>
-<td>IDs of <a href="../company">Company</a> records</td>
+<td>IDs of <a href="../company">Company</a> records (expandable)</td>
 </tr>
 
 <tr>
@@ -991,6 +1022,41 @@ API
 <td align="center">array of unsigned 32-bit integers</td>
 <td align="center">-</td>
 <td>An array of <a href="../../misc-objects/tagnumbers">Tag Numbers</a></td>
+</tr>
+
+<tr>
+<td>dlcs</td>
+<td align="center">array of unsigned 64-bit integers</td>
+<td align="center">-</td>
+<td>IDs of <a href="../game">Game</a> records (expandable)</td>
+</tr>
+
+<tr>
+<td>expansions</td>
+<td align="center">array of unsigned 64-bit integers</td>
+<td align="center">-</td>
+<td>IDs of <a href="../game">Game</a> records (expandable)</td>
+</tr>
+
+<tr>
+<td>standalone_expansions</td>
+<td align="center">array of unsigned 64-bit integers</td>
+<td align="center">-</td>
+<td>IDs of <a href="../game">Game</a> records (expandable)</td>
+</tr>
+
+<tr>
+<td>bundles</td>
+<td align="center">array of unsigned 64-bit integers</td>
+<td align="center">-</td>
+<td>IDs of <a href="../game">Game</a> records (expandable)</td>
+</tr>
+
+<tr>
+<td>games</td>
+<td align="center">array of unsigned 64-bit integers</td>
+<td align="center">-</td>
+<td>IDs of <a href="../game">Game</a> records that are similar to this game. (expandable)</td>
 </tr>
 </tbody>
 </table>

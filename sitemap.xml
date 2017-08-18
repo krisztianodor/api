@@ -82,8 +82,8 @@
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/endpoints/franchise/</loc>
-    <lastmod>2017-01-14T19:07:25+10:00</lastmod>
+    <loc>https://igdb.github.io/api/endpoints/credit/</loc>
+    <lastmod>2017-01-13T21:35:46+10:00</lastmod>
   </url>
   
   <url>
@@ -134,6 +134,11 @@
   <url>
     <loc>https://igdb.github.io/api/enum-fields/pegi-rating/</loc>
     <lastmod>2017-01-15T18:40:41+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/endpoints/franchise/</loc>
+    <lastmod>2017-01-14T19:07:25+10:00</lastmod>
   </url>
   
   <url>
@@ -196,6 +201,11 @@
   </url>
   
   <url>
+    <loc>https://igdb.github.io/api/enum-fields/credit-category/</loc>
+    <lastmod>2017-01-15T18:35:20+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://igdb.github.io/api/enum-fields/website-category/</loc>
     <lastmod>2017-01-15T18:35:20+10:00</lastmod>
   </url>
@@ -242,6 +252,11 @@
   
   <url>
     <loc>https://igdb.github.io/api/endpoints/theme/</loc>
+    <lastmod>2017-01-13T21:35:46+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/endpoints/title/</loc>
     <lastmod>2017-01-13T21:35:46+10:00</lastmod>
   </url>
   
