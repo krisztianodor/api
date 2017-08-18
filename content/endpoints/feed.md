@@ -1,8 +1,8 @@
 +++
 date = "2017-01-10T19:08:39+10:00"
 toc = true
-next = "/endpoints/game"
-prev = "/endpoints/franchise"
+next = "/endpoints/franchise"
+prev = "/endpoints/credit"
 weight = 5
 title = "Feed"
 
@@ -37,4 +37,3 @@ title = "Feed"
 | games               | array of unsigned 64-bit integer  |     -     | ID of a [Game](../game) record |
 | title               | string                            |     -     ||
 | feed_likes_count    | 64-bit integer                    |     -     ||
-
