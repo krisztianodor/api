@@ -10,6 +10,8 @@ title = "Franchise"
 
 ***URL path:*** /franchises/
 
+***Description:*** A list of video game franchises such as Star Wars.
+
 ***Example response***
 
 ```json

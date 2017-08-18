@@ -10,6 +10,8 @@ title = "Pulse Source"
 
 ***URL path:*** /pulse_sources/
 
+***Description:*** A news article source such as IGN.
+
 ***Example response***
 
 ```json
@@ -29,5 +31,3 @@ title = "Pulse Source"
 | name     | string                 |     +     | Name of pulse source |
 | game        | unsigned 64-bit integer                  |     +     | ID of a [Game](../game) record if this pulse source has a game connected to it |
 | page      | unsigned 64-bit integer       |     +     | ID of a [Page](../page) record if this pulse source has a page connected to it  |
-
-

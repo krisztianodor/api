@@ -8,6 +8,8 @@ title = "Credit category"
 
 +++
 
+***Description:*** The type of entry in an end credits list.
+
 ***Values***
 
 | Value | Category |

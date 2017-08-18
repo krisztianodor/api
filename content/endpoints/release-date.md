@@ -10,6 +10,8 @@ title = "Release date"
 
 ***URL path:*** /release_dates/
 
+***Description:*** A handy endpoint that extends the games endpoint. Used to dig deeper into release dates, platforms and versions.
+
 ***Example response***
 
 ```json

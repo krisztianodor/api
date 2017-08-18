@@ -10,6 +10,8 @@ title = "Credits"
 
 ***URL path:*** /credits/
 
+***Description:*** Contains all employees responsible for working on the game.
+
 ***Example response***
 
 ```json

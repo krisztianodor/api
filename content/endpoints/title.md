@@ -10,6 +10,8 @@ title = "Titles"
 
 ***URL path:*** /titles/
 
+***Description:*** Job titles in the industry.
+
 ***Example response***
 
 ```json

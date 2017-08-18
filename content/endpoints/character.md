@@ -10,6 +10,8 @@ title = "Character"
 
 ***URL path:*** /characters/
 
+***Description:*** Video game characters
+
 ***Example response***
 
 ```json

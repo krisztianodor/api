@@ -10,6 +10,8 @@ title = "Game mode"
 
 ***URL path:*** /game_modes/
 
+***Description:*** Single player, Multiplayer etc
+
 ***Example response***
 
 ```json

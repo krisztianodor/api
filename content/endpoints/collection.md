@@ -10,6 +10,8 @@ title = "Collection"
 
 ***URL path:*** /collections/
 
+***Description:*** Collection, AKA Series
+
 ***Example response***
 
 ```json

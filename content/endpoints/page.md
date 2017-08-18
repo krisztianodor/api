@@ -10,6 +10,8 @@ title = "Page"
 
 ***URL path:*** /pages/
 
+***Description:*** Our multipurpose page system is currently used for youtubers and media organisations.
+
 ***Example response***
 
 ```json

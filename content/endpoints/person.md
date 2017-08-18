@@ -10,6 +10,8 @@ title = "Person"
 
 ***URL path:*** /people/
 
+***Description:*** Individuals who are in the video games industry
+
 ***Example response***
 
 ```json

@@ -10,6 +10,8 @@ title = "Feed"
 
 ***URL path:*** /feeds/
 
+***Description:*** Feed items are a social feed of status updates, media and news articles.
+
 ***Example response***
 
 ```json

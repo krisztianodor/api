@@ -10,6 +10,8 @@ title = "Company"
 
 ***URL path:*** /companies/
 
+***Description:*** Video game companies. Both publishers & developers
+
 ***Example response***
 
 ```json

@@ -10,6 +10,8 @@ title = "Pulse"
 
 ***URL path:*** /pulses/
 
+***Description:*** A single news article.
+
 ***Example response***
 
 ```json

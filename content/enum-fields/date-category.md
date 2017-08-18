@@ -8,6 +8,8 @@ title = "Date category"
 
 +++
 
+***Description:*** The format of the value in the release date.
+
 ***Values***
 
 | Value | Human format |

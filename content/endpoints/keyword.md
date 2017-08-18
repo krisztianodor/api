@@ -10,6 +10,8 @@ title = "Keyword"
 
 ***URL path:*** /keywords/
 
+***Description:*** Keywords are words or phrases that get tagged to a game such as "world war 2" or "steampunk".
+
 ***Example response***
 
 ```json

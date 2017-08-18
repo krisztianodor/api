@@ -10,6 +10,8 @@ title = "Platform"
 
 ***URL path:*** /platforms/
 
+***Description:*** The hardware used to run the game or game delivery network
+
 ***Example response***
 
 ```json
