@@ -12,7 +12,7 @@ title = "Examples"
 #### An example request in Java
 ----------
 ```
-HttpResponse<JsonNode> response = Unirest.get("hhttps://api-2445582011268.apicast.io/characters/?fields=*&limit=10")
+HttpResponse<JsonNode> response = Unirest.get("https://api-2445582011268.apicast.io/characters/?fields=*&limit=10")
 .header("user-key", "YOUR_KEY")
 .header("Accept", "application/json")
 .asJson();
