@@ -6,8 +6,41 @@
     <description>Recent content on IGDB API Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Jan 2017 18:35:20 +1000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Jul 2017 10:23:47 +0100</lastBuildDate>
     <atom:link href="https://igdb.github.io/api/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Error Codes</title>
+      <link>https://igdb.github.io/api/references/errors/</link>
+      <pubDate>Fri, 28 Jul 2017 10:23:47 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/errors/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;500 = Internal Error
+
+&lt;ul&gt;
+&lt;li&gt;The server has done something wrong. This is a bug and should be reported.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;400 = Bad request
+
+&lt;ul&gt;
+&lt;li&gt;Something is wrong with the query parameters.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;401 = Unauthorized!
+
+&lt;ul&gt;
+&lt;li&gt;You may not have a key, sign up at api.igdb.com&lt;/li&gt;
+&lt;li&gt;You may be sending the key via a GET parameter which is incorrect, please use the &amp;ldquo;user-key&amp;rdquo; header.&lt;/li&gt;
+&lt;li&gt;Your account may not have access to this specific endpoint. Upgrade at api.igdb.com&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;200 = OK! Good response!
+
+&lt;ul&gt;
+&lt;li&gt;This result may still contain an empty array which indicates there are no results for your query.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Date category</title>
@@ -15,7 +48,9 @@
       <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
       
       <guid>https://igdb.github.io/api/enum-fields/date-category/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; The format of the value in the release date.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -119,6 +154,8 @@
       
       <guid>https://igdb.github.io/api/endpoints/character/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /characters/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Video game characters&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -386,6 +423,8 @@
       
       <guid>https://igdb.github.io/api/endpoints/collection/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /collections/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Collection, AKA Series&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -709,6 +748,8 @@ Then when you know the ID&amp;rsquo;s of the platform:&lt;/p&gt;
       <guid>https://igdb.github.io/api/endpoints/company/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /companies/&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Video game companies. Both publishers &amp;amp; developers&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
@@ -899,7 +940,7 @@ Then when you know the ID&amp;rsquo;s of the platform:&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;pre&gt;&lt;code&gt;HttpResponse&amp;lt;JsonNode&amp;gt; response = Unirest.get(&amp;quot;hhttps://api-2445582011268.apicast.io/characters/?fields=*&amp;amp;limit=10&amp;quot;)
+&lt;pre&gt;&lt;code&gt;HttpResponse&amp;lt;JsonNode&amp;gt; response = Unirest.get(&amp;quot;https://api-2445582011268.apicast.io/characters/?fields=*&amp;amp;limit=10&amp;quot;)
 .header(&amp;quot;user-key&amp;quot;, &amp;quot;YOUR_KEY&amp;quot;)
 .header(&amp;quot;Accept&amp;quot;, &amp;quot;application/json&amp;quot;)
 .asJson();
@@ -978,57 +1019,6 @@ For example, you can order games based on it&amp;rsquo;s earliest release date l
 &lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
 
 &lt;p&gt;Ordering can be used on any entity.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Game status</title>
-      <link>https://igdb.github.io/api/enum-fields/game-status/</link>
-      <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/enum-fields/game-status/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Status&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Released&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Alpha&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Beta&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Early access&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Offline&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Cancelled&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
 </description>
     </item>
     

@@ -33,6 +33,39 @@
     </item>
     
     <item>
+      <title>Error Codes</title>
+      <link>https://igdb.github.io/api/references/errors/</link>
+      <pubDate>Fri, 28 Jul 2017 10:23:47 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/errors/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;500 = Internal Error
+
+&lt;ul&gt;
+&lt;li&gt;The server has done something wrong. This is a bug and should be reported.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;400 = Bad request
+
+&lt;ul&gt;
+&lt;li&gt;Something is wrong with the query parameters.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;401 = Unauthorized!
+
+&lt;ul&gt;
+&lt;li&gt;You may not have a key, sign up at api.igdb.com&lt;/li&gt;
+&lt;li&gt;You may be sending the key via a GET parameter which is incorrect, please use the &amp;ldquo;user-key&amp;rdquo; header.&lt;/li&gt;
+&lt;li&gt;Your account may not have access to this specific endpoint. Upgrade at api.igdb.com&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;200 = OK! Good response!
+
+&lt;ul&gt;
+&lt;li&gt;This result may still contain an empty array which indicates there are no results for your query.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Fields</title>
       <link>https://igdb.github.io/api/references/fields/</link>
       <pubDate>Mon, 09 Jan 2017 10:23:15 +0100</pubDate>
@@ -424,6 +457,51 @@ Because the pulse_source is inferred, you can also specify fields on the pulse_s
   }
 ]
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;what-can-i-expand&#34;&gt;What can I expand?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Game.collection&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.franchise&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.franchises&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.game&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.developers&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.publishers&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.game_engines&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.player_perspectives&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.game_modes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.keywords&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.themes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.genres&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Character.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Company.published&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Company.developed&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GameEngine.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GameEngine.platforms&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GameEngine.companies&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GameMode.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Keyword.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PulseSource.game&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PulseSource.page&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Theme.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Collection.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PlayerPerspective.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Franchise.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Genre.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ReleaseDate.game&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ReleaseDate.platform&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Page.feed&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Page.game&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Pulse.pulse_source&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Review.game&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Person.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Person.characters&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Feed.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Feed.pulse&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PulseGroup.game&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PulseGroup.pulses&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

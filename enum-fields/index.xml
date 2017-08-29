@@ -27,7 +27,9 @@
       <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
       
       <guid>https://igdb.github.io/api/enum-fields/date-category/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; The format of the value in the release date.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -474,6 +476,59 @@
 &lt;tr&gt;
 &lt;td&gt;5&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;Unknown&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Credit category</title>
+      <link>https://igdb.github.io/api/enum-fields/credit-category/</link>
+      <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
+      
+      <guid>https://igdb.github.io/api/enum-fields/credit-category/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; The type of entry in an end credits list.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Category&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;voice_actor&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;language&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;company_credit&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;employee&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;misc&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;support_company&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
