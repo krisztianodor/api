@@ -93,3 +93,46 @@ The result is:
   }
 ]
 ```
+
+## What can I expand?
+
+- `Game.collection`
+- `Game.franchise`
+- `Game.franchises`
+- `Game.game`
+- `Game.games`
+- `Game.developers`
+- `Game.publishers`
+- `Game.game_engines`
+- `Game.player_perspectives`
+- `Game.game_modes`
+- `Game.keywords`
+- `Game.themes`
+- `Game.genres`
+- `Character.games`
+- `Company.published`
+- `Company.developed`
+- `GameEngine.games`
+- `GameEngine.platforms`
+- `GameEngine.companies`
+- `GameMode.games`
+- `Keyword.games`
+- `PulseSource.game`
+- `PulseSource.page`
+- `Theme.games`
+- `Collection.games`
+- `PlayerPerspective.games`
+- `Franchise.games`
+- `Genre.games`
+- `ReleaseDate.game`
+- `ReleaseDate.platform`
+- `Page.feed`
+- `Page.game`
+- `Pulse.pulse_source`
+- `Review.game`
+- `Person.games`
+- `Person.characters`
+- `Feed.games`
+- `Feed.pulse`
+- `PulseGroup.game`
+- `PulseGroup.pulses`
