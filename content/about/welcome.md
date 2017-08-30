@@ -35,9 +35,10 @@ You can find some examples by [clicking here](/api/examples).
 Wrappers:
 
 - [NodeJS](https://github.com/igdb/igdb-api-node)
+- [Python](https://github.com/igdb/igdb-api-python)
 - [Laravel](https://github.com/messerli90/igdb)
 - [Ruby](https://github.com/tastycake/igdb_api)
-- [Python](https://github.com/igdb/igdb-api-python)
+
 
 
 ### Need support?
