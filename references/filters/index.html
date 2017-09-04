@@ -647,7 +647,7 @@ API
       
     </ul>
      
-    <section id="footer">
+    <section style="display:none;" id="footer">
       <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
     </section>
   </div>
@@ -767,6 +767,17 @@ The filter itself comprises of 2 parts; The <code>field</code> and the <code>pos
 <li><code>not_in</code> The values must not exists within the (comma separated) array (AND between values).</li>
 <li><code>any</code> The value has any within the (comma separated) array (OR between values).</li>
 </ul>
+
+<p>The <code>id</code> field is special and cannot be filtered.</p>
+
+<ul>
+<li>Invalid: <code>/games/?filter[id][eq]=4032&amp;fields=name</code></li>
+<li>Valid: <code>/games/4032?fields=name</code></li>
+</ul>
+
+<div class="notices info" ><p>Applying any postfix to the field <code>id</code> are not supported except for <code>not_in</code> which can be used to filter away specific  results.</p>
+</div>
+
 
 <h2 id="text-search">Text search</h2>
 

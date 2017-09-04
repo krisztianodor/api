@@ -22,12 +22,13 @@
 &lt;p&gt;This section describes all available data points and the means to retrieve them.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;./expander&#34;&gt;Expander&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./errors&#34;&gt;Error Codes&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./fields&#34;&gt;Fields&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./filters&#34;&gt;Filters&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./ordering&#34;&gt;Ordering&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./pagination&#34;&gt;Pagination&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./images&#34;&gt;Images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./expander&#34;&gt;Expander&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -130,6 +131,17 @@ The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and t
 &lt;li&gt;&lt;code&gt;not_in&lt;/code&gt; The values must not exists within the (comma separated) array (AND between values).&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;any&lt;/code&gt; The value has any within the (comma separated) array (OR between values).&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;The &lt;code&gt;id&lt;/code&gt; field is special and cannot be filtered.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Invalid: &lt;code&gt;/games/?filter[id][eq]=4032&amp;amp;fields=name&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Valid: &lt;code&gt;/games/4032?fields=name&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Applying any postfix to the field &lt;code&gt;id&lt;/code&gt; are not supported except for &lt;code&gt;not_in&lt;/code&gt; which can be used to filter away specific  results.&lt;/p&gt;
+&lt;/div&gt;
+
 
 &lt;h2 id=&#34;text-search&#34;&gt;Text search&lt;/h2&gt;
 
