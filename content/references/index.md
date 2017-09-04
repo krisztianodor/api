@@ -13,9 +13,10 @@ title = "Reference"
 
 This section describes all available data points and the means to retrieve them.
 
-- [Expander](./expander)
+- [Error Codes](./errors)
 - [Fields](./fields)
 - [Filters](./filters)
 - [Ordering](./ordering)
 - [Pagination](./pagination)
 - [Images](./images)
+- [Expander](./expander)

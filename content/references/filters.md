@@ -36,6 +36,15 @@ Filters can be used on any entity that has sub-properties such as Games, Compani
 - `not_in` The values must not exists within the (comma separated) array (AND between values).
 - `any` The value has any within the (comma separated) array (OR between values).
 
+The `id` field is special and cannot be filtered.
+
+- Invalid: `/games/?filter[id][eq]=4032&fields=name`
+- Valid: `/games/4032?fields=name`
+
+{{% notice info %}}
+Applying any postfix to the field `id` are not supported except for `not_in` which can be used to filter away specific  results.
+{{% /notice %}}
+
 ## Text search
 
 - `search` This parameter is not like other filters. It is an independant parameter that performs a full text search.
