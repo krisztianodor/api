@@ -65,6 +65,6 @@ If you checkout the platforms endpoint:
 You will find the names and id's of the platform. Select the ones you want.  
 Then when you know the ID's of the platform:
 
-`/games/?fields=*&filter[release_dates.platform][eq]=48&filter[release_dates.platform][eq]=6&filter[release_dates.platform][eq]=49&`
+`/games/?fields=*&filter[release_dates.platform][any]=48,49,6`
 
 This will give you games that are released on PS4 or XBOX ONE or PC
