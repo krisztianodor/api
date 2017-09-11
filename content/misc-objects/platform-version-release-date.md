@@ -2,8 +2,8 @@
 date = "2017-01-15T19:59:47+10:00"
 toc = true
 next = "/misc-objects/release-date"
-prev = "/misc-objects/tagnumbers"
-weight = 6
+prev = "/misc-objects/platform-version"
+weight = 7
 title = "Platform version release date"
 
 +++

@@ -1,9 +1,9 @@
 +++
-weight = 4
+weight = 6
 title = "Pagination"
 date = "2017-01-09T10:24:00+01:00"
 toc = true
-next = "/references/images"
+next = "/references/response-codes"
 prev = "/references/ordering"
 
 +++

@@ -1,9 +1,9 @@
 +++
 date = "2017-01-15T18:40:41+10:00"
 toc = true
-next = "/enum-fields/pulse-category"
+next = "/enum-fields/region"
 prev = "/enum-fields/gender"
-weight = 6
+weight = 8
 title = "PEGI rating"
 
 +++

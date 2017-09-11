@@ -1,9 +1,9 @@
 +++
 date = "2017-01-15T19:26:23+10:00"
 toc = true
-next = "/misc-objects/time-to-beat"
+next = "/misc-objects/tag-numbers"
 prev = "/misc-objects/platform-version-release-date"
-weight = 7
+weight = 8
 title = "Release date"
 
 +++

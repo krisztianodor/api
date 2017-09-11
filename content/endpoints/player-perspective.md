@@ -1,9 +1,9 @@
 +++
 date = "2017-01-13T21:35:46+10:00"
 toc = true
-next = "/endpoints/pulse-group"
+next = "/endpoints/pulse"
 prev = "/endpoints/platform"
-weight = 12
+weight = 15
 title = "Player Perspective"
 
 +++

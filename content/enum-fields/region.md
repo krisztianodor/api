@@ -2,8 +2,8 @@
 date = "2017-01-15T20:01:12+10:00"
 toc = true
 next = "/enum-fields/species"
-prev = "/enum-fields/pulse-category"
-weight = 8
+prev = "/enum-fields/pegi-rating"
+weight = 9
 title = "Region"
 
 +++
