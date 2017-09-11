@@ -1,8 +1,8 @@
 +++
 toc = true
 next = "/references/pagination"
-prev = "/references/filters"
-weight = 3
+prev = "/references/images"
+weight = 5
 title = "Ordering"
 date = "2017-01-09T10:23:54+01:00"
 
