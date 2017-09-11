@@ -36,7 +36,7 @@ title = "Release date"
 | updated_at | 64-bit integer        |     +     | When the release_date was updated. |
 | created_at | 64-bit integer        |     +     | When the release_date was created. |
 | date     | 64-bit integer          |     -     | Unix epoch |
-| region   | unsigned integer        |     -     | ID of a [Region](../region) |
+| region   | unsigned integer        |     -     | ID of a [Region](../../enum-fields/region) |
 | y        | unsigned integer        |     -     | The year in 4-digit format |
 | m        | unsigned integer        |     -     | The month in no-leading-zero format (1-12) |
 
