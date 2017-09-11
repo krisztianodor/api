@@ -1,7 +1,7 @@
 +++
 date = "2017-01-15T18:23:12+10:00"
 toc = true
-next = "/enum-fields/date-category"
+next = "/enum-fields/credit-category"
 prev = "/endpoints/theme"
 weight = 0
 title = "Enumerated fields"

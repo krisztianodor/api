@@ -1,9 +1,9 @@
 +++
 date = "2017-01-15T18:35:20+10:00"
 toc = true
-next = "/misc-objects"
-prev = "/enum-fields/species"
-weight = 10
+next = "/enum-fields/date-category"
+prev = "/enum-fields"
+weight = 1
 title = "Credit category"
 
 +++

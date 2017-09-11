@@ -3,7 +3,7 @@ date = "2017-07-01T18:44:22+10:00"
 toc = true
 next = "/enum-fields/game-category"
 prev = "/enum-fields/esrb-rating"
-weight = 3
+weight = 4
 title = "Feed Item Category"
 
 +++
