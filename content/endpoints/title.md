@@ -2,9 +2,9 @@
 date = "2017-01-13T21:35:46+10:00"
 toc = true
 next = "/enum-fields"
-prev = "/endpoints/review"
-weight = 19
-title = "Titles"
+prev = "/endpoints/theme"
+weight = 22
+title = "Title"
 
 +++
 

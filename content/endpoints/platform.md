@@ -3,7 +3,7 @@ date = "2017-01-11T20:46:03+10:00"
 toc = true
 next = "/endpoints/player-perspective"
 prev = "/endpoints/person"
-weight = 11
+weight = 14
 title = "Platform"
 
 +++
