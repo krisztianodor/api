@@ -2,9 +2,9 @@
 title = "Tag Numbers"
 date = "2017-01-09T10:23:50+01:00"
 toc = true
-prev = "/misc-objects/platform-version"
-next = "/misc-objects/platform-version-release-date"
-weight = 5
+next = "/misc-objects/time-to-beat"
+prev = "/misc-objects/release-date"
+weight = 9
 
 +++
 
