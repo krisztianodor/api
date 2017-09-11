@@ -50,3 +50,14 @@ The popularity number is calculated using usage statistics of game pages at http
 
 1500619813000: Is the timestamp in miliseconds of today (This you need to generate yourself)  
 48 Is the platform id of Playstation 4.
+
+#### Search, return certain fields.
+----------
+
+   `/games/?search=Halo`
+
+This will return search results and the IDs of the games.
+If you want to return certain fields of the game or even all, do the following:
+
+   `/games/?search=Halo&fields=name,publishers`
+   `/games/?search=Halo&fields=*`
