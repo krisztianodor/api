@@ -215,6 +215,51 @@ or as an array of objects.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Platform company</title>
+      <link>https://igdb.github.io/api/misc-objects/platform-company/</link>
+      <pubDate>Sun, 15 Jan 2017 18:35:12 +1000</pubDate>
+      
+      <guid>https://igdb.github.io/api/misc-objects/platform-company/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+  &amp;quot;company&amp;quot;: 12,
+  &amp;quot;comment&amp;quot;: &amp;quot;Developed stuff!&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
+&lt;th&gt;Comment&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;company&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;comment&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;What does that company do.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Platform version</title>
       <link>https://igdb.github.io/api/misc-objects/platform-version/</link>
       <pubDate>Sun, 15 Jan 2017 19:46:33 +1000</pubDate>
@@ -383,50 +428,6 @@ or as an array of objects.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Tag Numbers</title>
-      <link>https://igdb.github.io/api/misc-objects/tagnumbers/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:50 +0100</pubDate>
-      
-      <guid>https://igdb.github.io/api/misc-objects/tagnumbers/</guid>
-      <description>&lt;p&gt;Tag numbers are a compact and fast way to do complex filtering on the IGDB API. The number calculation can be easily achieved with any programming language.&lt;/p&gt;
-
-&lt;p&gt;For example, take the genre filter option (reference list below) and the ID of a genre and you can create a tag number like this&amp;hellip;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;// Javascript
-const genreTag = 1 &amp;lt;&amp;lt; 28 // 268435456 - Note the bitshifting! Id (1) taken from the reference list below.
-const shooterId = 5 // Can get this ID from the genres endpoint
-const tagNumber = genreTag | shooterId // 268435461 - Use this tag number to filter by the shooter genre
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;An example query:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/pulse/?filter[tags][any]=268435461,425266432
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;0 = theme&lt;/li&gt;
-&lt;li&gt;1 = genre&lt;/li&gt;
-&lt;li&gt;2 = keyword&lt;/li&gt;
-&lt;li&gt;3 = game&lt;/li&gt;
-&lt;li&gt;4 = player_perspective&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Example 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#Python
-gameTag = 3 &amp;lt;&amp;lt; 28 #We use 3 since we want to search for a game
-gameId = 26196 #This is the gameid of the game /games/crash-bandicoot-n-sane-trilogy
-print(gameTag | gameId )
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The end result is &lt;code&gt;805332564&lt;/code&gt;.
-We can then search inside the tags of &lt;code&gt;/pulses/241395&lt;/code&gt; to see if it has this tag.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Platform version release date</title>
       <link>https://igdb.github.io/api/misc-objects/platform-version-release-date/</link>
       <pubDate>Sun, 15 Jan 2017 19:59:47 +1000</pubDate>
@@ -483,6 +484,50 @@ it doesn&amp;rsquo;t have an ID.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Tag Numbers</title>
+      <link>https://igdb.github.io/api/misc-objects/tag-numbers/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:50 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/misc-objects/tag-numbers/</guid>
+      <description>&lt;p&gt;Tag numbers are a compact and fast way to do complex filtering on the IGDB API. The number calculation can be easily achieved with any programming language.&lt;/p&gt;
+
+&lt;p&gt;For example, take the genre filter option (reference list below) and the ID of a genre and you can create a tag number like this&amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Javascript
+const genreTag = 1 &amp;lt;&amp;lt; 28 // 268435456 - Note the bitshifting! Id (1) taken from the reference list below.
+const shooterId = 5 // Can get this ID from the genres endpoint
+const tagNumber = genreTag | shooterId // 268435461 - Use this tag number to filter by the shooter genre
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;An example query:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/pulse/?filter[tags][any]=268435461,425266432
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;0 = theme&lt;/li&gt;
+&lt;li&gt;1 = genre&lt;/li&gt;
+&lt;li&gt;2 = keyword&lt;/li&gt;
+&lt;li&gt;3 = game&lt;/li&gt;
+&lt;li&gt;4 = player_perspective&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#Python
+gameTag = 3 &amp;lt;&amp;lt; 28 #We use 3 since we want to search for a game
+gameId = 26196 #This is the gameid of the game /games/crash-bandicoot-n-sane-trilogy
+print(gameTag | gameId )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The end result is &lt;code&gt;805332564&lt;/code&gt;.
+We can then search inside the tags of &lt;code&gt;/pulses/241395&lt;/code&gt; to see if it has this tag.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Time to beat</title>
       <link>https://igdb.github.io/api/misc-objects/time-to-beat/</link>
       <pubDate>Sun, 15 Jan 2017 19:07:32 +1000</pubDate>
@@ -529,51 +574,6 @@ it doesn&amp;rsquo;t have an ID.&lt;/p&gt;
 &lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td&gt;Number of seconds&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Platform company</title>
-      <link>https://igdb.github.io/api/misc-objects/platform-company/</link>
-      <pubDate>Sun, 15 Jan 2017 18:35:12 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/misc-objects/platform-company/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-  &amp;quot;company&amp;quot;: 12,
-  &amp;quot;comment&amp;quot;: &amp;quot;Developed stuff!&amp;quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
-&lt;th&gt;Comment&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;company&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;comment&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;What does that company do.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

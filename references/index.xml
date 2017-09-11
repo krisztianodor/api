@@ -22,350 +22,14 @@
 &lt;p&gt;This section describes all available data points and the means to retrieve them.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;./errors&#34;&gt;Error Codes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./expander&#34;&gt;Expander&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./fields&#34;&gt;Fields&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./filters&#34;&gt;Filters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./images&#34;&gt;Images&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./ordering&#34;&gt;Ordering&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./pagination&#34;&gt;Pagination&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./images&#34;&gt;Images&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./expander&#34;&gt;Expander&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./response-codes&#34;&gt;Response Codes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Error Codes</title>
-      <link>https://igdb.github.io/api/references/errors/</link>
-      <pubDate>Fri, 28 Jul 2017 10:23:47 +0100</pubDate>
-      
-      <guid>https://igdb.github.io/api/references/errors/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;500 = Internal Error
-
-&lt;ul&gt;
-&lt;li&gt;The server has done something wrong. This is a bug and should be reported.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;400 = Bad request
-
-&lt;ul&gt;
-&lt;li&gt;Something is wrong with the query parameters.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;401 = Unauthorized!
-
-&lt;ul&gt;
-&lt;li&gt;You may not have a key, sign up at api.igdb.com&lt;/li&gt;
-&lt;li&gt;You may be sending the key via a GET parameter which is incorrect, please use the &amp;ldquo;user-key&amp;rdquo; header.&lt;/li&gt;
-&lt;li&gt;Your account may not have access to this specific endpoint. Upgrade at api.igdb.com&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;200 = OK! Good response!
-
-&lt;ul&gt;
-&lt;li&gt;This result may still contain an empty array which indicates there are no results for your query.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fields</title>
-      <link>https://igdb.github.io/api/references/fields/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:15 +0100</pubDate>
-      
-      <guid>https://igdb.github.io/api/references/fields/</guid>
-      <description>
-
-&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
-
-&lt;p&gt;Fields are properties of an entity. For example, a Game field would be &lt;code&gt;rating&lt;/code&gt; or &lt;code&gt;release_dates&lt;/code&gt;. Some fields have properties of their own, for example, the &lt;code&gt;esrb&lt;/code&gt; field has the property &lt;code&gt;synopsis&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
-
-&lt;p&gt;Fields can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
-
-&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
-
-&lt;p&gt;Fields are requested in a comma separated list. For example, to get some information for some Games, Genres, Themes or anything else, you could request it like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/games/4356,189,444?fields=name,release_dates,esrb.synopsis,rating&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Note the &lt;code&gt;synopsis&lt;/code&gt; property of &lt;code&gt;esrb&lt;/code&gt; can be accessed directly with a dot.&lt;/p&gt;
-
-&lt;p&gt;A full list of fields can be obtained by passing a &lt;code&gt;*&lt;/code&gt; as a field. Alternatively you can use the &lt;code&gt;meta&lt;/code&gt; postfix: &lt;code&gt;/games/meta&lt;/code&gt; to get a list of all fields.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Filters</title>
-      <link>https://igdb.github.io/api/references/filters/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:47 +0100</pubDate>
-      
-      <guid>https://igdb.github.io/api/references/filters/</guid>
-      <description>
-
-&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
-
-&lt;p&gt;Filters are used to sift through results to get what you want. You can exclude and include results based on their properties. For example you could remove all Games where the &lt;code&gt;rating&lt;/code&gt; was below 80 (&lt;code&gt;filter[rating][gte]=80&lt;/code&gt;).&lt;/p&gt;
-
-&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
-
-&lt;p&gt;Filters are parameter arrays so must be added using special keys like this: &lt;code&gt;/games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;filter[release_dates.date][gt]=YYYY-MM-DD&lt;/code&gt;
-The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and the &lt;code&gt;postfix&lt;/code&gt;. Fields are described in the section on the left, postfixes are described below.&lt;/p&gt;
-
-&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
-
-&lt;p&gt;Filters can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
-
-&lt;h2 id=&#34;available-postfixes&#34;&gt;Available Postfixes&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;eq&lt;/code&gt; Equal: Exact match equal.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;not_eq&lt;/code&gt; Not Equal: Exact match equal.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gt&lt;/code&gt; Greater than works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gte&lt;/code&gt; Greater than or equal to works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lt&lt;/code&gt; Less than works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lte&lt;/code&gt; Less than or equal to works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;prefix&lt;/code&gt; Prefix of a value only works on strings.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;exists&lt;/code&gt; The value is not null.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;not_exists&lt;/code&gt; The value is null.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;in&lt;/code&gt; The value exists within the (comma separated) array (AND between values).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;not_in&lt;/code&gt; The values must not exists within the (comma separated) array (AND between values).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;any&lt;/code&gt; The value has any within the (comma separated) array (OR between values).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The &lt;code&gt;id&lt;/code&gt; field is special and cannot be filtered.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Invalid: &lt;code&gt;/games/?filter[id][eq]=4032&amp;amp;fields=name&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Valid: &lt;code&gt;/games/4032?fields=name&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Applying any postfix to the field &lt;code&gt;id&lt;/code&gt; are not supported except for &lt;code&gt;not_in&lt;/code&gt; which can be used to filter away specific  results.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;h2 id=&#34;text-search&#34;&gt;Text search&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;search&lt;/code&gt; This parameter is not like other filters. It is an independant parameter that performs a full text search.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;Setting the &lt;code&gt;order&lt;/code&gt; parameter will override the default &lt;code&gt;relevance&lt;/code&gt; ordering of search results.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;&lt;code&gt;/games/?search=zelda&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-
-&lt;h4 id=&#34;filter-by-multiple-platforms&#34;&gt;Filter by multiple platforms&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;If you checkout the platforms endpoint:
-&lt;code&gt;/platforms/?fields=name&amp;amp;limit=50&lt;/code&gt;&lt;br /&gt;
-You will find the names and id&amp;rsquo;s of the platform. Select the ones you want.&lt;br /&gt;
-Then when you know the ID&amp;rsquo;s of the platform:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/games/?fields=*&amp;amp;filter[release_dates.platform][eq]=48&amp;amp;filter[release_dates.platform][eq]=6&amp;amp;filter[release_dates.platform][eq]=49&amp;amp;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This will give you games that are released on PS4 or XBOX ONE or PC&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ordering</title>
-      <link>https://igdb.github.io/api/references/ordering/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:54 +0100</pubDate>
-      
-      <guid>https://igdb.github.io/api/references/ordering/</guid>
-      <description>
-
-&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
-
-&lt;p&gt;Ordering (Sorting) is used to order results by a specific field.&lt;/p&gt;
-
-&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
-
-&lt;p&gt;You can order results like this: &lt;code&gt;/games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;order=release_dates.date:desc&lt;/code&gt;. Notice the appended &lt;code&gt;:desc&lt;/code&gt; which could also be &lt;code&gt;:asc&lt;/code&gt; if required.&lt;/p&gt;
-
-&lt;p&gt;You can also subfilter arrays by appending &amp;ldquo;max&amp;rdquo;, &amp;ldquo;min&amp;rdquo;, &amp;ldquo;sum&amp;rdquo;, &amp;ldquo;avg&amp;rdquo; or &amp;ldquo;median&amp;rdquo;.
-For example, you can order games based on it&amp;rsquo;s earliest release date like this: &lt;code&gt;/games/?search=zelda&amp;amp;order=release_dates.date:desc:min&amp;amp;limit=5&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;order-by-popularity&#34;&gt;Order by popularity&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Popularity parameter for games. You can access it like this:
-&lt;code&gt;/games/?fields=name,popularity&amp;amp;order=popularity:desc&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The popularity number is calculated using usage statistics of game pages at &lt;a href=&#34;https://www.igdb.com&#34;&gt;https://www.igdb.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
-
-&lt;p&gt;Ordering can be used on any entity.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Pagination</title>
-      <link>https://igdb.github.io/api/references/pagination/</link>
-      <pubDate>Mon, 09 Jan 2017 10:24:00 +0100</pubDate>
-      
-      <guid>https://igdb.github.io/api/references/pagination/</guid>
-      <description>
-
-&lt;h3 id=&#34;simple-pagination&#34;&gt;Simple Pagination&lt;/h3&gt;
-
-&lt;p&gt;Here is an example for how to use &lt;strong&gt;limit&lt;/strong&gt;. The default limit is 10. The maximum limit is 50.
-&lt;code&gt;/platforms/?limit=33&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;There is also an &lt;strong&gt;offset&lt;/strong&gt;. This will start the list at position 22 and give 33 results.
-&lt;code&gt;/platforms/?limit=33&amp;amp;offset=22&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;&lt;code&gt;offset&lt;/code&gt; has a maximum value of 10,000 for server-resource reasons. While simple pagination is perfect for smaller datasets, we strongly recommend using the Scroll API documented below for everything else.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;h3 id=&#34;scroll-api&#34;&gt;Scroll API&lt;/h3&gt;
-
-&lt;p&gt;In order to bypass the limits of simple pagination and get blazing fast response times you need to use the &lt;code&gt;scroll&lt;/code&gt; parameter. To use it you need to supply the scroll param to the query like this:
-&lt;code&gt;/games/?order=rating&amp;amp;limit=50&amp;amp;scroll=1&lt;/code&gt;. It will return results and include a couple of extra headers: &lt;strong&gt;X-Next-Page&lt;/strong&gt; and &lt;strong&gt;X-Count&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;X-Next-Page&lt;/strong&gt; includes a special scroll path: &lt;code&gt;/games/scroll/cXVlcnlBbmRGZXRjaDsxOzE5OkhBck1wUUZsUnpPUDgwMGtDN0hSdEE7MDs=&lt;/code&gt; This path actually never changes so you can repeatedly query the same URL to get the next page.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;X-Count&lt;/strong&gt; includes the total number of results: &lt;code&gt;1337&lt;/code&gt; You can work out the number of pages with a simple calculation: &lt;code&gt;Math.round(X-Count / limit)&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;There is a timeout on the Scroll API of &lt;strong&gt;3 minutes&lt;/strong&gt; and for each subsequent scroll request it refreshes this timeout.&lt;/p&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Images</title>
-      <link>https://igdb.github.io/api/references/images/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:50 +0100</pubDate>
-      
-      <guid>https://igdb.github.io/api/references/images/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Image url structure:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dfgkfivjrhcksyymh9vw.jpg&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Original image url&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;https://images.igdb.com/igdb/image/upload/dfgkfivjrhcksyymh9vw.png&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Break down:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;https://images.igdb.com/igdb/image/upload/t_{size}/{hash}.jpg&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;size&lt;/code&gt; is one of the interchangeable size types listed below.
-&lt;code&gt;hash&lt;/code&gt; is the id of the image.
-The image sizes are all maximum size but by appending &lt;code&gt;_2x&lt;/code&gt; to any size, you can get retina (DPR 2.0) sizes (&lt;code&gt;cover_small_2x&lt;/code&gt;).&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Size&lt;/th&gt;
-&lt;th&gt;Extra&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;cover_small&lt;/td&gt;
-&lt;td&gt;90 x 128&lt;/td&gt;
-&lt;td&gt;Fit&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;screenshot_med&lt;/td&gt;
-&lt;td&gt;569 x 320&lt;/td&gt;
-&lt;td&gt;Lfill, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;cover_big&lt;/td&gt;
-&lt;td&gt;227 x 320&lt;/td&gt;
-&lt;td&gt;Fit&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;logo_med&lt;/td&gt;
-&lt;td&gt;284 x 160&lt;/td&gt;
-&lt;td&gt;Fit&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;screenshot_big&lt;/td&gt;
-&lt;td&gt;889 x 500&lt;/td&gt;
-&lt;td&gt;Lfill, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;screenshot_huge&lt;/td&gt;
-&lt;td&gt;1280 x 720&lt;/td&gt;
-&lt;td&gt;Lfill, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;thumb&lt;/td&gt;
-&lt;td&gt;90 x 90&lt;/td&gt;
-&lt;td&gt;Thumb, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;micro&lt;/td&gt;
-&lt;td&gt;35 x 35&lt;/td&gt;
-&lt;td&gt;Thumb, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;720p&lt;/td&gt;
-&lt;td&gt;1280 x 720&lt;/td&gt;
-&lt;td&gt;Fit, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;1080p&lt;/td&gt;
-&lt;td&gt;1920 x 1080&lt;/td&gt;
-&lt;td&gt;Fit, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;/games/1942?fields=screenshots&lt;/code&gt;&lt;br /&gt;
-Here we retrieve the image properties of the game with the id &amp;ldquo;1942&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Response:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[
-  {
-    &amp;quot;id&amp;quot;: 1942,
-    &amp;quot;screenshots&amp;quot;: [
-      {
-        &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&amp;quot;,
-        &amp;quot;cloudinary_id&amp;quot;: &amp;quot;z5t0yuhyiiui1ickwhgj&amp;quot;,
-        &amp;quot;width&amp;quot;: 1920,
-        &amp;quot;height&amp;quot;: 1080
-      },
-      {
-        &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&amp;quot;,
-        &amp;quot;cloudinary_id&amp;quot;: &amp;quot;mnljdjtrh44x4snmierh&amp;quot;,
-        &amp;quot;width&amp;quot;: 1920,
-        &amp;quot;height&amp;quot;: 1080
-      }
-    ]
-  }
-]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Replace the hashes above with &lt;code&gt;cloudinary_id&lt;/code&gt;, provided by the API.&lt;/p&gt;
 </description>
     </item>
     
@@ -513,6 +177,342 @@ Because the pulse_source is inferred, you can also specify fields on the pulse_s
 &lt;li&gt;&lt;code&gt;Feed.pulse&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;PulseGroup.game&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;PulseGroup.pulses&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fields</title>
+      <link>https://igdb.github.io/api/references/fields/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:15 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/fields/</guid>
+      <description>
+
+&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
+
+&lt;p&gt;Fields are properties of an entity. For example, a Game field would be &lt;code&gt;rating&lt;/code&gt; or &lt;code&gt;release_dates&lt;/code&gt;. Some fields have properties of their own, for example, the &lt;code&gt;esrb&lt;/code&gt; field has the property &lt;code&gt;synopsis&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
+
+&lt;p&gt;Fields can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
+
+&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
+
+&lt;p&gt;Fields are requested in a comma separated list. For example, to get some information for some Games, Genres, Themes or anything else, you could request it like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/games/4356,189,444?fields=name,release_dates,esrb.synopsis,rating&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Note the &lt;code&gt;synopsis&lt;/code&gt; property of &lt;code&gt;esrb&lt;/code&gt; can be accessed directly with a dot.&lt;/p&gt;
+
+&lt;p&gt;A full list of fields can be obtained by passing a &lt;code&gt;*&lt;/code&gt; as a field. Alternatively you can use the &lt;code&gt;meta&lt;/code&gt; postfix: &lt;code&gt;/games/meta&lt;/code&gt; to get a list of all fields.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Filters</title>
+      <link>https://igdb.github.io/api/references/filters/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:47 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/filters/</guid>
+      <description>
+
+&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
+
+&lt;p&gt;Filters are used to sift through results to get what you want. You can exclude and include results based on their properties. For example you could remove all Games where the &lt;code&gt;rating&lt;/code&gt; was below 80 (&lt;code&gt;filter[rating][gte]=80&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
+
+&lt;p&gt;Filters are parameter arrays so must be added using special keys like this: &lt;code&gt;/games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;filter[release_dates.date][gt]=YYYY-MM-DD&lt;/code&gt;
+The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and the &lt;code&gt;postfix&lt;/code&gt;. Fields are described in the section on the left, postfixes are described below.&lt;/p&gt;
+
+&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
+
+&lt;p&gt;Filters can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
+
+&lt;h2 id=&#34;available-postfixes&#34;&gt;Available Postfixes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;eq&lt;/code&gt; Equal: Exact match equal.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;not_eq&lt;/code&gt; Not Equal: Exact match equal.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gt&lt;/code&gt; Greater than works only on numbers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gte&lt;/code&gt; Greater than or equal to works only on numbers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lt&lt;/code&gt; Less than works only on numbers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lte&lt;/code&gt; Less than or equal to works only on numbers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;prefix&lt;/code&gt; Prefix of a value only works on strings.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;exists&lt;/code&gt; The value is not null.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;not_exists&lt;/code&gt; The value is null.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;in&lt;/code&gt; The value exists within the (comma separated) array (AND between values).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;not_in&lt;/code&gt; The values must not exists within the (comma separated) array (AND between values).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;any&lt;/code&gt; The value has any within the (comma separated) array (OR between values).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The &lt;code&gt;id&lt;/code&gt; field is special and cannot be filtered.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Invalid: &lt;code&gt;/games/?filter[id][eq]=4032&amp;amp;fields=name&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Valid: &lt;code&gt;/games/4032?fields=name&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Applying any postfix to the field &lt;code&gt;id&lt;/code&gt; are not supported except for &lt;code&gt;not_in&lt;/code&gt; which can be used to filter away specific  results.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;text-search&#34;&gt;Text search&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;search&lt;/code&gt; This parameter is not like other filters. It is an independant parameter that performs a full text search.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;Setting the &lt;code&gt;order&lt;/code&gt; parameter will override the default &lt;code&gt;relevance&lt;/code&gt; ordering of search results.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;/games/?search=zelda&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h4 id=&#34;filter-by-multiple-platforms&#34;&gt;Filter by multiple platforms&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;If you checkout the platforms endpoint:
+&lt;code&gt;/platforms/?fields=name&amp;amp;limit=50&lt;/code&gt;&lt;br /&gt;
+You will find the names and id&amp;rsquo;s of the platform. Select the ones you want.&lt;br /&gt;
+Then when you know the ID&amp;rsquo;s of the platform:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/games/?fields=*&amp;amp;filter[release_dates.platform][any]=48,49,6&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will give you games that are released on PS4 or XBOX ONE or PC&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Images</title>
+      <link>https://igdb.github.io/api/references/images/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:50 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/images/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Image url structure:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dfgkfivjrhcksyymh9vw.jpg&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Original image url&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;https://images.igdb.com/igdb/image/upload/dfgkfivjrhcksyymh9vw.png&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Break down:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;https://images.igdb.com/igdb/image/upload/t_{size}/{hash}.jpg&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;size&lt;/code&gt; is one of the interchangeable size types listed below.
+&lt;code&gt;hash&lt;/code&gt; is the id of the image.
+The image sizes are all maximum size but by appending &lt;code&gt;_2x&lt;/code&gt; to any size, you can get retina (DPR 2.0) sizes (&lt;code&gt;cover_small_2x&lt;/code&gt;).&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Size&lt;/th&gt;
+&lt;th&gt;Extra&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;cover_small&lt;/td&gt;
+&lt;td&gt;90 x 128&lt;/td&gt;
+&lt;td&gt;Fit&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;screenshot_med&lt;/td&gt;
+&lt;td&gt;569 x 320&lt;/td&gt;
+&lt;td&gt;Lfill, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;cover_big&lt;/td&gt;
+&lt;td&gt;227 x 320&lt;/td&gt;
+&lt;td&gt;Fit&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;logo_med&lt;/td&gt;
+&lt;td&gt;284 x 160&lt;/td&gt;
+&lt;td&gt;Fit&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;screenshot_big&lt;/td&gt;
+&lt;td&gt;889 x 500&lt;/td&gt;
+&lt;td&gt;Lfill, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;screenshot_huge&lt;/td&gt;
+&lt;td&gt;1280 x 720&lt;/td&gt;
+&lt;td&gt;Lfill, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;thumb&lt;/td&gt;
+&lt;td&gt;90 x 90&lt;/td&gt;
+&lt;td&gt;Thumb, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;micro&lt;/td&gt;
+&lt;td&gt;35 x 35&lt;/td&gt;
+&lt;td&gt;Thumb, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;720p&lt;/td&gt;
+&lt;td&gt;1280 x 720&lt;/td&gt;
+&lt;td&gt;Fit, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1080p&lt;/td&gt;
+&lt;td&gt;1920 x 1080&lt;/td&gt;
+&lt;td&gt;Fit, Center gravity&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;/games/1942?fields=screenshots&lt;/code&gt;&lt;br /&gt;
+Here we retrieve the image properties of the game with the id &amp;ldquo;1942&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Response:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[
+  {
+    &amp;quot;id&amp;quot;: 1942,
+    &amp;quot;screenshots&amp;quot;: [
+      {
+        &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&amp;quot;,
+        &amp;quot;cloudinary_id&amp;quot;: &amp;quot;z5t0yuhyiiui1ickwhgj&amp;quot;,
+        &amp;quot;width&amp;quot;: 1920,
+        &amp;quot;height&amp;quot;: 1080
+      },
+      {
+        &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&amp;quot;,
+        &amp;quot;cloudinary_id&amp;quot;: &amp;quot;mnljdjtrh44x4snmierh&amp;quot;,
+        &amp;quot;width&amp;quot;: 1920,
+        &amp;quot;height&amp;quot;: 1080
+      }
+    ]
+  }
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Replace the hashes above with &lt;code&gt;cloudinary_id&lt;/code&gt;, provided by the API.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ordering</title>
+      <link>https://igdb.github.io/api/references/ordering/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:54 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/ordering/</guid>
+      <description>
+
+&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
+
+&lt;p&gt;Ordering (Sorting) is used to order results by a specific field.&lt;/p&gt;
+
+&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
+
+&lt;p&gt;You can order results like this: &lt;code&gt;/games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;order=release_dates.date:desc&lt;/code&gt;. Notice the appended &lt;code&gt;:desc&lt;/code&gt; which could also be &lt;code&gt;:asc&lt;/code&gt; if required.&lt;/p&gt;
+
+&lt;p&gt;You can also subfilter arrays by appending &amp;ldquo;max&amp;rdquo;, &amp;ldquo;min&amp;rdquo;, &amp;ldquo;sum&amp;rdquo;, &amp;ldquo;avg&amp;rdquo; or &amp;ldquo;median&amp;rdquo;.
+For example, you can order games based on it&amp;rsquo;s earliest release date like this: &lt;code&gt;/games/?search=zelda&amp;amp;order=release_dates.date:desc:min&amp;amp;limit=5&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;order-by-popularity&#34;&gt;Order by popularity&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Popularity parameter for games. You can access it like this:
+&lt;code&gt;/games/?fields=name,popularity&amp;amp;order=popularity:desc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The popularity number is calculated using usage statistics of game pages at &lt;a href=&#34;https://www.igdb.com&#34;&gt;https://www.igdb.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
+
+&lt;p&gt;Ordering can be used on any entity.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pagination</title>
+      <link>https://igdb.github.io/api/references/pagination/</link>
+      <pubDate>Mon, 09 Jan 2017 10:24:00 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/pagination/</guid>
+      <description>
+
+&lt;h3 id=&#34;simple-pagination&#34;&gt;Simple Pagination&lt;/h3&gt;
+
+&lt;p&gt;Here is an example for how to use &lt;strong&gt;limit&lt;/strong&gt;. The default limit is 10. The maximum limit is 50.
+&lt;code&gt;/platforms/?limit=33&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;There is also an &lt;strong&gt;offset&lt;/strong&gt;. This will start the list at position 22 and give 33 results.
+&lt;code&gt;/platforms/?limit=33&amp;amp;offset=22&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;&lt;code&gt;offset&lt;/code&gt; has a maximum value of 10,000 for server-resource reasons. While simple pagination is perfect for smaller datasets, we strongly recommend using the Scroll API documented below for everything else.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;scroll-api&#34;&gt;Scroll API&lt;/h3&gt;
+
+&lt;p&gt;In order to bypass the limits of simple pagination and get blazing fast response times you need to use the &lt;code&gt;scroll&lt;/code&gt; parameter. To use it you need to supply the scroll param to the query like this:
+&lt;code&gt;/games/?order=rating&amp;amp;limit=50&amp;amp;scroll=1&lt;/code&gt;. It will return results and include a couple of extra headers: &lt;strong&gt;X-Next-Page&lt;/strong&gt; and &lt;strong&gt;X-Count&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;X-Next-Page&lt;/strong&gt; includes a special scroll path: &lt;code&gt;/games/scroll/cXVlcnlBbmRGZXRjaDsxOzE5OkhBck1wUUZsUnpPUDgwMGtDN0hSdEE7MDs=&lt;/code&gt; This path actually never changes so you can repeatedly query the same URL to get the next page.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;X-Count&lt;/strong&gt; includes the total number of results: &lt;code&gt;1337&lt;/code&gt; You can work out the number of pages with a simple calculation: &lt;code&gt;Math.round(X-Count / limit)&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;There is a timeout on the Scroll API of &lt;strong&gt;3 minutes&lt;/strong&gt; and for each subsequent scroll request it refreshes this timeout.&lt;/p&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Response Codes</title>
+      <link>https://igdb.github.io/api/references/response-codes/</link>
+      <pubDate>Fri, 28 Jul 2017 10:23:47 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/response-codes/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;200 = OK! Good response!
+
+&lt;ul&gt;
+&lt;li&gt;This result may still contain an empty array which indicates there are no results for your query.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;400 = Bad request
+
+&lt;ul&gt;
+&lt;li&gt;Something is wrong with the query parameters.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;401 = Unauthorized!
+
+&lt;ul&gt;
+&lt;li&gt;You may not have a key, sign up at api.igdb.com&lt;/li&gt;
+&lt;li&gt;You may be sending the key via a GET parameter which is incorrect, please use the &amp;ldquo;user-key&amp;rdquo; header.&lt;/li&gt;
+&lt;li&gt;Your account may not have access to this specific endpoint. Upgrade at api.igdb.com&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;500 = Internal Error
+
+&lt;ul&gt;
+&lt;li&gt;The server has done something wrong. This is a bug and should be reported.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

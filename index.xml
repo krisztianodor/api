@@ -6,49 +6,16 @@
     <description>Recent content on IGDB API Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Jul 2017 10:23:47 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jan 2017 18:35:20 +1000</lastBuildDate>
     <atom:link href="https://igdb.github.io/api/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Error Codes</title>
-      <link>https://igdb.github.io/api/references/errors/</link>
-      <pubDate>Fri, 28 Jul 2017 10:23:47 +0100</pubDate>
-      
-      <guid>https://igdb.github.io/api/references/errors/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;500 = Internal Error
-
-&lt;ul&gt;
-&lt;li&gt;The server has done something wrong. This is a bug and should be reported.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;400 = Bad request
-
-&lt;ul&gt;
-&lt;li&gt;Something is wrong with the query parameters.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;401 = Unauthorized!
-
-&lt;ul&gt;
-&lt;li&gt;You may not have a key, sign up at api.igdb.com&lt;/li&gt;
-&lt;li&gt;You may be sending the key via a GET parameter which is incorrect, please use the &amp;ldquo;user-key&amp;rdquo; header.&lt;/li&gt;
-&lt;li&gt;Your account may not have access to this specific endpoint. Upgrade at api.igdb.com&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;200 = OK! Good response!
-
-&lt;ul&gt;
-&lt;li&gt;This result may still contain an empty array which indicates there are no results for your query.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Date category</title>
-      <link>https://igdb.github.io/api/enum-fields/date-category/</link>
+      <title>Credit category</title>
+      <link>https://igdb.github.io/api/enum-fields/credit-category/</link>
       <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
       
-      <guid>https://igdb.github.io/api/enum-fields/date-category/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; The format of the value in the release date.&lt;/p&gt;
+      <guid>https://igdb.github.io/api/enum-fields/credit-category/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; The type of entry in an end credits list.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -56,49 +23,39 @@
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Value&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Human format&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Category&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY MMM DD&amp;rdquo;, for example &amp;ldquo;2001 Nov 13&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
 &lt;td&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-MMM&amp;rdquo;, for example &amp;ldquo;1999-May&amp;rdquo;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;voice_actor&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY&amp;rdquo;, for example &amp;ldquo;1995&amp;rdquo;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;language&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-Q1&amp;rdquo;, for example &amp;ldquo;2012-Q1&amp;rdquo;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;company_credit&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-Q2&amp;rdquo;, for example &amp;ldquo;2012-Q2&amp;rdquo;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;employee&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-Q3&amp;rdquo;, for example &amp;ldquo;2012-Q3&amp;rdquo;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;misc&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-Q4&amp;rdquo;, for example &amp;ldquo;2012-Q4&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;TBD&amp;rdquo;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;support_company&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -289,30 +246,150 @@
     </item>
     
     <item>
-      <title>Fields</title>
-      <link>https://igdb.github.io/api/references/fields/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:15 +0100</pubDate>
+      <title>Expander</title>
+      <link>https://igdb.github.io/api/references/expander/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/references/fields/</guid>
+      <guid>https://igdb.github.io/api/references/expander/</guid>
       <description>
+
+&lt;h3 id=&#34;expander&#34;&gt;Expander&lt;/h3&gt;
 
 &lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
 
-&lt;p&gt;Fields are properties of an entity. For example, a Game field would be &lt;code&gt;rating&lt;/code&gt; or &lt;code&gt;release_dates&lt;/code&gt;. Some fields have properties of their own, for example, the &lt;code&gt;esrb&lt;/code&gt; field has the property &lt;code&gt;synopsis&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The expander feature is used to combine multiple requests. For example, a game provides a list of company IDs which in turn need to be requested to reach the company data. Using the expander parameter, the company ID will instead be an object containing that data.&lt;/p&gt;
 
 &lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
 
-&lt;p&gt;Fields can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
+&lt;p&gt;The expander can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
 
 &lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
 
-&lt;p&gt;Fields are requested in a comma separated list. For example, to get some information for some Games, Genres, Themes or anything else, you could request it like this:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: &lt;code&gt;/games/1838,828,1337?fields=name,themes.name,game.name&amp;amp;expand=game,themes&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;/games/4356,189,444?fields=name,release_dates,esrb.synopsis,rating&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;We start with this simple URL.&lt;/p&gt;
 
-&lt;p&gt;Note the &lt;code&gt;synopsis&lt;/code&gt; property of &lt;code&gt;esrb&lt;/code&gt; can be accessed directly with a dot.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/games/1838,828,1337&lt;/code&gt;
+First we have the resource part of the url. In this case we get the games with ID: 1838, 828 and 1337&lt;/p&gt;
 
-&lt;p&gt;A full list of fields can be obtained by passing a &lt;code&gt;*&lt;/code&gt; as a field. Alternatively you can use the &lt;code&gt;meta&lt;/code&gt; postfix: &lt;code&gt;/games/meta&lt;/code&gt; to get a list of all fields.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;expand=game,themes&lt;/code&gt;
+With this parameter, we will expand: game (parent game) and themes (the themes that the game has).&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;fields=name,themes.name,game.name&lt;/code&gt;
+We also have to specify all the fields we want to have expanded. If you don&amp;rsquo;t specify the fields it will give you the full object.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;name: The field on the root game model.&lt;/li&gt;
+&lt;li&gt;game.name: The field on the parent game model.&lt;/li&gt;
+&lt;li&gt;themes.name: The field on the theme model.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The result will be:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;
+[
+  {
+    &amp;quot;id&amp;quot;: 1838,
+    &amp;quot;name&amp;quot;: &amp;quot;Painkiller: Redemption&amp;quot;,
+    &amp;quot;game&amp;quot;: {
+      &amp;quot;id&amp;quot;: 828,
+      &amp;quot;name&amp;quot;: &amp;quot;Painkiller&amp;quot;
+    },
+    &amp;quot;themes&amp;quot;: [
+      {
+        &amp;quot;id&amp;quot;: 1,
+        &amp;quot;name&amp;quot;: &amp;quot;Action&amp;quot;
+      },
+      {
+        &amp;quot;id&amp;quot;: 19,
+        &amp;quot;name&amp;quot;: &amp;quot;Horror&amp;quot;
+      }
+    ]
+  }
+]
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now for the more advanced expander:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/pulses/19357?fields=title,pulse_source.name,pulse_source.page.name,pulse_source.page.logo&amp;amp;expand=pulse_source.page&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We get the pulse news article with ID = 19357.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;expand=pulse_source.page&lt;/code&gt;
+We want the pulse_source and it&amp;rsquo;s page with associated logo&amp;rsquo;s and deeper information.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;fields=title,pulse_source.name,pulse_source.page.name,pulse_source.page.logo&lt;/code&gt;
+Because the pulse_source is inferred, you can also specify fields on the pulse_source as well.&lt;/p&gt;
+
+&lt;p&gt;The result is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;[
+  {
+    &amp;quot;id&amp;quot;: 19357,
+    &amp;quot;title&amp;quot;: &amp;quot;Today’s selection of articles from Kotaku’s reader-run community: Anatomy of a Fire Emblem Character&amp;quot;,
+    &amp;quot;pulse_source&amp;quot;: {
+      &amp;quot;id&amp;quot;: 1,
+      &amp;quot;name&amp;quot;: &amp;quot;Kotaku&amp;quot;,
+      &amp;quot;page&amp;quot;: {
+        &amp;quot;id&amp;quot;: 501,
+        &amp;quot;name&amp;quot;: &amp;quot;Kotaku&amp;quot;,
+        &amp;quot;logo&amp;quot;: {
+          &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/ns8o3b99iwdbyee8wu9c.png&amp;quot;,
+          &amp;quot;cloudinary_id&amp;quot;: &amp;quot;ns8o3b99iwdbyee8wu9c&amp;quot;,
+          &amp;quot;width&amp;quot;: 240,
+          &amp;quot;height&amp;quot;: 240
+        }
+      }
+    }
+  }
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;what-can-i-expand&#34;&gt;What can I expand?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Game.collection&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.franchise&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.franchises&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.game&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.developers&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.publishers&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.game_engines&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.player_perspectives&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.game_modes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.keywords&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.themes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Game.genres&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Character.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Company.published&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Company.developed&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GameEngine.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GameEngine.platforms&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GameEngine.companies&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GameMode.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Keyword.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PulseSource.game&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PulseSource.page&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Theme.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Collection.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PlayerPerspective.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Franchise.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Genre.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ReleaseDate.game&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ReleaseDate.platform&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Page.feed&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Page.game&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Pulse.pulse_source&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Review.game&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Person.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Person.characters&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Feed.games&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Feed.pulse&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PulseGroup.game&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PulseGroup.pulses&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -361,55 +438,62 @@
     </item>
     
     <item>
-      <title>ESRB rating</title>
-      <link>https://igdb.github.io/api/enum-fields/esrb-rating/</link>
-      <pubDate>Sun, 15 Jan 2017 18:44:22 +1000</pubDate>
+      <title>Date category</title>
+      <link>https://igdb.github.io/api/enum-fields/date-category/</link>
+      <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
       
-      <guid>https://igdb.github.io/api/enum-fields/esrb-rating/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+      <guid>https://igdb.github.io/api/enum-fields/date-category/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; The format of the value in the release date.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Value&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Rating&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Human format&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY MMM DD&amp;rdquo;, for example &amp;ldquo;2001 Nov 13&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
 &lt;td&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;RP&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-MMM&amp;rdquo;, for example &amp;ldquo;1999-May&amp;rdquo;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;EC&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY&amp;rdquo;, for example &amp;ldquo;1995&amp;rdquo;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;E&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-Q1&amp;rdquo;, for example &amp;ldquo;2012-Q1&amp;rdquo;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;E10+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-Q2&amp;rdquo;, for example &amp;ldquo;2012-Q2&amp;rdquo;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;T&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-Q3&amp;rdquo;, for example &amp;ldquo;2012-Q3&amp;rdquo;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;M&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-Q4&amp;rdquo;, for example &amp;ldquo;2012-Q4&amp;rdquo;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;AO&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;ldquo;TBD&amp;rdquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -511,179 +595,83 @@
     </item>
     
     <item>
-      <title>Filters</title>
-      <link>https://igdb.github.io/api/references/filters/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:47 +0100</pubDate>
+      <title>Fields</title>
+      <link>https://igdb.github.io/api/references/fields/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:15 +0100</pubDate>
       
-      <guid>https://igdb.github.io/api/references/filters/</guid>
+      <guid>https://igdb.github.io/api/references/fields/</guid>
       <description>
 
 &lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
 
-&lt;p&gt;Filters are used to sift through results to get what you want. You can exclude and include results based on their properties. For example you could remove all Games where the &lt;code&gt;rating&lt;/code&gt; was below 80 (&lt;code&gt;filter[rating][gte]=80&lt;/code&gt;).&lt;/p&gt;
-
-&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
-
-&lt;p&gt;Filters are parameter arrays so must be added using special keys like this: &lt;code&gt;/games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;filter[release_dates.date][gt]=YYYY-MM-DD&lt;/code&gt;
-The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and the &lt;code&gt;postfix&lt;/code&gt;. Fields are described in the section on the left, postfixes are described below.&lt;/p&gt;
+&lt;p&gt;Fields are properties of an entity. For example, a Game field would be &lt;code&gt;rating&lt;/code&gt; or &lt;code&gt;release_dates&lt;/code&gt;. Some fields have properties of their own, for example, the &lt;code&gt;esrb&lt;/code&gt; field has the property &lt;code&gt;synopsis&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
 
-&lt;p&gt;Filters can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
+&lt;p&gt;Fields can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
 
-&lt;h2 id=&#34;available-postfixes&#34;&gt;Available Postfixes&lt;/h2&gt;
+&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;eq&lt;/code&gt; Equal: Exact match equal.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;not_eq&lt;/code&gt; Not Equal: Exact match equal.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gt&lt;/code&gt; Greater than works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gte&lt;/code&gt; Greater than or equal to works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lt&lt;/code&gt; Less than works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lte&lt;/code&gt; Less than or equal to works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;prefix&lt;/code&gt; Prefix of a value only works on strings.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;exists&lt;/code&gt; The value is not null.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;not_exists&lt;/code&gt; The value is null.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;in&lt;/code&gt; The value exists within the (comma separated) array (AND between values).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;not_in&lt;/code&gt; The values must not exists within the (comma separated) array (AND between values).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;any&lt;/code&gt; The value has any within the (comma separated) array (OR between values).&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Fields are requested in a comma separated list. For example, to get some information for some Games, Genres, Themes or anything else, you could request it like this:&lt;/p&gt;
 
-&lt;p&gt;The &lt;code&gt;id&lt;/code&gt; field is special and cannot be filtered.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/games/4356,189,444?fields=name,release_dates,esrb.synopsis,rating&lt;/code&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Invalid: &lt;code&gt;/games/?filter[id][eq]=4032&amp;amp;fields=name&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Valid: &lt;code&gt;/games/4032?fields=name&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Note the &lt;code&gt;synopsis&lt;/code&gt; property of &lt;code&gt;esrb&lt;/code&gt; can be accessed directly with a dot.&lt;/p&gt;
 
-&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Applying any postfix to the field &lt;code&gt;id&lt;/code&gt; are not supported except for &lt;code&gt;not_in&lt;/code&gt; which can be used to filter away specific  results.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;h2 id=&#34;text-search&#34;&gt;Text search&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;search&lt;/code&gt; This parameter is not like other filters. It is an independant parameter that performs a full text search.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;Setting the &lt;code&gt;order&lt;/code&gt; parameter will override the default &lt;code&gt;relevance&lt;/code&gt; ordering of search results.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;&lt;code&gt;/games/?search=zelda&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-
-&lt;h4 id=&#34;filter-by-multiple-platforms&#34;&gt;Filter by multiple platforms&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;If you checkout the platforms endpoint:
-&lt;code&gt;/platforms/?fields=name&amp;amp;limit=50&lt;/code&gt;&lt;br /&gt;
-You will find the names and id&amp;rsquo;s of the platform. Select the ones you want.&lt;br /&gt;
-Then when you know the ID&amp;rsquo;s of the platform:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/games/?fields=*&amp;amp;filter[release_dates.platform][eq]=48&amp;amp;filter[release_dates.platform][eq]=6&amp;amp;filter[release_dates.platform][eq]=49&amp;amp;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This will give you games that are released on PS4 or XBOX ONE or PC&lt;/p&gt;
+&lt;p&gt;A full list of fields can be obtained by passing a &lt;code&gt;*&lt;/code&gt; as a field. Alternatively you can use the &lt;code&gt;meta&lt;/code&gt; postfix: &lt;code&gt;/games/meta&lt;/code&gt; to get a list of all fields.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Feed Item Category</title>
-      <link>https://igdb.github.io/api/enum-fields/feed-item-category/</link>
-      <pubDate>Sat, 01 Jul 2017 18:44:22 +1000</pubDate>
+      <title>ESRB rating</title>
+      <link>https://igdb.github.io/api/enum-fields/esrb-rating/</link>
+      <pubDate>Sun, 15 Jan 2017 18:44:22 +1000</pubDate>
       
-      <guid>https://igdb.github.io/api/enum-fields/feed-item-category/</guid>
-      <description>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;th&gt;Category&lt;/th&gt;
-&lt;th&gt;Explanation&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;Pulse Article&lt;/td&gt;
-&lt;td&gt;Kotaku news article&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;Coming Soon&lt;/td&gt;
-&lt;td&gt;Final Fantasy XXXVIII is releasing in 7 days&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;New Trailer&lt;/td&gt;
-&lt;td&gt;New trailer added to a game&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;User Contributed Item&lt;/td&gt;
-&lt;td&gt;New feed item created by a user&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;User contributions item&lt;/td&gt;
-&lt;td&gt;User has changed a game release date&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td&gt;Page Contributed Item&lt;/td&gt;
-&lt;td&gt;New feed item created by a page&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Game category</title>
-      <link>https://igdb.github.io/api/enum-fields/game-category/</link>
-      <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/enum-fields/game-category/</guid>
+      <guid>https://igdb.github.io/api/enum-fields/esrb-rating/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Value&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Category&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Rating&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Main game&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
 &lt;td&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;DLC / Addon&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;RP&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Expansion&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;EC&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Bundle&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;E&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Standalone expansion&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;E10+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;T&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;M&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;AO&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -940,96 +928,334 @@ Then when you know the ID&amp;rsquo;s of the platform:&lt;/p&gt;
     </item>
     
     <item>
-      <title>Examples</title>
-      <link>https://igdb.github.io/api/examples/</link>
-      <pubDate>Mon, 09 Jan 2017 10:30:17 +0100</pubDate>
+      <title>Filters</title>
+      <link>https://igdb.github.io/api/references/filters/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:47 +0100</pubDate>
       
-      <guid>https://igdb.github.io/api/examples/</guid>
-      <description>
-
-&lt;h4 id=&#34;an-example-request-in-java&#34;&gt;An example request in Java&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;pre&gt;&lt;code&gt;HttpResponse&amp;lt;JsonNode&amp;gt; response = Unirest.get(&amp;quot;https://api-2445582011268.apicast.io/characters/?fields=*&amp;amp;limit=10&amp;quot;)
-.header(&amp;quot;user-key&amp;quot;, &amp;quot;YOUR_KEY&amp;quot;)
-.header(&amp;quot;Accept&amp;quot;, &amp;quot;application/json&amp;quot;)
-.asJson();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;get-all-information-from-a-specific-game&#34;&gt;Get all information from a specific game&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;code&gt;/games/1942?fields=*&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;1942, is the ID of the game.&lt;/p&gt;
-
-&lt;h4 id=&#34;get-all-games-from-specific-genres&#34;&gt;Get all games from specific genres&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;code&gt;/genres/12,9,11?fields=*&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Notice you can comma separate multiple IDs (12, 9 and 11). You can do this with games, companies and anything else.&lt;/p&gt;
-
-&lt;h4 id=&#34;count-total-games-that-have-a-rating-higher-than-75&#34;&gt;Count total games that have a rating higher than 75&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;code&gt;/games/count?filter[rating][gt]=75&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;order-by-popularity&#34;&gt;Order by popularity&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Popularity parameter for games. You can access it like this:
-&lt;code&gt;/games/?fields=name,popularity&amp;amp;order=popularity:desc&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The popularity number is calculated using usage statistics of game pages at &lt;a href=&#34;https://www.igdb.com&#34;&gt;https://www.igdb.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;coming-soon-games-for-playstation-4&#34;&gt;Coming soon games for Playstation 4&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;code&gt;/release_dates/?fields=*&amp;amp;filter[platform][eq]=48&amp;amp;order=date:asc&amp;amp;filter[date][gt]=1500619813000&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;1500619813000: Is the timestamp in miliseconds of today (This you need to generate yourself)&lt;br /&gt;
-48 Is the platform id of Playstation 4.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ordering</title>
-      <link>https://igdb.github.io/api/references/ordering/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:54 +0100</pubDate>
-      
-      <guid>https://igdb.github.io/api/references/ordering/</guid>
+      <guid>https://igdb.github.io/api/references/filters/</guid>
       <description>
 
 &lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
 
-&lt;p&gt;Ordering (Sorting) is used to order results by a specific field.&lt;/p&gt;
+&lt;p&gt;Filters are used to sift through results to get what you want. You can exclude and include results based on their properties. For example you could remove all Games where the &lt;code&gt;rating&lt;/code&gt; was below 80 (&lt;code&gt;filter[rating][gte]=80&lt;/code&gt;).&lt;/p&gt;
 
 &lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
 
-&lt;p&gt;You can order results like this: &lt;code&gt;/games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;order=release_dates.date:desc&lt;/code&gt;. Notice the appended &lt;code&gt;:desc&lt;/code&gt; which could also be &lt;code&gt;:asc&lt;/code&gt; if required.&lt;/p&gt;
-
-&lt;p&gt;You can also subfilter arrays by appending &amp;ldquo;max&amp;rdquo;, &amp;ldquo;min&amp;rdquo;, &amp;ldquo;sum&amp;rdquo;, &amp;ldquo;avg&amp;rdquo; or &amp;ldquo;median&amp;rdquo;.
-For example, you can order games based on it&amp;rsquo;s earliest release date like this: &lt;code&gt;/games/?search=zelda&amp;amp;order=release_dates.date:desc:min&amp;amp;limit=5&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;order-by-popularity&#34;&gt;Order by popularity&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Popularity parameter for games. You can access it like this:
-&lt;code&gt;/games/?fields=name,popularity&amp;amp;order=popularity:desc&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The popularity number is calculated using usage statistics of game pages at &lt;a href=&#34;https://www.igdb.com&#34;&gt;https://www.igdb.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Filters are parameter arrays so must be added using special keys like this: &lt;code&gt;/games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;filter[release_dates.date][gt]=YYYY-MM-DD&lt;/code&gt;
+The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and the &lt;code&gt;postfix&lt;/code&gt;. Fields are described in the section on the left, postfixes are described below.&lt;/p&gt;
 
 &lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
 
-&lt;p&gt;Ordering can be used on any entity.&lt;/p&gt;
+&lt;p&gt;Filters can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
+
+&lt;h2 id=&#34;available-postfixes&#34;&gt;Available Postfixes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;eq&lt;/code&gt; Equal: Exact match equal.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;not_eq&lt;/code&gt; Not Equal: Exact match equal.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gt&lt;/code&gt; Greater than works only on numbers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gte&lt;/code&gt; Greater than or equal to works only on numbers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lt&lt;/code&gt; Less than works only on numbers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lte&lt;/code&gt; Less than or equal to works only on numbers.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;prefix&lt;/code&gt; Prefix of a value only works on strings.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;exists&lt;/code&gt; The value is not null.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;not_exists&lt;/code&gt; The value is null.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;in&lt;/code&gt; The value exists within the (comma separated) array (AND between values).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;not_in&lt;/code&gt; The values must not exists within the (comma separated) array (AND between values).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;any&lt;/code&gt; The value has any within the (comma separated) array (OR between values).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The &lt;code&gt;id&lt;/code&gt; field is special and cannot be filtered.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Invalid: &lt;code&gt;/games/?filter[id][eq]=4032&amp;amp;fields=name&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Valid: &lt;code&gt;/games/4032?fields=name&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Applying any postfix to the field &lt;code&gt;id&lt;/code&gt; are not supported except for &lt;code&gt;not_in&lt;/code&gt; which can be used to filter away specific  results.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;text-search&#34;&gt;Text search&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;search&lt;/code&gt; This parameter is not like other filters. It is an independant parameter that performs a full text search.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;Setting the &lt;code&gt;order&lt;/code&gt; parameter will override the default &lt;code&gt;relevance&lt;/code&gt; ordering of search results.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;/games/?search=zelda&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h4 id=&#34;filter-by-multiple-platforms&#34;&gt;Filter by multiple platforms&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;If you checkout the platforms endpoint:
+&lt;code&gt;/platforms/?fields=name&amp;amp;limit=50&lt;/code&gt;&lt;br /&gt;
+You will find the names and id&amp;rsquo;s of the platform. Select the ones you want.&lt;br /&gt;
+Then when you know the ID&amp;rsquo;s of the platform:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/games/?fields=*&amp;amp;filter[release_dates.platform][any]=48,49,6&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will give you games that are released on PS4 or XBOX ONE or PC&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Feed Item Category</title>
+      <link>https://igdb.github.io/api/enum-fields/feed-item-category/</link>
+      <pubDate>Sat, 01 Jul 2017 18:44:22 +1000</pubDate>
+      
+      <guid>https://igdb.github.io/api/enum-fields/feed-item-category/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Category&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Pulse Article&lt;/td&gt;
+&lt;td&gt;Kotaku news article&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Coming Soon&lt;/td&gt;
+&lt;td&gt;Final Fantasy XXXVIII is releasing in 7 days&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;New Trailer&lt;/td&gt;
+&lt;td&gt;New trailer added to a game&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;User Contributed Item&lt;/td&gt;
+&lt;td&gt;New feed item created by a user&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;User contributions item&lt;/td&gt;
+&lt;td&gt;User has changed a game release date&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;Page Contributed Item&lt;/td&gt;
+&lt;td&gt;New feed item created by a page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PEGI</title>
+      <link>https://igdb.github.io/api/misc-objects/pegi/</link>
+      <pubDate>Sun, 15 Jan 2017 18:35:11 +1000</pubDate>
+      
+      <guid>https://igdb.github.io/api/misc-objects/pegi/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+  &amp;quot;rating&amp;quot;: &amp;quot;4&amp;quot;,
+  &amp;quot;synopsis&amp;quot;: &amp;quot;The content of this game is suitable for persons aged 16 years and over only.\nIt contains: Realistic looking violence.&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
+&lt;th&gt;Comment&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;rating&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;See the &lt;a href=&#34;../../enum-fields/pegi-rating&#34;&gt;PEGI rating&lt;/a&gt; value reference&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;synopsis&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Credits</title>
+      <link>https://igdb.github.io/api/endpoints/credit/</link>
+      <pubDate>Fri, 13 Jan 2017 21:35:46 +1000</pubDate>
+      
+      <guid>https://igdb.github.io/api/endpoints/credit/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /credits/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Contains all employees responsible for working on the game.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;    {
+        &amp;quot;id&amp;quot;: 268458528,
+        &amp;quot;created_at&amp;quot;: 1448841876902,
+        &amp;quot;updated_at&amp;quot;: 1448841876902,
+        &amp;quot;category&amp;quot;: 1,
+        &amp;quot;game&amp;quot;: 6913,
+        &amp;quot;position&amp;quot;: 122,
+        &amp;quot;person&amp;quot;: 96942,
+        &amp;quot;character&amp;quot;: 441
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
+&lt;th&gt;Comment&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;slug&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;created_at&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;Unix epoch&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;updated_at&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;Unix epoch&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;game&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;ID of a &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; record (expandable)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;category&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;See the &lt;a href=&#34;../../enum-fields/credit-category&#34;&gt;Credit category&lt;/a&gt; value reference&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;company&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;ID of a &lt;a href=&#34;../company&#34;&gt;Company&lt;/a&gt; record (expandable)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;position&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;Position in the credits list.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;person&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;ID of a &lt;a href=&#34;../person&#34;&gt;Person&lt;/a&gt; record (expandable)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;character&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;ID of a &lt;a href=&#34;../character&#34;&gt;Character&lt;/a&gt; record (expandable)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;title&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;ID of a &lt;a href=&#34;../title&#34;&gt;Title&lt;/a&gt; record (expandable)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;country&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;Please see the &lt;a href=&#34;https://en.wikipedia.org/wiki/ISO_3166-1_numeric&#34;&gt;ISO-3316-1&lt;/a&gt; reference&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;credited_name&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;Credited name of the person only for overriding when misspelled or changed in credits.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;character_credited_name&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;Credited name of the character only for overriding when misspelled or changed in credits.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
     </item>
     

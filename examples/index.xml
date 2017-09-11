@@ -66,6 +66,18 @@
 
 &lt;p&gt;1500619813000: Is the timestamp in miliseconds of today (This you need to generate yourself)&lt;br /&gt;
 48 Is the platform id of Playstation 4.&lt;/p&gt;
+
+&lt;h4 id=&#34;search-return-certain-fields&#34;&gt;Search, return certain fields.&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code&gt;/games/?search=Halo&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will return search results and the IDs of the games.
+If you want to return certain fields of the game or even all, do the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/games/?search=Halo&amp;amp;fields=name,publishers&lt;/code&gt;
+   &lt;code&gt;/games/?search=Halo&amp;amp;fields=*&lt;/code&gt;&lt;/p&gt;
 </description>
     </item>
     

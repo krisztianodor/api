@@ -2,12 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://igdb.github.io/api/references/errors/</loc>
-    <lastmod>2017-07-28T10:23:47+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/enum-fields/date-category/</loc>
+    <loc>https://igdb.github.io/api/enum-fields/credit-category/</loc>
     <lastmod>2017-01-15T18:35:20+10:00</lastmod>
   </url>
   
@@ -22,8 +17,7 @@
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/references/fields/</loc>
-    <lastmod>2017-01-09T10:23:15+01:00</lastmod>
+    <loc>https://igdb.github.io/api/references/expander/</loc>
   </url>
   
   <url>
@@ -32,8 +26,8 @@
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/enum-fields/esrb-rating/</loc>
-    <lastmod>2017-01-15T18:44:22+10:00</lastmod>
+    <loc>https://igdb.github.io/api/enum-fields/date-category/</loc>
+    <lastmod>2017-01-15T18:35:20+10:00</lastmod>
   </url>
   
   <url>
@@ -42,18 +36,13 @@
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/references/filters/</loc>
-    <lastmod>2017-01-09T10:23:47+01:00</lastmod>
+    <loc>https://igdb.github.io/api/references/fields/</loc>
+    <lastmod>2017-01-09T10:23:15+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/enum-fields/feed-item-category/</loc>
-    <lastmod>2017-07-01T18:44:22+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/enum-fields/game-category/</loc>
-    <lastmod>2017-01-15T18:35:20+10:00</lastmod>
+    <loc>https://igdb.github.io/api/enum-fields/esrb-rating/</loc>
+    <lastmod>2017-01-15T18:44:22+10:00</lastmod>
   </url>
   
   <url>
@@ -67,18 +56,13 @@
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/examples/</loc>
-    <lastmod>2017-01-09T10:30:17+01:00</lastmod>
+    <loc>https://igdb.github.io/api/references/filters/</loc>
+    <lastmod>2017-01-09T10:23:47+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/references/ordering/</loc>
-    <lastmod>2017-01-09T10:23:54+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/enum-fields/game-status/</loc>
-    <lastmod>2017-01-15T18:35:20+10:00</lastmod>
+    <loc>https://igdb.github.io/api/enum-fields/feed-item-category/</loc>
+    <lastmod>2017-07-01T18:44:22+10:00</lastmod>
   </url>
   
   <url>
@@ -92,96 +76,12 @@
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/references/pagination/</loc>
-    <lastmod>2017-01-09T10:24:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/misc-objects/platform-version/</loc>
-    <lastmod>2017-01-15T19:46:33+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/enum-fields/gender/</loc>
-    <lastmod>2017-01-15T18:35:20+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/endpoints/feed/</loc>
-    <lastmod>2017-01-10T19:08:39+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/endpoints/game/</loc>
-    <lastmod>2017-01-10T19:08:39+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/endpoints/page/</loc>
-    <lastmod>2017-01-10T19:08:39+10:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://igdb.github.io/api/references/images/</loc>
     <lastmod>2017-01-09T10:23:50+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/misc-objects/tagnumbers/</loc>
-    <lastmod>2017-01-09T10:23:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/misc-objects/platform-version-release-date/</loc>
-    <lastmod>2017-01-15T19:59:47+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/enum-fields/pegi-rating/</loc>
-    <lastmod>2017-01-15T18:40:41+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/endpoints/franchise/</loc>
-    <lastmod>2017-01-14T19:07:25+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/endpoints/game-engine/</loc>
-    <lastmod>2017-01-12T16:55:43+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/references/expander/</loc>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/misc-objects/release-date/</loc>
-    <lastmod>2017-01-15T19:26:23+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/endpoints/game-mode/</loc>
-    <lastmod>2017-01-12T20:44:16+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/enum-fields/region/</loc>
-    <lastmod>2017-01-15T20:01:12+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/misc-objects/time-to-beat/</loc>
-    <lastmod>2017-01-15T19:07:32+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/endpoints/genre/</loc>
-    <lastmod>2017-01-11T17:01:41+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/enum-fields/species/</loc>
+    <loc>https://igdb.github.io/api/enum-fields/game-category/</loc>
     <lastmod>2017-01-15T18:35:20+10:00</lastmod>
   </url>
   
@@ -191,12 +91,107 @@
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/misc-objects/video/</loc>
-    <lastmod>2017-01-15T18:35:12+10:00</lastmod>
+    <loc>https://igdb.github.io/api/endpoints/feed/</loc>
+    <lastmod>2017-01-10T19:08:39+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/misc-objects/website/</loc>
+    <loc>https://igdb.github.io/api/references/ordering/</loc>
+    <lastmod>2017-01-09T10:23:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/misc-objects/platform-version/</loc>
+    <lastmod>2017-01-15T19:46:33+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/enum-fields/game-status/</loc>
+    <lastmod>2017-01-15T18:35:20+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/endpoints/franchise/</loc>
+    <lastmod>2017-01-14T19:07:25+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/references/pagination/</loc>
+    <lastmod>2017-01-09T10:24:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/references/response-codes/</loc>
+    <lastmod>2017-07-28T10:23:47+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/misc-objects/platform-version-release-date/</loc>
+    <lastmod>2017-01-15T19:59:47+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/enum-fields/gender/</loc>
+    <lastmod>2017-01-15T18:35:20+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/endpoints/game/</loc>
+    <lastmod>2017-01-10T19:08:39+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/misc-objects/release-date/</loc>
+    <lastmod>2017-01-15T19:26:23+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/enum-fields/pegi-rating/</loc>
+    <lastmod>2017-01-15T18:40:41+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/endpoints/game-engine/</loc>
+    <lastmod>2017-01-12T16:55:43+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/enum-fields/region/</loc>
+    <lastmod>2017-01-15T20:01:12+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/endpoints/game-mode/</loc>
+    <lastmod>2017-01-12T20:44:16+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/misc-objects/tag-numbers/</loc>
+    <lastmod>2017-01-09T10:23:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/misc-objects/time-to-beat/</loc>
+    <lastmod>2017-01-15T19:07:32+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/enum-fields/species/</loc>
+    <lastmod>2017-01-15T18:35:20+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/endpoints/genre/</loc>
+    <lastmod>2017-01-11T17:01:41+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/enum-fields/website-category/</loc>
+    <lastmod>2017-01-15T18:35:20+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/misc-objects/video/</loc>
     <lastmod>2017-01-15T18:35:12+10:00</lastmod>
   </url>
   
@@ -206,13 +201,13 @@
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/enum-fields/credit-category/</loc>
-    <lastmod>2017-01-15T18:35:20+10:00</lastmod>
+    <loc>https://igdb.github.io/api/misc-objects/website/</loc>
+    <lastmod>2017-01-15T18:35:12+10:00</lastmod>
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/enum-fields/website-category/</loc>
-    <lastmod>2017-01-15T18:35:20+10:00</lastmod>
+    <loc>https://igdb.github.io/api/endpoints/page/</loc>
+    <lastmod>2017-01-10T19:08:39+10:00</lastmod>
   </url>
   
   <url>
@@ -231,17 +226,17 @@
   </url>
   
   <url>
+    <loc>https://igdb.github.io/api/endpoints/pulse/</loc>
+    <lastmod>2017-01-15T16:24:05+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://igdb.github.io/api/endpoints/pulse-group/</loc>
     <lastmod>2017-06-08T14:05:08+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://igdb.github.io/api/endpoints/pulse-source/</loc>
-    <lastmod>2017-01-15T16:24:05+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/endpoints/pulse/</loc>
     <lastmod>2017-01-15T16:24:05+10:00</lastmod>
   </url>
   
@@ -281,6 +276,11 @@
   </url>
   
   <url>
+    <loc>https://igdb.github.io/api/examples/</loc>
+    <lastmod>2017-01-09T10:30:17+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://igdb.github.io/api/references/</loc>
     <lastmod>2017-01-09T10:23:01+01:00</lastmod>
   </url>
@@ -316,7 +316,7 @@
   
   <url>
     <loc>https://igdb.github.io/api/</loc>
-    <lastmod>2017-07-28T10:23:47+01:00</lastmod>
+    <lastmod>2017-01-15T18:35:20+10:00</lastmod>
     <priority>0</priority>
   </url>
   

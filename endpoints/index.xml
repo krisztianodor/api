@@ -766,6 +766,100 @@
     </item>
     
     <item>
+      <title>Franchise</title>
+      <link>https://igdb.github.io/api/endpoints/franchise/</link>
+      <pubDate>Sat, 14 Jan 2017 19:07:25 +1000</pubDate>
+      
+      <guid>https://igdb.github.io/api/endpoints/franchise/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /franchises/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; A list of video game franchises such as Star Wars.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+    &amp;quot;id&amp;quot;: 1,
+    &amp;quot;name&amp;quot;: &amp;quot;Star Wars&amp;quot;,
+    &amp;quot;slug&amp;quot;: &amp;quot;star-wars&amp;quot;,
+    &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/franchises/star-wars&amp;quot;,
+    &amp;quot;created_at&amp;quot;: 123456789,
+    &amp;quot;updated_at&amp;quot;: 123456789,
+    &amp;quot;games&amp;quot;: [
+        1,
+        2,
+        3,
+        ...
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
+&lt;th&gt;Comment&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;slug&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;created_at&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;Unix epoch&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;updated_at&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;Unix epoch&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;games&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;IDs of &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; records&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Game</title>
       <link>https://igdb.github.io/api/endpoints/game/</link>
       <pubDate>Tue, 10 Jan 2017 19:08:39 +1000</pubDate>
@@ -1120,385 +1214,6 @@
 &lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td&gt;IDs of &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; records that are similar to this game. (expandable)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Page</title>
-      <link>https://igdb.github.io/api/endpoints/page/</link>
-      <pubDate>Tue, 10 Jan 2017 19:08:39 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/endpoints/page/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /pages/&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Our multipurpose page system is currently used for youtubers and media organisations.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-    &amp;quot;id&amp;quot;: 1234,
-    &amp;quot;name&amp;quot;: &amp;quot;The Super channel.&amp;quot;,
-    &amp;quot;created_at&amp;quot;: 1488287162348,
-    &amp;quot;updated_at&amp;quot;: 1488287515627,
-    &amp;quot;slug&amp;quot;: &amp;quot;the-super-channel&amp;quot;,
-    &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/p/the-super-channel&amp;quot;,
-    &amp;quot;page_follows_count&amp;quot;: 0,
-    &amp;quot;description&amp;quot;: &amp;quot;Playing awesome games quick!&amp;quot;,
-    &amp;quot;youtube&amp;quot;: &amp;quot;https://www.youtube.com/channel/abc123&amp;quot;,
-    &amp;quot;logo&amp;quot;: {
-      &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/abc123.png&amp;quot;,
-      &amp;quot;cloudinary_id&amp;quot;: &amp;quot;abc123&amp;quot;,
-      &amp;quot;width&amp;quot;: 240,
-      &amp;quot;height&amp;quot;: 240
-    },
-    &amp;quot;background&amp;quot;: {
-      &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/abc123.png&amp;quot;,
-      &amp;quot;cloudinary_id&amp;quot;: &amp;quot;abc123&amp;quot;,
-      &amp;quot;width&amp;quot;: 1920,
-      &amp;quot;height&amp;quot;: 1080
-    }
-  }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
-&lt;th&gt;Comment&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;id&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;slug&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;url&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;created_at&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;updated_at&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;content&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;text (long string)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;category&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;sub_category&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;country&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;Please see the &lt;a href=&#34;https://en.wikipedia.org/wiki/ISO_3166-1_numeric&#34;&gt;ISO-3316-1&lt;/a&gt; reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;color&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;user&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integers&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;game&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integers&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;IDs of &lt;a href=&#34;../company&#34;&gt;Game&lt;/a&gt; records&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;company&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integers&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;IDs of &lt;a href=&#34;../company&#34;&gt;Company&lt;/a&gt; records&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;description&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;text (long string)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;page_follows_count&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;logo&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;objects&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;See the &lt;a href=&#34;../../misc-objects/image&#34;&gt;Image&lt;/a&gt; object reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;background&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;objects&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;See the &lt;a href=&#34;../../misc-objects/image&#34;&gt;Image&lt;/a&gt; object reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;facebook&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;twitter&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;twitch&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;instagram&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;youtube&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;steam&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;linkedin&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;pinterest&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;soundcloud&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;google_plus&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;reddit&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;battlenet&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;origin&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;uplay&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;discord&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Franchise</title>
-      <link>https://igdb.github.io/api/endpoints/franchise/</link>
-      <pubDate>Sat, 14 Jan 2017 19:07:25 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/endpoints/franchise/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /franchises/&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; A list of video game franchises such as Star Wars.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-    &amp;quot;id&amp;quot;: 1,
-    &amp;quot;name&amp;quot;: &amp;quot;Star Wars&amp;quot;,
-    &amp;quot;slug&amp;quot;: &amp;quot;star-wars&amp;quot;,
-    &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/franchises/star-wars&amp;quot;,
-    &amp;quot;created_at&amp;quot;: 123456789,
-    &amp;quot;updated_at&amp;quot;: 123456789,
-    &amp;quot;games&amp;quot;: [
-        1,
-        2,
-        3,
-        ...
-    ]
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
-&lt;th&gt;Comment&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;id&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;slug&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;url&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;created_at&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;updated_at&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;games&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;IDs of &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; records&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1882,6 +1597,291 @@
 &lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td&gt;IDs of &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; records&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Page</title>
+      <link>https://igdb.github.io/api/endpoints/page/</link>
+      <pubDate>Tue, 10 Jan 2017 19:08:39 +1000</pubDate>
+      
+      <guid>https://igdb.github.io/api/endpoints/page/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /pages/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Our multipurpose page system is currently used for youtubers and media organisations.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+    &amp;quot;id&amp;quot;: 1234,
+    &amp;quot;name&amp;quot;: &amp;quot;The Super channel.&amp;quot;,
+    &amp;quot;created_at&amp;quot;: 1488287162348,
+    &amp;quot;updated_at&amp;quot;: 1488287515627,
+    &amp;quot;slug&amp;quot;: &amp;quot;the-super-channel&amp;quot;,
+    &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/p/the-super-channel&amp;quot;,
+    &amp;quot;page_follows_count&amp;quot;: 0,
+    &amp;quot;description&amp;quot;: &amp;quot;Playing awesome games quick!&amp;quot;,
+    &amp;quot;youtube&amp;quot;: &amp;quot;https://www.youtube.com/channel/abc123&amp;quot;,
+    &amp;quot;logo&amp;quot;: {
+      &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/abc123.png&amp;quot;,
+      &amp;quot;cloudinary_id&amp;quot;: &amp;quot;abc123&amp;quot;,
+      &amp;quot;width&amp;quot;: 240,
+      &amp;quot;height&amp;quot;: 240
+    },
+    &amp;quot;background&amp;quot;: {
+      &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/abc123.png&amp;quot;,
+      &amp;quot;cloudinary_id&amp;quot;: &amp;quot;abc123&amp;quot;,
+      &amp;quot;width&amp;quot;: 1920,
+      &amp;quot;height&amp;quot;: 1080
+    }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
+&lt;th&gt;Comment&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;slug&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;created_at&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;Unix epoch&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;updated_at&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;Unix epoch&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;content&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;text (long string)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;category&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;sub_category&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;country&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;Please see the &lt;a href=&#34;https://en.wikipedia.org/wiki/ISO_3166-1_numeric&#34;&gt;ISO-3316-1&lt;/a&gt; reference&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;color&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;user&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;64-bit integers&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;game&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;64-bit integers&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;IDs of &lt;a href=&#34;../company&#34;&gt;Game&lt;/a&gt; records&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;company&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;64-bit integers&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;IDs of &lt;a href=&#34;../company&#34;&gt;Company&lt;/a&gt; records&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;description&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;text (long string)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;page_follows_count&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;logo&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;objects&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;See the &lt;a href=&#34;../../misc-objects/image&#34;&gt;Image&lt;/a&gt; object reference&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;background&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;objects&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;See the &lt;a href=&#34;../../misc-objects/image&#34;&gt;Image&lt;/a&gt; object reference&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;facebook&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;twitter&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;twitch&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;instagram&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;youtube&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;steam&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;linkedin&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;pinterest&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;soundcloud&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;google_plus&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;reddit&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;battlenet&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;origin&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;uplay&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;discord&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
