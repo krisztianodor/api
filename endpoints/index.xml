@@ -1148,7 +1148,7 @@
 
 &lt;tr&gt;
 &lt;td&gt;cover&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;array of objects&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;object&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td&gt;See the &lt;a href=&#34;../../misc-objects/image&#34;&gt;Image&lt;/a&gt; object reference&lt;/td&gt;
 &lt;/tr&gt;
@@ -1214,6 +1214,13 @@
 &lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td&gt;IDs of &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; records that are similar to this game. (expandable)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;external&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;object&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;See the &lt;a href=&#34;../../misc-objects/external&#34;&gt;External&lt;/a&gt; object reference&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

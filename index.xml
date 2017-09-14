@@ -679,6 +679,43 @@ Because the pulse_source is inferred, you can also specify fields on the pulse_s
     </item>
     
     <item>
+      <title>External</title>
+      <link>https://igdb.github.io/api/misc-objects/external/</link>
+      <pubDate>Sun, 15 Jan 2017 18:27:42 +1000</pubDate>
+      
+      <guid>https://igdb.github.io/api/misc-objects/external/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+    &amp;quot;steam&amp;quot;: &amp;quot;294810&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
+&lt;th&gt;Comment&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;steam&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;The steam id.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Image</title>
       <link>https://igdb.github.io/api/misc-objects/image/</link>
       <pubDate>Sun, 15 Jan 2017 18:27:42 +1000</pubDate>
@@ -1100,159 +1137,6 @@ Then when you know the ID&amp;rsquo;s of the platform:&lt;/p&gt;
 &lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Credits</title>
-      <link>https://igdb.github.io/api/endpoints/credit/</link>
-      <pubDate>Fri, 13 Jan 2017 21:35:46 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/endpoints/credit/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /credits/&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Contains all employees responsible for working on the game.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;    {
-        &amp;quot;id&amp;quot;: 268458528,
-        &amp;quot;created_at&amp;quot;: 1448841876902,
-        &amp;quot;updated_at&amp;quot;: 1448841876902,
-        &amp;quot;category&amp;quot;: 1,
-        &amp;quot;game&amp;quot;: 6913,
-        &amp;quot;position&amp;quot;: 122,
-        &amp;quot;person&amp;quot;: 96942,
-        &amp;quot;character&amp;quot;: 441
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
-&lt;th&gt;Comment&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;id&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;slug&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;url&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;created_at&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;updated_at&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;game&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;ID of a &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; record (expandable)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;category&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;See the &lt;a href=&#34;../../enum-fields/credit-category&#34;&gt;Credit category&lt;/a&gt; value reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;company&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;ID of a &lt;a href=&#34;../company&#34;&gt;Company&lt;/a&gt; record (expandable)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;position&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;Position in the credits list.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;person&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;ID of a &lt;a href=&#34;../person&#34;&gt;Person&lt;/a&gt; record (expandable)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;character&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;ID of a &lt;a href=&#34;../character&#34;&gt;Character&lt;/a&gt; record (expandable)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;title&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;ID of a &lt;a href=&#34;../title&#34;&gt;Title&lt;/a&gt; record (expandable)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;country&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;Please see the &lt;a href=&#34;https://en.wikipedia.org/wiki/ISO_3166-1_numeric&#34;&gt;ISO-3316-1&lt;/a&gt; reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;credited_name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;Credited name of the person only for overriding when misspelled or changed in credits.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;character_credited_name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;Credited name of the character only for overriding when misspelled or changed in credits.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

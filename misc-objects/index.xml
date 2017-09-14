@@ -109,6 +109,43 @@ or as an array of objects.&lt;/p&gt;
     </item>
     
     <item>
+      <title>External</title>
+      <link>https://igdb.github.io/api/misc-objects/external/</link>
+      <pubDate>Sun, 15 Jan 2017 18:27:42 +1000</pubDate>
+      
+      <guid>https://igdb.github.io/api/misc-objects/external/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+    &amp;quot;steam&amp;quot;: &amp;quot;294810&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
+&lt;th&gt;Comment&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;steam&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;The steam id.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Image</title>
       <link>https://igdb.github.io/api/misc-objects/image/</link>
       <pubDate>Sun, 15 Jan 2017 18:27:42 +1000</pubDate>
