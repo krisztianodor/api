@@ -36,6 +36,7 @@ Wrappers:
 
 - [NodeJS](https://github.com/igdb/igdb-api-node)
 - [Python](https://github.com/igdb/igdb-api-python)
+- [Java/Android](https://github.com/igdb/api-android-java)
 - [Laravel](https://github.com/messerli90/igdb)
 - [Ruby](https://github.com/tastycake/igdb_api)
 
