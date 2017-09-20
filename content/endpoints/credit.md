@@ -43,7 +43,7 @@ title = "Credits"
 | position    | unsigned 64-bit integer           |     -     | Position in the credits list. |
 | person    | unsigned 64-bit integer           |     -     | ID of a [Person](../person) record (expandable) |
 | character    | unsigned 64-bit integer           |     -     | ID of a [Character](../character) record (expandable) |
-| title    | unsigned 64-bit integer           |     -     | ID of a [Title](../title) record (expandable) |
+| person_title    | unsigned 64-bit integer           |     -     | ID of a [Title](../title) record (expandable) |
 | country    | unsigned 64-bit integer           |     -     | Please see the [ISO-3316-1](https://en.wikipedia.org/wiki/ISO_3166-1_numeric) reference |
 | credited_name        | string                            |     -     | Credited name of the person only for overriding when misspelled or changed in credits. |
 | character_credited_name        | string                            |     -     | Credited name of the character only for overriding when misspelled or changed in credits. |
