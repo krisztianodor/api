@@ -1,5 +1,6 @@
 +++
 toc = true
+next="/references/tag-numbers"
 prev = "/references/pagination"
 weight = 7
 title = "Response Codes"

@@ -2,8 +2,8 @@
 date = "2017-01-15T19:07:32+10:00"
 toc = true
 next = "/misc-objects/video"
-prev = "/misc-objects/tag-numbers"
-weight = 10
+prev = "/misc-objects/release-date"
+weight = 9
 title = "Time to beat"
 
 +++
