@@ -36,6 +36,10 @@ Notice you can comma separate multiple IDs (12, 9 and 11). You can do this with 
 ----------
 `/games/count?filter[rating][gt]=75`
 
+#### Count total games from a certain platform (Playstation 4 , id=48)
+----------
+`/games/count?filter[release_dates.platform][eq]=72`
+
 #### Order by popularity
 ----------
 Popularity parameter for games. You can access it like this:
