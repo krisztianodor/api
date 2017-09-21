@@ -69,7 +69,7 @@ title = "Game"
 | esrb                | object                            |     -     | See the [ESRB](../../misc-objects/esrb) object reference |
 | pegi                | object                            |     -     | See the [PEGI](../../misc-objects/pegi) object reference |
 | websites            | array of objects                  |     -     | See the [Website](../../misc-objects/website) object reference |
-| tags         | array of unsigned 32-bit integers |     -     | An array of [Tag Numbers](../../misc-objects/tag-numbers)  |
+| tags         | array of unsigned 32-bit integers |     -     | An array of [Tag Numbers](../../references/tag-numbers)  |
 | dlcs          | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
 | expansions          | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
 | standalone_expansions          | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
