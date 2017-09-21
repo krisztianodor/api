@@ -517,5 +517,89 @@ For example, you can order games based on it&amp;rsquo;s earliest release date l
 </description>
     </item>
     
+    <item>
+      <title>Tag Numbers</title>
+      <link>https://igdb.github.io/api/references/tag-numbers/</link>
+      <pubDate>Mon, 09 Jan 2017 10:23:50 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/tag-numbers/</guid>
+      <description>&lt;p&gt;Tag numbers are automatically generated numbers which provide a compact and fast way to do complex filtering on the IGDB API. The number calculation can be easily achieved with any programming language.&lt;/p&gt;
+
+&lt;p&gt;The basis of the calculation is a 32bit integer, where the first 4 bits contain the object type ID, and the remaining 28 bits represent the ID of the object we are generating the tag number for.&lt;/p&gt;
+
+&lt;p&gt;Using this method a flat index of custom object &amp;lsquo;hashes&amp;rsquo; can be maintained in which index the search and filtering is faster than using conventional methods.&lt;/p&gt;
+
+&lt;p&gt;Currently the following object types use tags:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type ID&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Name&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Theme&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Genre&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Keyword&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Game&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Player Perspective&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Let&amp;rsquo;s see two examples for tag number calculation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We try to find all the pulses which relate to the Shooter genre. The tag number generation in Javascript would look something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Javascript
+const genreTypeID = 1 // The type ID from the table above
+const shooterGenreID = 5 // The Shooter genre&#39;s ID, coming from the genres endpoint.
+let tagNumber = genreTypeID &amp;lt;&amp;lt; 28 // Bit-shifting the genre&#39;s type ID by 28 bits, ensuring that it will get into the first four bits. The result will be 268435456
+tagNumber |= shooterGenreID // Adding the Shooter genre ID to the tag number with a bitwise OR operation. The result will be 268435461.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;An example query:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/pulse/?filter[tags][any]=268435461
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#Python
+gameTypeID = 3 # The game&#39;s type ID from the table above/
+gameID = 26196 # The ID of the game /games/crash-bandicoot-n-sane-trilogy
+tagNumber = gameTypeID &amp;lt;&amp;lt; 28 # Bit-shifting the game&#39;s type ID by 28 bits, ensuring that it will get into the first four bits. The result will be 805306368
+tagNumber |= gameID # Adding the game ID to the tag number with a bitwise OR operation. The result will be 805332564.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;An example query:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/pulse/?filter[tags][any]=805332564
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

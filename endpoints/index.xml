@@ -625,7 +625,7 @@
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;title&lt;/td&gt;
+&lt;td&gt;person_title&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
 &lt;td&gt;ID of a &lt;a href=&#34;../title&#34;&gt;Title&lt;/a&gt; record (expandable)&lt;/td&gt;

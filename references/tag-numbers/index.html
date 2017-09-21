@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.19" />
+    <meta name="generator" content="Hugo 0.18.1" />
     <meta name="description" content="">
 
 
@@ -25,7 +25,7 @@
     
 <link href="https://igdb.github.io/api//css/igdb.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/api/misc-objects/tag-numbers/">
+  <body class="" data-url="/api/references/tag-numbers/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -445,7 +445,7 @@ API
       
       
 
-      <li class="dd-item  parent" data-nav-id="/api/misc-objects/">
+      <li class="dd-item  " data-nav-id="/api/misc-objects/">
         <a href="/api/misc-objects/">
           <span>
             
@@ -533,14 +533,6 @@ API
           
           
           
-            <li class="dd-item active" data-nav-id="/api/misc-objects/tag-numbers/">
-              <a href="/api/misc-objects/tag-numbers/">
-                <span>Tag Numbers     </i></span>
-              </a>
-            </li>
-          
-          
-          
             <li class="dd-item " data-nav-id="/api/misc-objects/time-to-beat/">
               <a href="/api/misc-objects/time-to-beat/">
                 <span>Time to beat     </i></span>
@@ -577,7 +569,7 @@ API
       
       
 
-      <li class="dd-item  " data-nav-id="/api/references/">
+      <li class="dd-item  parent" data-nav-id="/api/references/">
         <a href="/api/references/">
           <span>
             
@@ -648,6 +640,14 @@ API
             </li>
           
           
+          
+            <li class="dd-item active" data-nav-id="/api/references/tag-numbers/">
+              <a href="/api/references/tag-numbers/">
+                <span>Tag Numbers     </i></span>
+              </a>
+            </li>
+          
+          
         </ul>
         
       </li>
@@ -672,7 +672,7 @@ API
                 
                 
               <div id="top-github-link">
-                  <a class="github-link" href="https://github.com/igdb/api/blob/master/content/misc-objects/tag-numbers.md" target="blank">
+                  <a class="github-link" href="https://github.com/igdb/api/blob/master/content/references/tag-numbers.md" target="blank">
                     <i class="fa fa-code-fork"></i>
                     Edit this page
                   </a>
@@ -700,12 +700,12 @@ API
                   
                 
                   
-                    
-                    
-                <a href="/api/misc-objects/" itemprop="url"><span itemprop="title">Miscellaneous objects</span></a> <i class="fa fa-angle-right"></i>
-                    
-                  
                 
+                  
+                    
+                    
+                <a href="/api/references/" itemprop="url"><span itemprop="title">Reference</span></a> <i class="fa fa-angle-right"></i>
+                    
                   
                 
                 <span itemprop="title"> Tag Numbers</span>
@@ -726,41 +726,81 @@ API
                 <h1>Tag Numbers</h1>
                 
 
-<p>Tag numbers are a compact and fast way to do complex filtering on the IGDB API. The number calculation can be easily achieved with any programming language.</p>
+<p>Tag numbers are automatically generated numbers which provide a compact and fast way to do complex filtering on the IGDB API. The number calculation can be easily achieved with any programming language.</p>
 
-<p>For example, take the genre filter option (reference list below) and the ID of a genre and you can create a tag number like this&hellip;</p>
+<p>The basis of the calculation is a 32bit integer, where the first 4 bits contain the object type ID, and the remaining 28 bits represent the ID of the object we are generating the tag number for.</p>
+
+<p>Using this method a flat index of custom object &lsquo;hashes&rsquo; can be maintained in which index the search and filtering is faster than using conventional methods.</p>
+
+<p>Currently the following object types use tags:</p>
+
+<table>
+<thead>
+<tr>
+<th>Type ID</th>
+<th align="center">Name</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0</td>
+<td align="center">Theme</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td align="center">Genre</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td align="center">Keyword</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td align="center">Game</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td align="center">Player Perspective</td>
+</tr>
+</tbody>
+</table>
+
+<p>Let&rsquo;s see two examples for tag number calculation.</p>
+
+<p><strong>Example 1</strong></p>
+
+<p>We try to find all the pulses which relate to the Shooter genre. The tag number generation in Javascript would look something like this:</p>
 
 <pre><code>// Javascript
-const genreTag = 1 &lt;&lt; 28 // 268435456 - Note the bitshifting! Id (1) taken from the reference list below.
-const shooterId = 5 // Can get this ID from the genres endpoint
-const tagNumber = genreTag | shooterId // 268435461 - Use this tag number to filter by the shooter genre
+const genreTypeID = 1 // The type ID from the table above
+const shooterGenreID = 5 // The Shooter genre's ID, coming from the genres endpoint.
+let tagNumber = genreTypeID &lt;&lt; 28 // Bit-shifting the genre's type ID by 28 bits, ensuring that it will get into the first four bits. The result will be 268435456
+tagNumber |= shooterGenreID // Adding the Shooter genre ID to the tag number with a bitwise OR operation. The result will be 268435461.
 </code></pre>
 
 <p>An example query:</p>
 
-<pre><code>/pulse/?filter[tags][any]=268435461,425266432
+<pre><code>/pulse/?filter[tags][any]=268435461
 </code></pre>
-
-<p><strong>Reference</strong></p>
-
-<ul>
-<li>0 = theme</li>
-<li>1 = genre</li>
-<li>2 = keyword</li>
-<li>3 = game</li>
-<li>4 = player_perspective</li>
-</ul>
 
 <p><strong>Example 2</strong></p>
 
 <pre><code class="language-python">#Python
-gameTag = 3 &lt;&lt; 28 #We use 3 since we want to search for a game
-gameId = 26196 #This is the gameid of the game /games/crash-bandicoot-n-sane-trilogy
-print(gameTag | gameId )
+gameTypeID = 3 # The game's type ID from the table above/
+gameID = 26196 # The ID of the game /games/crash-bandicoot-n-sane-trilogy
+tagNumber = gameTypeID &lt;&lt; 28 # Bit-shifting the game's type ID by 28 bits, ensuring that it will get into the first four bits. The result will be 805306368
+tagNumber |= gameID # Adding the game ID to the tag number with a bitwise OR operation. The result will be 805332564.
 </code></pre>
 
-<p>The end result is <code>805332564</code>.
-We can then search inside the tags of <code>/pulses/241395</code> to see if it has this tag.</p>
+<p>An example query:</p>
+
+<pre><code>/pulse/?filter[tags][any]=805332564
+</code></pre>
 
 
       
@@ -769,8 +809,8 @@ We can then search inside the tags of <code>/pulses/241395</code> to see if it h
 
     <div id="navigation">
         
-        <a class="nav nav-prev" href="https://igdb.github.io/api//misc-objects/release-date"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="https://igdb.github.io/api//misc-objects/time-to-beat" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="https://igdb.github.io/api//references/response-codes"> <i class="fa fa-chevron-left"></i></a>
+        
     </div>
 
     </section>

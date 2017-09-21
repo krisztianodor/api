@@ -161,18 +161,13 @@
   </url>
   
   <url>
+    <loc>https://igdb.github.io/api/references/tag-numbers/</loc>
+    <lastmod>2017-01-09T10:23:50+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://igdb.github.io/api/enum-fields/region/</loc>
     <lastmod>2017-01-15T20:01:12+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/endpoints/game-mode/</loc>
-    <lastmod>2017-01-12T20:44:16+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/misc-objects/tag-numbers/</loc>
-    <lastmod>2017-01-09T10:23:50+01:00</lastmod>
   </url>
   
   <url>
@@ -181,8 +176,18 @@
   </url>
   
   <url>
+    <loc>https://igdb.github.io/api/endpoints/game-mode/</loc>
+    <lastmod>2017-01-12T20:44:16+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://igdb.github.io/api/enum-fields/species/</loc>
     <lastmod>2017-01-15T18:35:20+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.io/api/misc-objects/video/</loc>
+    <lastmod>2017-01-15T18:35:12+10:00</lastmod>
   </url>
   
   <url>
@@ -196,18 +201,13 @@
   </url>
   
   <url>
-    <loc>https://igdb.github.io/api/misc-objects/video/</loc>
+    <loc>https://igdb.github.io/api/misc-objects/website/</loc>
     <lastmod>2017-01-15T18:35:12+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://igdb.github.io/api/endpoints/keyword/</loc>
     <lastmod>2017-01-12T20:44:16+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://igdb.github.io/api/misc-objects/website/</loc>
-    <lastmod>2017-01-15T18:35:12+10:00</lastmod>
   </url>
   
   <url>

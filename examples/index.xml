@@ -49,6 +49,12 @@
 
 &lt;p&gt;&lt;code&gt;/games/count?filter[rating][gt]=75&lt;/code&gt;&lt;/p&gt;
 
+&lt;h4 id=&#34;count-total-games-from-a-certain-platform-playstation-4-id-48&#34;&gt;Count total games from a certain platform (Playstation 4 , id=48)&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code&gt;/games/count?filter[release_dates.platform][eq]=72&lt;/code&gt;&lt;/p&gt;
+
 &lt;h4 id=&#34;order-by-popularity&#34;&gt;Order by popularity&lt;/h4&gt;
 
 &lt;hr /&gt;
