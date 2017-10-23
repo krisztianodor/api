@@ -266,6 +266,11 @@
   </url>
   
   <url>
+    <loc>https://igdb.github.io/api/endpoints/versions/</loc>
+    <lastmod>2017-01-13T21:35:46+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://igdb.github.io/api/enum-fields/</loc>
     <lastmod>2017-01-15T18:23:12+10:00</lastmod>
   </url>

@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://www.igdb.com/favicon.ico" type="image/x-icon" />
 
     
-    <title>Examples</title>
+    <title>Versions</title>
     <link href="https://igdb.github.io/api//css/nucleus.css" rel="stylesheet">
     <link href="https://igdb.github.io/api//css/font-awesome.min.css" rel="stylesheet">
     <link href="https://igdb.github.io/api//css/hybrid.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     
 <link href="https://igdb.github.io/api//css/igdb.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/api/examples/">
+  <body class="" data-url="/api/endpoints/versions/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -103,7 +103,7 @@ API
       
       
 
-      <li class="dd-item  " data-nav-id="/api/endpoints/">
+      <li class="dd-item  parent" data-nav-id="/api/endpoints/">
         <a href="/api/endpoints/">
           <span>
             
@@ -295,7 +295,7 @@ API
           
           
           
-            <li class="dd-item " data-nav-id="/api/endpoints/versions/">
+            <li class="dd-item active" data-nav-id="/api/endpoints/versions/">
               <a href="/api/endpoints/versions/">
                 <span>Versions     </i></span>
               </a>
@@ -431,7 +431,7 @@ API
       
       
 
-      <li class="dd-item active parent" data-nav-id="/api/examples/">
+      <li class="dd-item  " data-nav-id="/api/examples/">
         <a href="/api/examples/">
           <span>
             
@@ -680,7 +680,7 @@ API
                 
                 
               <div id="top-github-link">
-                  <a class="github-link" href="https://github.com/igdb/api/blob/master/content/examples/index.md" target="blank">
+                  <a class="github-link" href="https://github.com/igdb/api/blob/master/content/endpoints/versions.md" target="blank">
                     <i class="fa fa-code-fork"></i>
                     Edit this page
                   </a>
@@ -702,11 +702,9 @@ API
                   
                 
                   
-                
-                  
-                
-                  
                     
+                    
+                <a href="/api/endpoints/" itemprop="url"><span itemprop="title">Endpoints</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
@@ -714,7 +712,11 @@ API
                 
                   
                 
-                <span itemprop="title"> Examples</span>
+                  
+                
+                  
+                
+                <span itemprop="title"> Versions</span>
               </div>
               
                   <div class="progress">
@@ -725,17 +727,7 @@ API
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li><a href="#an-example-request-in-java">An example request in Java</a></li>
-<li><a href="#get-all-information-from-a-specific-game">Get all information from a specific game</a></li>
-<li><a href="#get-all-games-from-specific-genres">Get all games from specific genres</a></li>
-<li><a href="#count-total-games-that-have-a-rating-higher-than-75">Count total games that have a rating higher than 75</a></li>
-<li><a href="#count-total-games-from-a-certain-platform-playstation-4-id-48">Count total games from a certain platform (Playstation 4 , id=48)</a></li>
-<li><a href="#order-by-popularity">Order by popularity</a></li>
-<li><a href="#coming-soon-games-for-playstation-4">Coming soon games for Playstation 4</a></li>
-<li><a href="#search-return-certain-fields">Search, return certain fields.</a></li>
-</ul></li>
+<li><a href="#examples">Examples</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -749,78 +741,232 @@ API
             
     	        <div id="body-inner">
                 
-                <h1>Examples</h1>
+                <h1>Versions</h1>
                 
 
 
 
-<h4 id="an-example-request-in-java">An example request in Java</h4>
+<p><strong><em>URL path:</em></strong> /game_versions/</p>
 
-<hr />
+<p><strong><em>Description:</em></strong> Details about game editions and versions.</p>
 
-<pre><code>HttpResponse&lt;JsonNode&gt; response = Unirest.get(&quot;https://api-2445582011268.apicast.io/characters/?fields=*&amp;limit=10&quot;)
-.header(&quot;user-key&quot;, &quot;YOUR_KEY&quot;)
-.header(&quot;Accept&quot;, &quot;application/json&quot;)
-.asJson();
+<p><strong><em>Example response</em></strong></p>
+
+<pre><code class="language-json">[
+    {
+        &quot;id&quot;: 1,
+        &quot;game&quot;: 28540,
+        &quot;created_at&quot;: 1505219853364,
+        &quot;updated_at&quot;: 1507493062339,
+        &quot;games&quot;: [
+            28540,
+            39045,
+            39044,
+            39047,
+            39034,
+            39046
+        ],
+        &quot;url&quot;: &quot;https://www.igdb.com/games/assassins-creed-origins/&quot;,
+        &quot;features&quot;: [
+            {
+                &quot;title&quot;: &quot;Notes&quot;,
+                &quot;description&quot;: &quot;&quot;,
+                &quot;category&quot;: 1,
+                &quot;position&quot;: 3,
+                &quot;values&quot;: [
+                    {
+                        &quot;game&quot;: 39034,
+                        &quot;value&quot;: &quot;&quot;
+                    },
+                    {
+                        &quot;game&quot;: 39046,
+                        &quot;value&quot;: &quot;Ubisoft Store exclusive.&quot;
+                    },
+                    {
+                        &quot;game&quot;: 39045,
+                        &quot;value&quot;: &quot;&quot;
+                    },
+                    {
+                        &quot;game&quot;: 39044,
+                        &quot;value&quot;: &quot;&quot;
+                    },
+                    {
+                        &quot;game&quot;: 39047,
+                        &quot;value&quot;: &quot;Only 999 copies available. Ubisoft Store exclusive.&quot;
+                    },
+                    {
+                        &quot;game&quot;: 28540,
+                        &quot;value&quot;: &quot;&quot;
+                    }
+                ]
+            }
+        ]
+    }
+]
 </code></pre>
 
-<h4 id="get-all-information-from-a-specific-game">Get all information from a specific game</h4>
+<p>You can see how this data is used here: <a href="https://www.igdb.com/games/assassins-creed-origins/versions">https://www.igdb.com/games/assassins-creed-origins/versions</a></p>
 
-<hr />
+<p><strong><em>Fields</em></strong></p>
 
-<p><code>/games/1942?fields=*</code></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th align="center">Type</th>
+<th align="center">Mandatory</th>
+<th>Comment</th>
+</tr>
+</thead>
 
-<p>1942, is the ID of the game.</p>
+<tbody>
+<tr>
+<td>id</td>
+<td align="center">unsigned 64-bit integer</td>
+<td align="center">+</td>
+<td></td>
+</tr>
 
-<h4 id="get-all-games-from-specific-genres">Get all games from specific genres</h4>
+<tr>
+<td>game</td>
+<td align="center">unsigned 64-bit integer</td>
+<td align="center">+</td>
+<td>ID of the parent game</td>
+</tr>
 
-<hr />
+<tr>
+<td>created_at</td>
+<td align="center">64-bit integer</td>
+<td align="center">+</td>
+<td>Unix epoch</td>
+</tr>
 
-<p><code>/genres/12,9,11?fields=*</code></p>
+<tr>
+<td>updated_at</td>
+<td align="center">64-bit integer</td>
+<td align="center">+</td>
+<td>Unix epoch</td>
+</tr>
 
-<p>Notice you can comma separate multiple IDs (12, 9 and 11). You can do this with games, companies and anything else.</p>
+<tr>
+<td>games</td>
+<td align="center">array of unsigned 64-bit integers</td>
+<td align="center">-</td>
+<td>IDs of <a href="../game">Game</a> records which are versions of the main game</td>
+</tr>
 
-<h4 id="count-total-games-that-have-a-rating-higher-than-75">Count total games that have a rating higher than 75</h4>
+<tr>
+<td>url</td>
+<td align="center">string</td>
+<td align="center">+</td>
+<td>URL of the main game</td>
+</tr>
 
-<hr />
+<tr>
+<td>features</td>
+<td align="center">array of objects</td>
+<td align="center">-</td>
+<td>Array of Features (see below)</td>
+</tr>
+</tbody>
+</table>
 
-<p><code>/games/count?filter[rating][gt]=75</code></p>
+<p><strong><em>Feature Object</em></strong></p>
 
-<h4 id="count-total-games-from-a-certain-platform-playstation-4-id-48">Count total games from a certain platform (Playstation 4 , id=48)</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th align="center">Type</th>
+<th align="center">Mandatory</th>
+<th>Comment</th>
+</tr>
+</thead>
 
-<hr />
+<tbody>
+<tr>
+<td>title</td>
+<td align="center">string</td>
+<td align="center">+</td>
+<td>Title of the feature</td>
+</tr>
 
-<p><code>/games/count?filter[release_dates.platform][eq]=72</code></p>
+<tr>
+<td>description</td>
+<td align="center">string</td>
+<td align="center">+</td>
+<td>Description of the feature</td>
+</tr>
 
-<h4 id="order-by-popularity">Order by popularity</h4>
+<tr>
+<td>category</td>
+<td align="center">64-bit integer</td>
+<td align="center">+</td>
+<td>Feature category (see below)</td>
+</tr>
 
-<hr />
+<tr>
+<td>position</td>
+<td align="center">64-bit integer</td>
+<td align="center">+</td>
+<td>Show at this index</td>
+</tr>
 
-<p>Popularity parameter for games. You can access it like this:
-<code>/games/?fields=name,popularity&amp;order=popularity:desc</code></p>
+<tr>
+<td>values</td>
+<td align="center">array of objects</td>
+<td align="center">+</td>
+<td>Array of Feature values (see below)</td>
+</tr>
+</tbody>
+</table>
 
-<p>The popularity number is calculated using usage statistics of game pages at <a href="https://www.igdb.com">https://www.igdb.com</a></p>
+<p><strong><em>Feature Value Object</em></strong></p>
 
-<h4 id="coming-soon-games-for-playstation-4">Coming soon games for Playstation 4</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th align="center">Type</th>
+<th align="center">Mandatory</th>
+<th>Comment</th>
+</tr>
+</thead>
 
-<hr />
+<tbody>
+<tr>
+<td>game</td>
+<td align="center">64-bit integer</td>
+<td align="center">+</td>
+<td>ID of the <a href="../game">Edition</a></td>
+</tr>
 
-<p><code>/release_dates/?fields=*&amp;filter[platform][eq]=48&amp;order=date:asc&amp;filter[date][gt]=1500619813000</code></p>
+<tr>
+<td>value</td>
+<td align="center">string</td>
+<td align="center">+</td>
+<td>Feature&rsquo;s value</td>
+</tr>
+</tbody>
+</table>
 
-<p>1500619813000: Is the timestamp in miliseconds of today (This you need to generate yourself)<br />
-48 Is the platform id of Playstation 4.</p>
+<p><strong><em>Feature Category</em></strong></p>
 
-<h4 id="search-return-certain-fields">Search, return certain fields.</h4>
+<ul>
+<li><code>0</code> boolean. String should either be &ldquo;1&rdquo; or &ldquo;0&rdquo; (yes or no).</li>
+<li><code>1</code> string. Free text.</li>
+<li><code>2</code> Preorder only. Whether the feature is only available in preorder. Value is always an empty string.</li>
+</ul>
 
-<hr />
+<h3 id="examples">Examples</h3>
 
-<p><code>/games/?search=Halo</code></p>
+<p><strong><em>Get all editions</em></strong></p>
 
-<p>This will return search results and the IDs of the games.
-If you want to return certain fields of the game or even all, do the following:</p>
+<p><code>/game_versions/?fields=*&amp;filter[games][exists]=1</code></p>
 
-<p><code>/games/?search=Halo&amp;fields=name,publishers</code>
-   <code>/games/?search=Halo&amp;fields=*</code></p>
+<p><strong><em>Get all versions of a game</em></strong></p>
+
+<p><code>/game_versions/?fields=games.name&amp;filter[games][exists]=1&amp;filter[game][eq]=28540&amp;expand=games</code></p>
 
 
       
@@ -829,8 +975,8 @@ If you want to return certain fields of the game or even all, do the following:<
 
     <div id="navigation">
         
-        <a class="nav nav-prev" href="https://igdb.github.io/api//enum-fields/website-category"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="https://igdb.github.io/api//misc-objects" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="https://igdb.github.io/api//endpoints/title"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="https://igdb.github.io/api//enum-fields" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
