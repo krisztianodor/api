@@ -890,17 +890,17 @@ API
 </tr>
 
 <tr>
-<td>weighted_rating</td>
-<td align="center">double</td>
-<td align="center">-</td>
-<td>A number to sort on in order to get the weighted top lists for instance.</td>
-</tr>
-
-<tr>
 <td>game</td>
 <td align="center">unsigned 64-bit integer</td>
 <td align="center">-</td>
-<td>ID of a <a href="../game">Game</a> record if this record is a DLC/expansion (expandable)</td>
+<td>ID of a <a href="../game">Game</a> this game is a DLC/expansion of (expandable)</td>
+</tr>
+
+<tr>
+<td>version_parent</td>
+<td align="center">unsigned 64-bit integer</td>
+<td align="center">-</td>
+<td>ID of a <a href="../game">Game</a> this game is an edition of</td>
 </tr>
 
 <tr>

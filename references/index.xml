@@ -508,6 +508,11 @@ For example, you can order games based on it&amp;rsquo;s earliest release date l
 &lt;li&gt;You may be sending the key via a GET parameter which is incorrect, please use the &amp;ldquo;user-key&amp;rdquo; header.&lt;/li&gt;
 &lt;li&gt;Your account may not have access to this specific endpoint. Upgrade at api.igdb.com&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;403 = Forbidden
+
+&lt;ul&gt;
+&lt;li&gt;You have probably hit your usage cap. &lt;a href=&#34;https://api.igdb.com/pricing&#34;&gt;Upgrade here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;500 = Internal Error
 
 &lt;ul&gt;

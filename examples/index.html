@@ -735,6 +735,7 @@ API
 <li><a href="#order-by-popularity">Order by popularity</a></li>
 <li><a href="#coming-soon-games-for-playstation-4">Coming soon games for Playstation 4</a></li>
 <li><a href="#search-return-certain-fields">Search, return certain fields.</a></li>
+<li><a href="#search-games-but-exclude-versions-editions">Search games but exclude versions &amp; editions</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -821,6 +822,14 @@ If you want to return certain fields of the game or even all, do the following:<
 
 <p><code>/games/?search=Halo&amp;fields=name,publishers</code>
    <code>/games/?search=Halo&amp;fields=*</code></p>
+
+<h4 id="search-games-but-exclude-versions-editions">Search games but exclude versions &amp; editions</h4>
+
+<hr />
+
+<p><code>/games/?search=Assassins%20Creed&amp;fields=name&amp;filter[version_parent][not_exists]=1</code></p>
+
+<p>This will return search results with ID and name of the game but exclude editions such as &ldquo;Collectors Edition&rdquo;.</p>
 
 
       

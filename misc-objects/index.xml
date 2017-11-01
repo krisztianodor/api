@@ -18,7 +18,7 @@
       <description>&lt;p&gt;Miscellaneous objects are entities which don&amp;rsquo;t have individual IDs and are only present in fields either as an object
 or as an array of objects.&lt;/p&gt;
 
-&lt;p&gt;One good example is an Image object, which is a Platform entity&amp;rsquo;s logo.&lt;/p&gt;
+&lt;p&gt;One good example is an Image object.&lt;/p&gt;
 </description>
     </item>
     

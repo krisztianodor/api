@@ -19,7 +19,7 @@
 
 &lt;h2 id=&#34;general-information&#34;&gt;General information&lt;/h2&gt;
 
-&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;Test endpoints using the &lt;a href=&#34;https://api.igdb.com/livetest&#34;&gt;Live test&lt;/a&gt;. Alternatively, we highly recommend &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;postman&lt;/a&gt; to perfect your requests.&lt;/p&gt;
+&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Test endpoints using the &lt;a href=&#34;https://api.igdb.com/livetest&#34;&gt;Live test&lt;/a&gt;. Alternatively, we highly recommend &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;postman&lt;/a&gt; to perfect your requests.&lt;/p&gt;
 &lt;/div&gt;
 
 
@@ -45,6 +45,10 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;Note: All endpoints support &lt;code&gt;limit&lt;/code&gt; and &lt;code&gt;offset&lt;/code&gt; &lt;a href=&#34;https://igdb.github.io/api/api/references/pagination&#34;&gt;pagination&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
 
 &lt;h2 id=&#34;common-fields-in-responses&#34;&gt;Common fields in responses&lt;/h2&gt;
 
@@ -74,9 +78,9 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Note: all unix epoch fields&amp;rsquo; values are in milliseconds.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&#34;notices tip&#34; &gt;&lt;p&gt;Note: all unix epoch fields&amp;rsquo; values are in milliseconds.&lt;/p&gt;
+&lt;/div&gt;
+
 </description>
     </item>
     
@@ -1021,17 +1025,17 @@
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;weighted_rating&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;double&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;A number to sort on in order to get the weighted top lists for instance.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
 &lt;td&gt;game&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;ID of a &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; record if this record is a DLC/expansion (expandable)&lt;/td&gt;
+&lt;td&gt;ID of a &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; this game is a DLC/expansion of (expandable)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;version_parent&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;ID of a &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; this game is an edition of&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
