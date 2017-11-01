@@ -12,4 +12,4 @@ icon = "<b class='fa fa-puzzle-piece'></b>"
 Miscellaneous objects are entities which don't have individual IDs and are only present in fields either as an object
 or as an array of objects.
 
-One good example is an Image object, which is a Platform entity's logo.
+One good example is an Image object.

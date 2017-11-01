@@ -11,7 +11,7 @@ icon = "<b class='fa fa-sitemap'></b>"
 
 ## General information
 
-{{% notice tip %}}
+{{% notice info %}}
 Test endpoints using the [Live test](https://api.igdb.com/livetest). Alternatively, we highly recommend [postman](https://www.getpostman.com/) to perfect your requests.
 {{% /notice %}}
 
@@ -22,6 +22,10 @@ In order to communicate with the server, you will have to send these headers.
 | user-key | Your key |
 | Accept        | application/json |
 
+{{% notice tip %}}
+Note: All endpoints support `limit` and `offset` [pagination](/api/references/pagination).
+{{% /notice %}}
+
 ## Common fields in responses
 
 All the responses may contain the following fields in the result:
@@ -31,4 +35,6 @@ All the responses may contain the following fields in the result:
 | _score | float            |     -     |
 | error  | array of strings |     -     |
 
-* Note: all unix epoch fields' values are in milliseconds.
+{{% notice tip %}}
+Note: all unix epoch fields' values are in milliseconds.
+{{% /notice %}}

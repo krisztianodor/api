@@ -10,21 +10,21 @@ title = "Welcome"
 
 # Internet Game Database API Documentation
 
-One of the principles behind IGDB.com is accessibility of data. We wish to share the data with anyone who wants to build cool videogame oriented websites, apps and services. This means that the information you contribute to IGDB.com can be used by other projects as well.
+One of the principles behind IGDB.com is accessibility of data. We wish to share the data with anyone who wants to build cool video game oriented websites, apps and services.
 
-Thus, you are not only contributing to the value of this site but to hundreds of other projects as well. We are looking forward to see what exciting game related projects you come up with. Happy coding!
+This means that you are not only contributing to the value of this IGDB but to thousands of other projects as well. We are looking forward to see what exciting game related projects you come up with. Happy coding!
 
-Our video game database has loads of video game metadata. That includes release dates, descriptions, media, etc.
+For a high level overview of our juicy data, check out the [endpoints section](/api/endpoints/).
 
-{{% button href="https://api.igdb.com" %}}GET FREE KEY{{% /button %}}
+{{% button href="https://api.igdb.com/signup" %}}GET FREE KEY{{% /button %}}
 
 ---
 
 ### The Basics
 
-In order to use our API, you must have a [account and key](https://api.igdb.com).
+In order to use our API, you must have an [account and key](https://api.igdb.com/signup).
   
-The IGDB.com API is free for non-commercial & commercial usage.
+The IGDB.com API is free for **non-commercial** & **commercial usage**.
 
 ### REST Examples
 
@@ -40,14 +40,6 @@ Wrappers:
 - [Laravel](https://github.com/messerli90/igdb)
 - [Ruby](https://github.com/tastycake/igdb_api)
 
-
-
 ### Need support?
 
-Access community support by either using our [Discord](https://discord.gg/JKsh9R7) channel or report an issue on [Github](https://github.com/igdb/api).   
-
-Or contact us directly by chatting with us. [Click the little green box on the bottom right](https://api.igdb.com/)
-
-{{% notice tip %}}
-All endpoints support `limit` and `offset` [pagination](/api/references/pagination).
-{{% /notice %}}
+Access community support by either using our [Discord](https://discord.gg/JKsh9R7) channel or contact us directly by chatting with us - [Go here and click the little green box on the bottom right](https://api.igdb.com/).

@@ -65,3 +65,11 @@ If you want to return certain fields of the game or even all, do the following:
 
    `/games/?search=Halo&fields=name,publishers`
    `/games/?search=Halo&fields=*`
+
+#### Search games but exclude versions & editions
+----------
+
+`/games/?search=Assassins%20Creed&fields=name&filter[version_parent][not_exists]=1`
+
+This will return search results with ID and name of the game but exclude editions such as "Collectors Edition".
+

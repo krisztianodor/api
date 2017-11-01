@@ -47,8 +47,8 @@ title = "Game"
 | aggregated_rating_count | integer                       |     -     | Number of external critic scores |
 | total_rating        | double                            |     -     | Average rating based on both IGDB user and external critic scores |
 | total_rating_count  | integer                           |     -     | Total number of user and external critic scores |
-| weighted_rating     | double                            |     -     | A number to sort on in order to get the weighted top lists for instance. |
-| game                | unsigned 64-bit integer           |     -     | ID of a [Game](../game) record if this record is a DLC/expansion (expandable) |
+| game                | unsigned 64-bit integer           |     -     | ID of a [Game](../game) this game is a DLC/expansion of (expandable) |
+| version_parent      | unsigned 64-bit integer           |     -     | ID of a [Game](../game) this game is an edition of |
 | developers          | array of unsigned 64-bit integers |     -     | IDs of [Company](../company) records (expandable) |
 | publishers          | array of unsigned 64-bit integers |     -     | IDs of [Company](../company) records (expandable) |
 | game_engines        | array of unsigned 64-bit integers |     -     | IDs of [Game engine](../game-engine) records |
@@ -69,10 +69,10 @@ title = "Game"
 | esrb                | object                            |     -     | See the [ESRB](../../misc-objects/esrb) object reference |
 | pegi                | object                            |     -     | See the [PEGI](../../misc-objects/pegi) object reference |
 | websites            | array of objects                  |     -     | See the [Website](../../misc-objects/website) object reference |
-| tags         | array of unsigned 32-bit integers |     -     | An array of [Tag Numbers](../../references/tag-numbers)  |
-| dlcs          | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
+| tags                | array of unsigned 32-bit integers |     -     | An array of [Tag Numbers](../../references/tag-numbers)  |
+| dlcs                | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
 | expansions          | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
-| standalone_expansions          | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
-| bundles          | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
-| games          | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records that are similar to this game. (expandable) |
-| external                 | object                  |     -     | See the [External](../../misc-objects/external) object reference |
+| standalone_expansions | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
+| bundles             | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
+| games               | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records that are similar to this game. (expandable) |
+| external            | object                            |     -     | See the [External](../../misc-objects/external) object reference |
