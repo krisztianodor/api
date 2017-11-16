@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://www.igdb.com/favicon.ico" type="image/x-icon" />
 
     
-    <title>Image</title>
+    <title>Webhooks</title>
     <link href="https://igdb.github.io/api//css/nucleus.css" rel="stylesheet">
     <link href="https://igdb.github.io/api//css/font-awesome.min.css" rel="stylesheet">
     <link href="https://igdb.github.io/api//css/hybrid.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     
 <link href="https://igdb.github.io/api//css/igdb.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/api/misc-objects/image/">
+  <body class="" data-url="/api/references/webhooks/">
     <nav id="sidebar">
   <div id="header-wrapper">
     <div id="header">
@@ -453,7 +453,7 @@ API
       
       
 
-      <li class="dd-item  parent" data-nav-id="/api/misc-objects/">
+      <li class="dd-item  " data-nav-id="/api/misc-objects/">
         <a href="/api/misc-objects/">
           <span>
             
@@ -493,7 +493,7 @@ API
           
           
           
-            <li class="dd-item active" data-nav-id="/api/misc-objects/image/">
+            <li class="dd-item " data-nav-id="/api/misc-objects/image/">
               <a href="/api/misc-objects/image/">
                 <span>Image     </i></span>
               </a>
@@ -577,7 +577,7 @@ API
       
       
 
-      <li class="dd-item  " data-nav-id="/api/references/">
+      <li class="dd-item  parent" data-nav-id="/api/references/">
         <a href="/api/references/">
           <span>
             
@@ -657,7 +657,7 @@ API
           
           
           
-            <li class="dd-item " data-nav-id="/api/references/webhooks/">
+            <li class="dd-item active" data-nav-id="/api/references/webhooks/">
               <a href="/api/references/webhooks/">
                 <span>Webhooks     </i></span>
               </a>
@@ -688,7 +688,7 @@ API
                 
                 
               <div id="top-github-link">
-                  <a class="github-link" href="https://github.com/igdb/api/blob/master/content/misc-objects/image.md" target="blank">
+                  <a class="github-link" href="https://github.com/igdb/api/blob/master/content/references/webhooks.md" target="blank">
                     <i class="fa fa-code-fork"></i>
                     Edit this page
                   </a>
@@ -716,20 +716,30 @@ API
                   
                 
                   
+                
+                  
                     
                     
-                <a href="/api/misc-objects/" itemprop="url"><span itemprop="title">Miscellaneous objects</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/api/references/" itemprop="url"><span itemprop="title">Reference</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                  
-                
-                <span itemprop="title"> Image</span>
+                <span itemprop="title"> Webhooks</span>
               </div>
               
                   <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#what">What?</a></li>
+<li><a href="#how-to-register-your-webhook">How to register your webhook</a></li>
+<li><a href="#removing-a-webhook">Removing a Webhook</a></li>
+<li><a href="#category-keys">Category keys</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -739,61 +749,81 @@ API
             
     	        <div id="body-inner">
                 
-                <h1>Image</h1>
+                <h1>Webhooks</h1>
                 
 
-<p><strong><em>Example</em></strong></p>
 
-<pre><code class="language-json">{
-  &quot;url&quot;: &quot;//images.igdb.com/igdb/image/upload/t_thumb/l3n0zuklmgkloi1udslt.png&quot;,
-  &quot;width&quot;: 339,
-  &quot;height&quot;: 393,
-  &quot;cloudinary_id&quot;: &quot;l3n0zuklmgkloi1udslt&quot;
+
+<h2 id="what">What?</h2>
+
+<p>Webhooks allow us to push data to you when it is added or updated. Instead of polling the API for changes, you can listen on your HTTP endpoint (Webhook) and we will deliver the data to you.</p>
+
+<div class="notices info" ><p>Webhooks are only available on <a href="https://api.igdb.com/pricing">Pro, Ultra and Enterprise plans</a>.</p>
+</div>
+
+
+<h2 id="how-to-register-your-webhook">How to register your webhook</h2>
+
+<p>Make a POST request to <code>/webhooks</code> via the IGDB API and include the following as the BODY of the request or as url encoded form parameters&hellip;</p>
+
+<pre><code class="language-javascript">{
+    &quot;webhook&quot;: {
+        &quot;url&quot;: &quot;YOUR_WEBHOOK_URL&quot;, // url that the data will be sent to.
+        &quot;category&quot;: 1, // which kind of data you want to receive.
+        &quot;secret&quot;: &quot;YOUR_SECRET&quot; // we will send this back to you in each request.
+    }
 }
 </code></pre>
 
-<p><strong><em>Fields</em></strong></p>
+<p>On registering your webhook you will receive a response like this&hellip;</p>
 
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th align="center">Type</th>
-<th align="center">Mandatory</th>
-<th>Comment</th>
-</tr>
-</thead>
+<pre><code class="language-javascript">{
+    &quot;id&quot;: 42, // A unique ID for the webhook
+    &quot;url&quot;: &quot;YOUR_WEBHOOK_URL&quot;, // Your chosen URL
+    &quot;category&quot;: 1, // Your chosen category
+    &quot;last_failed_at&quot;: 1510826647000, // When the webhook last failed in unix time
+    &quot;secret&quot;: &quot;YOUR_SECRET&quot; // Your chosen secret
+}
+</code></pre>
 
-<tbody>
-<tr>
-<td>url</td>
-<td align="center">string</td>
-<td align="center">+</td>
-<td>Can be non-IGDB URL</td>
-</tr>
+<p>That’s it! The data will now be sent to your webhook.</p>
 
-<tr>
-<td>cloudinary_id</td>
-<td align="center">string</td>
-<td align="center">-</td>
-<td>Cloudinary slug</td>
-</tr>
+<p>You can ensure security by checking the <code>X-Secret</code> header in our request against your chosen secret.</p>
 
-<tr>
-<td>width</td>
-<td align="center">unsigned integer</td>
-<td align="center">-</td>
-<td>The image&rsquo;s width in pixels</td>
-</tr>
+<h2 id="removing-a-webhook">Removing a Webhook</h2>
 
-<tr>
-<td>height</td>
-<td align="center">unsigned integer</td>
-<td align="center">-</td>
-<td>The image&rsquo;s height in pixels</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>If a webhook fails to return a <code>200 OK</code> within 24 hours it will be removed.</li>
+<li>If a webhook returns <code>401 Unauthorized</code> it will be removed.</li>
+<li>You can manually unregister your webhook by sending a <code>DELETE</code> request to <code>/webhooks/ID</code> where ID is the ID returned during the registration process.</li>
+</ul>
+
+<h2 id="category-keys">Category keys</h2>
+
+<pre><code>Game: 1
+GameVersion: 2
+SocialMetricSource: 3
+SocialMetric: 4
+PulseSource: 5
+Category: 6
+Character: 7
+Company: 8
+GameEngine: 9
+GameMode: 10
+Person: 11
+Platform: 12
+PulseGroup: 13
+Pulse: 14
+Theme: 15
+Collection: 16
+PlayerPerspective: 17
+Page: 18
+Review: 19
+Franchise: 20
+Genre: 21
+ReleaseDate: 22
+Title (Job Title): 23
+</code></pre>
 
 
       
@@ -802,8 +832,8 @@ API
 
     <div id="navigation">
         
-        <a class="nav nav-prev" href="https://igdb.github.io/api//misc-objects/esrb"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="https://igdb.github.io/api//misc-objects/pegi" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="https://igdb.github.io/api//references/tag-numbers"> <i class="fa fa-chevron-left"></i></a>
+        
     </div>
 
     </section>

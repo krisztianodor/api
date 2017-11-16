@@ -606,5 +606,86 @@ tagNumber |= gameID # Adding the game ID to the tag number with a bitwise OR ope
 </description>
     </item>
     
+    <item>
+      <title>Webhooks</title>
+      <link>https://igdb.github.io/api/references/webhooks/</link>
+      <pubDate>Thu, 16 Nov 2017 10:23:50 +0100</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/webhooks/</guid>
+      <description>
+
+&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
+
+&lt;p&gt;Webhooks allow us to push data to you when it is added or updated. Instead of polling the API for changes, you can listen on your HTTP endpoint (Webhook) and we will deliver the data to you.&lt;/p&gt;
+
+&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Webhooks are only available on &lt;a href=&#34;https://api.igdb.com/pricing&#34;&gt;Pro, Ultra and Enterprise plans&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;how-to-register-your-webhook&#34;&gt;How to register your webhook&lt;/h2&gt;
+
+&lt;p&gt;Make a POST request to &lt;code&gt;/webhooks&lt;/code&gt; via the IGDB API and include the following as the BODY of the request or as url encoded form parameters&amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;{
+    &amp;quot;webhook&amp;quot;: {
+        &amp;quot;url&amp;quot;: &amp;quot;YOUR_WEBHOOK_URL&amp;quot;, // url that the data will be sent to.
+        &amp;quot;category&amp;quot;: 1, // which kind of data you want to receive.
+        &amp;quot;secret&amp;quot;: &amp;quot;YOUR_SECRET&amp;quot; // we will send this back to you in each request.
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On registering your webhook you will receive a response like this&amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;{
+    &amp;quot;id&amp;quot;: 42, // A unique ID for the webhook
+    &amp;quot;url&amp;quot;: &amp;quot;YOUR_WEBHOOK_URL&amp;quot;, // Your chosen URL
+    &amp;quot;category&amp;quot;: 1, // Your chosen category
+    &amp;quot;last_failed_at&amp;quot;: 1510826647000, // When the webhook last failed in unix time
+    &amp;quot;secret&amp;quot;: &amp;quot;YOUR_SECRET&amp;quot; // Your chosen secret
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That’s it! The data will now be sent to your webhook.&lt;/p&gt;
+
+&lt;p&gt;You can ensure security by checking the &lt;code&gt;X-Secret&lt;/code&gt; header in our request against your chosen secret.&lt;/p&gt;
+
+&lt;h2 id=&#34;removing-a-webhook&#34;&gt;Removing a Webhook&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If a webhook fails to return a &lt;code&gt;200 OK&lt;/code&gt; within 24 hours it will be removed.&lt;/li&gt;
+&lt;li&gt;If a webhook returns &lt;code&gt;401 Unauthorized&lt;/code&gt; it will be removed.&lt;/li&gt;
+&lt;li&gt;You can manually unregister your webhook by sending a &lt;code&gt;DELETE&lt;/code&gt; request to &lt;code&gt;/webhooks/ID&lt;/code&gt; where ID is the ID returned during the registration process.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;category-keys&#34;&gt;Category keys&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;Game: 1
+GameVersion: 2
+SocialMetricSource: 3
+SocialMetric: 4
+PulseSource: 5
+Category: 6
+Character: 7
+Company: 8
+GameEngine: 9
+GameMode: 10
+Person: 11
+Platform: 12
+PulseGroup: 13
+Pulse: 14
+Theme: 15
+Collection: 16
+PlayerPerspective: 17
+Page: 18
+Review: 19
+Franchise: 20
+Genre: 21
+ReleaseDate: 22
+Title (Job Title): 23
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

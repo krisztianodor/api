@@ -166,6 +166,11 @@
   </url>
   
   <url>
+    <loc>https://igdb.github.io/api/references/webhooks/</loc>
+    <lastmod>2017-11-16T10:23:50+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://igdb.github.io/api/enum-fields/region/</loc>
     <lastmod>2017-01-15T20:01:12+10:00</lastmod>
   </url>
