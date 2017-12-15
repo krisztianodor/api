@@ -29,6 +29,8 @@
 &lt;li&gt;&lt;a href=&#34;./ordering&#34;&gt;Ordering&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./pagination&#34;&gt;Pagination&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./response-codes&#34;&gt;Response Codes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./tag-numbers&#34;&gt;Tag Numbers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./webhooks&#34;&gt;Webhooks&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

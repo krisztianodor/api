@@ -54,9 +54,13 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/igdb/igdb-api-node&#34;&gt;NodeJS&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/igdb/igdb-api-python&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/igdb/api-android-java&#34;&gt;Java/Android&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/messerli90/igdb&#34;&gt;Laravel&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tastycake/igdb_api&#34;&gt;Ruby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/igdb/api-java&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;Third party wrappers:
+- &lt;a href=&#34;https://github.com/messerli90/igdb&#34;&gt;Laravel&lt;/a&gt;
+- &lt;a href=&#34;https://github.com/tastycake/igdb_api&#34;&gt;Ruby&lt;/a&gt;
+- &lt;a href=&#34;https://github.com/Henry-Sarabia/igdb&#34;&gt;Go&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;need-support&#34;&gt;Need support?&lt;/h3&gt;
 
