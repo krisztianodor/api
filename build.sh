@@ -1,5 +1,4 @@
 #!/bin/bash
-
 hugo
 rm -rf /tmp/igdb-api/*
 cp -rf public /tmp/igdb-api
