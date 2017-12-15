@@ -42,6 +42,7 @@ Wrappers:
 Third party wrappers:
 - [Laravel](https://github.com/messerli90/igdb)
 - [Ruby](https://github.com/tastycake/igdb_api) 
+- [Go](https://github.com/Henry-Sarabia/igdb)
 
 ### Need support?
 
