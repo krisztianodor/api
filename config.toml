@@ -1,4 +1,11 @@
-baseURL = "http://example.org/"
+# baseURL = "http://example.org/"
+# languageCode = "en-us"
+# title = "My New Hugo Site"
+# theme = "hugo-theme-learn"
+
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "IGDB API Documentation"
 theme = "hugo-theme-learn"
+baseurl = "https://igdb.github.io/api/"
+[params]
+  editURL = "https://github.com/igdb/api/blob/master/content/"
