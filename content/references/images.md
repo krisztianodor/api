@@ -14,7 +14,7 @@ weight = 4
 
 **Original image url**
 
-`https://images.igdb.com/igdb/image/upload/dfgkfivjrhcksyymh9vw.png`
+`https://images.igdb.com/igdb/image/upload/t_original/yesnrawyww0jemvxzyws.jpg`
 
 **Break down:**
 
