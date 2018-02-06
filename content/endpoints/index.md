@@ -20,7 +20,7 @@ In order to communicate with the server, you will have to send these headers.
 | HTTP Header   | Value |
 | ------------- | ----- |
 | user-key | Your key |
-| Accept        | application/json |
+| accept        | application/json |
 
 {{% notice tip %}}
 Note: All endpoints support `limit` and `offset` [pagination](/api/references/pagination).

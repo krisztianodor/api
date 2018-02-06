@@ -16,7 +16,11 @@ There is also an **offset**. This will start the list at position 22 and give 33
 `/platforms/?limit=33&offset=22`
 
 {{% notice warning %}}
-`offset` has a maximum value of 10,000 for server-resource reasons. While simple pagination is perfect for smaller datasets, we strongly recommend using the Scroll API documented below for everything else.
+For ever tier, `offset` has a maximum value of 10,000 for server-resource reasons. While simple pagination is perfect for smaller datasets, we strongly recommend using the Scroll API documented below for everything else.
+{{% /notice %}}
+
+{{% notice info %}}
+For the pro tier and above, you can increase the page limit to 3000 by prepending the request with `/pro`. For example: `/pro/platforms/?limit=3000`
 {{% /notice %}}
 
 ### Scroll API
