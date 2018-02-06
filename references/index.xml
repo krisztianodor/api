@@ -297,13 +297,39 @@ Then when you know the ID&amp;rsquo;s of the platform:&lt;/p&gt;
       <guid>https://igdb.github.io/api/references/images/</guid>
       <description>
 
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;/games/1942?fields=screenshots&lt;/code&gt;&lt;br /&gt;
+Here we retrieve the image properties of the game with the id &amp;ldquo;1942&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Response:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[
+  {
+    &amp;quot;id&amp;quot;: 1942,
+    &amp;quot;screenshots&amp;quot;: [
+      {
+        &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&amp;quot;,
+        &amp;quot;cloudinary_id&amp;quot;: &amp;quot;z5t0yuhyiiui1ickwhgj&amp;quot;,
+        &amp;quot;width&amp;quot;: 1920,
+        &amp;quot;height&amp;quot;: 1080
+      },
+      {
+        &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&amp;quot;,
+        &amp;quot;cloudinary_id&amp;quot;: &amp;quot;mnljdjtrh44x4snmierh&amp;quot;,
+        &amp;quot;width&amp;quot;: 1920,
+        &amp;quot;height&amp;quot;: 1080
+      }
+    ]
+  }
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Replace the ID&amp;rsquo;s above (e.g. &lt;code&gt;z5t0yuhyiiui1ickwhgj&lt;/code&gt;) with the &lt;code&gt;cloudinary_id&lt;/code&gt; value, provided by the API.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Image url structure:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dfgkfivjrhcksyymh9vw.jpg&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Original image url&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;https://images.igdb.com/igdb/image/upload/t_original/yesnrawyww0jemvxzyws.jpg&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Break down:&lt;/strong&gt;&lt;/p&gt;
 
@@ -385,35 +411,9 @@ The image sizes are all maximum size but by appending &lt;code&gt;_2x&lt;/code&g
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Images that are removed or replaced from IGDB.com exist for 30 days before they are removed. Keep that in mind when caching.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p&gt;&lt;code&gt;/games/1942?fields=screenshots&lt;/code&gt;&lt;br /&gt;
-Here we retrieve the image properties of the game with the id &amp;ldquo;1942&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Response:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[
-  {
-    &amp;quot;id&amp;quot;: 1942,
-    &amp;quot;screenshots&amp;quot;: [
-      {
-        &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&amp;quot;,
-        &amp;quot;cloudinary_id&amp;quot;: &amp;quot;z5t0yuhyiiui1ickwhgj&amp;quot;,
-        &amp;quot;width&amp;quot;: 1920,
-        &amp;quot;height&amp;quot;: 1080
-      },
-      {
-        &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&amp;quot;,
-        &amp;quot;cloudinary_id&amp;quot;: &amp;quot;mnljdjtrh44x4snmierh&amp;quot;,
-        &amp;quot;width&amp;quot;: 1920,
-        &amp;quot;height&amp;quot;: 1080
-      }
-    ]
-  }
-]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Replace the hashes above with &lt;code&gt;cloudinary_id&lt;/code&gt;, provided by the API.&lt;/p&gt;
 </description>
     </item>
     
@@ -467,7 +467,11 @@ For example, you can order games based on it&amp;rsquo;s earliest release date l
 &lt;p&gt;There is also an &lt;strong&gt;offset&lt;/strong&gt;. This will start the list at position 22 and give 33 results.
 &lt;code&gt;/platforms/?limit=33&amp;amp;offset=22&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;&lt;code&gt;offset&lt;/code&gt; has a maximum value of 10,000 for server-resource reasons. While simple pagination is perfect for smaller datasets, we strongly recommend using the Scroll API documented below for everything else.&lt;/p&gt;
+&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;For ever tier, &lt;code&gt;offset&lt;/code&gt; has a maximum value of 10,000 for server-resource reasons. While simple pagination is perfect for smaller datasets, we strongly recommend using the Scroll API documented below for everything else.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;For the pro tier and above, you can increase the page limit to 3000 by prepending the request with &lt;code&gt;/pro&lt;/code&gt;. For example: &lt;code&gt;/pro/platforms/?limit=3000&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 

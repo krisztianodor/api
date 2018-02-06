@@ -751,13 +751,39 @@ API
 
 
 
+<h2 id="examples">Examples</h2>
+
+<p><code>/games/1942?fields=screenshots</code><br />
+Here we retrieve the image properties of the game with the id &ldquo;1942&rdquo;</p>
+
+<p><strong>Response:</strong></p>
+
+<pre><code>[
+  {
+    &quot;id&quot;: 1942,
+    &quot;screenshots&quot;: [
+      {
+        &quot;url&quot;: &quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&quot;,
+        &quot;cloudinary_id&quot;: &quot;z5t0yuhyiiui1ickwhgj&quot;,
+        &quot;width&quot;: 1920,
+        &quot;height&quot;: 1080
+      },
+      {
+        &quot;url&quot;: &quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&quot;,
+        &quot;cloudinary_id&quot;: &quot;mnljdjtrh44x4snmierh&quot;,
+        &quot;width&quot;: 1920,
+        &quot;height&quot;: 1080
+      }
+    ]
+  }
+]
+</code></pre>
+
+<p>Replace the ID&rsquo;s above (e.g. <code>z5t0yuhyiiui1ickwhgj</code>) with the <code>cloudinary_id</code> value, provided by the API.</p>
+
 <p><strong>Image url structure:</strong></p>
 
 <p><code>https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dfgkfivjrhcksyymh9vw.jpg</code></p>
-
-<p><strong>Original image url</strong></p>
-
-<p><code>https://images.igdb.com/igdb/image/upload/t_original/yesnrawyww0jemvxzyws.jpg</code></p>
 
 <p><strong>Break down:</strong></p>
 
@@ -839,35 +865,9 @@ The image sizes are all maximum size but by appending <code>_2x</code> to any si
 </tbody>
 </table>
 
-<h2 id="examples">Examples</h2>
+<div class="notices info" ><p>Images that are removed or replaced from IGDB.com exist for 30 days before they are removed. Keep that in mind when caching.</p>
+</div>
 
-<p><code>/games/1942?fields=screenshots</code><br />
-Here we retrieve the image properties of the game with the id &ldquo;1942&rdquo;</p>
-
-<p><strong>Response:</strong></p>
-
-<pre><code>[
-  {
-    &quot;id&quot;: 1942,
-    &quot;screenshots&quot;: [
-      {
-        &quot;url&quot;: &quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&quot;,
-        &quot;cloudinary_id&quot;: &quot;z5t0yuhyiiui1ickwhgj&quot;,
-        &quot;width&quot;: 1920,
-        &quot;height&quot;: 1080
-      },
-      {
-        &quot;url&quot;: &quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&quot;,
-        &quot;cloudinary_id&quot;: &quot;mnljdjtrh44x4snmierh&quot;,
-        &quot;width&quot;: 1920,
-        &quot;height&quot;: 1080
-      }
-    ]
-  }
-]
-</code></pre>
-
-<p>Replace the hashes above with <code>cloudinary_id</code>, provided by the API.</p>
 
 
       

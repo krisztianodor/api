@@ -763,7 +763,11 @@ API
 <p>There is also an <strong>offset</strong>. This will start the list at position 22 and give 33 results.
 <code>/platforms/?limit=33&amp;offset=22</code></p>
 
-<div class="notices warning" ><p><code>offset</code> has a maximum value of 10,000 for server-resource reasons. While simple pagination is perfect for smaller datasets, we strongly recommend using the Scroll API documented below for everything else.</p>
+<div class="notices warning" ><p>For ever tier, <code>offset</code> has a maximum value of 10,000 for server-resource reasons. While simple pagination is perfect for smaller datasets, we strongly recommend using the Scroll API documented below for everything else.</p>
+</div>
+
+
+<div class="notices info" ><p>For the pro tier and above, you can increase the page limit to 3000 by prepending the request with <code>/pro</code>. For example: <code>/pro/platforms/?limit=3000</code></p>
 </div>
 
 
