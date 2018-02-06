@@ -1,7 +1,3 @@
 #!/bin/bash
-hugo
-rm -rf /tmp/igdb-api/*
-cp -rf public /tmp/igdb-api
-git checkout gh-pages
-rm -rf *
-cp -rf /tmp/igdb-api/* .
+hugo --destination "/tmp/igdb-api"
+if git checkout gh-pages; then rm -rf * && cp -rf /tmp/igdb-api/* .; fi
