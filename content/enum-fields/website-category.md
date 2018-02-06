@@ -24,4 +24,5 @@ title = "Website category"
 | 11     | ipad |
 | 12     | android |
 | 13     | steam |
+| 14     | Reddit |
 
