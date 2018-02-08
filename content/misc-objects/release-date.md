@@ -8,5 +8,4 @@ title = "Release date"
 
 +++
 
-The Release date miscellaneous object is identical to the [Release date](../../endpoints/release-date) object except that
-it doesn't have an ID.
+The Release date miscellaneous object is identical to the [Release date](../../endpoints/release-date) object except that it doesn't have an ID. Release dates are in milliseconds.
