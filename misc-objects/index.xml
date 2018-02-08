@@ -515,8 +515,7 @@ or as an array of objects.&lt;/p&gt;
       <pubDate>Sun, 15 Jan 2017 19:26:23 +1000</pubDate>
       
       <guid>https://igdb.github.io/api/misc-objects/release-date/</guid>
-      <description>&lt;p&gt;The Release date miscellaneous object is identical to the &lt;a href=&#34;../../endpoints/release-date&#34;&gt;Release date&lt;/a&gt; object except that
-it doesn&amp;rsquo;t have an ID.&lt;/p&gt;
+      <description>&lt;p&gt;The Release date miscellaneous object is identical to the &lt;a href=&#34;../../endpoints/release-date&#34;&gt;Release date&lt;/a&gt; object except that it doesn&amp;rsquo;t have an ID. Release dates are in milliseconds.&lt;/p&gt;
 </description>
     </item>
     
