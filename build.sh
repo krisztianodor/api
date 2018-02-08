@@ -6,6 +6,5 @@ if git checkout gh-pages; then
     cp -rf /tmp/igdb-api/* .
     git add -A
     git commit -m "Derp"
-    git push
     git checkout master
 fi
