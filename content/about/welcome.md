@@ -54,4 +54,4 @@ Third party & out of date. Need help :'(
 
 [Click here](/api/references/response-codes/) if you are experiencing **400, 401, 403 or 500 errors**.
 
-Access community support by either using our [Discord](https://discord.gg/JKsh9R7) channel or contact us directly by chatting with us - [Go here and click the little yellow box on the bottom right](https://api.igdb.com/).
+Access community support by either using our [Discord](https://discord.gg/JKsh9R7) channel or contact us directly by chatting with us - [Go here and click the little orange box on the bottom right](https://api.igdb.com/).
