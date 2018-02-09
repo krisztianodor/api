@@ -12,7 +12,7 @@ title = "Examples"
 #### An example request in Java
 ----------
 ```
-HttpResponse<JsonNode> response = Unirest.get("https://api-2445582011268.apicast.io/characters/?fields=*&limit=10")
+HttpResponse<JsonNode> response = Unirest.get("https://api-endpoint.igdb.com/characters/?fields=*&limit=10")
 .header("user-key", "YOUR_KEY")
 .header("Accept", "application/json")
 .asJson();
@@ -50,9 +50,9 @@ The popularity number is calculated using usage statistics of game pages at http
 #### Coming soon games for Playstation 4
 ----------
 
-   `/release_dates/?fields=*&filter[platform][eq]=48&order=date:asc&filter[date][gt]=1500619813000`
+   `/release_dates/?fields=*&filter[platform][eq]=48&order=date:asc&filter[date][gt]=1500619813000&expand=game`
 
-1500619813000: Is the timestamp in miliseconds of today (This you need to generate yourself)  
+1500619813000: Is the timestamp in milliseconds of today (This you need to generate yourself)  
 48 Is the platform id of Playstation 4.
 
 #### Search, return certain fields.

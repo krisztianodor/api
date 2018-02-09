@@ -24,7 +24,7 @@ For a high level overview of our juicy data, check out the [endpoints section](/
 
 In order to use our API, you must have an [account and key](https://api.igdb.com/signup).
   
-The IGDB.com API is free for **non-commercial** & **commercial usage**.
+The IGDB.com API is free for **non-commercial** & **commercial** usage.
 
 ### REST Examples
 
@@ -40,10 +40,18 @@ Wrappers:
 - [Java](https://github.com/igdb/api-java)
 
 Third party wrappers:
+
 - [Laravel](https://github.com/messerli90/igdb)
-- [Ruby](https://github.com/tastycake/igdb_api) 
 - [Go](https://github.com/Henry-Sarabia/igdb)
+
+Third party & out of date. Need help :'(
+
+- [Ruby](https://github.com/tastycake/igdb_api) 
 
 ### Need support?
 
-Access community support by either using our [Discord](https://discord.gg/JKsh9R7) channel or contact us directly by chatting with us - [Go here and click the little green box on the bottom right](https://api.igdb.com/).
+[Click here](/api/references/cors) if you are using **Browser Javascript** or **Ionic framework** and have CORS issues.
+
+[Click here](/api/references/response-codes/) if you are experiencing **400, 401, 403 or 500 errors**.
+
+Access community support by either using our [Discord](https://discord.gg/JKsh9R7) channel or contact us directly by chatting with us - [Go here and click the little yellow box on the bottom right](https://api.igdb.com/).

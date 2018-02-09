@@ -13,6 +13,7 @@ title = "Reference"
 
 This section describes all available data points and the means to retrieve them.
 
+- [CORS for Javascript & Ionic](./cors)
 - [Expander](./expander)
 - [Fields](./fields)
 - [Filters](./filters)
