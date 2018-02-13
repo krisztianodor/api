@@ -21,7 +21,7 @@
 
 &lt;hr /&gt;
 
-&lt;pre&gt;&lt;code&gt;HttpResponse&amp;lt;JsonNode&amp;gt; response = Unirest.get(&amp;quot;https://api-2445582011268.apicast.io/characters/?fields=*&amp;amp;limit=10&amp;quot;)
+&lt;pre&gt;&lt;code&gt;HttpResponse&amp;lt;JsonNode&amp;gt; response = Unirest.get(&amp;quot;https://api-endpoint.igdb.com/characters/?fields=*&amp;amp;limit=10&amp;quot;)
 .header(&amp;quot;user-key&amp;quot;, &amp;quot;YOUR_KEY&amp;quot;)
 .header(&amp;quot;Accept&amp;quot;, &amp;quot;application/json&amp;quot;)
 .asJson();
@@ -68,9 +68,9 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;code&gt;/release_dates/?fields=*&amp;amp;filter[platform][eq]=48&amp;amp;order=date:asc&amp;amp;filter[date][gt]=1500619813000&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/release_dates/?fields=*&amp;amp;filter[platform][eq]=48&amp;amp;order=date:asc&amp;amp;filter[date][gt]=1500619813000&amp;amp;expand=game&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;1500619813000: Is the timestamp in miliseconds of today (This you need to generate yourself)&lt;br /&gt;
+&lt;p&gt;1500619813000: Is the timestamp in milliseconds of today (This you need to generate yourself)&lt;br /&gt;
 48 Is the platform id of Playstation 4.&lt;/p&gt;
 
 &lt;h4 id=&#34;search-return-certain-fields&#34;&gt;Search, return certain fields.&lt;/h4&gt;

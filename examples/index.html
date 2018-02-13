@@ -593,6 +593,14 @@ API
           
           
           
+            <li class="dd-item " data-nav-id="/api/references/cors/">
+              <a href="/api/references/cors/">
+                <span>CORS for Javascript &amp; Ionic     </i></span>
+              </a>
+            </li>
+          
+          
+          
             <li class="dd-item " data-nav-id="/api/references/expander/">
               <a href="/api/references/expander/">
                 <span>Expander     </i></span>
@@ -767,7 +775,7 @@ API
 
 <hr />
 
-<pre><code>HttpResponse&lt;JsonNode&gt; response = Unirest.get(&quot;https://api-2445582011268.apicast.io/characters/?fields=*&amp;limit=10&quot;)
+<pre><code>HttpResponse&lt;JsonNode&gt; response = Unirest.get(&quot;https://api-endpoint.igdb.com/characters/?fields=*&amp;limit=10&quot;)
 .header(&quot;user-key&quot;, &quot;YOUR_KEY&quot;)
 .header(&quot;Accept&quot;, &quot;application/json&quot;)
 .asJson();
@@ -814,9 +822,9 @@ API
 
 <hr />
 
-<p><code>/release_dates/?fields=*&amp;filter[platform][eq]=48&amp;order=date:asc&amp;filter[date][gt]=1500619813000</code></p>
+<p><code>/release_dates/?fields=*&amp;filter[platform][eq]=48&amp;order=date:asc&amp;filter[date][gt]=1500619813000&amp;expand=game</code></p>
 
-<p>1500619813000: Is the timestamp in miliseconds of today (This you need to generate yourself)<br />
+<p>1500619813000: Is the timestamp in milliseconds of today (This you need to generate yourself)<br />
 48 Is the platform id of Playstation 4.</p>
 
 <h4 id="search-return-certain-fields">Search, return certain fields.</h4>

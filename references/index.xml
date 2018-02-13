@@ -22,6 +22,7 @@
 &lt;p&gt;This section describes all available data points and the means to retrieve them.&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;./cors&#34;&gt;CORS for Javascript &amp;amp; Ionic&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./expander&#34;&gt;Expander&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./fields&#34;&gt;Fields&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./filters&#34;&gt;Filters&lt;/a&gt;&lt;/li&gt;
@@ -32,6 +33,48 @@
 &lt;li&gt;&lt;a href=&#34;./tag-numbers&#34;&gt;Tag Numbers&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./webhooks&#34;&gt;Webhooks&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CORS for Javascript &amp; Ionic</title>
+      <link>https://igdb.github.io/api/references/cors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.io/api/references/cors/</guid>
+      <description>
+
+&lt;h3 id=&#34;cross-origin-resource-sharing&#34;&gt;Cross-Origin Resource Sharing&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS&#34;&gt;Cross-Origin Resource Sharing&lt;/a&gt; (CORS) is a mechanism that uses additional HTTP headers to let a user agent gain permission to access selected resources from a server on a different origin (domain) than the site currently in use. These security restrictions only affect browser-based javascript and mobile javascript frameworks like Ionic.&lt;/p&gt;
+
+&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Enabling CORS is only available in &lt;a href=&#34;https://api.igdb.com/pricing&#34;&gt;premium tiers&lt;/a&gt;. For free users you can set up a &lt;a href=&#34;https://stackoverflow.com/questions/25468100/simple-php-proxy-with-persistent-url&#34;&gt;proxy server&lt;/a&gt;, &lt;a href=&#34;https://blog.ionicframework.com/handling-cors-issues-in-ionic/&#34;&gt;Ionic&lt;/a&gt; also has a guide for this.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;To enable CORS, you need to register your domain by sending a POST request to the headers endpoint. To achieve this in &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;Postman&lt;/a&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Set the POST request url to &lt;code&gt;https://api-endpoint.igdb.com/headers/&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Set the body to the following json&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &amp;quot;api_header&amp;quot;: {
+        &amp;quot;header&amp;quot;: &amp;quot;Access-Control-Allow-Origin&amp;quot;,
+        &amp;quot;value&amp;quot;: &amp;quot;yourdomain.com&amp;quot;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Change &lt;code&gt;yourdomain.com&lt;/code&gt; to your domain or &lt;code&gt;localhost:8100&lt;/code&gt; for Ionic.&lt;/li&gt;
+&lt;li&gt;Send!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Future responses from the API will contain the special header required to access the API. &lt;code&gt;Access-Control-Allow-Origin: yourdomain.com&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To delete the header, send a DELETE request to &lt;code&gt;/headers/?header=Access-Control-Allow-Origin&lt;/code&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -497,29 +540,30 @@ For example, you can order games based on it&amp;rsquo;s earliest release date l
       
       <guid>https://igdb.github.io/api/references/response-codes/</guid>
       <description>&lt;ul&gt;
-&lt;li&gt;200 = OK! Good response!
+&lt;li&gt;&lt;strong&gt;200&lt;/strong&gt; = OK! Good response!
 
 &lt;ul&gt;
 &lt;li&gt;This result may still contain an empty array which indicates there are no results for your query.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;400 = Bad request
+&lt;li&gt;&lt;strong&gt;400&lt;/strong&gt; = Bad request
 
 &lt;ul&gt;
 &lt;li&gt;Something is wrong with the query parameters.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;401 = Unauthorized!
+&lt;li&gt;&lt;strong&gt;401&lt;/strong&gt; = Unauthorized!
 
 &lt;ul&gt;
-&lt;li&gt;You may not have a key, sign up at api.igdb.com&lt;/li&gt;
+&lt;li&gt;You may not have a key, sign up at &lt;a href=&#34;https://api.igdb.com/pricing&#34;&gt;api.igdb.com&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;You may be sending the key via a GET parameter which is incorrect, please use the &amp;ldquo;user-key&amp;rdquo; header.&lt;/li&gt;
-&lt;li&gt;Your account may not have access to this specific endpoint. Upgrade at api.igdb.com&lt;/li&gt;
+&lt;li&gt;Your account may not have access to this specific endpoint. Upgrade at &lt;a href=&#34;https://api.igdb.com/pricing&#34;&gt;api.igdb.com&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;403 = Forbidden
+&lt;li&gt;&lt;strong&gt;403&lt;/strong&gt; = Forbidden
 
 &lt;ul&gt;
-&lt;li&gt;You have probably hit your usage cap. &lt;a href=&#34;https://api.igdb.com/pricing&#34;&gt;Upgrade here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You may have hit your usage cap. &lt;a href=&#34;https://api.igdb.com/pricing&#34;&gt;Upgrade here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You may be using browser javascript or ionic framework to make requests to the API and need to &lt;a href=&#34;../cors&#34;&gt;enable CORs on your account&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;500 = Internal Error
+&lt;li&gt;&lt;strong&gt;500&lt;/strong&gt; = Internal Error
 
 &lt;ul&gt;
 &lt;li&gt;The server has done something wrong. This is a bug and should be reported.&lt;/li&gt;

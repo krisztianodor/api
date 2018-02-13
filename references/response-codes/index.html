@@ -593,6 +593,14 @@ API
           
           
           
+            <li class="dd-item " data-nav-id="/api/references/cors/">
+              <a href="/api/references/cors/">
+                <span>CORS for Javascript &amp; Ionic     </i></span>
+              </a>
+            </li>
+          
+          
+          
             <li class="dd-item " data-nav-id="/api/references/expander/">
               <a href="/api/references/expander/">
                 <span>Expander     </i></span>
@@ -743,29 +751,30 @@ API
                 
 
 <ul>
-<li>200 = OK! Good response!
+<li><strong>200</strong> = OK! Good response!
 
 <ul>
 <li>This result may still contain an empty array which indicates there are no results for your query.</li>
 </ul></li>
-<li>400 = Bad request
+<li><strong>400</strong> = Bad request
 
 <ul>
 <li>Something is wrong with the query parameters.</li>
 </ul></li>
-<li>401 = Unauthorized!
+<li><strong>401</strong> = Unauthorized!
 
 <ul>
-<li>You may not have a key, sign up at api.igdb.com</li>
+<li>You may not have a key, sign up at <a href="https://api.igdb.com/pricing">api.igdb.com</a>.</li>
 <li>You may be sending the key via a GET parameter which is incorrect, please use the &ldquo;user-key&rdquo; header.</li>
-<li>Your account may not have access to this specific endpoint. Upgrade at api.igdb.com</li>
+<li>Your account may not have access to this specific endpoint. Upgrade at <a href="https://api.igdb.com/pricing">api.igdb.com</a>.</li>
 </ul></li>
-<li>403 = Forbidden
+<li><strong>403</strong> = Forbidden
 
 <ul>
-<li>You have probably hit your usage cap. <a href="https://api.igdb.com/pricing">Upgrade here</a>.</li>
+<li>You may have hit your usage cap. <a href="https://api.igdb.com/pricing">Upgrade here</a>.</li>
+<li>You may be using browser javascript or ionic framework to make requests to the API and need to <a href="../cors">enable CORs on your account</a>.</li>
 </ul></li>
-<li>500 = Internal Error
+<li><strong>500</strong> = Internal Error
 
 <ul>
 <li>The server has done something wrong. This is a bug and should be reported.</li>

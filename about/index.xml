@@ -40,7 +40,7 @@
 
 &lt;p&gt;In order to use our API, you must have an &lt;a href=&#34;https://api.igdb.com/signup&#34;&gt;account and key&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The IGDB.com API is free for &lt;strong&gt;non-commercial&lt;/strong&gt; &amp;amp; &lt;strong&gt;commercial usage&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The IGDB.com API is free for &lt;strong&gt;non-commercial&lt;/strong&gt; &amp;amp; &lt;strong&gt;commercial&lt;/strong&gt; usage.&lt;/p&gt;
 
 &lt;h3 id=&#34;rest-examples&#34;&gt;REST Examples&lt;/h3&gt;
 
@@ -57,14 +57,26 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/igdb/api-java&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Third party wrappers:
-- &lt;a href=&#34;https://github.com/messerli90/igdb&#34;&gt;Laravel&lt;/a&gt;
-- &lt;a href=&#34;https://github.com/tastycake/igdb_api&#34;&gt;Ruby&lt;/a&gt;
-- &lt;a href=&#34;https://github.com/Henry-Sarabia/igdb&#34;&gt;Go&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Third party wrappers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/messerli90/igdb&#34;&gt;Laravel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Henry-Sarabia/igdb&#34;&gt;Go&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Third party &amp;amp; out of date. Need help :&amp;lsquo;(&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tastycake/igdb_api&#34;&gt;Ruby&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&#34;need-support&#34;&gt;Need support?&lt;/h3&gt;
 
-&lt;p&gt;Access community support by either using our &lt;a href=&#34;https://discord.gg/JKsh9R7&#34;&gt;Discord&lt;/a&gt; channel or contact us directly by chatting with us - &lt;a href=&#34;https://api.igdb.com/&#34;&gt;Go here and click the little green box on the bottom right&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://igdb.github.io/api/api/references/cors&#34;&gt;Click here&lt;/a&gt; if you are using &lt;strong&gt;Browser Javascript&lt;/strong&gt; or &lt;strong&gt;Ionic framework&lt;/strong&gt; and have CORS issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://igdb.github.io/api/api/references/response-codes/&#34;&gt;Click here&lt;/a&gt; if you are experiencing &lt;strong&gt;400, 401, 403 or 500 errors&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Access community support by either using our &lt;a href=&#34;https://discord.gg/JKsh9R7&#34;&gt;Discord&lt;/a&gt; channel or contact us directly by chatting with us - &lt;a href=&#34;https://api.igdb.com/&#34;&gt;Go here and click the little orange box on the bottom right&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
