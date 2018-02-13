@@ -17,7 +17,6 @@ Enabling CORS is only available in [premium tiers](https://api.igdb.com/pricing)
 To enable CORS, you need to register your domain by sending a POST request to the headers endpoint. To achieve this in [Postman](https://www.getpostman.com/)...
 
 - Set the POST request url to `https://api-endpoint.igdb.com/headers/`.
-- Add your `user-key` as a request header in the headers section.
 - Set the body to the following json...
 
 ```
