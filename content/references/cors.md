@@ -33,3 +33,5 @@ To enable CORS, you need to register your domain by sending a POST request to th
 - Send!
 
 Future responses from the API will contain the special header required to access the API. `Access-Control-Allow-Origin: yourdomain.com`
+
+To delete the header, send a DELETE request to `/headers/?header=Access-Control-Allow-Origin`.
