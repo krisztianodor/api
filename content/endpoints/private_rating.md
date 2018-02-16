@@ -30,6 +30,10 @@ title = "User Ratings"
 ***Usage***
 With the user rating endpoint you can add, update, and delete user ratings for a specific user defined in the accesstoken. 
 
+***Important headers***
+Authorization: Bearer "YOUR_ACCESSTOKEN"
+Content-Type: application/json
+
 * Create user rating (POST)
 
 	To create a new rating you have to send a post request with the new rating in the form of a JSON, JSON structure bellow.  
