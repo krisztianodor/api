@@ -27,10 +27,10 @@ title = "User Ratings"
 | game         | unsigned 64-bit integer |     +     | ID of a Game that the user has rated |
 | rating       | unsigned 64-bit integer |     +     | The rating value for the specific game, 0 - 10 |
 
-***Usage***
+***Usage***   
 With the user rating endpoint you can add, update, and delete user ratings for a specific user defined in the accesstoken. 
 
-***Important headers***
+***Important headers***   
 Authorization: Bearer "YOUR_ACCESSTOKEN"
 Content-Type: application/json
 
