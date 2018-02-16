@@ -30,17 +30,20 @@ title = "User Ratings"
 ***Usage***
 With the user rating endpoint you can add, update, and delete user ratings for a specific user defined in the accesstoken. 
 
-* *Create user rating (POST)*
+* Create user rating (POST)
+
 To create a new rating you have to send a post request with the new rating in the form of a JSON, JSON structure bellow.
 request URL: /private/rates/
 The API will respond with the newly created rating, see Example Response.
 
 * Update user rating (PATCH)
+
 To update an existing user rating you have to send a patch request with the updated rating in the form of a JSON, JSON structure bellow. The request url should contain the rating id at the end. 
 request URL: /private/rates/156849
 The API will respond with the newly created rating, see Example Response.
 
 * Delete user rating (DELETE)
+
 To delete an existing user rating you have to send a delete request with the rating id.
 request URL: /private/rates/156849
 The API will respond with just the rating id 
