@@ -59,6 +59,7 @@ title = "Game"
 | keywords            | array of unsigned 64-bit integers |     -     | IDs of [Keyword](../keyword) records |
 | themes              | array of unsigned 64-bit integers |     -     | IDs of [Theme](../theme) records |
 | genres              | array of unsigned 64-bit integers |     -     | IDs of [Genre](../genre) records |
+| platforms           | array of unsigned 64-bit integers |     -     | IDs of [Platform](../platform) records |
 | first_release_date  | 64-bit integer                    |     -     | Unix epoch |
 | status              | integer                           |     -     | See the [Game status](../../enum-fields/game-status) value reference |
 | release_dates       | array of objects                  |     -     | See the [Release date](../../misc-objects/release-date) object reference |

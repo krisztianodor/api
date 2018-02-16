@@ -42,4 +42,4 @@ title = "Pulse"
 | published_at | 64-bit integer          |     +     | Unix epoch |
 | image        | string                  |     -     | URL pointing to the image |
 | author       | string                  |     -     ||
-| tags         | array of unsigned 32-bit integers |     -     | An array of [Tag Numbers](../../references/tagnumbers)  |
+| tags         | array of unsigned 32-bit integers |     -     | An array of [Tag Numbers](../../references/tag-numbers)  |

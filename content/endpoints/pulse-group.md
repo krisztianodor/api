@@ -42,6 +42,6 @@ title = "Pulse Group"
 | created_at | 64-bit integer                    |     +     | Unix epoch |
 | updated_at | 64-bit integer                    |     +     | Unix epoch |
 | published_at | 64-bit integer                  |     +     | Unix epoch |
-| tags       | array of unsigned 32-bit integers |     -     | An array of [Tag Numbers](../../misc-objects/tagnumbers) |
+| tags       | array of unsigned 32-bit integers |     -     | An array of [Tag Numbers](../../references/tag-numbers) |
 | pulses     | array of unsigned 64-bit integers |     -     | ID of a [Pulse](../pulse) item |
 | game       | array of unsigned 64-bit integers |     -     | ID of a [Game](../game) |
