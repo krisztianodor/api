@@ -1109,6 +1109,13 @@
 &lt;/tr&gt;
 
 &lt;tr&gt;
+&lt;td&gt;platforms&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td&gt;IDs of &lt;a href=&#34;../platform&#34;&gt;Platform&lt;/a&gt; records&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
 &lt;td&gt;first_release_date&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
