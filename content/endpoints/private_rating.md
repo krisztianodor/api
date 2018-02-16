@@ -51,7 +51,7 @@ With the user rating endpoint you can add, update, and delete user ratings for a
 ***Example POST JSON***
 ```json
 {
-	"rate":{
+    "rate":{
         "game": 1942,
         "rating": 10
     }
