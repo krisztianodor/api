@@ -52,7 +52,7 @@ Content-Type: application/json
 	request URL: /private/rates/156849  
 	The API will respond with just the rating id   
 
-***Example POST JSON***
+***Example JSON Body***
 ```json
 {
     "rate":{
