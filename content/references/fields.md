@@ -1,12 +1,11 @@
-+++
-toc=true
-weight = 2
-title = "Fields"
-date = "2017-01-09T10:23:15+01:00"
-next = "/references/filters"
-prev = "/references/expander"
-
-+++
+---
+toc: true
+weight: 2
+title: "Fields"
+date: "2017-01-09T10:23:15+01:00"
+next: "/references/filters"
+prev: "/references/expander"
+---
 
 ## What?
 Fields are properties of an entity. For example, a Game field would be `rating` or `release_dates`. Some fields have properties of their own, for example, the `esrb` field has the property `synopsis`.

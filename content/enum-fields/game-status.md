@@ -1,12 +1,12 @@
-+++
-date = "2017-01-15T18:35:20+10:00"
-toc = true
-next = "/enum-fields/gender"
-prev = "/enum-fields/game-category"
-weight = 6
-title = "Game status"
+---
+date: "2017-01-15T18:35:20+10:00"
+toc: true
+next: "/enum-fields/gender"
+prev: "/enum-fields/game-category"
+weight: 6
+title: "Game status"
 
-+++
+---
 
 ***Values***
 

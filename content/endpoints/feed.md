@@ -1,12 +1,12 @@
-+++
-date = "2017-01-10T19:08:39+10:00"
-toc = true
-next = "/endpoints/franchise"
-prev = "/endpoints/credit"
-weight = 5
-title = "Feed"
+---
+date: "2017-01-10T19:08:39+10:00"
+toc: true
+next: "/endpoints/franchise"
+prev: "/endpoints/credit"
+weight: 5
+title: "Feed"
 
-+++
+---
 
 ***URL path:*** /feeds/
 

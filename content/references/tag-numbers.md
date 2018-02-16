@@ -1,12 +1,12 @@
-+++
-title = "Tag Numbers"
-date = "2017-01-09T10:23:50+01:00"
-toc = true
-prev = "/references/response-codes"
-next = "/references/webhooks"
-weight = 8
+---
+title: "Tag Numbers"
+date: "2017-01-09T10:23:50+01:00"
+toc: true
+prev: "/references/response-codes"
+next: "/references/webhooks"
+weight: 8
 
-+++
+---
 
 Tag numbers are automatically generated numbers which provide a compact and fast way to do complex filtering on the IGDB API. The number calculation can be easily achieved with any programming language.
 
@@ -32,9 +32,9 @@ We try to find all the pulses which relate to the Shooter genre. The tag number 
 
 ```
 // Javascript
-const genreTypeID = 1 // The type ID from the table above
-const shooterGenreID = 5 // The Shooter genre's ID, coming from the genres endpoint.
-let tagNumber = genreTypeID << 28 // Bit-shifting the genre's type ID by 28 bits, ensuring that it will get into the first four bits. The result will be 268435456
+const genreTypeID: 1 // The type ID from the table above
+const shooterGenreID: 5 // The Shooter genre's ID, coming from the genres endpoint.
+let tagNumber: genreTypeID << 28 // Bit-shifting the genre's type ID by 28 bits, ensuring that it will get into the first four bits. The result will be 268435456
 tagNumber |= shooterGenreID // Adding the Shooter genre ID to the tag number with a bitwise OR operation. The result will be 268435461.
 ```
 
@@ -47,9 +47,9 @@ An example query:
 
 ```python
 #Python
-gameTypeID = 3 # The game's type ID from the table above/
-gameID = 26196 # The ID of the game /games/crash-bandicoot-n-sane-trilogy
-tagNumber = gameTypeID << 28 # Bit-shifting the game's type ID by 28 bits, ensuring that it will get into the first four bits. The result will be 805306368
+gameTypeID: 3 # The game's type ID from the table above/
+gameID: 26196 # The ID of the game /games/crash-bandicoot-n-sane-trilogy
+tagNumber: gameTypeID << 28 # Bit-shifting the game's type ID by 28 bits, ensuring that it will get into the first four bits. The result will be 805306368
 tagNumber |= gameID # Adding the game ID to the tag number with a bitwise OR operation. The result will be 805332564.
 ```
 

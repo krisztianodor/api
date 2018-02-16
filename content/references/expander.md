@@ -1,10 +1,10 @@
-+++
-toc = true
-next = "/references/fields"
-prev = "/references"
-weight = 1
-title = "Expander"
-+++
+---
+toc: true
+next: "/references/fields"
+prev: "/references"
+weight: 1
+title: "Expander"
+---
 
 ### Expander
 
@@ -64,7 +64,7 @@ Now for the more advanced expander:
 
 `/pulses/19357?fields=title,pulse_source.name,pulse_source.page.name,pulse_source.page.logo&expand=pulse_source.page`
 
-We get the pulse news article with ID = 19357.
+We get the pulse news article with ID: 19357.
 
 `expand=pulse_source.page`
 We want the pulse_source and it's page with associated logo's and deeper information.

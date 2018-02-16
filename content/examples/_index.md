@@ -1,18 +1,18 @@
-+++
-date = "2017-01-09T10:30:17+01:00"
-toc = true
-icon = "<b class='fa fa-smile-o'></b>"
-next = "/misc-objects"
-prev = "/enum-fields/website-category"
-weight = 0
-title = "Examples"
+---
+date: "2017-01-09T10:30:17+01:00"
+toc: true
+pre: "<b class='fa fa-smile-o'></b> "
+next: "/misc-objects"
+prev: "/enum-fields/website-category"
+weight: 1
+title: "Examples"
 
-+++
+---
 
 #### An example request in Java
 ----------
 ```
-HttpResponse<JsonNode> response = Unirest.get("https://api-endpoint.igdb.com/characters/?fields=*&limit=10")
+HttpResponse<JsonNode> response: Unirest.get("https://api-endpoint.igdb.com/characters/?fields=*&limit=10")
 .header("user-key", "YOUR_KEY")
 .header("Accept", "application/json")
 .asJson();

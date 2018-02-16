@@ -1,12 +1,12 @@
-+++
-date = "2017-01-13T21:35:46+10:00"
-toc = true
-next = "/endpoints/pulse"
-prev = "/endpoints/platform"
-weight = 15
-title = "Player Perspective"
+---
+date: "2017-01-13T21:35:46+10:00"
+toc: true
+next: "/endpoints/pulse"
+prev: "/endpoints/platform"
+weight: 15
+title: "Player Perspective"
 
-+++
+---
 
 ***URL path:*** /player_perspectives/
 

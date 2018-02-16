@@ -1,12 +1,12 @@
-+++
-date = "2017-01-15T18:35:11+10:00"
-toc = true
-next = "/misc-objects/platform-company"
-prev = "/misc-objects/image"
-weight = 4
-title = "PEGI"
+---
+date: "2017-01-15T18:35:11+10:00"
+toc: true
+next: "/misc-objects/platform-company"
+prev: "/misc-objects/image"
+weight: 4
+title: "PEGI"
 
-+++
+---
 
 ***Example***
 

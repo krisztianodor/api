@@ -1,13 +1,14 @@
-+++
-title = "User Lists"
-+++
+---
+title: "User Lists"
+---
 
 ***URL path:*** /private/lists/
 
 ***Description:*** IGDB user lists
 
-***Important:***   
-You can only access this information with a valid access token. And the lists will only be of this particulat user that is connected to the accesstoken.
+{{% notice info %}}
+This information is only accessible after a user has authenticated and you have an access token. Any reads or writes performed will be specifically to that user.
+{{% /notice %}}
 
 ***Example response***
 ```json

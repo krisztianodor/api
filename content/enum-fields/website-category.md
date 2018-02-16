@@ -1,12 +1,12 @@
-+++
-date = "2017-01-15T18:35:20+10:00"
-toc = true
-next = "/examples"
-prev = "/enum-fields/species"
-weight = 11
-title = "Website category"
+---
+date: "2017-01-15T18:35:20+10:00"
+toc: true
+next: "/examples"
+prev: "/enum-fields/species"
+weight: 11
+title: "Website category"
 
-+++
+---
 
 ***Values***
 

@@ -1,6 +1,6 @@
-+++
-title = "User Profile"
-+++
+---
+title: "User Profile"
+---
 
 ***URL path:*** /me/
 

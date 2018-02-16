@@ -1,12 +1,12 @@
-+++
-weight = 6
-title = "Pagination"
-date = "2017-01-09T10:24:00+01:00"
-toc = true
-next = "/references/response-codes"
-prev = "/references/ordering"
+---
+weight: 6
+title: "Pagination"
+date: "2017-01-09T10:24:00+01:00"
+toc: true
+next: "/references/response-codes"
+prev: "/references/ordering"
 
-+++
+---
 
 ### Simple Pagination
 Here is an example for how to use **limit**. The default limit is 10. The maximum limit is 50.

@@ -1,12 +1,12 @@
-+++
-date = "2017-06-08T14:05:08+02:00"
-toc = true
-next = "/endpoints/pulse-source"
-prev = "/endpoints/pulse"
-weight = 17
-title = "Pulse Group"
+---
+date: "2017-06-08T14:05:08+02:00"
+toc: true
+next: "/endpoints/pulse-source"
+prev: "/endpoints/pulse"
+weight: 17
+title: "Pulse Group"
 
-+++
+---
 
 ***URL path:*** /pulse_groups/
 

@@ -1,12 +1,12 @@
-+++
-date = "2017-01-15T18:40:41+10:00"
-toc = true
-next = "/enum-fields/region"
-prev = "/enum-fields/gender"
-weight = 8
-title = "PEGI rating"
+---
+date: "2017-01-15T18:40:41+10:00"
+toc: true
+next: "/enum-fields/region"
+prev: "/enum-fields/gender"
+weight: 8
+title: "PEGI rating"
 
-+++
+---
 
 ***Values***
 

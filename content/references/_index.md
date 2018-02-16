@@ -1,13 +1,13 @@
-+++
-date = "2017-01-09T10:23:01+01:00"
-icon = "<b class='fa fa-list'></b>"
-chapter = true
-prev = "/misc-objects/website"
-next = "/references/expander"
-weight = 0
-title = "Reference"
+---
+date: "2017-01-09T10:23:01+01:00"
+pre: "<b class='fa fa-list'></b> "
+chapter: true
+prev: "/misc-objects/website"
+next: "/references/expander"
+weight: 6
+title: "Reference"
 
-+++
+---
 
 ### References
 

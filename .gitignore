@@ -1,6 +1,6 @@
 public/
 .idea/
-
 npm-debug.log
 enum-fields/.DS_Store
 .DS_Store
+themes/hugo-theme-learn/exampleSite

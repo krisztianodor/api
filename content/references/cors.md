@@ -1,10 +1,10 @@
-+++
-toc = true
-next = "/references/expander"
-prev = "/api/references"
-weight = 0
-title = "CORS for Javascript & Ionic"
-+++
+---
+toc: true
+next: "/references/expander"
+prev: "/api/references"
+weight: 0
+title: "CORS for Javascript & Ionic"
+---
 
 ### Cross-Origin Resource Sharing
 

@@ -1,12 +1,12 @@
-+++
-title = "Images"
-date = "2017-01-09T10:23:50+01:00"
-toc = true
-prev = "/references/filters"
-next = "/references/ordering"
-weight = 4
+---
+title: "Images"
+date: "2017-01-09T10:23:50+01:00"
+toc: true
+prev: "/references/filters"
+next: "/references/ordering"
+weight: 4
 
-+++
+---
 
 ## Examples
 

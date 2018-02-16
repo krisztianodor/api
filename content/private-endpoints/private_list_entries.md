@@ -1,12 +1,14 @@
-+++
-title = "List Entries"
-+++
+---
+title: "List Entries"
+---
 
 ***URL path:*** /private/list_entries/
 
 ***Description:*** IGDB list entries
 
-***Important:*** You can only access this information with a valid access token. And the list entries will only be the entries of this particulat user that is connected to the accesstoken.
+{{% notice info %}}
+This information is only accessible after a user has authenticated and you have an access token. Any reads or writes performed will be specifically to that user.
+{{% /notice %}}
 
 ***Example response***
 ```json
@@ -27,7 +29,7 @@ title = "List Entries"
 | user         | unsigned 64-bit integer |     +     | User ID |
 | list         | unsigned 64-bit integer |     +     | List ID |
 | game         | unsigned 64-bit integer |     +     | ID of Game that the entry is reffering to |
-| position     | 64-bit integer          |     +     | position of the entry in the list, 0 = default |
+| position     | 64-bit integer          |     +     | position of the entry in the list, 0: default |
 
 ***Usage***   
 With the list entries endpoint you can add, and delete list entries for a specific users list defined in the accesstoken. 

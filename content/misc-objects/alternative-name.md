@@ -1,12 +1,12 @@
-+++
-date = "2017-01-15T18:27:42+10:00"
-toc = true
-next = "/misc-objects/esrb"
-prev = "/misc-objects"
-weight = 1
-title = "Alternative name"
+---
+date: "2017-01-15T18:27:42+10:00"
+toc: true
+next: "/misc-objects/esrb"
+prev: "/misc-objects"
+weight: 1
+title: "Alternative name"
 
-+++
+---
 
 ***Example***
 
