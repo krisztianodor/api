@@ -43,7 +43,7 @@ The API will respond with the newly created rating, see Example Response.
 * Delete user rating (DELETE)
 To delete an existing user rating you have to send a delete request with the rating id.
 request URL: /private/rates/156849
-The API will respond with just the rating id
+The API will respond with just the rating id 
 
 ***Example POST JSON***
 ```json
