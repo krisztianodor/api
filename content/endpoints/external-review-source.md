@@ -8,10 +8,6 @@ title: "External Review Source"
 
 ---
 
-{{% notice info %}}
-This endpoint is only available for [pro and ultra tiers](https://api.igdb.com/pricing).
-{{% /notice %}}
-
 ***URL path:*** /external_review_source/
 
 ***Example response***
