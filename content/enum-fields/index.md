@@ -1,9 +1,9 @@
 ---
-date: "2017-01-15T18:23:12+10:00"
-toc: true
-next: "/enum-fields/credit-category"
-prev: "/endpoints/versions"
-weight: 0
+
+
+
+
+
 title: "Enumerated fields"
 pre: "<b class='fa fa-list-ol'></b> "
 

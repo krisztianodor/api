@@ -1,9 +1,9 @@
 ---
-date: "2017-01-15T18:35:20+10:00"
-toc: true
-next: "/enum-fields/pegi-rating"
-prev: "/enum-fields/game-status"
-weight: 7
+
+
+
+
+
 title: "Gender"
 
 ---

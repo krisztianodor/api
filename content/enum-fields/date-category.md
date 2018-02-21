@@ -1,9 +1,9 @@
 ---
-date: "2017-01-15T18:35:20+10:00"
-toc: true
-next: "/enum-fields/esrb-rating"
-prev: "/enum-fields/credit-category"
-weight: 2
+
+
+
+
+
 title: "Date category"
 
 ---

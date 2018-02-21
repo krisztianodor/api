@@ -1,9 +1,9 @@
 ---
-date: "2017-01-11T20:46:03+10:00"
-toc: true
-next: "/endpoints/platform"
-prev: "/endpoints/page"
-weight: 13
+
+
+
+
+
 title: "Person"
 
 ---

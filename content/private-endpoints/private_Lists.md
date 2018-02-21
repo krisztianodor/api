@@ -4,10 +4,12 @@ title: "User Lists"
 
 ***URL path:*** /private/lists/
 
+***Scope Name*** list
+
 ***Description:*** IGDB user lists
 
 {{% notice info %}}
-This information is only accessible after a user has authenticated and you have an access token. Any reads or writes performed will be specifically to that user.
+This information is only accessible after a user has [authenticated](../authentication) and you have an access token. Any reads or writes performed will be specifically to that user.
 {{% /notice %}}
 
 ***Example response***

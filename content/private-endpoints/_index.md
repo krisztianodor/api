@@ -11,5 +11,10 @@ pre: "<b class='fa fa-sitemap'></b> "
 ## General information
 
 {{% notice info %}}
-Test private endpoints using [postman](https://www.getpostman.com/).
+[Authenticate](./authentication) first, then use [postman](https://www.getpostman.com/) to test private endpoints.
 {{% /notice %}}
+
+- [Authentication](./authentication)
+- [List Entries](./private_list_entries)
+- [Lists](./private_lists)
+- [Ratings](./private_rating)
