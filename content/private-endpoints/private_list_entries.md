@@ -4,7 +4,7 @@ title: "List Entries"
 
 ***URL path:*** /private/list_entries/
 
-***Scope Name*** list_entry
+***Scope Name*** lists
 
 ***Description:*** IGDB list entries
 

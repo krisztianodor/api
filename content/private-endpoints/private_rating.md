@@ -1,10 +1,10 @@
 ---
-title: "User Ratings"
+title: "Ratings"
 ---
 
 ***URL path:*** /private/rates/
 
-***Scope Name*** rating
+***Scope Name*** rates
 
 ***Description:*** IGDB user ratings
 

@@ -1,10 +1,10 @@
 ---
-title: "User Lists"
+title: "Lists"
 ---
 
 ***URL path:*** /private/lists/
 
-***Scope Name*** list
+***Scope Name*** lists
 
 ***Description:*** IGDB user lists
 
