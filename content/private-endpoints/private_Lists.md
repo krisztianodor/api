@@ -22,6 +22,7 @@ This information is only accessible after a user has authenticated and you have 
     "url": "https://www.igdb.com/users/1337/lists/want-to-play",
     "private": false,
     "numbering": false,
+    "count": 34,
     "lists": [
         16717,
         9581,
@@ -29,7 +30,7 @@ This information is only accessible after a user has authenticated and you have 
         20765,
         17883
     ]
-    }
+}
 ```
 
 ***Fields***
@@ -45,7 +46,8 @@ This information is only accessible after a user has authenticated and you have 
 | url          | string                  |     +     ||
 | private      | boolean                 |     +     | is the list publicly visible |
 | numbering    | boolen                  |     +     | is the list numbered |
-| lists        | array of unsigned 64-bit integers   |     -     | |
+| count        | 64-bit integer          |     +     | number of [list_entries]() in the list |
+| lists        | array of unsigned 64-bit integers   |     -     | similar lists to this one |
 
 ***Usage***   
 With the user lists endpoint you can add, update, and delete user lists for a specific user defined in the accesstoken. 
@@ -75,7 +77,7 @@ Content-Type: application/json
 ***Example JSON Body***
 ```json
 {
-	"list":{
+    "list": {
         "name": "my new list",
         "private": false,
         "numbering": false, -- (Optional)

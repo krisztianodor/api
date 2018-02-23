@@ -13,10 +13,10 @@ This information is only accessible after a user has authenticated and you have 
 ***Example response***
 ```json
 {
-  "id": 156849,
-  "user": 1337,
-  "game": 1942,
-  "rating": 9
+    "id": 156849,
+    "user": 1337,
+    "game": 1942,
+    "rating": 9
 }
 ```
 

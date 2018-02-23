@@ -13,11 +13,11 @@ This information is only accessible after a user has authenticated and you have 
 ***Example response***
 ```json
 {
-  "id": 157609,
-  "user": 1337,
-  "list": 7331,
-  "game": 1942,
-  "position": 0
+    "id": 157609,
+    "user": 1337,
+    "list": 7331,
+    "game": 1942,
+    "position": 0
 }
 ```
 
@@ -53,7 +53,7 @@ Content-Type: application/json
 ***Example JSON Body***
 ```json
 {
-	"list_entry":{
+    "list_entry":{
         "game": 1942,
         "list": 9823
     }
