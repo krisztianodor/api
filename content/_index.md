@@ -1,5 +1,4 @@
 ---
-date: "2017-01-09T10:20:09+01:00"
 pre: "<b class='fa fa-hand-peace-o'></b> "
 chapter: true
 next: "/endpoints"

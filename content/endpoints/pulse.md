@@ -1,9 +1,9 @@
 ---
-date: "2017-01-15T16:24:05+10:00"
-toc: true
-next: "/endpoints/pulse-group"
-prev: "/endpoints/player-perspective"
-weight: 16
+
+
+
+
+
 title: "Pulse"
 
 ---

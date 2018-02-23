@@ -1,12 +1,7 @@
 ---
-date: "2017-01-09T10:30:17+01:00"
-toc: true
 pre: "<b class='fa fa-smile-o'></b> "
-next: "/misc-objects"
-prev: "/enum-fields/website-category"
 weight: 1
 title: "Examples"
-
 ---
 
 #### An example request in Java

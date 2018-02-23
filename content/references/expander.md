@@ -1,8 +1,4 @@
 ---
-toc: true
-next: "/references/fields"
-prev: "/references"
-weight: 1
 title: "Expander"
 ---
 

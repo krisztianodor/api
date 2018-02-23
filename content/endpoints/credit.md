@@ -1,9 +1,9 @@
 ---
-date: "2017-01-13T21:35:46+10:00"
-toc: true
-next: "/endpoints/feed"
-prev: "/endpoints/company"
-weight: 4
+
+
+
+
+
 title: "Credits"
 
 ---

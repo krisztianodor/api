@@ -1,10 +1,10 @@
 ---
-toc: true
-next: "/references/tag-numbers"
-prev: "/references/pagination"
-weight: 7
+
+
+
+
 title: "Response Codes"
-date: "2017-07-28T10:23:47+01:00"
+
 ---
 
 - **200**: OK! Good response!

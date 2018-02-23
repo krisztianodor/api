@@ -1,9 +1,9 @@
 ---
-date: "2017-01-15T16:24:05+10:00"
-toc: true
-next: "/endpoints/release-date"
-prev: "/endpoints/pulse-group"
-weight: 18
+
+
+
+
+
 title: "Pulse Source"
 
 ---

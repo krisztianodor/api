@@ -1,9 +1,9 @@
 ---
-date: "2017-01-15T19:46:33+10:00"
-toc: true
-next: "/misc-objects/platform-version-release-date"
-prev: "/misc-objects/platform-company"
-weight: 6
+
+
+
+
+
 title: "Platform version"
 
 ---
