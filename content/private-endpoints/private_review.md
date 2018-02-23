@@ -86,26 +86,26 @@ Content-Type: application/json
 ***Example JSON Body***
 ```json
 {
-	"review": { 
-		"game_id": 36926,
-		"title": "Review: Monster Hunter: World (optional)",
-		"review_text_attributes": {
-			"introduction": "Review introduction (optional)",
-			"content": "Review content (required)",
-			"conclusion": "Review conclusion (optional)",
-			"positive_points": "Review positive points (optional)",
-			"negative_points": "Review negative points (optional)"
-		},
-		"rating_category": 3,
-		"review_rating_attributes": {
-			"story_rate": 10, 
-      "graphics_rate": 10, 
-      "audio_rate": 10, 
-      "controls_rate": 10, 
-      "fun_rate": 10,
-			"rating": 6
-		}
+    "review": { 
+	"game_id": 36926,
+	"title": "Review: Monster Hunter: World (optional)",
+	"review_text_attributes": {
+	    "introduction": "Review introduction (optional)",
+	    "content": "Review content (required)",
+	    "conclusion": "Review conclusion (optional)",
+	    "positive_points": "Review positive points (optional)",
+	    "negative_points": "Review negative points (optional)"
+	},
+	"rating_category": 3,
+	"review_rating_attributes": {
+            "story_rate": 10, 
+            "graphics_rate": 10, 
+            "audio_rate": 10, 
+            "controls_rate": 10, 
+            "fun_rate": 10,
+            "rating": 6
 	}
+    }
 }
 ```
 ***Additional info***  
