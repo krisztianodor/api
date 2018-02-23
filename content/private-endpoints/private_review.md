@@ -109,6 +109,6 @@ Content-Type: application/json
 }
 ```
 *** additional info***  
-content is the standard review space and is required to be filled with at least 50 characters to be accepted.
-rating category = 2 means only posting/ patching "rating": 6
-rating category = 3 means only posting/ patching advanced ratings, not rating.
+content is the standard review space and is required to be filled with at least 50 characters to be accepted.  
+rating category = 2 means only posting/ patching "rating": 6  
+rating category = 3 means only posting/ patching advanced ratings, not rating.  
