@@ -1,83 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Abouts on IGDB API Documentation</title>
-    <link>https://igdb.github.io/api/about/index.xml</link>
-    <description>Recent content in Abouts on IGDB API Documentation</description>
+    <title>IGDB.com API Documentation</title>
+    <link>https://igdb.github.com/api/about/</link>
+    <description>Recent content on IGDB.com API Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Jan 2017 10:20:09 +0100</lastBuildDate>
-    <atom:link href="https://igdb.github.io/api/about/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://igdb.github.com/api/about/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>Welcome</title>
-      <link>https://igdb.github.io/api/about/welcome/</link>
-      <pubDate>Mon, 09 Jan 2017 10:20:09 +0100</pubDate>
+      <title></title>
+      <link>https://igdb.github.com/api/about/welcome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/about/welcome/</guid>
-      <description>
-
-&lt;h1 id=&#34;internet-game-database-api-documentation&#34;&gt;Internet Game Database API Documentation&lt;/h1&gt;
-
-&lt;p&gt;One of the principles behind IGDB.com is accessibility of data. We wish to share the data with anyone who wants to build cool video game oriented websites, apps and services.&lt;/p&gt;
-
-&lt;p&gt;This means that you are not only contributing to the value of this IGDB but to thousands of other projects as well. We are looking forward to see what exciting game related projects you come up with. Happy coding!&lt;/p&gt;
-
-&lt;p&gt;For a high level overview of our juicy data, check out the &lt;a href=&#34;https://igdb.github.io/api/api/endpoints/&#34;&gt;endpoints section&lt;/a&gt;.&lt;/p&gt;
-
-&lt;a  href=&#34;https://api.igdb.com/signup&#34; target=&#34;_blank&#34;  class=&#34;btn btn-default&#34;&gt;
-  
-  
-  
-  GET FREE KEY
-  
-&lt;/a&gt;
-
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;the-basics&#34;&gt;The Basics&lt;/h3&gt;
-
-&lt;p&gt;In order to use our API, you must have an &lt;a href=&#34;https://api.igdb.com/signup&#34;&gt;account and key&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The IGDB.com API is free for &lt;strong&gt;non-commercial&lt;/strong&gt; &amp;amp; &lt;strong&gt;commercial&lt;/strong&gt; usage.&lt;/p&gt;
-
-&lt;h3 id=&#34;rest-examples&#34;&gt;REST Examples&lt;/h3&gt;
-
-&lt;p&gt;You can find some examples by &lt;a href=&#34;https://igdb.github.io/api/api/examples&#34;&gt;clicking here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;api-wrappers&#34;&gt;API Wrappers&lt;/h3&gt;
-
-&lt;p&gt;Wrappers:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/igdb/igdb-api-node&#34;&gt;NodeJS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/igdb/igdb-api-python&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/igdb/api-android-java&#34;&gt;Java/Android&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/igdb/api-java&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Third party wrappers:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/messerli90/igdb&#34;&gt;Laravel&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Henry-Sarabia/igdb&#34;&gt;Go&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Third party &amp;amp; out of date. Need help :&amp;lsquo;(&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tastycake/igdb_api&#34;&gt;Ruby&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;need-support&#34;&gt;Need support?&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://igdb.github.io/api/api/references/cors&#34;&gt;Click here&lt;/a&gt; if you are using &lt;strong&gt;Browser Javascript&lt;/strong&gt; or &lt;strong&gt;Ionic framework&lt;/strong&gt; and have CORS issues.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://igdb.github.io/api/api/references/response-codes/&#34;&gt;Click here&lt;/a&gt; if you are experiencing &lt;strong&gt;400, 401, 403 or 500 errors&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Access community support by either using our &lt;a href=&#34;https://discord.gg/JKsh9R7&#34;&gt;Discord&lt;/a&gt; channel or contact us directly by chatting with us - &lt;a href=&#34;https://api.igdb.com/&#34;&gt;Go here and click the little orange box on the bottom right&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <guid>https://igdb.github.com/api/about/welcome/</guid>
+      <description></description>
     </item>
     
   </channel>

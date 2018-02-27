@@ -1,1146 +1,800 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>IGDB API Documentation</title>
-    <link>https://igdb.github.io/api/index.xml</link>
-    <description>Recent content on IGDB API Documentation</description>
+    <title>Welcome on IGDB.com API Documentation</title>
+    <link>https://igdb.github.com/api/</link>
+    <description>Recent content in Welcome on IGDB.com API Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Jan 2017 18:35:20 +1000</lastBuildDate>
-    <atom:link href="https://igdb.github.io/api/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://igdb.github.com/api/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>Credit category</title>
-      <link>https://igdb.github.io/api/enum-fields/credit-category/</link>
-      <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
+      <title></title>
+      <link>https://igdb.github.com/api/about/welcome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/enum-fields/credit-category/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; The type of entry in an end credits list.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Category&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;voice_actor&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;language&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;company_credit&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;employee&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;misc&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;support_company&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
+      <guid>https://igdb.github.com/api/about/welcome/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Alternative name</title>
-      <link>https://igdb.github.io/api/misc-objects/alternative-name/</link>
-      <pubDate>Sun, 15 Jan 2017 18:27:42 +1000</pubDate>
+      <link>https://igdb.github.com/api/misc-objects/alternative-name/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/misc-objects/alternative-name/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-  &amp;quot;name&amp;quot;: &amp;quot;Thief: o Projeto Negro&amp;quot;,
-  &amp;quot;comment&amp;quot;: &amp;quot;Brazilian title&amp;quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;comment&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
+      <guid>https://igdb.github.com/api/misc-objects/alternative-name/</guid>
+      <description>Example
+{ &amp;quot;name&amp;quot;: &amp;quot;Thief: o Projeto Negro&amp;quot;, &amp;quot;comment&amp;quot;: &amp;quot;Brazilian title&amp;quot; }  Fields
+   Name Type Mandatory     name string +   comment string -    </description>
+    </item>
+    
+    <item>
+      <title>Authentication</title>
+      <link>https://igdb.github.com/api/private-endpoints/authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/private-endpoints/authentication/</guid>
+      <description>You must apply for a Client ID and Client Secret from us manually. There is no automated system for this. Please send an email to sitefeedback@igdb.se explaining and linking to information about your app, the scopes you require, why you require those scopes and finally, the oAuth callback url.
+ Authentication is done using the oAuth2 workflow.
+oAuth Details
+ Authentication URL: https://www.igdb.com/oauth/authorize Authentication URL (mobile): https://m.igdb.com/oauth/authorize Token URL: https://www.igdb.com/oauth/token.json Scope: public  Other scopes are described in other pages within the private endpoints section.</description>
+    </item>
+    
+    <item>
+      <title>CORS for JS &amp; Ionic</title>
+      <link>https://igdb.github.com/api/references/cors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/references/cors/</guid>
+      <description>Cross-Origin Resource Sharing Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP headers to let a user agent gain permission to access selected resources from a server on a different origin (domain) than the site currently in use. These security restrictions only affect browser-based javascript and mobile javascript frameworks like Ionic.
+Enabling CORS is only available in premium tiers. For free users you can set up a proxy server, Ionic also has a guide for this.</description>
     </item>
     
     <item>
       <title>Character</title>
-      <link>https://igdb.github.io/api/endpoints/character/</link>
-      <pubDate>Wed, 11 Jan 2017 17:44:12 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/endpoints/character/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /characters/&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Video game characters&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-    &amp;quot;id&amp;quot;: 1,
-    &amp;quot;name&amp;quot;: &amp;quot;Urdnot Wrex&amp;quot;,
-    &amp;quot;slug&amp;quot;: &amp;quot;urdnot-wrex&amp;quot;,
-    &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/characters/urdnot-wrex&amp;quot;,
-    &amp;quot;created_at&amp;quot;: 123456789,
-    &amp;quot;updated_at&amp;quot;: 123456789
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Used fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
-&lt;th&gt;Comment&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;id&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;slug&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;url&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;created_at&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;updated_at&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;mug_shot&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;object&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;See the &lt;a href=&#34;../../misc-objects/image&#34;&gt;Image&lt;/a&gt; object reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;gender&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;See the &lt;a href=&#34;../../enum-fields/gender&#34;&gt;Gender&lt;/a&gt; value reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;akas&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;array of strings&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;Name aliases - &amp;lsquo;also known as&amp;rsquo;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;species&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;See the &lt;a href=&#34;../../enum-fields/species&#34;&gt;Species&lt;/a&gt; value reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;games&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;IDs of &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; records&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;people&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;IDs of &lt;a href=&#34;../person&#34;&gt;Person&lt;/a&gt; records&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Unused fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;These fields are present in the meta field list but has no data for any of the entities.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;country_name&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Expander</title>
-      <link>https://igdb.github.io/api/references/expander/</link>
+      <link>https://igdb.github.com/api/endpoints/character/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/references/expander/</guid>
-      <description>
-
-&lt;h3 id=&#34;expander&#34;&gt;Expander&lt;/h3&gt;
-
-&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
-
-&lt;p&gt;The expander feature is used to combine multiple requests. For example, a game provides a list of company IDs which in turn need to be requested to reach the company data. Using the expander parameter, the company ID will instead be an object containing that data.&lt;/p&gt;
-
-&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
-
-&lt;p&gt;The expander can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
-
-&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: &lt;code&gt;/games/1838,828,1337?fields=name,themes.name,game.name&amp;amp;expand=game,themes&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;We start with this simple URL.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/games/1838,828,1337&lt;/code&gt;
-First we have the resource part of the url. In this case we get the games with ID: 1838, 828 and 1337&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;expand=game,themes&lt;/code&gt;
-With this parameter, we will expand: game (parent game) and themes (the themes that the game has).&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;fields=name,themes.name,game.name&lt;/code&gt;
-We also have to specify all the fields we want to have expanded. If you don&amp;rsquo;t specify the fields it will give you the full object.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;name: The field on the root game model.&lt;/li&gt;
-&lt;li&gt;game.name: The field on the parent game model.&lt;/li&gt;
-&lt;li&gt;themes.name: The field on the theme model.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The result will be:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;
-[
-  {
-    &amp;quot;id&amp;quot;: 1838,
-    &amp;quot;name&amp;quot;: &amp;quot;Painkiller: Redemption&amp;quot;,
-    &amp;quot;game&amp;quot;: {
-      &amp;quot;id&amp;quot;: 828,
-      &amp;quot;name&amp;quot;: &amp;quot;Painkiller&amp;quot;
-    },
-    &amp;quot;themes&amp;quot;: [
-      {
-        &amp;quot;id&amp;quot;: 1,
-        &amp;quot;name&amp;quot;: &amp;quot;Action&amp;quot;
-      },
-      {
-        &amp;quot;id&amp;quot;: 19,
-        &amp;quot;name&amp;quot;: &amp;quot;Horror&amp;quot;
-      }
-    ]
-  }
-]
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now for the more advanced expander:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/pulses/19357?fields=title,pulse_source.name,pulse_source.page.name,pulse_source.page.logo&amp;amp;expand=pulse_source.page&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;We get the pulse news article with ID = 19357.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;expand=pulse_source.page&lt;/code&gt;
-We want the pulse_source and it&amp;rsquo;s page with associated logo&amp;rsquo;s and deeper information.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;fields=title,pulse_source.name,pulse_source.page.name,pulse_source.page.logo&lt;/code&gt;
-Because the pulse_source is inferred, you can also specify fields on the pulse_source as well.&lt;/p&gt;
-
-&lt;p&gt;The result is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;[
-  {
-    &amp;quot;id&amp;quot;: 19357,
-    &amp;quot;title&amp;quot;: &amp;quot;Today’s selection of articles from Kotaku’s reader-run community: Anatomy of a Fire Emblem Character&amp;quot;,
-    &amp;quot;pulse_source&amp;quot;: {
-      &amp;quot;id&amp;quot;: 1,
-      &amp;quot;name&amp;quot;: &amp;quot;Kotaku&amp;quot;,
-      &amp;quot;page&amp;quot;: {
-        &amp;quot;id&amp;quot;: 501,
-        &amp;quot;name&amp;quot;: &amp;quot;Kotaku&amp;quot;,
-        &amp;quot;logo&amp;quot;: {
-          &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/ns8o3b99iwdbyee8wu9c.png&amp;quot;,
-          &amp;quot;cloudinary_id&amp;quot;: &amp;quot;ns8o3b99iwdbyee8wu9c&amp;quot;,
-          &amp;quot;width&amp;quot;: 240,
-          &amp;quot;height&amp;quot;: 240
-        }
-      }
-    }
-  }
-]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;what-can-i-expand&#34;&gt;What can I expand?&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Game.collection&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.franchise&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.franchises&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.game&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.developers&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.publishers&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.game_engines&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.player_perspectives&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.game_modes&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.keywords&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.themes&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.genres&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Character.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Company.published&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Company.developed&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;GameEngine.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;GameEngine.platforms&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;GameEngine.companies&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;GameMode.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Keyword.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PulseSource.game&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PulseSource.page&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Theme.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Collection.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PlayerPerspective.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Franchise.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Genre.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ReleaseDate.game&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ReleaseDate.platform&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Page.feed&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Page.game&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Pulse.pulse_source&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Review.game&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Person.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Person.characters&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Feed.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Feed.pulse&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PulseGroup.game&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PulseGroup.pulses&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ESRB</title>
-      <link>https://igdb.github.io/api/misc-objects/esrb/</link>
-      <pubDate>Sun, 15 Jan 2017 19:43:51 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/misc-objects/esrb/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-  &amp;quot;rating&amp;quot;: &amp;quot;4&amp;quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
-&lt;th&gt;Comment&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;rating&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;See the &lt;a href=&#34;../../enum-fields/esrb-rating&#34;&gt;ESRB rating&lt;/a&gt; value reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;synopsis&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Date category</title>
-      <link>https://igdb.github.io/api/enum-fields/date-category/</link>
-      <pubDate>Sun, 15 Jan 2017 18:35:20 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/enum-fields/date-category/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; The format of the value in the release date.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Human format&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY MMM DD&amp;rdquo;, for example &amp;ldquo;2001 Nov 13&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-MMM&amp;rdquo;, for example &amp;ldquo;1999-May&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY&amp;rdquo;, for example &amp;ldquo;1995&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-Q1&amp;rdquo;, for example &amp;ldquo;2012-Q1&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-Q2&amp;rdquo;, for example &amp;ldquo;2012-Q2&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-Q3&amp;rdquo;, for example &amp;ldquo;2012-Q3&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;YYYY-Q4&amp;rdquo;, for example &amp;ldquo;2012-Q4&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;ldquo;TBD&amp;rdquo;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
+      <guid>https://igdb.github.com/api/endpoints/character/</guid>
+      <description>URL path: /characters/
+Description: Video game characters
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;Urdnot Wrex&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;urdnot-wrex&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/characters/urdnot-wrex&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789 }  Used fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   mug_shot object - See the Image object reference   gender integer - See the Gender value reference   akas array of strings - Name aliases - &amp;lsquo;also known as&amp;rsquo;   species integer - See the Species value reference   games array of unsigned 64-bit integers - IDs of Game records   people array of unsigned 64-bit integers - IDs of Person records    Unused fields</description>
     </item>
     
     <item>
       <title>Collection</title>
-      <link>https://igdb.github.io/api/endpoints/collection/</link>
-      <pubDate>Fri, 13 Jan 2017 21:35:46 +1000</pubDate>
+      <link>https://igdb.github.com/api/endpoints/collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/endpoints/collection/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /collections/&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Collection, AKA Series&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-    &amp;quot;id&amp;quot;: 1,
-    &amp;quot;name&amp;quot;: &amp;quot;Bioshock&amp;quot;,
-    &amp;quot;slug&amp;quot;: &amp;quot;bioshock&amp;quot;,
-    &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/collections/bioshock&amp;quot;,
-    &amp;quot;created_at&amp;quot;: 123456789,
-    &amp;quot;updated_at&amp;quot;: 123456789,
-    &amp;quot;games&amp;quot;: [
-        1,
-        2,
-        3,
-        ...
-    ]
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
-&lt;th&gt;Comment&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;id&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;slug&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;url&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;created_at&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;updated_at&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;games&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;IDs of &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; records&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fields</title>
-      <link>https://igdb.github.io/api/references/fields/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:15 +0100</pubDate>
-      
-      <guid>https://igdb.github.io/api/references/fields/</guid>
-      <description>
-
-&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
-
-&lt;p&gt;Fields are properties of an entity. For example, a Game field would be &lt;code&gt;rating&lt;/code&gt; or &lt;code&gt;release_dates&lt;/code&gt;. Some fields have properties of their own, for example, the &lt;code&gt;esrb&lt;/code&gt; field has the property &lt;code&gt;synopsis&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
-
-&lt;p&gt;Fields can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
-
-&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
-
-&lt;p&gt;Fields are requested in a comma separated list. For example, to get some information for some Games, Genres, Themes or anything else, you could request it like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/games/4356,189,444?fields=name,release_dates,esrb.synopsis,rating&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Note the &lt;code&gt;synopsis&lt;/code&gt; property of &lt;code&gt;esrb&lt;/code&gt; can be accessed directly with a dot.&lt;/p&gt;
-
-&lt;p&gt;A full list of fields can be obtained by passing a &lt;code&gt;*&lt;/code&gt; as a field. Alternatively you can use the &lt;code&gt;meta&lt;/code&gt; postfix: &lt;code&gt;/games/meta&lt;/code&gt; to get a list of all fields.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ESRB rating</title>
-      <link>https://igdb.github.io/api/enum-fields/esrb-rating/</link>
-      <pubDate>Sun, 15 Jan 2017 18:44:22 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/enum-fields/esrb-rating/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Values&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Rating&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;RP&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;EC&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;E&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;E10+&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;T&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;M&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;AO&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>External</title>
-      <link>https://igdb.github.io/api/misc-objects/external/</link>
-      <pubDate>Sun, 15 Jan 2017 18:27:42 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/misc-objects/external/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-    &amp;quot;steam&amp;quot;: &amp;quot;294810&amp;quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
-&lt;th&gt;Comment&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;steam&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;The steam id.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Image</title>
-      <link>https://igdb.github.io/api/misc-objects/image/</link>
-      <pubDate>Sun, 15 Jan 2017 18:27:42 +1000</pubDate>
-      
-      <guid>https://igdb.github.io/api/misc-objects/image/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-  &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/l3n0zuklmgkloi1udslt.png&amp;quot;,
-  &amp;quot;width&amp;quot;: 339,
-  &amp;quot;height&amp;quot;: 393,
-  &amp;quot;cloudinary_id&amp;quot;: &amp;quot;l3n0zuklmgkloi1udslt&amp;quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
-&lt;th&gt;Comment&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;url&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;Can be non-IGDB URL&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;cloudinary_id&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;Cloudinary slug&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;width&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;The image&amp;rsquo;s width in pixels&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;height&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;The image&amp;rsquo;s height in pixels&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
+      <guid>https://igdb.github.com/api/endpoints/collection/</guid>
+      <description>URL path: /collections/
+Description: Collection, AKA Series
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;Bioshock&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;bioshock&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/collections/bioshock&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
     </item>
     
     <item>
       <title>Company</title>
-      <link>https://igdb.github.io/api/endpoints/company/</link>
-      <pubDate>Wed, 11 Jan 2017 17:44:12 +1000</pubDate>
+      <link>https://igdb.github.com/api/endpoints/company/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/endpoints/company/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;URL path:&lt;/em&gt;&lt;/strong&gt; /companies/&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Description:&lt;/em&gt;&lt;/strong&gt; Video game companies. Both publishers &amp;amp; developers&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example response&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-    &amp;quot;id&amp;quot;: 642,
-    &amp;quot;name&amp;quot;: &amp;quot;testcompany1&amp;quot;,
-    &amp;quot;slug&amp;quot;: &amp;quot;testcompany1&amp;quot;,
-    &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/companies/testcompany1&amp;quot;,
-    &amp;quot;created_at&amp;quot;: 123456789,
-    &amp;quot;updated_at&amp;quot;: 123456789,
-    ...
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
-&lt;th&gt;Comment&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;id&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;slug&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;url&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;created_at&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;updated_at&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;logo&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;object&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;See the &lt;a href=&#34;../../misc-objects/image&#34;&gt;Image&lt;/a&gt; object reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;description&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;country&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;Please see the &lt;a href=&#34;https://en.wikipedia.org/wiki/ISO_3166-1_numeric&#34;&gt;ISO-3316-1&lt;/a&gt; reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;website&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;start_date&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;start_date_category&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;See the &lt;a href=&#34;../../enum-fields/date-category&#34;&gt;Date category&lt;/a&gt; value reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;changed_company_id&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned 64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;ID of a &lt;a href=&#34;../company&#34;&gt;Company&lt;/a&gt; record&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;change_date&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;64-bit integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;Unix epoch&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;change_date_category&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;See the &lt;a href=&#34;../../enum-fields/date-category&#34;&gt;Date category&lt;/a&gt; value reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;twitter&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;The URL of the Twitter profile&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;published&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;IDs of &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; records&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;developed&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;array of unsigned 64-bit integers&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;IDs of &lt;a href=&#34;../game&#34;&gt;Game&lt;/a&gt; records&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Unused fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;These fields are present in the meta field list but has no data for any of the entities.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;parent&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;facebook&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
+      <guid>https://igdb.github.com/api/endpoints/company/</guid>
+      <description>URL path: /companies/
+Description: Video game companies. Both publishers &amp;amp; developers
+Example response
+{ &amp;quot;id&amp;quot;: 642, &amp;quot;name&amp;quot;: &amp;quot;testcompany1&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;testcompany1&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/companies/testcompany1&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, ... }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   logo object - See the Image object reference   description string -    country integer - Please see the ISO-3316-1 reference   website string -    start_date 64-bit integer - Unix epoch   start_date_category integer - See the Date category value reference   changed_company_id unsigned 64-bit integer - ID of a Company record   change_date 64-bit integer - Unix epoch   change_date_category integer - See the Date category value reference   twitter string - The URL of the Twitter profile   published array of unsigned 64-bit integers - IDs of Game records   developed array of unsigned 64-bit integers - IDs of Game records    Unused fields</description>
     </item>
     
     <item>
-      <title>Filters</title>
-      <link>https://igdb.github.io/api/references/filters/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:47 +0100</pubDate>
+      <title>Credit category</title>
+      <link>https://igdb.github.com/api/enum-fields/credit-category/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/references/filters/</guid>
-      <description>
-
-&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
-
-&lt;p&gt;Filters are used to sift through results to get what you want. You can exclude and include results based on their properties. For example you could remove all Games where the &lt;code&gt;rating&lt;/code&gt; was below 80 (&lt;code&gt;filter[rating][gte]=80&lt;/code&gt;).&lt;/p&gt;
-
-&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
-
-&lt;p&gt;Filters are parameter arrays so must be added using special keys like this: &lt;code&gt;/games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;filter[release_dates.date][gt]=YYYY-MM-DD&lt;/code&gt;
-The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and the &lt;code&gt;postfix&lt;/code&gt;. Fields are described in the section on the left, postfixes are described below.&lt;/p&gt;
-
-&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
-
-&lt;p&gt;Filters can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
-
-&lt;h2 id=&#34;available-postfixes&#34;&gt;Available Postfixes&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;eq&lt;/code&gt; Equal: Exact match equal.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;not_eq&lt;/code&gt; Not Equal: Exact match equal.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gt&lt;/code&gt; Greater than works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gte&lt;/code&gt; Greater than or equal to works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lt&lt;/code&gt; Less than works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lte&lt;/code&gt; Less than or equal to works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;prefix&lt;/code&gt; Prefix of a value only works on strings.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;exists&lt;/code&gt; The value is not null.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;not_exists&lt;/code&gt; The value is null.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;in&lt;/code&gt; The value exists within the (comma separated) array (AND between values).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;not_in&lt;/code&gt; The values must not exists within the (comma separated) array (AND between values).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;any&lt;/code&gt; The value has any within the (comma separated) array (OR between values).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The &lt;code&gt;id&lt;/code&gt; field is special and cannot be filtered.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Invalid: &lt;code&gt;/games/?filter[id][eq]=4032&amp;amp;fields=name&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Valid: &lt;code&gt;/games/4032?fields=name&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Applying any postfix to the field &lt;code&gt;id&lt;/code&gt; are not supported except for &lt;code&gt;not_in&lt;/code&gt; which can be used to filter away specific  results.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;h2 id=&#34;text-search&#34;&gt;Text search&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;search&lt;/code&gt; This parameter is not like other filters. It is an independant parameter that performs a full text search.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;Setting the &lt;code&gt;order&lt;/code&gt; parameter will override the default &lt;code&gt;relevance&lt;/code&gt; ordering of search results.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;&lt;code&gt;/games/?search=zelda&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-
-&lt;h4 id=&#34;filter-by-multiple-platforms&#34;&gt;Filter by multiple platforms&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;If you checkout the platforms endpoint:
-&lt;code&gt;/platforms/?fields=name&amp;amp;limit=50&lt;/code&gt;&lt;br /&gt;
-You will find the names and id&amp;rsquo;s of the platform. Select the ones you want.&lt;br /&gt;
-Then when you know the ID&amp;rsquo;s of the platform:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/games/?fields=*&amp;amp;filter[release_dates.platform][any]=48,49,6&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This will give you games that are released on PS4 or XBOX ONE or PC&lt;/p&gt;
-</description>
+      <guid>https://igdb.github.com/api/enum-fields/credit-category/</guid>
+      <description>Description: The type of entry in an end credits list.
+Values
+   Value Category     1 voice_actor   2 language   3 company_credit   4 employee   5 misc   6 support_company    </description>
+    </item>
+    
+    <item>
+      <title>Credits</title>
+      <link>https://igdb.github.com/api/endpoints/credit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/credit/</guid>
+      <description>URL path: /credits/
+Description: Contains all employees responsible for working on the game.
+Example response
+{ &amp;quot;id&amp;quot;: 268458528, &amp;quot;created_at&amp;quot;: 1448841876902, &amp;quot;updated_at&amp;quot;: 1448841876902, &amp;quot;category&amp;quot;: 1, &amp;quot;game&amp;quot;: 6913, &amp;quot;position&amp;quot;: 122, &amp;quot;person&amp;quot;: 96942, &amp;quot;character&amp;quot;: 441 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   game unsigned 64-bit integer - ID of a Game record (expandable)   category integer - See the Credit category value reference   company unsigned 64-bit integer - ID of a Company record (expandable)   position unsigned 64-bit integer - Position in the credits list.</description>
+    </item>
+    
+    <item>
+      <title>Date category</title>
+      <link>https://igdb.github.com/api/enum-fields/date-category/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/enum-fields/date-category/</guid>
+      <description>Description: The format of the value in the release date.
+Values
+   Value Human format     0 &amp;ldquo;YYYY MMM DD&amp;rdquo;, for example &amp;ldquo;2001 Nov 13&amp;rdquo;   1 &amp;ldquo;YYYY-MMM&amp;rdquo;, for example &amp;ldquo;1999-May&amp;rdquo;   2 &amp;ldquo;YYYY&amp;rdquo;, for example &amp;ldquo;1995&amp;rdquo;   3 &amp;ldquo;YYYY-Q1&amp;rdquo;, for example &amp;ldquo;2012-Q1&amp;rdquo;   4 &amp;ldquo;YYYY-Q2&amp;rdquo;, for example &amp;ldquo;2012-Q2&amp;rdquo;   5 &amp;ldquo;YYYY-Q3&amp;rdquo;, for example &amp;ldquo;2012-Q3&amp;rdquo;   6 &amp;ldquo;YYYY-Q4&amp;rdquo;, for example &amp;ldquo;2012-Q4&amp;rdquo;   7 &amp;ldquo;TBD&amp;rdquo;    </description>
+    </item>
+    
+    <item>
+      <title>ESRB</title>
+      <link>https://igdb.github.com/api/misc-objects/esrb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/misc-objects/esrb/</guid>
+      <description>Example
+{ &amp;quot;rating&amp;quot;: &amp;quot;4&amp;quot; }  Fields
+   Name Type Mandatory Comment     rating unsigned integer + See the ESRB rating value reference   synopsis string -     </description>
+    </item>
+    
+    <item>
+      <title>ESRB rating</title>
+      <link>https://igdb.github.com/api/enum-fields/esrb-rating/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/enum-fields/esrb-rating/</guid>
+      <description>Values
+   Value Rating     1 RP   2 EC   3 E   4 E10+   5 T   6 M   7 AO    </description>
+    </item>
+    
+    <item>
+      <title>Expander</title>
+      <link>https://igdb.github.com/api/references/expander/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/references/expander/</guid>
+      <description>Expander What? The expander feature is used to combine multiple requests. For example, a game provides a list of company IDs which in turn need to be requested to reach the company data. Using the expander parameter, the company ID will instead be an object containing that data.
+Where? The expander can be used on any entity that has sub-properties such as Games, Companies, People etc.
+How? Example: /games/1838,828,1337?fields=name,themes.name,game.name&amp;amp;expand=game,themes</description>
+    </item>
+    
+    <item>
+      <title>External</title>
+      <link>https://igdb.github.com/api/misc-objects/external/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/misc-objects/external/</guid>
+      <description>Example
+{ &amp;quot;steam&amp;quot;: &amp;quot;294810&amp;quot; }  Fields
+   Name Type Mandatory Comment     steam string - The steam id.    </description>
+    </item>
+    
+    <item>
+      <title>External Review</title>
+      <link>https://igdb.github.com/api/endpoints/external-review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/external-review/</guid>
+      <description>This endpoint is only available for pro and ultra tiers.
+ URL path: /external_reviews/
+Example response
+{ &amp;quot;id&amp;quot;: 50331, &amp;quot;game&amp;quot;: 7621, &amp;quot;source&amp;quot;: 30, &amp;quot;score&amp;quot;: 40, &amp;quot;url&amp;quot;: &amp;quot;http://www.impulsegamer.com/rime-switch-review/&amp;quot; }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    game unsigned 64-bit integer + ID of a Game record   source unsigned 64-bit integer + ID of an External Review Source   url string +    score integer  The review score out of 100    </description>
+    </item>
+    
+    <item>
+      <title>External Review Source</title>
+      <link>https://igdb.github.com/api/endpoints/external-review-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/external-review-source/</guid>
+      <description>URL path: /external_review_source/
+Example response
+{ &amp;quot;id&amp;quot;: 50331, &amp;quot;game&amp;quot;: 7621, &amp;quot;source&amp;quot;: 30, &amp;quot;score&amp;quot;: 40, &amp;quot;url&amp;quot;: &amp;quot;http://www.impulsegamer.com/rime-switch-review/&amp;quot; }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    game unsigned 64-bit integer + ID of a Game record   source unsigned 64-bit integer + ID of an External Review Source   url string +    score integer  The review score out of 100    </description>
+    </item>
+    
+    <item>
+      <title>Feed</title>
+      <link>https://igdb.github.com/api/endpoints/feed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/feed/</guid>
+      <description>URL path: /feeds/
+Description: Feed items are a social feed of status updates, media and news articles.
+Example response
+{ &amp;quot;id&amp;quot;: 1234, &amp;quot;created_at&amp;quot;: 1489255204000, &amp;quot;updated_at&amp;quot;: 1490353040531, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/feed/ya&amp;quot;, &amp;quot;content&amp;quot;: &amp;quot;Testing the new feed items.&amp;quot;, &amp;quot;category&amp;quot;: 7 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   content text (long string) -    category unsigned 64-bit integer - ID of a Feed Item Category   user unsigned 64-bit integer - ID of a User record   games array of unsigned 64-bit integer - ID of a Game record   title string -    feed_likes_count 64-bit integer -     </description>
     </item>
     
     <item>
       <title>Feed Item Category</title>
-      <link>https://igdb.github.io/api/enum-fields/feed-item-category/</link>
-      <pubDate>Sat, 01 Jul 2017 18:44:22 +1000</pubDate>
+      <link>https://igdb.github.com/api/enum-fields/feed-item-category/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/enum-fields/feed-item-category/</guid>
-      <description>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;th&gt;Category&lt;/th&gt;
-&lt;th&gt;Explanation&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;Pulse Article&lt;/td&gt;
-&lt;td&gt;Kotaku news article&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;Coming Soon&lt;/td&gt;
-&lt;td&gt;Final Fantasy XXXVIII is releasing in 7 days&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;New Trailer&lt;/td&gt;
-&lt;td&gt;New trailer added to a game&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;User Contributed Item&lt;/td&gt;
-&lt;td&gt;New feed item created by a user&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;User contributions item&lt;/td&gt;
-&lt;td&gt;User has changed a game release date&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt;
-&lt;td&gt;Page Contributed Item&lt;/td&gt;
-&lt;td&gt;New feed item created by a page&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
+      <guid>https://igdb.github.com/api/enum-fields/feed-item-category/</guid>
+      <description>   Value Category Explanation     1 Pulse Article Kotaku news article   2 Coming Soon Final Fantasy XXXVIII is releasing in 7 days   3 New Trailer New trailer added to a game   5 User Contributed Item New feed item created by a user   6 User contributions item User has changed a game release date   7 Page Contributed Item New feed item created by a page    </description>
+    </item>
+    
+    <item>
+      <title>Fields</title>
+      <link>https://igdb.github.com/api/references/fields/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/references/fields/</guid>
+      <description>What? Fields are properties of an entity. For example, a Game field would be rating or release_dates. Some fields have properties of their own, for example, the esrb field has the property synopsis.
+Where? Fields can be used on any entity that has sub-properties such as Games, Companies, People etc.
+How? Fields are requested in a comma separated list. For example, to get some information for some Games, Genres, Themes or anything else, you could request it like this:</description>
+    </item>
+    
+    <item>
+      <title>Filters</title>
+      <link>https://igdb.github.com/api/references/filters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/references/filters/</guid>
+      <description>What? Filters are used to sift through results to get what you want. You can exclude and include results based on their properties. For example you could remove all Games where the rating was below 80 (filter[rating][gte]=80).
+How? Filters are parameter arrays so must be added using special keys like this: /games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;filter[release_dates.date][gt]=YYYY-MM-DD The filter itself comprises of 2 parts; The field and the postfix. Fields are described in the section on the left, postfixes are described below.</description>
+    </item>
+    
+    <item>
+      <title>Franchise</title>
+      <link>https://igdb.github.com/api/endpoints/franchise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/franchise/</guid>
+      <description>URL path: /franchises/
+Description: A list of video game franchises such as Star Wars.
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;Star Wars&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;star-wars&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/franchises/star-wars&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
+    </item>
+    
+    <item>
+      <title>Game</title>
+      <link>https://igdb.github.com/api/endpoints/game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/game/</guid>
+      <description>URL path: /games/
+Description: Video Games!
+Example response
+{ &amp;quot;id&amp;quot;: 1234, &amp;quot;name&amp;quot;: &amp;quot;Test game&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;/games/test-game&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/games/test-game&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   summary text (long string) -    storyline text (long string) -    collection unsigned 64-bit integer - ID of a Collection record   franchise unsigned 64-bit integer - ID of a Franchise record   hypes integer - Number of follows a game gets before release   popularity double - A number based on traffic to that game page   rating double - Average user rating   rating_count integer - Number of user ratings   aggregated_rating double - Rating based on external critic scores   aggregated_rating_count integer - Number of external critic scores   total_rating double - Average rating based on both IGDB user and external critic scores   total_rating_count integer - Total number of user and external critic scores   game unsigned 64-bit integer - ID of a Game this game is a DLC/expansion of (expandable)   version_parent unsigned 64-bit integer - ID of a Game this game is an edition of   developers array of unsigned 64-bit integers - IDs of Company records (expandable)   publishers array of unsigned 64-bit integers - IDs of Company records (expandable)   game_engines array of unsigned 64-bit integers - IDs of Game engine records   category integer - See the Game category value reference   time_to_beat object - See the Time to beat object reference   player_perspectives array of unsigned 64-bit integers - IDs of Player perspective records   game_modes array of unsigned 64-bit integers - IDs of Game mode records   keywords array of unsigned 64-bit integers - IDs of Keyword records   themes array of unsigned 64-bit integers - IDs of Theme records   genres array of unsigned 64-bit integers - IDs of Genre records   platforms array of unsigned 64-bit integers - IDs of Platform records   first_release_date 64-bit integer - Unix epoch   status integer - See the Game status value reference   release_dates array of objects - See the Release date object reference   alternative_names array of objects - See the Alternative name object reference   screenshots array of objects - See the Image object reference   videos array of objects - See the Video object reference   cover object - See the Image object reference   esrb object - See the ESRB object reference   pegi object - See the PEGI object reference   websites array of objects - See the Website object reference   tags array of unsigned 32-bit integers - An array of Tag Numbers   dlcs array of unsigned 64-bit integers - IDs of Game records (expandable)   expansions array of unsigned 64-bit integers - IDs of Game records (expandable)   standalone_expansions array of unsigned 64-bit integers - IDs of Game records (expandable)   bundles array of unsigned 64-bit integers - IDs of Game records (expandable)   games array of unsigned 64-bit integers - IDs of Game records that are similar to this game.</description>
+    </item>
+    
+    <item>
+      <title>Game category</title>
+      <link>https://igdb.github.com/api/enum-fields/game-category/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/enum-fields/game-category/</guid>
+      <description>Values
+   Value Category     0 Main game   1 DLC / Addon   2 Expansion   3 Bundle   4 Standalone expansion    </description>
+    </item>
+    
+    <item>
+      <title>Game engine</title>
+      <link>https://igdb.github.com/api/endpoints/game-engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/game-engine/</guid>
+      <description>URL path: /game_engines/
+Description: Video game engines such as unreal engine.
+Example response
+{ &amp;quot;id&amp;quot;: 2, &amp;quot;name&amp;quot;: &amp;quot;Frostbite&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;frostbite&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/game_engines/frostbite&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   logo object - See the Image object reference   games array of unsigned 64-bit integers - IDs of Game records   companies array of unsigned 64-bit integers - IDs of Company records   platforms array of unsigned 64-bit integers - IDs of Platforms records    </description>
+    </item>
+    
+    <item>
+      <title>Game mode</title>
+      <link>https://igdb.github.com/api/endpoints/game-mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/game-mode/</guid>
+      <description>URL path: /game_modes/
+Description: Single player, Multiplayer etc
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;Single player&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;single-player&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/game_modes/single-player&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
+    </item>
+    
+    <item>
+      <title>Game status</title>
+      <link>https://igdb.github.com/api/enum-fields/game-status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/enum-fields/game-status/</guid>
+      <description>Values
+   Value Status     0 Released   2 Alpha   3 Beta   4 Early access   5 Offline   6 Cancelled    </description>
+    </item>
+    
+    <item>
+      <title>Gender</title>
+      <link>https://igdb.github.com/api/enum-fields/gender/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/enum-fields/gender/</guid>
+      <description>Values
+   Value Text     0 Male   1 Female   2 Unknown    </description>
+    </item>
+    
+    <item>
+      <title>Genre</title>
+      <link>https://igdb.github.com/api/endpoints/genre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/genre/</guid>
+      <description>URL path: /genres/
+Example response
+{ &amp;quot;id&amp;quot;: 2, &amp;quot;name&amp;quot;: &amp;quot;Point-and-click&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;point-and-click&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/genres/point-and-click&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
+    </item>
+    
+    <item>
+      <title>Image</title>
+      <link>https://igdb.github.com/api/misc-objects/image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/misc-objects/image/</guid>
+      <description>Example
+{ &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/l3n0zuklmgkloi1udslt.png&amp;quot;, &amp;quot;width&amp;quot;: 339, &amp;quot;height&amp;quot;: 393, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;l3n0zuklmgkloi1udslt&amp;quot; }  Fields
+   Name Type Mandatory Comment     url string + Can be non-IGDB URL   cloudinary_id string - Cloudinary slug   width unsigned integer - The image&amp;rsquo;s width in pixels   height unsigned integer - The image&amp;rsquo;s height in pixels    </description>
+    </item>
+    
+    <item>
+      <title>Images</title>
+      <link>https://igdb.github.com/api/references/images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/references/images/</guid>
+      <description>Examples /games/1942?fields=screenshots
+Here we retrieve the image properties of the game with the id &amp;ldquo;1942&amp;rdquo;
+Response:
+[ { &amp;quot;id&amp;quot;: 1942, &amp;quot;screenshots&amp;quot;: [ { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;z5t0yuhyiiui1ickwhgj&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 }, { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;mnljdjtrh44x4snmierh&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 } ] } ]  Replace the ID&amp;rsquo;s above (e.g. z5t0yuhyiiui1ickwhgj) with the cloudinary_id value, provided by the API.
+Image url structure:
+https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dfgkfivjrhcksyymh9vw.jpg
+Break down:
+https://images.igdb.com/igdb/image/upload/t_{size}/{hash}.jpg
+size is one of the interchangeable size types listed below.</description>
+    </item>
+    
+    <item>
+      <title>Keyword</title>
+      <link>https://igdb.github.com/api/endpoints/keyword/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/keyword/</guid>
+      <description>URL path: /keywords/
+Description: Keywords are words or phrases that get tagged to a game such as &amp;ldquo;world war 2&amp;rdquo; or &amp;ldquo;steampunk&amp;rdquo;.
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;modern warfare&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;modern-warfare&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/categories/modern-warfare&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
+    </item>
+    
+    <item>
+      <title>List Entries</title>
+      <link>https://igdb.github.com/api/private-endpoints/private_list_entries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/private-endpoints/private_list_entries/</guid>
+      <description>URL path: /private/list_entries/
+Scope Name lists
+Description: IGDB list entries
+This information is only accessible after a user has authenticated and you have an access token. Any reads or writes performed will be specifically to that user.
+ Example response
+{ &amp;quot;id&amp;quot;: 157609, &amp;quot;user&amp;quot;: 1337, &amp;quot;list&amp;quot;: 7331, &amp;quot;game&amp;quot;: 1942, &amp;quot;position&amp;quot;: 0 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    user unsigned 64-bit integer + User ID   list unsigned 64-bit integer + List ID   game unsigned 64-bit integer + ID of Game that the entry is reffering to   position 64-bit integer + position of the entry in the list, 0: default    Usage</description>
+    </item>
+    
+    <item>
+      <title>Lists</title>
+      <link>https://igdb.github.com/api/private-endpoints/private_lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/private-endpoints/private_lists/</guid>
+      <description>URL path: /private/lists/
+Scope Name lists
+Description: IGDB user lists
+This information is only accessible after a user has authenticated and you have an access token. Any reads or writes performed will be specifically to that user.
+ Example response
+{ &amp;quot;id&amp;quot;: 7331, &amp;quot;name&amp;quot;: &amp;quot;Want to Play&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;want-to-play&amp;quot;, &amp;quot;updated_at&amp;quot;: 1515406241367, &amp;quot;created_at&amp;quot;: 1484834920172, &amp;quot;user&amp;quot;: 1337, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/users/1337/lists/want-to-play&amp;quot;, &amp;quot;private&amp;quot;: false, &amp;quot;numbering&amp;quot;: false, &amp;quot;count&amp;quot;: 34, &amp;quot;lists&amp;quot;: [ 16717, 9581, 20268, 20765, 17883 ] }  Fields</description>
+    </item>
+    
+    <item>
+      <title>Ordering</title>
+      <link>https://igdb.github.com/api/references/ordering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/references/ordering/</guid>
+      <description>What? Ordering (Sorting) is used to order results by a specific field.
+How? You can order results like this: /games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;order=release_dates.date:desc. Notice the appended :desc which could also be :asc if required.
+You can also subfilter arrays by appending &amp;ldquo;max&amp;rdquo;, &amp;ldquo;min&amp;rdquo;, &amp;ldquo;sum&amp;rdquo;, &amp;ldquo;avg&amp;rdquo; or &amp;ldquo;median&amp;rdquo;. For example, you can order games based on it&amp;rsquo;s earliest release date like this: /games/?search=zelda&amp;amp;order=release_dates.date:desc:min&amp;amp;limit=5
+Order by popularity Popularity parameter for games. You can access it like this: /games/?</description>
     </item>
     
     <item>
       <title>PEGI</title>
-      <link>https://igdb.github.io/api/misc-objects/pegi/</link>
-      <pubDate>Sun, 15 Jan 2017 18:35:11 +1000</pubDate>
+      <link>https://igdb.github.com/api/misc-objects/pegi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/misc-objects/pegi/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Example&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
-  &amp;quot;rating&amp;quot;: &amp;quot;4&amp;quot;,
-  &amp;quot;synopsis&amp;quot;: &amp;quot;The content of this game is suitable for persons aged 16 years and over only.\nIt contains: Realistic looking violence.&amp;quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Fields&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Mandatory&lt;/th&gt;
-&lt;th&gt;Comment&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;rating&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;unsigned integer&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;+&lt;/td&gt;
-&lt;td&gt;See the &lt;a href=&#34;../../enum-fields/pegi-rating&#34;&gt;PEGI rating&lt;/a&gt; value reference&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;synopsis&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;string&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
+      <guid>https://igdb.github.com/api/misc-objects/pegi/</guid>
+      <description>Example
+{ &amp;quot;rating&amp;quot;: &amp;quot;4&amp;quot;, &amp;quot;synopsis&amp;quot;: &amp;quot;The content of this game is suitable for persons aged 16 years and over only.\nIt contains: Realistic looking violence.&amp;quot; }  Fields
+   Name Type Mandatory Comment     rating unsigned integer + See the PEGI rating value reference   synopsis string -     </description>
+    </item>
+    
+    <item>
+      <title>PEGI rating</title>
+      <link>https://igdb.github.com/api/enum-fields/pegi-rating/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/enum-fields/pegi-rating/</guid>
+      <description>Values
+   Value Minimum age (years)     1 3   2 7   3 12   4 16   5 18    </description>
+    </item>
+    
+    <item>
+      <title>Page</title>
+      <link>https://igdb.github.com/api/endpoints/page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/page/</guid>
+      <description>URL path: /pages/
+Description: Our multipurpose page system is currently used for youtubers and media organisations.
+Example response
+{ &amp;quot;id&amp;quot;: 1234, &amp;quot;name&amp;quot;: &amp;quot;The Super channel.&amp;quot;, &amp;quot;created_at&amp;quot;: 1488287162348, &amp;quot;updated_at&amp;quot;: 1488287515627, &amp;quot;slug&amp;quot;: &amp;quot;the-super-channel&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/p/the-super-channel&amp;quot;, &amp;quot;page_follows_count&amp;quot;: 0, &amp;quot;description&amp;quot;: &amp;quot;Playing awesome games quick!&amp;quot;, &amp;quot;youtube&amp;quot;: &amp;quot;https://www.youtube.com/channel/abc123&amp;quot;, &amp;quot;logo&amp;quot;: { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/abc123.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;abc123&amp;quot;, &amp;quot;width&amp;quot;: 240, &amp;quot;height&amp;quot;: 240 }, &amp;quot;background&amp;quot;: { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/abc123.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;abc123&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 } }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   name string +    content text (long string) -    category unsigned 64-bit integer -    sub_category unsigned 64-bit integer -    country integer - Please see the ISO-3316-1 reference   color unsigned 64-bit integer -    user 64-bit integers -    game 64-bit integers - IDs of Game records   company 64-bit integers - IDs of Company records   description text (long string) -    page_follows_count 64-bit integer -    logo objects - See the Image object reference   background objects - See the Image object reference   facebook string -    twitter string -    twitch string -    instagram string -    youtube string -    steam string -    linkedin string -    pinterest string -    soundcloud string -    google_plus string -    reddit string -    battlenet string -    origin string -    uplay string -    discord string -     </description>
+    </item>
+    
+    <item>
+      <title>Pagination</title>
+      <link>https://igdb.github.com/api/references/pagination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/references/pagination/</guid>
+      <description>Simple Pagination Here is an example for how to use limit. The default limit is 10. The maximum limit is 50. /platforms/?limit=33
+There is also an offset. This will start the list at position 22 and give 33 results. /platforms/?limit=33&amp;amp;offset=22
+For ever tier, offset has a maximum value of 10,000 for server-resource reasons. While simple pagination is perfect for smaller datasets, we strongly recommend using the Scroll API documented below for everything else.</description>
+    </item>
+    
+    <item>
+      <title>Person</title>
+      <link>https://igdb.github.com/api/endpoints/person/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/person/</guid>
+      <description>URL path: /people/
+Description: Individuals who are in the video games industry
+Example response
+{ &amp;quot;id&amp;quot;: 557, &amp;quot;name&amp;quot;: &amp;quot;Adam Longton&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;adam-longton&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/people/adam-longton&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   mug_shot object - See the Image object reference   games array of unsigned 64-bit integers - IDs of Game records   characters array of unsigned 64-bit integers - IDs of Character records   voice_acted array of unsigned 64-bit integers - IDs of Game records    Unused fields</description>
+    </item>
+    
+    <item>
+      <title>Platform</title>
+      <link>https://igdb.github.com/api/endpoints/platform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/platform/</guid>
+      <description>URL path: /platforms/
+Description: The hardware used to run the game or game delivery network
+Example response
+{ &amp;quot;id&amp;quot;: 2, &amp;quot;name&amp;quot;: &amp;quot;Wii&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;wii&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/platform/wii&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   logo object - See the Image object reference   website string -    summary text (long string) -    alternative_name string -    generation integer -    games array of unsigned 64-bit integers - IDs of Game records   versions array of objects - See the Platform version object reference    Unused fields</description>
+    </item>
+    
+    <item>
+      <title>Platform company</title>
+      <link>https://igdb.github.com/api/misc-objects/platform-company/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/misc-objects/platform-company/</guid>
+      <description>Example
+{ &amp;quot;company&amp;quot;: 12, &amp;quot;comment&amp;quot;: &amp;quot;Developed stuff!&amp;quot; }  Fields
+   Name Type Mandatory Comment     company unsigned 64-bit integer +    comment string + What does that company do.    </description>
+    </item>
+    
+    <item>
+      <title>Platform version</title>
+      <link>https://igdb.github.com/api/misc-objects/platform-version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/misc-objects/platform-version/</guid>
+      <description>Example
+{ &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/platforms/linux/version/initial-version-04719e9f-bc9e-4b08-982c-50c495215228&amp;quot;, &amp;quot;logo&amp;quot;: { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/pilogm8rythuvcg4cslx.png&amp;quot;, &amp;quot;width&amp;quot;: 1344, &amp;quot;height&amp;quot;: 742, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;pilogm8rythuvcg4cslx&amp;quot; }, &amp;quot;name&amp;quot;: &amp;quot;Initial version&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;initial-version-04719e9f-bc9e-4b08-982c-50c495215228&amp;quot;, &amp;quot;summary&amp;quot;: &amp;quot;Linux is a free and open-source (FOSS/FLOSS) Operating System. ...&amp;quot;, &amp;quot;release_dates&amp;quot;: [ {&amp;quot;date&amp;quot;: 694137600000, &amp;quot;region&amp;quot;: 8} ] }  Fields
+   Name Type Mandatory Comment     url string +    name string +    slug string +    cpu string -    os string -    media string -    memory string -    online string -    output string -    storage string -    graphics string -    resolutions string -    connectivity string -    logo object - See the Image object reference   summary text (long string) -    release_dates array of objects - See the Platform version release date object reference   developers array of objects - See the Platform company object reference   manufacturers array of objects - See the Platform company object reference    </description>
+    </item>
+    
+    <item>
+      <title>Platform version release date</title>
+      <link>https://igdb.github.com/api/misc-objects/platform-version-release-date/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/misc-objects/platform-version-release-date/</guid>
+      <description>Example
+{ &amp;quot;date&amp;quot;: 123456789, &amp;quot;region&amp;quot;: 8 }  Fields
+   Name Type Mandatory Comment     date 64-bit integer + Unix epoch   region unsigned integer + See the Region value reference    </description>
+    </item>
+    
+    <item>
+      <title>Play Times</title>
+      <link>https://igdb.github.com/api/endpoints/play_times/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/play_times/</guid>
+      <description>Getting detailed play times for a client id What is a client id? A Client ID is a unique identifier defined by you or your code. The idea is to generate a client ID that can be recalled for a certain user. For example, it could be a salted and hashed version of the mac ID or an external user ID. This ID can be used to save and recall play time data.</description>
+    </item>
+    
+    <item>
+      <title>Play Times</title>
+      <link>https://igdb.github.com/api/private-endpoints/play_times/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/private-endpoints/play_times/</guid>
+      <description>Getting detailed play times for a user URL path: /private/play_times/
+Scope Name play_times
+Description: IGDB Play Times
+This information is only accessible after a user has authenticated and you have an access token. Any reads or writes performed will be specifically to that user.
+ Example response
+[ { &amp;quot;id&amp;quot;: 5253, &amp;quot;created_at&amp;quot;: 1519380959, &amp;quot;game&amp;quot;: 5343, &amp;quot;user&amp;quot;: 24223, &amp;quot;client_id&amp;quot;: &amp;quot;fsf34fw4w4wferevxaaaf34wr&amp;quot;, &amp;quot;start_time&amp;quot;: 15192843993, &amp;quot;end_time&amp;quot;: 1519380959, &amp;quot;duration&amp;quot;: 1 } ]  Fields</description>
+    </item>
+    
+    <item>
+      <title>Player Perspective</title>
+      <link>https://igdb.github.com/api/endpoints/player-perspective/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/player-perspective/</guid>
+      <description>URL path: /player_perspectives/
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;First person&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;first-person&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/player_perspectives/first-person&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
+    </item>
+    
+    <item>
+      <title>Pulse</title>
+      <link>https://igdb.github.com/api/endpoints/pulse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/pulse/</guid>
+      <description>URL path: /pulses/
+Description: A single news article.
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;pulse_source&amp;quot;: 1, &amp;quot;title&amp;quot;: &amp;quot;End of 2015 Discussions Megathread&amp;quot;, &amp;quot;summary&amp;quot;: &amp;quot;&amp;lt;!-- SC_OFF --&amp;gt;&amp;lt;div class=\&amp;quot;md\&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;December 31&amp;lt;/h3&amp;gt; ...&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.pcgamer.com/super-cool-article&amp;quot;, &amp;quot;uid&amp;quot;: &amp;quot;g87d799g520fhu2hk45jhk&amp;quot;, &amp;quot;author&amp;quot;: &amp;quot;Forestl&amp;quot;, &amp;quot;published_at&amp;quot;: 1448892803000 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    pulse_source integer + ID of a Pulse Source   title string +    summary text (long string) + Can contain HTML markup   url string + Publisher&amp;rsquo;s pulse URL, can be path only.</description>
+    </item>
+    
+    <item>
+      <title>Pulse Group</title>
+      <link>https://igdb.github.com/api/endpoints/pulse-group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/pulse-group/</guid>
+      <description>URL path: /pulse_groups/
+Example response
+{ &amp;quot;id&amp;quot;: 33, &amp;quot;name&amp;quot;: &amp;quot;Dissidia Final Fantasy NT&amp;quot;, &amp;quot;created_at&amp;quot;: 1496847873582, &amp;quot;updated_at&amp;quot;: 1496849184912, &amp;quot;published_at&amp;quot;: 1496848080000, &amp;quot;tags&amp;quot;: [ 805343199, 1073741826 ], &amp;quot;pulses&amp;quot;: [ 141662, 141667, 141668 ], &amp;quot;game&amp;quot;: 36831 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    category 64-bit integer + Unused (for now)   created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   published_at 64-bit integer + Unix epoch   tags array of unsigned 32-bit integers - An array of Tag Numbers   pulses array of unsigned 64-bit integers - ID of a Pulse item   game array of unsigned 64-bit integers - ID of a Game    </description>
+    </item>
+    
+    <item>
+      <title>Pulse Source</title>
+      <link>https://igdb.github.com/api/endpoints/pulse-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/pulse-source/</guid>
+      <description>URL path: /pulse_sources/
+Description: A news article source such as IGN.
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;Kotaku&amp;quot;, &amp;quot;game&amp;quot;: 4536, &amp;quot;page&amp;quot;: 345 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string + Name of pulse source   game unsigned 64-bit integer + ID of a Game record if this pulse source has a game connected to it   page unsigned 64-bit integer + ID of a Page record if this pulse source has a page connected to it    </description>
+    </item>
+    
+    <item>
+      <title>Ratings</title>
+      <link>https://igdb.github.com/api/private-endpoints/private_rating/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/private-endpoints/private_rating/</guid>
+      <description>URL path: /private/rates/
+Scope Name rates
+Description: IGDB user ratings
+This information is only accessible after a user has authenticated and you have an access token. Any reads or writes performed will be specifically to that user.
+ Example response
+{ &amp;quot;id&amp;quot;: 156849, &amp;quot;user&amp;quot;: 1337, &amp;quot;game&amp;quot;: 1942, &amp;quot;rating&amp;quot;: 9 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    user unsigned 64-bit integer + User ID   game unsigned 64-bit integer + ID of a Game that the user has rated   rating unsigned 64-bit integer + The rating value for the specific game, 0 - 10    Usage</description>
+    </item>
+    
+    <item>
+      <title>Region</title>
+      <link>https://igdb.github.com/api/enum-fields/region/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/enum-fields/region/</guid>
+      <description>Values
+   Value Region     1 Europe (EU)   2 North America (NA)   3 Australia (AU)   4 New Zealand (NZ)   5 Japan (JP)   6 China (CH)   7 Asia (AS)   8 Worldwide    </description>
+    </item>
+    
+    <item>
+      <title>Release date</title>
+      <link>https://igdb.github.com/api/endpoints/release-date/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/release-date/</guid>
+      <description>URL path: /release_dates/
+Description: A handy endpoint that extends the games endpoint. Used to dig deeper into release dates, platforms and versions.
+Example response
+{ &amp;quot;id&amp;quot;: 4034, &amp;quot;game&amp;quot;: 1936, &amp;quot;category&amp;quot;: 7, &amp;quot;platform&amp;quot;: 48, &amp;quot;human&amp;quot;: &amp;quot;TBD&amp;quot; }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    game unsigned 64-bit integer + ID of a Game record   category unsigned integer + See the Date category value reference   platform unsigned 64-bit integer + ID of a Platform record   human string + The release date in human readable format.</description>
+    </item>
+    
+    <item>
+      <title>Release date</title>
+      <link>https://igdb.github.com/api/misc-objects/release-date/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/misc-objects/release-date/</guid>
+      <description>The Release date miscellaneous object is identical to the Release date object except that it doesn&amp;rsquo;t have an ID. Release dates are in milliseconds.</description>
+    </item>
+    
+    <item>
+      <title>Response Codes</title>
+      <link>https://igdb.github.com/api/references/response-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/references/response-codes/</guid>
+      <description>200: OK! Good response!  This result may still contain an empty array which indicates there are no results for your query.  400: Bad request  Something is wrong with the query parameters.  401: Unauthorized!  You may not have a key, sign up at api.igdb.com. You may be sending the key via a GET parameter which is incorrect, please use the &amp;ldquo;user-key&amp;rdquo; header. Your account may not have access to this specific endpoint.</description>
+    </item>
+    
+    <item>
+      <title>Review</title>
+      <link>https://igdb.github.com/api/endpoints/review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/review/</guid>
+      <description>URL path: /reviews/
+Example response
+{ &amp;quot;id&amp;quot;: 7, &amp;quot;username&amp;quot;: &amp;quot;thespikez&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;trash-of-the-year&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/games/into-the-dark/reviews/trash-of-the-year&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Trash of the year.&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;game&amp;quot;: 6613, &amp;quot;category&amp;quot;: 1, &amp;quot;likes&amp;quot;: 0, &amp;quot;views&amp;quot;: 138, &amp;quot;rating_category&amp;quot;: 2, &amp;quot;platform&amp;quot;: 6, &amp;quot;introduction&amp;quot;: &amp;quot;Don&#39;t expect a good game here&amp;quot;, &amp;quot;content&amp;quot;: &amp;quot;Don&#39;t even ...&amp;quot; }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    username string +    slug string +    url string +    title string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   game unsigned 64-bit integer + ID of a Game record   category integer + ?</description>
+    </item>
+    
+    <item>
+      <title>Reviews</title>
+      <link>https://igdb.github.com/api/private-endpoints/private_review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/private-endpoints/private_review/</guid>
+      <description>URL path: /private/reviews/
+Scope Name reviews
+Description: IGDB user reviews
+This information is only accessible after a user has authenticated and you have an access token. Any reads or writes performed will be specifically to that user.
+ Example response
+{ &amp;quot;id&amp;quot;: 2508, &amp;quot;slug&amp;quot;: &amp;quot;review-monster-hunter-world&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/games/monster-hunter-world/reviews/review-monster-hunter-world&amp;quot;, &amp;quot;updated_at&amp;quot;: 1519396825587, &amp;quot;created_at&amp;quot;: 1519396825579, &amp;quot;game&amp;quot;: 36926, &amp;quot;username&amp;quot;: &amp;quot;1337&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Review: Monster Hunter: World&amp;quot;, &amp;quot;avatar_url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/yvk53qfbt3vwjz2iwevw.png&amp;quot;, &amp;quot;likes&amp;quot;: 0, &amp;quot;views&amp;quot;: 0, &amp;quot;rating_category&amp;quot;: 2, &amp;quot;review_rating&amp;quot;: 6, &amp;quot;content&amp;quot;: &amp;quot;Here is the user review, a minimum of 50 characters.</description>
+    </item>
+    
+    <item>
+      <title>Species</title>
+      <link>https://igdb.github.com/api/enum-fields/species/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/enum-fields/species/</guid>
+      <description>Values
+   Value Text     1 Human   2 Alien   3 Animal   4 Android   5 Unknown    </description>
+    </item>
+    
+    <item>
+      <title>Tag Numbers</title>
+      <link>https://igdb.github.com/api/references/tag-numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/references/tag-numbers/</guid>
+      <description>Tag numbers are automatically generated numbers which provide a compact and fast way to do complex filtering on the IGDB API. The number calculation can be easily achieved with any programming language.
+The basis of the calculation is a 32bit integer, where the first 4 bits contain the object type ID, and the remaining 28 bits represent the ID of the object we are generating the tag number for.
+Using this method a flat index of custom object &amp;lsquo;hashes&amp;rsquo; can be maintained in which index the search and filtering is faster than using conventional methods.</description>
+    </item>
+    
+    <item>
+      <title>Theme</title>
+      <link>https://igdb.github.com/api/endpoints/theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/theme/</guid>
+      <description>URL path: /themes/
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;Action&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;action&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/themes/action&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
+    </item>
+    
+    <item>
+      <title>Time to beat</title>
+      <link>https://igdb.github.com/api/misc-objects/time-to-beat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/misc-objects/time-to-beat/</guid>
+      <description>Example
+{ &amp;quot;hastly&amp;quot;: 30200, &amp;quot;normally&amp;quot;: 44550, &amp;quot;completely&amp;quot;: 111150 }  Fields
+   Name Type Mandatory Comment     hastly unsigned 64-bit integer - Number of seconds   normally unsigned 64-bit integer - Number of seconds   completely unsigned 64-bit integer - Number of seconds    </description>
+    </item>
+    
+    <item>
+      <title>Title</title>
+      <link>https://igdb.github.com/api/endpoints/title/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/title/</guid>
+      <description>URL path: /titles/
+Description: Job titles in the industry.
+Example response
+{ &amp;quot;id&amp;quot;: 12003, &amp;quot;name&amp;quot;: &amp;quot;Brand Presentation Director&amp;quot;, &amp;quot;created_at&amp;quot;: 1424455593564, &amp;quot;updated_at&amp;quot;: 1424455593588, &amp;quot;slug&amp;quot;: &amp;quot;brand-presentation-director&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/titles/brand-presentation-director&amp;quot;, &amp;quot;games&amp;quot;: [ 6801 ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   description string -    games array of unsigned 64-bit integers - IDs of Game records (expandable)    </description>
+    </item>
+    
+    <item>
+      <title>User Profile</title>
+      <link>https://igdb.github.com/api/endpoints/me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/me/</guid>
+      <description>URL path: /me/
+Description: IGDB user profile
+Important: You can only access this information with a valid access token. And the profile is connected to the accesstoken.
+Example response
+{ &amp;quot;id&amp;quot;: 7331, &amp;quot;username&amp;quot;: &amp;quot;1337&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;1337&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/users/1337&amp;quot;, &amp;quot;created_at&amp;quot;: 1484834834279, &amp;quot;updated_at&amp;quot;: 1510306478341, &amp;quot;role&amp;quot;: 9, &amp;quot;color&amp;quot;: 5, &amp;quot;avatar&amp;quot;: { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/yvk53qfbt3vwjz2iwevw.jpg&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;yvk53qfbt3vwjz2iwevw&amp;quot;, &amp;quot;width&amp;quot;: 600, &amp;quot;height&amp;quot;: 600 }, &amp;quot;background&amp;quot;: { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/gstfbf0007llxsj9t8mn.jpg&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;gstfbf0007llxsj9t8mn&amp;quot;, &amp;quot;width&amp;quot;: 8000, &amp;quot;height&amp;quot;: 4500 } }  Fields</description>
+    </item>
+    
+    <item>
+      <title>Versions</title>
+      <link>https://igdb.github.com/api/endpoints/versions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/versions/</guid>
+      <description>URL path: /game_versions/
+Description: Details about game editions and versions.
+Example response
+[ { &amp;quot;id&amp;quot;: 1, &amp;quot;game&amp;quot;: 28540, &amp;quot;created_at&amp;quot;: 1505219853364, &amp;quot;updated_at&amp;quot;: 1507493062339, &amp;quot;games&amp;quot;: [ 28540, 39045, 39044, 39047, 39034, 39046 ], &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/games/assassins-creed-origins/&amp;quot;, &amp;quot;features&amp;quot;: [ { &amp;quot;title&amp;quot;: &amp;quot;Notes&amp;quot;, &amp;quot;description&amp;quot;: &amp;quot;&amp;quot;, &amp;quot;category&amp;quot;: 1, &amp;quot;position&amp;quot;: 3, &amp;quot;values&amp;quot;: [ { &amp;quot;game&amp;quot;: 39034, &amp;quot;value&amp;quot;: &amp;quot;&amp;quot; }, { &amp;quot;game&amp;quot;: 39046, &amp;quot;value&amp;quot;: &amp;quot;Ubisoft Store exclusive.&amp;quot; }, { &amp;quot;game&amp;quot;: 39045, &amp;quot;value&amp;quot;: &amp;quot;&amp;quot; }, { &amp;quot;game&amp;quot;: 39044, &amp;quot;value&amp;quot;: &amp;quot;&amp;quot; }, { &amp;quot;game&amp;quot;: 39047, &amp;quot;value&amp;quot;: &amp;quot;Only 999 copies available.</description>
+    </item>
+    
+    <item>
+      <title>Video</title>
+      <link>https://igdb.github.com/api/misc-objects/video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/misc-objects/video/</guid>
+      <description>Example
+{ &amp;quot;name&amp;quot;: &amp;quot;Trailer&amp;quot;, &amp;quot;video_id&amp;quot;: &amp;quot;9C543B6uJ88&amp;quot; }  Fields
+   Name Type Mandatory Comment     name string +    video_id string + Youtube slug    </description>
+    </item>
+    
+    <item>
+      <title>Webhooks</title>
+      <link>https://igdb.github.com/api/references/webhooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/references/webhooks/</guid>
+      <description>What? Webhooks allow us to push data to you when it is added or updated. Instead of polling the API for changes, you can listen on your HTTP endpoint (Webhook) and we will deliver the data to you.
+Webhooks are only available on Pro, Ultra and Enterprise plans.
+ How to register your webhook Make a POST request to /webhooks via the IGDB API and include the following as the BODY of the request or as url encoded form parameters&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>https://igdb.github.com/api/misc-objects/website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/misc-objects/website/</guid>
+      <description>Example
+{ &amp;quot;category&amp;quot;: 1, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com&amp;quot; }  Fields
+   Name Type Mandatory Comment     category unsigned 64-bit integer + See the Website category value reference   url string + Url to website    </description>
+    </item>
+    
+    <item>
+      <title>Website category</title>
+      <link>https://igdb.github.com/api/enum-fields/website-category/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/enum-fields/website-category/</guid>
+      <description>Values
+   Value Category     1 official   2 wikia   3 wikipedia   4 facebook   5 twitter   6 twitch   8 instagram   9 youtube   10 iphone   11 ipad   12 android   13 steam   14 Reddit    </description>
     </item>
     
   </channel>

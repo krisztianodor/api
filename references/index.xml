@@ -1,740 +1,127 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>References on IGDB API Documentation</title>
-    <link>https://igdb.github.io/api/references/index.xml</link>
-    <description>Recent content in References on IGDB API Documentation</description>
+    <title>Reference on IGDB.com API Documentation</title>
+    <link>https://igdb.github.com/api/references/</link>
+    <description>Recent content in Reference on IGDB.com API Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 09 Jan 2017 10:23:01 +0100</lastBuildDate>
-    <atom:link href="https://igdb.github.io/api/references/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://igdb.github.com/api/references/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>Reference</title>
-      <link>https://igdb.github.io/api/references/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:01 +0100</pubDate>
-      
-      <guid>https://igdb.github.io/api/references/</guid>
-      <description>
-
-&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
-
-&lt;p&gt;This section describes all available data points and the means to retrieve them.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;./cors&#34;&gt;CORS for Javascript &amp;amp; Ionic&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./expander&#34;&gt;Expander&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./fields&#34;&gt;Fields&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./filters&#34;&gt;Filters&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./images&#34;&gt;Images&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./ordering&#34;&gt;Ordering&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./pagination&#34;&gt;Pagination&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./response-codes&#34;&gt;Response Codes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./tag-numbers&#34;&gt;Tag Numbers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;./webhooks&#34;&gt;Webhooks&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>CORS for Javascript &amp; Ionic</title>
-      <link>https://igdb.github.io/api/references/cors/</link>
+      <title>CORS for JS &amp; Ionic</title>
+      <link>https://igdb.github.com/api/references/cors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/references/cors/</guid>
-      <description>
-
-&lt;h3 id=&#34;cross-origin-resource-sharing&#34;&gt;Cross-Origin Resource Sharing&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS&#34;&gt;Cross-Origin Resource Sharing&lt;/a&gt; (CORS) is a mechanism that uses additional HTTP headers to let a user agent gain permission to access selected resources from a server on a different origin (domain) than the site currently in use. These security restrictions only affect browser-based javascript and mobile javascript frameworks like Ionic.&lt;/p&gt;
-
-&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Enabling CORS is only available in &lt;a href=&#34;https://api.igdb.com/pricing&#34;&gt;premium tiers&lt;/a&gt;. For free users you can set up a &lt;a href=&#34;https://stackoverflow.com/questions/25468100/simple-php-proxy-with-persistent-url&#34;&gt;proxy server&lt;/a&gt;, &lt;a href=&#34;https://blog.ionicframework.com/handling-cors-issues-in-ionic/&#34;&gt;Ionic&lt;/a&gt; also has a guide for this.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;To enable CORS, you need to register your domain by sending a POST request to the headers endpoint. To achieve this in &lt;a href=&#34;https://www.getpostman.com/&#34;&gt;Postman&lt;/a&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Set the POST request url to &lt;code&gt;https://api-endpoint.igdb.com/headers/&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Set the body to the following json&amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-    &amp;quot;api_header&amp;quot;: {
-        &amp;quot;header&amp;quot;: &amp;quot;Access-Control-Allow-Origin&amp;quot;,
-        &amp;quot;value&amp;quot;: &amp;quot;yourdomain.com&amp;quot;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Change &lt;code&gt;yourdomain.com&lt;/code&gt; to your domain or &lt;code&gt;localhost:8100&lt;/code&gt; for Ionic.&lt;/li&gt;
-&lt;li&gt;Send!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Future responses from the API will contain the special header required to access the API. &lt;code&gt;Access-Control-Allow-Origin: yourdomain.com&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;To delete the header, send a DELETE request to &lt;code&gt;/headers/?header=Access-Control-Allow-Origin&lt;/code&gt;.&lt;/p&gt;
-</description>
+      <guid>https://igdb.github.com/api/references/cors/</guid>
+      <description>Cross-Origin Resource Sharing Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP headers to let a user agent gain permission to access selected resources from a server on a different origin (domain) than the site currently in use. These security restrictions only affect browser-based javascript and mobile javascript frameworks like Ionic.
+Enabling CORS is only available in premium tiers. For free users you can set up a proxy server, Ionic also has a guide for this.</description>
     </item>
     
     <item>
       <title>Expander</title>
-      <link>https://igdb.github.io/api/references/expander/</link>
+      <link>https://igdb.github.com/api/references/expander/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/references/expander/</guid>
-      <description>
-
-&lt;h3 id=&#34;expander&#34;&gt;Expander&lt;/h3&gt;
-
-&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
-
-&lt;p&gt;The expander feature is used to combine multiple requests. For example, a game provides a list of company IDs which in turn need to be requested to reach the company data. Using the expander parameter, the company ID will instead be an object containing that data.&lt;/p&gt;
-
-&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
-
-&lt;p&gt;The expander can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
-
-&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: &lt;code&gt;/games/1838,828,1337?fields=name,themes.name,game.name&amp;amp;expand=game,themes&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;We start with this simple URL.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/games/1838,828,1337&lt;/code&gt;
-First we have the resource part of the url. In this case we get the games with ID: 1838, 828 and 1337&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;expand=game,themes&lt;/code&gt;
-With this parameter, we will expand: game (parent game) and themes (the themes that the game has).&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;fields=name,themes.name,game.name&lt;/code&gt;
-We also have to specify all the fields we want to have expanded. If you don&amp;rsquo;t specify the fields it will give you the full object.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;name: The field on the root game model.&lt;/li&gt;
-&lt;li&gt;game.name: The field on the parent game model.&lt;/li&gt;
-&lt;li&gt;themes.name: The field on the theme model.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The result will be:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;
-[
-  {
-    &amp;quot;id&amp;quot;: 1838,
-    &amp;quot;name&amp;quot;: &amp;quot;Painkiller: Redemption&amp;quot;,
-    &amp;quot;game&amp;quot;: {
-      &amp;quot;id&amp;quot;: 828,
-      &amp;quot;name&amp;quot;: &amp;quot;Painkiller&amp;quot;
-    },
-    &amp;quot;themes&amp;quot;: [
-      {
-        &amp;quot;id&amp;quot;: 1,
-        &amp;quot;name&amp;quot;: &amp;quot;Action&amp;quot;
-      },
-      {
-        &amp;quot;id&amp;quot;: 19,
-        &amp;quot;name&amp;quot;: &amp;quot;Horror&amp;quot;
-      }
-    ]
-  }
-]
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now for the more advanced expander:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/pulses/19357?fields=title,pulse_source.name,pulse_source.page.name,pulse_source.page.logo&amp;amp;expand=pulse_source.page&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;We get the pulse news article with ID = 19357.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;expand=pulse_source.page&lt;/code&gt;
-We want the pulse_source and it&amp;rsquo;s page with associated logo&amp;rsquo;s and deeper information.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;fields=title,pulse_source.name,pulse_source.page.name,pulse_source.page.logo&lt;/code&gt;
-Because the pulse_source is inferred, you can also specify fields on the pulse_source as well.&lt;/p&gt;
-
-&lt;p&gt;The result is:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;[
-  {
-    &amp;quot;id&amp;quot;: 19357,
-    &amp;quot;title&amp;quot;: &amp;quot;Today’s selection of articles from Kotaku’s reader-run community: Anatomy of a Fire Emblem Character&amp;quot;,
-    &amp;quot;pulse_source&amp;quot;: {
-      &amp;quot;id&amp;quot;: 1,
-      &amp;quot;name&amp;quot;: &amp;quot;Kotaku&amp;quot;,
-      &amp;quot;page&amp;quot;: {
-        &amp;quot;id&amp;quot;: 501,
-        &amp;quot;name&amp;quot;: &amp;quot;Kotaku&amp;quot;,
-        &amp;quot;logo&amp;quot;: {
-          &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/ns8o3b99iwdbyee8wu9c.png&amp;quot;,
-          &amp;quot;cloudinary_id&amp;quot;: &amp;quot;ns8o3b99iwdbyee8wu9c&amp;quot;,
-          &amp;quot;width&amp;quot;: 240,
-          &amp;quot;height&amp;quot;: 240
-        }
-      }
-    }
-  }
-]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;what-can-i-expand&#34;&gt;What can I expand?&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Game.collection&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.franchise&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.franchises&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.game&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.developers&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.publishers&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.game_engines&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.player_perspectives&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.game_modes&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.keywords&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.themes&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Game.genres&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Character.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Company.published&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Company.developed&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;GameEngine.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;GameEngine.platforms&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;GameEngine.companies&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;GameMode.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Keyword.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PulseSource.game&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PulseSource.page&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Theme.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Collection.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PlayerPerspective.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Franchise.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Genre.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ReleaseDate.game&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ReleaseDate.platform&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Page.feed&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Page.game&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Pulse.pulse_source&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Review.game&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Person.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Person.characters&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Feed.games&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Feed.pulse&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PulseGroup.game&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PulseGroup.pulses&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://igdb.github.com/api/references/expander/</guid>
+      <description>Expander What? The expander feature is used to combine multiple requests. For example, a game provides a list of company IDs which in turn need to be requested to reach the company data. Using the expander parameter, the company ID will instead be an object containing that data.
+Where? The expander can be used on any entity that has sub-properties such as Games, Companies, People etc.
+How? Example: /games/1838,828,1337?fields=name,themes.name,game.name&amp;amp;expand=game,themes</description>
     </item>
     
     <item>
       <title>Fields</title>
-      <link>https://igdb.github.io/api/references/fields/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:15 +0100</pubDate>
+      <link>https://igdb.github.com/api/references/fields/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/references/fields/</guid>
-      <description>
-
-&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
-
-&lt;p&gt;Fields are properties of an entity. For example, a Game field would be &lt;code&gt;rating&lt;/code&gt; or &lt;code&gt;release_dates&lt;/code&gt;. Some fields have properties of their own, for example, the &lt;code&gt;esrb&lt;/code&gt; field has the property &lt;code&gt;synopsis&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
-
-&lt;p&gt;Fields can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
-
-&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
-
-&lt;p&gt;Fields are requested in a comma separated list. For example, to get some information for some Games, Genres, Themes or anything else, you could request it like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/games/4356,189,444?fields=name,release_dates,esrb.synopsis,rating&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Note the &lt;code&gt;synopsis&lt;/code&gt; property of &lt;code&gt;esrb&lt;/code&gt; can be accessed directly with a dot.&lt;/p&gt;
-
-&lt;p&gt;A full list of fields can be obtained by passing a &lt;code&gt;*&lt;/code&gt; as a field. Alternatively you can use the &lt;code&gt;meta&lt;/code&gt; postfix: &lt;code&gt;/games/meta&lt;/code&gt; to get a list of all fields.&lt;/p&gt;
-</description>
+      <guid>https://igdb.github.com/api/references/fields/</guid>
+      <description>What? Fields are properties of an entity. For example, a Game field would be rating or release_dates. Some fields have properties of their own, for example, the esrb field has the property synopsis.
+Where? Fields can be used on any entity that has sub-properties such as Games, Companies, People etc.
+How? Fields are requested in a comma separated list. For example, to get some information for some Games, Genres, Themes or anything else, you could request it like this:</description>
     </item>
     
     <item>
       <title>Filters</title>
-      <link>https://igdb.github.io/api/references/filters/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:47 +0100</pubDate>
+      <link>https://igdb.github.com/api/references/filters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/references/filters/</guid>
-      <description>
-
-&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
-
-&lt;p&gt;Filters are used to sift through results to get what you want. You can exclude and include results based on their properties. For example you could remove all Games where the &lt;code&gt;rating&lt;/code&gt; was below 80 (&lt;code&gt;filter[rating][gte]=80&lt;/code&gt;).&lt;/p&gt;
-
-&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
-
-&lt;p&gt;Filters are parameter arrays so must be added using special keys like this: &lt;code&gt;/games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;filter[release_dates.date][gt]=YYYY-MM-DD&lt;/code&gt;
-The filter itself comprises of 2 parts; The &lt;code&gt;field&lt;/code&gt; and the &lt;code&gt;postfix&lt;/code&gt;. Fields are described in the section on the left, postfixes are described below.&lt;/p&gt;
-
-&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
-
-&lt;p&gt;Filters can be used on any entity that has sub-properties such as Games, Companies, People etc.&lt;/p&gt;
-
-&lt;h2 id=&#34;available-postfixes&#34;&gt;Available Postfixes&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;eq&lt;/code&gt; Equal: Exact match equal.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;not_eq&lt;/code&gt; Not Equal: Exact match equal.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gt&lt;/code&gt; Greater than works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gte&lt;/code&gt; Greater than or equal to works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lt&lt;/code&gt; Less than works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lte&lt;/code&gt; Less than or equal to works only on numbers.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;prefix&lt;/code&gt; Prefix of a value only works on strings.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;exists&lt;/code&gt; The value is not null.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;not_exists&lt;/code&gt; The value is null.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;in&lt;/code&gt; The value exists within the (comma separated) array (AND between values).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;not_in&lt;/code&gt; The values must not exists within the (comma separated) array (AND between values).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;any&lt;/code&gt; The value has any within the (comma separated) array (OR between values).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The &lt;code&gt;id&lt;/code&gt; field is special and cannot be filtered.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Invalid: &lt;code&gt;/games/?filter[id][eq]=4032&amp;amp;fields=name&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Valid: &lt;code&gt;/games/4032?fields=name&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Applying any postfix to the field &lt;code&gt;id&lt;/code&gt; are not supported except for &lt;code&gt;not_in&lt;/code&gt; which can be used to filter away specific  results.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;h2 id=&#34;text-search&#34;&gt;Text search&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;search&lt;/code&gt; This parameter is not like other filters. It is an independant parameter that performs a full text search.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;Setting the &lt;code&gt;order&lt;/code&gt; parameter will override the default &lt;code&gt;relevance&lt;/code&gt; ordering of search results.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;&lt;code&gt;/games/?search=zelda&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-
-&lt;h4 id=&#34;filter-by-multiple-platforms&#34;&gt;Filter by multiple platforms&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;If you checkout the platforms endpoint:
-&lt;code&gt;/platforms/?fields=name&amp;amp;limit=50&lt;/code&gt;&lt;br /&gt;
-You will find the names and id&amp;rsquo;s of the platform. Select the ones you want.&lt;br /&gt;
-Then when you know the ID&amp;rsquo;s of the platform:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;/games/?fields=*&amp;amp;filter[release_dates.platform][any]=48,49,6&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This will give you games that are released on PS4 or XBOX ONE or PC&lt;/p&gt;
-</description>
+      <guid>https://igdb.github.com/api/references/filters/</guid>
+      <description>What? Filters are used to sift through results to get what you want. You can exclude and include results based on their properties. For example you could remove all Games where the rating was below 80 (filter[rating][gte]=80).
+How? Filters are parameter arrays so must be added using special keys like this: /games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;filter[release_dates.date][gt]=YYYY-MM-DD The filter itself comprises of 2 parts; The field and the postfix. Fields are described in the section on the left, postfixes are described below.</description>
     </item>
     
     <item>
       <title>Images</title>
-      <link>https://igdb.github.io/api/references/images/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:50 +0100</pubDate>
+      <link>https://igdb.github.com/api/references/images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/references/images/</guid>
-      <description>
-
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;/games/1942?fields=screenshots&lt;/code&gt;&lt;br /&gt;
-Here we retrieve the image properties of the game with the id &amp;ldquo;1942&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Response:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[
-  {
-    &amp;quot;id&amp;quot;: 1942,
-    &amp;quot;screenshots&amp;quot;: [
-      {
-        &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&amp;quot;,
-        &amp;quot;cloudinary_id&amp;quot;: &amp;quot;z5t0yuhyiiui1ickwhgj&amp;quot;,
-        &amp;quot;width&amp;quot;: 1920,
-        &amp;quot;height&amp;quot;: 1080
-      },
-      {
-        &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&amp;quot;,
-        &amp;quot;cloudinary_id&amp;quot;: &amp;quot;mnljdjtrh44x4snmierh&amp;quot;,
-        &amp;quot;width&amp;quot;: 1920,
-        &amp;quot;height&amp;quot;: 1080
-      }
-    ]
-  }
-]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Replace the ID&amp;rsquo;s above (e.g. &lt;code&gt;z5t0yuhyiiui1ickwhgj&lt;/code&gt;) with the &lt;code&gt;cloudinary_id&lt;/code&gt; value, provided by the API.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Image url structure:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dfgkfivjrhcksyymh9vw.jpg&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Break down:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;https://images.igdb.com/igdb/image/upload/t_{size}/{hash}.jpg&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;size&lt;/code&gt; is one of the interchangeable size types listed below.
-&lt;code&gt;hash&lt;/code&gt; is the id of the image.
-The image sizes are all maximum size but by appending &lt;code&gt;_2x&lt;/code&gt; to any size, you can get retina (DPR 2.0) sizes (&lt;code&gt;cover_small_2x&lt;/code&gt;).&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Size&lt;/th&gt;
-&lt;th&gt;Extra&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;cover_small&lt;/td&gt;
-&lt;td&gt;90 x 128&lt;/td&gt;
-&lt;td&gt;Fit&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;screenshot_med&lt;/td&gt;
-&lt;td&gt;569 x 320&lt;/td&gt;
-&lt;td&gt;Lfill, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;cover_big&lt;/td&gt;
-&lt;td&gt;227 x 320&lt;/td&gt;
-&lt;td&gt;Fit&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;logo_med&lt;/td&gt;
-&lt;td&gt;284 x 160&lt;/td&gt;
-&lt;td&gt;Fit&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;screenshot_big&lt;/td&gt;
-&lt;td&gt;889 x 500&lt;/td&gt;
-&lt;td&gt;Lfill, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;screenshot_huge&lt;/td&gt;
-&lt;td&gt;1280 x 720&lt;/td&gt;
-&lt;td&gt;Lfill, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;thumb&lt;/td&gt;
-&lt;td&gt;90 x 90&lt;/td&gt;
-&lt;td&gt;Thumb, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;micro&lt;/td&gt;
-&lt;td&gt;35 x 35&lt;/td&gt;
-&lt;td&gt;Thumb, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;720p&lt;/td&gt;
-&lt;td&gt;1280 x 720&lt;/td&gt;
-&lt;td&gt;Fit, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;1080p&lt;/td&gt;
-&lt;td&gt;1920 x 1080&lt;/td&gt;
-&lt;td&gt;Fit, Center gravity&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Images that are removed or replaced from IGDB.com exist for 30 days before they are removed. Keep that in mind when caching.&lt;/p&gt;
-&lt;/div&gt;
-
-</description>
+      <guid>https://igdb.github.com/api/references/images/</guid>
+      <description>Examples /games/1942?fields=screenshots
+Here we retrieve the image properties of the game with the id &amp;ldquo;1942&amp;rdquo;
+Response:
+[ { &amp;quot;id&amp;quot;: 1942, &amp;quot;screenshots&amp;quot;: [ { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;z5t0yuhyiiui1ickwhgj&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 }, { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;mnljdjtrh44x4snmierh&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 } ] } ]  Replace the ID&amp;rsquo;s above (e.g. z5t0yuhyiiui1ickwhgj) with the cloudinary_id value, provided by the API.
+Image url structure:
+https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dfgkfivjrhcksyymh9vw.jpg
+Break down:
+https://images.igdb.com/igdb/image/upload/t_{size}/{hash}.jpg
+size is one of the interchangeable size types listed below.</description>
     </item>
     
     <item>
       <title>Ordering</title>
-      <link>https://igdb.github.io/api/references/ordering/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:54 +0100</pubDate>
+      <link>https://igdb.github.com/api/references/ordering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/references/ordering/</guid>
-      <description>
-
-&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
-
-&lt;p&gt;Ordering (Sorting) is used to order results by a specific field.&lt;/p&gt;
-
-&lt;h2 id=&#34;how&#34;&gt;How?&lt;/h2&gt;
-
-&lt;p&gt;You can order results like this: &lt;code&gt;/games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;order=release_dates.date:desc&lt;/code&gt;. Notice the appended &lt;code&gt;:desc&lt;/code&gt; which could also be &lt;code&gt;:asc&lt;/code&gt; if required.&lt;/p&gt;
-
-&lt;p&gt;You can also subfilter arrays by appending &amp;ldquo;max&amp;rdquo;, &amp;ldquo;min&amp;rdquo;, &amp;ldquo;sum&amp;rdquo;, &amp;ldquo;avg&amp;rdquo; or &amp;ldquo;median&amp;rdquo;.
-For example, you can order games based on it&amp;rsquo;s earliest release date like this: &lt;code&gt;/games/?search=zelda&amp;amp;order=release_dates.date:desc:min&amp;amp;limit=5&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;order-by-popularity&#34;&gt;Order by popularity&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Popularity parameter for games. You can access it like this:
-&lt;code&gt;/games/?fields=name,popularity&amp;amp;order=popularity:desc&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The popularity number is calculated using usage statistics of game pages at &lt;a href=&#34;https://www.igdb.com&#34;&gt;https://www.igdb.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;where&#34;&gt;Where?&lt;/h2&gt;
-
-&lt;p&gt;Ordering can be used on any entity.&lt;/p&gt;
-</description>
+      <guid>https://igdb.github.com/api/references/ordering/</guid>
+      <description>What? Ordering (Sorting) is used to order results by a specific field.
+How? You can order results like this: /games/?search=zelda&amp;amp;filter[rating][gte]=80&amp;amp;order=release_dates.date:desc. Notice the appended :desc which could also be :asc if required.
+You can also subfilter arrays by appending &amp;ldquo;max&amp;rdquo;, &amp;ldquo;min&amp;rdquo;, &amp;ldquo;sum&amp;rdquo;, &amp;ldquo;avg&amp;rdquo; or &amp;ldquo;median&amp;rdquo;. For example, you can order games based on it&amp;rsquo;s earliest release date like this: /games/?search=zelda&amp;amp;order=release_dates.date:desc:min&amp;amp;limit=5
+Order by popularity Popularity parameter for games. You can access it like this: /games/?</description>
     </item>
     
     <item>
       <title>Pagination</title>
-      <link>https://igdb.github.io/api/references/pagination/</link>
-      <pubDate>Mon, 09 Jan 2017 10:24:00 +0100</pubDate>
+      <link>https://igdb.github.com/api/references/pagination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/references/pagination/</guid>
-      <description>
-
-&lt;h3 id=&#34;simple-pagination&#34;&gt;Simple Pagination&lt;/h3&gt;
-
-&lt;p&gt;Here is an example for how to use &lt;strong&gt;limit&lt;/strong&gt;. The default limit is 10. The maximum limit is 50.
-&lt;code&gt;/platforms/?limit=33&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;There is also an &lt;strong&gt;offset&lt;/strong&gt;. This will start the list at position 22 and give 33 results.
-&lt;code&gt;/platforms/?limit=33&amp;amp;offset=22&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&#34;notices warning&#34; &gt;&lt;p&gt;For ever tier, &lt;code&gt;offset&lt;/code&gt; has a maximum value of 10,000 for server-resource reasons. While simple pagination is perfect for smaller datasets, we strongly recommend using the Scroll API documented below for everything else.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;For the pro tier and above, you can increase the page limit to 3000 by prepending the request with &lt;code&gt;/pro&lt;/code&gt;. For example: &lt;code&gt;/pro/platforms/?limit=3000&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;h3 id=&#34;scroll-api&#34;&gt;Scroll API&lt;/h3&gt;
-
-&lt;p&gt;In order to bypass the limits of simple pagination and get blazing fast response times you need to use the &lt;code&gt;scroll&lt;/code&gt; parameter. To use it you need to supply the scroll param to the query like this:
-&lt;code&gt;/games/?order=rating&amp;amp;limit=50&amp;amp;scroll=1&lt;/code&gt;. It will return results and include a couple of extra headers: &lt;strong&gt;X-Next-Page&lt;/strong&gt; and &lt;strong&gt;X-Count&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;X-Next-Page&lt;/strong&gt; includes a special scroll path: &lt;code&gt;/games/scroll/cXVlcnlBbmRGZXRjaDsxOzE5OkhBck1wUUZsUnpPUDgwMGtDN0hSdEE7MDs=&lt;/code&gt; This path actually never changes so you can repeatedly query the same URL to get the next page.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;X-Count&lt;/strong&gt; includes the total number of results: &lt;code&gt;1337&lt;/code&gt; You can work out the number of pages with a simple calculation: &lt;code&gt;Math.round(X-Count / limit)&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;There is a timeout on the Scroll API of &lt;strong&gt;3 minutes&lt;/strong&gt; and for each subsequent scroll request it refreshes this timeout.&lt;/p&gt;
-&lt;/div&gt;
-
-</description>
+      <guid>https://igdb.github.com/api/references/pagination/</guid>
+      <description>Simple Pagination Here is an example for how to use limit. The default limit is 10. The maximum limit is 50. /platforms/?limit=33
+There is also an offset. This will start the list at position 22 and give 33 results. /platforms/?limit=33&amp;amp;offset=22
+For ever tier, offset has a maximum value of 10,000 for server-resource reasons. While simple pagination is perfect for smaller datasets, we strongly recommend using the Scroll API documented below for everything else.</description>
     </item>
     
     <item>
       <title>Response Codes</title>
-      <link>https://igdb.github.io/api/references/response-codes/</link>
-      <pubDate>Fri, 28 Jul 2017 10:23:47 +0100</pubDate>
+      <link>https://igdb.github.com/api/references/response-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/references/response-codes/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;200&lt;/strong&gt; = OK! Good response!
-
-&lt;ul&gt;
-&lt;li&gt;This result may still contain an empty array which indicates there are no results for your query.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;400&lt;/strong&gt; = Bad request
-
-&lt;ul&gt;
-&lt;li&gt;Something is wrong with the query parameters.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;401&lt;/strong&gt; = Unauthorized!
-
-&lt;ul&gt;
-&lt;li&gt;You may not have a key, sign up at &lt;a href=&#34;https://api.igdb.com/pricing&#34;&gt;api.igdb.com&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;You may be sending the key via a GET parameter which is incorrect, please use the &amp;ldquo;user-key&amp;rdquo; header.&lt;/li&gt;
-&lt;li&gt;Your account may not have access to this specific endpoint. Upgrade at &lt;a href=&#34;https://api.igdb.com/pricing&#34;&gt;api.igdb.com&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;403&lt;/strong&gt; = Forbidden
-
-&lt;ul&gt;
-&lt;li&gt;You may have hit your usage cap. &lt;a href=&#34;https://api.igdb.com/pricing&#34;&gt;Upgrade here&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;You may be using browser javascript or ionic framework to make requests to the API and need to &lt;a href=&#34;../cors&#34;&gt;enable CORs on your account&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;500&lt;/strong&gt; = Internal Error
-
-&lt;ul&gt;
-&lt;li&gt;The server has done something wrong. This is a bug and should be reported.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://igdb.github.com/api/references/response-codes/</guid>
+      <description>200: OK! Good response!  This result may still contain an empty array which indicates there are no results for your query.  400: Bad request  Something is wrong with the query parameters.  401: Unauthorized!  You may not have a key, sign up at api.igdb.com. You may be sending the key via a GET parameter which is incorrect, please use the &amp;ldquo;user-key&amp;rdquo; header. Your account may not have access to this specific endpoint.</description>
     </item>
     
     <item>
       <title>Tag Numbers</title>
-      <link>https://igdb.github.io/api/references/tag-numbers/</link>
-      <pubDate>Mon, 09 Jan 2017 10:23:50 +0100</pubDate>
+      <link>https://igdb.github.com/api/references/tag-numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/references/tag-numbers/</guid>
-      <description>&lt;p&gt;Tag numbers are automatically generated numbers which provide a compact and fast way to do complex filtering on the IGDB API. The number calculation can be easily achieved with any programming language.&lt;/p&gt;
-
-&lt;p&gt;The basis of the calculation is a 32bit integer, where the first 4 bits contain the object type ID, and the remaining 28 bits represent the ID of the object we are generating the tag number for.&lt;/p&gt;
-
-&lt;p&gt;Using this method a flat index of custom object &amp;lsquo;hashes&amp;rsquo; can be maintained in which index the search and filtering is faster than using conventional methods.&lt;/p&gt;
-
-&lt;p&gt;Currently the following object types use tags:&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Type ID&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Name&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Theme&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Genre&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Keyword&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Game&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Player Perspective&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Let&amp;rsquo;s see two examples for tag number calculation.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;We try to find all the pulses which relate to the Shooter genre. The tag number generation in Javascript would look something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;// Javascript
-const genreTypeID = 1 // The type ID from the table above
-const shooterGenreID = 5 // The Shooter genre&#39;s ID, coming from the genres endpoint.
-let tagNumber = genreTypeID &amp;lt;&amp;lt; 28 // Bit-shifting the genre&#39;s type ID by 28 bits, ensuring that it will get into the first four bits. The result will be 268435456
-tagNumber |= shooterGenreID // Adding the Shooter genre ID to the tag number with a bitwise OR operation. The result will be 268435461.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;An example query:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/pulse/?filter[tags][any]=268435461
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Example 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;#Python
-gameTypeID = 3 # The game&#39;s type ID from the table above/
-gameID = 26196 # The ID of the game /games/crash-bandicoot-n-sane-trilogy
-tagNumber = gameTypeID &amp;lt;&amp;lt; 28 # Bit-shifting the game&#39;s type ID by 28 bits, ensuring that it will get into the first four bits. The result will be 805306368
-tagNumber |= gameID # Adding the game ID to the tag number with a bitwise OR operation. The result will be 805332564.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;An example query:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/pulse/?filter[tags][any]=805332564
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>https://igdb.github.com/api/references/tag-numbers/</guid>
+      <description>Tag numbers are automatically generated numbers which provide a compact and fast way to do complex filtering on the IGDB API. The number calculation can be easily achieved with any programming language.
+The basis of the calculation is a 32bit integer, where the first 4 bits contain the object type ID, and the remaining 28 bits represent the ID of the object we are generating the tag number for.
+Using this method a flat index of custom object &amp;lsquo;hashes&amp;rsquo; can be maintained in which index the search and filtering is faster than using conventional methods.</description>
     </item>
     
     <item>
       <title>Webhooks</title>
-      <link>https://igdb.github.io/api/references/webhooks/</link>
-      <pubDate>Thu, 16 Nov 2017 10:23:50 +0100</pubDate>
+      <link>https://igdb.github.com/api/references/webhooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://igdb.github.io/api/references/webhooks/</guid>
-      <description>
-
-&lt;h2 id=&#34;what&#34;&gt;What?&lt;/h2&gt;
-
-&lt;p&gt;Webhooks allow us to push data to you when it is added or updated. Instead of polling the API for changes, you can listen on your HTTP endpoint (Webhook) and we will deliver the data to you.&lt;/p&gt;
-
-&lt;div class=&#34;notices info&#34; &gt;&lt;p&gt;Webhooks are only available on &lt;a href=&#34;https://api.igdb.com/pricing&#34;&gt;Pro, Ultra and Enterprise plans&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;h2 id=&#34;how-to-register-your-webhook&#34;&gt;How to register your webhook&lt;/h2&gt;
-
-&lt;p&gt;Make a POST request to &lt;code&gt;/webhooks&lt;/code&gt; via the IGDB API and include the following as the BODY of the request or as url encoded form parameters&amp;hellip;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;{
-    &amp;quot;webhook&amp;quot;: {
-        &amp;quot;url&amp;quot;: &amp;quot;YOUR_WEBHOOK_URL&amp;quot;, // url that the data will be sent to.
-        &amp;quot;category&amp;quot;: 1, // which kind of data you want to receive.
-        &amp;quot;secret&amp;quot;: &amp;quot;YOUR_SECRET&amp;quot; // we will send this back to you in each request.
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;On registering your webhook you will receive a response like this&amp;hellip;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;{
-    &amp;quot;id&amp;quot;: 42, // A unique ID for the webhook
-    &amp;quot;url&amp;quot;: &amp;quot;YOUR_WEBHOOK_URL&amp;quot;, // Your chosen URL
-    &amp;quot;category&amp;quot;: 1, // Your chosen category
-    &amp;quot;last_failed_at&amp;quot;: 1510826647000, // When the webhook last failed in unix time
-    &amp;quot;secret&amp;quot;: &amp;quot;YOUR_SECRET&amp;quot; // Your chosen secret
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That’s it! The data will now be sent to your webhook.&lt;/p&gt;
-
-&lt;p&gt;You can ensure security by checking the &lt;code&gt;X-Secret&lt;/code&gt; header in our request against your chosen secret.&lt;/p&gt;
-
-&lt;h2 id=&#34;removing-a-webhook&#34;&gt;Removing a Webhook&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;If a webhook fails to return a &lt;code&gt;200 OK&lt;/code&gt; within 24 hours it will be removed.&lt;/li&gt;
-&lt;li&gt;If a webhook returns &lt;code&gt;401 Unauthorized&lt;/code&gt; it will be removed.&lt;/li&gt;
-&lt;li&gt;You can manually unregister your webhook by sending a &lt;code&gt;DELETE&lt;/code&gt; request to &lt;code&gt;/webhooks/ID&lt;/code&gt; where ID is the ID returned during the registration process.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;category-keys&#34;&gt;Category keys&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;Game: 1
-GameVersion: 2
-SocialMetricSource: 3
-SocialMetric: 4
-PulseSource: 5
-Category: 6
-Character: 7
-Company: 8
-GameEngine: 9
-GameMode: 10
-Person: 11
-Platform: 12
-PulseGroup: 13
-Pulse: 14
-Theme: 15
-Collection: 16
-PlayerPerspective: 17
-Page: 18
-Review: 19
-Franchise: 20
-Genre: 21
-ReleaseDate: 22
-Title (Job Title): 23
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>https://igdb.github.com/api/references/webhooks/</guid>
+      <description>What? Webhooks allow us to push data to you when it is added or updated. Instead of polling the API for changes, you can listen on your HTTP endpoint (Webhook) and we will deliver the data to you.
+Webhooks are only available on Pro, Ultra and Enterprise plans.
+ How to register your webhook Make a POST request to /webhooks via the IGDB API and include the following as the BODY of the request or as url encoded form parameters&amp;hellip;</description>
     </item>
     
   </channel>
