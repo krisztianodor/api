@@ -60,7 +60,7 @@ Content-Type: application/json
 
 * Create user list (POST)
 
-	To create a new list you have to send a post request with the new list in the form of a JSON, JSON structure bellow.  
+	To create a new list you have to send a post request with the new list in the form of a JSON, JSON structure below.  
 	request URL: /private/lists/   
 	The API will respond with the newly created list, see Example Response.  
 

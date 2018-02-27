@@ -42,7 +42,7 @@ Content-Type: application/json
 
 * Create list entry (POST)
 
-	To create a new list entry you have to send a post request with the new entry in the form of a JSON, JSON structure bellow.  
+	To create a new list entry you have to send a post request with the new entry in the form of a JSON, JSON structure below.  
 	request URL: /private/list_entries/   
 	The API will respond with the newly created list entry, see Example Response.  
 
