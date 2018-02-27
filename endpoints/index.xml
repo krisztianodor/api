@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Endpoints on IGDB.com API Documentation</title>
+    <link>https://igdb.github.com/api/endpoints/</link>
+    <description>Recent content in Endpoints on IGDB.com API Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Jan 2017 19:03:21 +1000</lastBuildDate>
+    
+	<atom:link href="https://igdb.github.com/api/endpoints/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Character</title>
+      <link>https://igdb.github.com/api/endpoints/character/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/character/</guid>
+      <description>URL path: /characters/
+Description: Video game characters
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;Urdnot Wrex&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;urdnot-wrex&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/characters/urdnot-wrex&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789 }  Used fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   mug_shot object - See the Image object reference   gender integer - See the Gender value reference   akas array of strings - Name aliases - &amp;lsquo;also known as&amp;rsquo;   species integer - See the Species value reference   games array of unsigned 64-bit integers - IDs of Game records   people array of unsigned 64-bit integers - IDs of Person records    Unused fields</description>
+    </item>
+    
+    <item>
+      <title>Collection</title>
+      <link>https://igdb.github.com/api/endpoints/collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/collection/</guid>
+      <description>URL path: /collections/
+Description: Collection, AKA Series
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;Bioshock&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;bioshock&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/collections/bioshock&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
+    </item>
+    
+    <item>
+      <title>Company</title>
+      <link>https://igdb.github.com/api/endpoints/company/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/company/</guid>
+      <description>URL path: /companies/
+Description: Video game companies. Both publishers &amp;amp; developers
+Example response
+{ &amp;quot;id&amp;quot;: 642, &amp;quot;name&amp;quot;: &amp;quot;testcompany1&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;testcompany1&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/companies/testcompany1&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, ... }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   logo object - See the Image object reference   description string -    country integer - Please see the ISO-3316-1 reference   website string -    start_date 64-bit integer - Unix epoch   start_date_category integer - See the Date category value reference   changed_company_id unsigned 64-bit integer - ID of a Company record   change_date 64-bit integer - Unix epoch   change_date_category integer - See the Date category value reference   twitter string - The URL of the Twitter profile   published array of unsigned 64-bit integers - IDs of Game records   developed array of unsigned 64-bit integers - IDs of Game records    Unused fields</description>
+    </item>
+    
+    <item>
+      <title>Credits</title>
+      <link>https://igdb.github.com/api/endpoints/credit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/credit/</guid>
+      <description>URL path: /credits/
+Description: Contains all employees responsible for working on the game.
+Example response
+{ &amp;quot;id&amp;quot;: 268458528, &amp;quot;created_at&amp;quot;: 1448841876902, &amp;quot;updated_at&amp;quot;: 1448841876902, &amp;quot;category&amp;quot;: 1, &amp;quot;game&amp;quot;: 6913, &amp;quot;position&amp;quot;: 122, &amp;quot;person&amp;quot;: 96942, &amp;quot;character&amp;quot;: 441 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   game unsigned 64-bit integer - ID of a Game record (expandable)   category integer - See the Credit category value reference   company unsigned 64-bit integer - ID of a Company record (expandable)   position unsigned 64-bit integer - Position in the credits list.</description>
+    </item>
+    
+    <item>
+      <title>External Review</title>
+      <link>https://igdb.github.com/api/endpoints/external-review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/external-review/</guid>
+      <description>This endpoint is only available for pro and ultra tiers.
+ URL path: /external_reviews/
+Example response
+{ &amp;quot;id&amp;quot;: 50331, &amp;quot;game&amp;quot;: 7621, &amp;quot;source&amp;quot;: 30, &amp;quot;score&amp;quot;: 40, &amp;quot;url&amp;quot;: &amp;quot;http://www.impulsegamer.com/rime-switch-review/&amp;quot; }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    game unsigned 64-bit integer + ID of a Game record   source unsigned 64-bit integer + ID of an External Review Source   url string +    score integer  The review score out of 100    </description>
+    </item>
+    
+    <item>
+      <title>External Review Source</title>
+      <link>https://igdb.github.com/api/endpoints/external-review-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/external-review-source/</guid>
+      <description>URL path: /external_review_source/
+Example response
+{ &amp;quot;id&amp;quot;: 50331, &amp;quot;game&amp;quot;: 7621, &amp;quot;source&amp;quot;: 30, &amp;quot;score&amp;quot;: 40, &amp;quot;url&amp;quot;: &amp;quot;http://www.impulsegamer.com/rime-switch-review/&amp;quot; }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    game unsigned 64-bit integer + ID of a Game record   source unsigned 64-bit integer + ID of an External Review Source   url string +    score integer  The review score out of 100    </description>
+    </item>
+    
+    <item>
+      <title>Feed</title>
+      <link>https://igdb.github.com/api/endpoints/feed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/feed/</guid>
+      <description>URL path: /feeds/
+Description: Feed items are a social feed of status updates, media and news articles.
+Example response
+{ &amp;quot;id&amp;quot;: 1234, &amp;quot;created_at&amp;quot;: 1489255204000, &amp;quot;updated_at&amp;quot;: 1490353040531, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/feed/ya&amp;quot;, &amp;quot;content&amp;quot;: &amp;quot;Testing the new feed items.&amp;quot;, &amp;quot;category&amp;quot;: 7 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   content text (long string) -    category unsigned 64-bit integer - ID of a Feed Item Category   user unsigned 64-bit integer - ID of a User record   games array of unsigned 64-bit integer - ID of a Game record   title string -    feed_likes_count 64-bit integer -     </description>
+    </item>
+    
+    <item>
+      <title>Franchise</title>
+      <link>https://igdb.github.com/api/endpoints/franchise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/franchise/</guid>
+      <description>URL path: /franchises/
+Description: A list of video game franchises such as Star Wars.
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;Star Wars&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;star-wars&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/franchises/star-wars&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
+    </item>
+    
+    <item>
+      <title>Game</title>
+      <link>https://igdb.github.com/api/endpoints/game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/game/</guid>
+      <description>URL path: /games/
+Description: Video Games!
+Example response
+{ &amp;quot;id&amp;quot;: 1234, &amp;quot;name&amp;quot;: &amp;quot;Test game&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;/games/test-game&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/games/test-game&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   summary text (long string) -    storyline text (long string) -    collection unsigned 64-bit integer - ID of a Collection record   franchise unsigned 64-bit integer - ID of a Franchise record   hypes integer - Number of follows a game gets before release   popularity double - A number based on traffic to that game page   rating double - Average user rating   rating_count integer - Number of user ratings   aggregated_rating double - Rating based on external critic scores   aggregated_rating_count integer - Number of external critic scores   total_rating double - Average rating based on both IGDB user and external critic scores   total_rating_count integer - Total number of user and external critic scores   game unsigned 64-bit integer - ID of a Game this game is a DLC/expansion of (expandable)   version_parent unsigned 64-bit integer - ID of a Game this game is an edition of   developers array of unsigned 64-bit integers - IDs of Company records (expandable)   publishers array of unsigned 64-bit integers - IDs of Company records (expandable)   game_engines array of unsigned 64-bit integers - IDs of Game engine records   category integer - See the Game category value reference   time_to_beat object - See the Time to beat object reference   player_perspectives array of unsigned 64-bit integers - IDs of Player perspective records   game_modes array of unsigned 64-bit integers - IDs of Game mode records   keywords array of unsigned 64-bit integers - IDs of Keyword records   themes array of unsigned 64-bit integers - IDs of Theme records   genres array of unsigned 64-bit integers - IDs of Genre records   platforms array of unsigned 64-bit integers - IDs of Platform records   first_release_date 64-bit integer - Unix epoch   status integer - See the Game status value reference   release_dates array of objects - See the Release date object reference   alternative_names array of objects - See the Alternative name object reference   screenshots array of objects - See the Image object reference   videos array of objects - See the Video object reference   cover object - See the Image object reference   esrb object - See the ESRB object reference   pegi object - See the PEGI object reference   websites array of objects - See the Website object reference   tags array of unsigned 32-bit integers - An array of Tag Numbers   dlcs array of unsigned 64-bit integers - IDs of Game records (expandable)   expansions array of unsigned 64-bit integers - IDs of Game records (expandable)   standalone_expansions array of unsigned 64-bit integers - IDs of Game records (expandable)   bundles array of unsigned 64-bit integers - IDs of Game records (expandable)   games array of unsigned 64-bit integers - IDs of Game records that are similar to this game.</description>
+    </item>
+    
+    <item>
+      <title>Game engine</title>
+      <link>https://igdb.github.com/api/endpoints/game-engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/game-engine/</guid>
+      <description>URL path: /game_engines/
+Description: Video game engines such as unreal engine.
+Example response
+{ &amp;quot;id&amp;quot;: 2, &amp;quot;name&amp;quot;: &amp;quot;Frostbite&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;frostbite&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/game_engines/frostbite&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   logo object - See the Image object reference   games array of unsigned 64-bit integers - IDs of Game records   companies array of unsigned 64-bit integers - IDs of Company records   platforms array of unsigned 64-bit integers - IDs of Platforms records    </description>
+    </item>
+    
+    <item>
+      <title>Game mode</title>
+      <link>https://igdb.github.com/api/endpoints/game-mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/game-mode/</guid>
+      <description>URL path: /game_modes/
+Description: Single player, Multiplayer etc
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;Single player&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;single-player&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/game_modes/single-player&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
+    </item>
+    
+    <item>
+      <title>Genre</title>
+      <link>https://igdb.github.com/api/endpoints/genre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/genre/</guid>
+      <description>URL path: /genres/
+Example response
+{ &amp;quot;id&amp;quot;: 2, &amp;quot;name&amp;quot;: &amp;quot;Point-and-click&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;point-and-click&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/genres/point-and-click&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
+    </item>
+    
+    <item>
+      <title>Keyword</title>
+      <link>https://igdb.github.com/api/endpoints/keyword/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/keyword/</guid>
+      <description>URL path: /keywords/
+Description: Keywords are words or phrases that get tagged to a game such as &amp;ldquo;world war 2&amp;rdquo; or &amp;ldquo;steampunk&amp;rdquo;.
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;modern warfare&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;modern-warfare&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/categories/modern-warfare&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
+    </item>
+    
+    <item>
+      <title>Page</title>
+      <link>https://igdb.github.com/api/endpoints/page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/page/</guid>
+      <description>URL path: /pages/
+Description: Our multipurpose page system is currently used for youtubers and media organisations.
+Example response
+{ &amp;quot;id&amp;quot;: 1234, &amp;quot;name&amp;quot;: &amp;quot;The Super channel.&amp;quot;, &amp;quot;created_at&amp;quot;: 1488287162348, &amp;quot;updated_at&amp;quot;: 1488287515627, &amp;quot;slug&amp;quot;: &amp;quot;the-super-channel&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/p/the-super-channel&amp;quot;, &amp;quot;page_follows_count&amp;quot;: 0, &amp;quot;description&amp;quot;: &amp;quot;Playing awesome games quick!&amp;quot;, &amp;quot;youtube&amp;quot;: &amp;quot;https://www.youtube.com/channel/abc123&amp;quot;, &amp;quot;logo&amp;quot;: { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/abc123.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;abc123&amp;quot;, &amp;quot;width&amp;quot;: 240, &amp;quot;height&amp;quot;: 240 }, &amp;quot;background&amp;quot;: { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/abc123.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;abc123&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 } }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   name string +    content text (long string) -    category unsigned 64-bit integer -    sub_category unsigned 64-bit integer -    country integer - Please see the ISO-3316-1 reference   color unsigned 64-bit integer -    user 64-bit integers -    game 64-bit integers - IDs of Game records   company 64-bit integers - IDs of Company records   description text (long string) -    page_follows_count 64-bit integer -    logo objects - See the Image object reference   background objects - See the Image object reference   facebook string -    twitter string -    twitch string -    instagram string -    youtube string -    steam string -    linkedin string -    pinterest string -    soundcloud string -    google_plus string -    reddit string -    battlenet string -    origin string -    uplay string -    discord string -     </description>
+    </item>
+    
+    <item>
+      <title>Person</title>
+      <link>https://igdb.github.com/api/endpoints/person/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/person/</guid>
+      <description>URL path: /people/
+Description: Individuals who are in the video games industry
+Example response
+{ &amp;quot;id&amp;quot;: 557, &amp;quot;name&amp;quot;: &amp;quot;Adam Longton&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;adam-longton&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/people/adam-longton&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   mug_shot object - See the Image object reference   games array of unsigned 64-bit integers - IDs of Game records   characters array of unsigned 64-bit integers - IDs of Character records   voice_acted array of unsigned 64-bit integers - IDs of Game records    Unused fields</description>
+    </item>
+    
+    <item>
+      <title>Platform</title>
+      <link>https://igdb.github.com/api/endpoints/platform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/platform/</guid>
+      <description>URL path: /platforms/
+Description: The hardware used to run the game or game delivery network
+Example response
+{ &amp;quot;id&amp;quot;: 2, &amp;quot;name&amp;quot;: &amp;quot;Wii&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;wii&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/platform/wii&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   logo object - See the Image object reference   website string -    summary text (long string) -    alternative_name string -    generation integer -    games array of unsigned 64-bit integers - IDs of Game records   versions array of objects - See the Platform version object reference    Unused fields</description>
+    </item>
+    
+    <item>
+      <title>Play Times</title>
+      <link>https://igdb.github.com/api/endpoints/play_times/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/play_times/</guid>
+      <description>Getting detailed play times for a client id What is a client id? A Client ID is a unique identifier defined by you or your code. The idea is to generate a client ID that can be recalled for a certain user. For example, it could be a salted and hashed version of the mac ID or an external user ID. This ID can be used to save and recall play time data.</description>
+    </item>
+    
+    <item>
+      <title>Player Perspective</title>
+      <link>https://igdb.github.com/api/endpoints/player-perspective/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/player-perspective/</guid>
+      <description>URL path: /player_perspectives/
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;First person&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;first-person&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/player_perspectives/first-person&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
+    </item>
+    
+    <item>
+      <title>Pulse</title>
+      <link>https://igdb.github.com/api/endpoints/pulse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/pulse/</guid>
+      <description>URL path: /pulses/
+Description: A single news article.
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;pulse_source&amp;quot;: 1, &amp;quot;title&amp;quot;: &amp;quot;End of 2015 Discussions Megathread&amp;quot;, &amp;quot;summary&amp;quot;: &amp;quot;&amp;lt;!-- SC_OFF --&amp;gt;&amp;lt;div class=\&amp;quot;md\&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;December 31&amp;lt;/h3&amp;gt; ...&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.pcgamer.com/super-cool-article&amp;quot;, &amp;quot;uid&amp;quot;: &amp;quot;g87d799g520fhu2hk45jhk&amp;quot;, &amp;quot;author&amp;quot;: &amp;quot;Forestl&amp;quot;, &amp;quot;published_at&amp;quot;: 1448892803000 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    pulse_source integer + ID of a Pulse Source   title string +    summary text (long string) + Can contain HTML markup   url string + Publisher&amp;rsquo;s pulse URL, can be path only.</description>
+    </item>
+    
+    <item>
+      <title>Pulse Group</title>
+      <link>https://igdb.github.com/api/endpoints/pulse-group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/pulse-group/</guid>
+      <description>URL path: /pulse_groups/
+Example response
+{ &amp;quot;id&amp;quot;: 33, &amp;quot;name&amp;quot;: &amp;quot;Dissidia Final Fantasy NT&amp;quot;, &amp;quot;created_at&amp;quot;: 1496847873582, &amp;quot;updated_at&amp;quot;: 1496849184912, &amp;quot;published_at&amp;quot;: 1496848080000, &amp;quot;tags&amp;quot;: [ 805343199, 1073741826 ], &amp;quot;pulses&amp;quot;: [ 141662, 141667, 141668 ], &amp;quot;game&amp;quot;: 36831 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    category 64-bit integer + Unused (for now)   created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   published_at 64-bit integer + Unix epoch   tags array of unsigned 32-bit integers - An array of Tag Numbers   pulses array of unsigned 64-bit integers - ID of a Pulse item   game array of unsigned 64-bit integers - ID of a Game    </description>
+    </item>
+    
+    <item>
+      <title>Pulse Source</title>
+      <link>https://igdb.github.com/api/endpoints/pulse-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/pulse-source/</guid>
+      <description>URL path: /pulse_sources/
+Description: A news article source such as IGN.
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;Kotaku&amp;quot;, &amp;quot;game&amp;quot;: 4536, &amp;quot;page&amp;quot;: 345 }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string + Name of pulse source   game unsigned 64-bit integer + ID of a Game record if this pulse source has a game connected to it   page unsigned 64-bit integer + ID of a Page record if this pulse source has a page connected to it    </description>
+    </item>
+    
+    <item>
+      <title>Release date</title>
+      <link>https://igdb.github.com/api/endpoints/release-date/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/release-date/</guid>
+      <description>URL path: /release_dates/
+Description: A handy endpoint that extends the games endpoint. Used to dig deeper into release dates, platforms and versions.
+Example response
+{ &amp;quot;id&amp;quot;: 4034, &amp;quot;game&amp;quot;: 1936, &amp;quot;category&amp;quot;: 7, &amp;quot;platform&amp;quot;: 48, &amp;quot;human&amp;quot;: &amp;quot;TBD&amp;quot; }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    game unsigned 64-bit integer + ID of a Game record   category unsigned integer + See the Date category value reference   platform unsigned 64-bit integer + ID of a Platform record   human string + The release date in human readable format.</description>
+    </item>
+    
+    <item>
+      <title>Review</title>
+      <link>https://igdb.github.com/api/endpoints/review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/review/</guid>
+      <description>URL path: /reviews/
+Example response
+{ &amp;quot;id&amp;quot;: 7, &amp;quot;username&amp;quot;: &amp;quot;thespikez&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;trash-of-the-year&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/games/into-the-dark/reviews/trash-of-the-year&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Trash of the year.&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;game&amp;quot;: 6613, &amp;quot;category&amp;quot;: 1, &amp;quot;likes&amp;quot;: 0, &amp;quot;views&amp;quot;: 138, &amp;quot;rating_category&amp;quot;: 2, &amp;quot;platform&amp;quot;: 6, &amp;quot;introduction&amp;quot;: &amp;quot;Don&#39;t expect a good game here&amp;quot;, &amp;quot;content&amp;quot;: &amp;quot;Don&#39;t even ...&amp;quot; }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    username string +    slug string +    url string +    title string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   game unsigned 64-bit integer + ID of a Game record   category integer + ?</description>
+    </item>
+    
+    <item>
+      <title>Theme</title>
+      <link>https://igdb.github.com/api/endpoints/theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/theme/</guid>
+      <description>URL path: /themes/
+Example response
+{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;Action&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;action&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/themes/action&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   games array of unsigned 64-bit integers - IDs of Game records    </description>
+    </item>
+    
+    <item>
+      <title>Title</title>
+      <link>https://igdb.github.com/api/endpoints/title/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/title/</guid>
+      <description>URL path: /titles/
+Description: Job titles in the industry.
+Example response
+{ &amp;quot;id&amp;quot;: 12003, &amp;quot;name&amp;quot;: &amp;quot;Brand Presentation Director&amp;quot;, &amp;quot;created_at&amp;quot;: 1424455593564, &amp;quot;updated_at&amp;quot;: 1424455593588, &amp;quot;slug&amp;quot;: &amp;quot;brand-presentation-director&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/titles/brand-presentation-director&amp;quot;, &amp;quot;games&amp;quot;: [ 6801 ] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   description string -    games array of unsigned 64-bit integers - IDs of Game records (expandable)    </description>
+    </item>
+    
+    <item>
+      <title>User Profile</title>
+      <link>https://igdb.github.com/api/endpoints/me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/me/</guid>
+      <description>URL path: /me/
+Description: IGDB user profile
+Important: You can only access this information with a valid access token. And the profile is connected to the accesstoken.
+Example response
+{ &amp;quot;id&amp;quot;: 7331, &amp;quot;username&amp;quot;: &amp;quot;1337&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;1337&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/users/1337&amp;quot;, &amp;quot;created_at&amp;quot;: 1484834834279, &amp;quot;updated_at&amp;quot;: 1510306478341, &amp;quot;role&amp;quot;: 9, &amp;quot;color&amp;quot;: 5, &amp;quot;avatar&amp;quot;: { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/yvk53qfbt3vwjz2iwevw.jpg&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;yvk53qfbt3vwjz2iwevw&amp;quot;, &amp;quot;width&amp;quot;: 600, &amp;quot;height&amp;quot;: 600 }, &amp;quot;background&amp;quot;: { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/gstfbf0007llxsj9t8mn.jpg&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;gstfbf0007llxsj9t8mn&amp;quot;, &amp;quot;width&amp;quot;: 8000, &amp;quot;height&amp;quot;: 4500 } }  Fields</description>
+    </item>
+    
+    <item>
+      <title>Versions</title>
+      <link>https://igdb.github.com/api/endpoints/versions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/versions/</guid>
+      <description>URL path: /game_versions/
+Description: Details about game editions and versions.
+Example response
+[ { &amp;quot;id&amp;quot;: 1, &amp;quot;game&amp;quot;: 28540, &amp;quot;created_at&amp;quot;: 1505219853364, &amp;quot;updated_at&amp;quot;: 1507493062339, &amp;quot;games&amp;quot;: [ 28540, 39045, 39044, 39047, 39034, 39046 ], &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/games/assassins-creed-origins/&amp;quot;, &amp;quot;features&amp;quot;: [ { &amp;quot;title&amp;quot;: &amp;quot;Notes&amp;quot;, &amp;quot;description&amp;quot;: &amp;quot;&amp;quot;, &amp;quot;category&amp;quot;: 1, &amp;quot;position&amp;quot;: 3, &amp;quot;values&amp;quot;: [ { &amp;quot;game&amp;quot;: 39034, &amp;quot;value&amp;quot;: &amp;quot;&amp;quot; }, { &amp;quot;game&amp;quot;: 39046, &amp;quot;value&amp;quot;: &amp;quot;Ubisoft Store exclusive.&amp;quot; }, { &amp;quot;game&amp;quot;: 39045, &amp;quot;value&amp;quot;: &amp;quot;&amp;quot; }, { &amp;quot;game&amp;quot;: 39044, &amp;quot;value&amp;quot;: &amp;quot;&amp;quot; }, { &amp;quot;game&amp;quot;: 39047, &amp;quot;value&amp;quot;: &amp;quot;Only 999 copies available.</description>
+    </item>
+    
+  </channel>
+</rss>
