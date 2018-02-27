@@ -1,0 +1,48 @@
+/* background behind the logo*/
+#header-wrapper {
+    background: #252b32;
+    border-color: #39424c;
+}
+
+#header a {
+  padding-top: 16px;
+}
+
+/* Background color of the menu */
+#sidebar {
+  background-color: #252b32;
+  color: #333;
+}
+
+#sidebar ul li > a {
+  color: #FFF
+}
+#sidebar ul li > a:hover {
+  color: #2ECC71
+}
+
+/* Background color of the menu, when clicked */
+#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
+  background-color: #39424c;
+}
+
+/* Color of all links, including arrows to get to previous and next pages */
+a {
+  color: #27AE60;
+}
+a:hover {
+  color: #2ECC71;
+}
+
+#footer {
+  color: #333;
+}
+#footer a {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Centre-alignment of the non-first header fields of all the tables */
+table tr th:not(:first-child) {
+  text-align: center;
+}
