@@ -69,6 +69,6 @@ Page: 18
 Review: 19
 Franchise: 20
 Genre: 21
-Release
+Release Date: 22
 Title (Job Title): 23
 ```
