@@ -35,8 +35,6 @@ Here we retrieve the image properties of the game with the id "1942"
       }
     ]
 
-Replace the ID's above (e.g. `z5t0yuhyiiui1ickwhgj`) with the `cloudinary_id` value, provided by the API.
-
 **Image url structure:**
 
 `https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dfgkfivjrhcksyymh9vw.jpg`
