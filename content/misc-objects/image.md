@@ -1,12 +1,10 @@
 ---
-
-
-
-
-
 title: "Image"
-
 ---
+
+{{% notice info %}}
+To get different sized images, check out [our guide on how IGDB image urls are structured](../../references/images).
+{{% /notice %}}
 
 ***Example***
 
