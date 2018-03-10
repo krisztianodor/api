@@ -62,12 +62,11 @@ How? Filters are parameter arrays so must be added using special keys like this:
       <description>Examples /games/1942?fields=screenshots
 Here we retrieve the image properties of the game with the id &amp;ldquo;1942&amp;rdquo;
 Response:
-[ { &amp;quot;id&amp;quot;: 1942, &amp;quot;screenshots&amp;quot;: [ { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;z5t0yuhyiiui1ickwhgj&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 }, { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;mnljdjtrh44x4snmierh&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 } ] } ]  Replace the ID&amp;rsquo;s above (e.g. z5t0yuhyiiui1ickwhgj) with the cloudinary_id value, provided by the API.
-Image url structure:
+[ { &amp;quot;id&amp;quot;: 1942, &amp;quot;screenshots&amp;quot;: [ { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;z5t0yuhyiiui1ickwhgj&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 }, { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;mnljdjtrh44x4snmierh&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 } ] } ]  Image url structure:
 https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dfgkfivjrhcksyymh9vw.jpg
 Break down:
 https://images.igdb.com/igdb/image/upload/t_{size}/{hash}.jpg
-size is one of the interchangeable size types listed below.</description>
+size is one of the interchangeable size types listed below. hash is the id of the image.</description>
     </item>
     
     <item>

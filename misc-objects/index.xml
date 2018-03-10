@@ -50,7 +50,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://igdb.github.com/api/misc-objects/image/</guid>
-      <description>Example
+      <description>To get different sized images, check out our guide on how IGDB image urls are structured.
+ Example
 { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/l3n0zuklmgkloi1udslt.png&amp;quot;, &amp;quot;width&amp;quot;: 339, &amp;quot;height&amp;quot;: 393, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;l3n0zuklmgkloi1udslt&amp;quot; }  Fields
    Name Type Mandatory Comment     url string + Can be non-IGDB URL   cloudinary_id string - Cloudinary slug   width unsigned integer - The image&amp;rsquo;s width in pixels   height unsigned integer - The image&amp;rsquo;s height in pixels    </description>
     </item>
