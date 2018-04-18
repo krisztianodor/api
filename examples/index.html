@@ -13,17 +13,17 @@
     <title>Examples :: IGDB.com API Documentation</title>
     
     
-    <link href="/api/css/nucleus.css?1523609947" rel="stylesheet">
-    <link href="/api/css/font-awesome.min.css?1523609947" rel="stylesheet">
-    <link href="/api/css/hybrid.css?1523609947" rel="stylesheet">
-    <link href="/api/css/featherlight.min.css?1523609947" rel="stylesheet">
-    <link href="/api/css/perfect-scrollbar.min.css?1523609947" rel="stylesheet">
-    <link href="/api/css/horsey.css?1523609947" rel="stylesheet">
-    <link href="/api/css/theme.css?1523609947" rel="stylesheet">
-    <link href="/api/css/hugo-theme.css?1523609947" rel="stylesheet">
+    <link href="/api/css/nucleus.css?1524062194" rel="stylesheet">
+    <link href="/api/css/font-awesome.min.css?1524062194" rel="stylesheet">
+    <link href="/api/css/hybrid.css?1524062194" rel="stylesheet">
+    <link href="/api/css/featherlight.min.css?1524062194" rel="stylesheet">
+    <link href="/api/css/perfect-scrollbar.min.css?1524062194" rel="stylesheet">
+    <link href="/api/css/horsey.css?1524062194" rel="stylesheet">
+    <link href="/api/css/theme.css?1524062194" rel="stylesheet">
+    <link href="/api/css/hugo-theme.css?1524062194" rel="stylesheet">
     
 
-    <script src="/api/js/jquery-2.x.min.js?1523609947"></script>
+    <script src="/api/js/jquery-2.x.min.js?1524062194"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -1646,7 +1646,9 @@ API
 <li><a href="#order-by-popularity">Order by popularity</a></li>
 <li><a href="#coming-soon-games-for-playstation-4">Coming soon games for Playstation 4</a></li>
 <li><a href="#search-return-certain-fields">Search, return certain fields.</a></li>
-<li><a href="#search-games-but-exclude-versions-editions">Search games but exclude versions &amp; editions</a></li>
+<li><a href="#search-games-but-exclude-versions-editions">Search games but exclude versions (editions)</a></li>
+<li><a href="#get-versions-editions-of-a-game">Get versions (editions) of a game</a></li>
+<li><a href="#get-the-parent-game-for-a-version">Get the parent game for a version</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -1738,13 +1740,29 @@ If you want to return certain fields of the game or even all, do the following:<
 <p><code>/games/?search=Halo&amp;fields=name,publishers</code>
    <code>/games/?search=Halo&amp;fields=*</code></p>
 
-<h4 id="search-games-but-exclude-versions-editions">Search games but exclude versions &amp; editions</h4>
+<h4 id="search-games-but-exclude-versions-editions">Search games but exclude versions (editions)</h4>
 
 <hr />
 
 <p><code>/games/?search=Assassins%20Creed&amp;fields=name&amp;filter[version_parent][not_exists]=1</code></p>
 
 <p>This will return search results with ID and name of the game but exclude editions such as &ldquo;Collectors Edition&rdquo;.</p>
+
+<h4 id="get-versions-editions-of-a-game">Get versions (editions) of a game</h4>
+
+<hr />
+
+<p><code>/game_versions/?fields=games,games.name&amp;filter[game][eq]=28540&amp;expand=games</code></p>
+
+<p>This resulting object will contain a list of version ids and names.</p>
+
+<h4 id="get-the-parent-game-for-a-version">Get the parent game for a version</h4>
+
+<hr />
+
+<p><code>/games/39047?fields=version_parent</code></p>
+
+<p>This resulting object will contain the id of the parent game (version_parent).</p>
 
 
 <footer class=" footline" >
@@ -2982,20 +3000,20 @@ If you want to return certain fields of the game or even all, do the following:<
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/api/js/clipboard.min.js?1523609947"></script>
-    <script src="/api/js/perfect-scrollbar.min.js?1523609947"></script>
-    <script src="/api/js/perfect-scrollbar.jquery.min.js?1523609947"></script>
-    <script src="/api/js/jquery.sticky-kit.min.js?1523609947"></script>
-    <script src="/api/js/featherlight.min.js?1523609947"></script>
-    <script src="/api/js/html5shiv-printshiv.min.js?1523609947"></script>
-    <script src="/api/js/highlight.pack.js?1523609947"></script>
+    <script src="/api/js/clipboard.min.js?1524062194"></script>
+    <script src="/api/js/perfect-scrollbar.min.js?1524062194"></script>
+    <script src="/api/js/perfect-scrollbar.jquery.min.js?1524062194"></script>
+    <script src="/api/js/jquery.sticky-kit.min.js?1524062194"></script>
+    <script src="/api/js/featherlight.min.js?1524062194"></script>
+    <script src="/api/js/html5shiv-printshiv.min.js?1524062194"></script>
+    <script src="/api/js/highlight.pack.js?1524062194"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/api/js/modernizr.custom.71422.js?1523609947"></script>
-    <script src="/api/js/learn.js?1523609947"></script>
-    <script src="/api/js/hugo-learn.js?1523609947"></script>
+    <script src="/api/js/modernizr.custom.71422.js?1524062194"></script>
+    <script src="/api/js/learn.js?1524062194"></script>
+    <script src="/api/js/hugo-learn.js?1524062194"></script>
 
-    <link href="/api/mermaid/mermaid.css?1523609947" type="text/css" rel="stylesheet" />
-    <script src="/api/mermaid/mermaid.js?1523609947"></script>
+    <link href="/api/mermaid/mermaid.css?1524062194" type="text/css" rel="stylesheet" />
+    <script src="/api/mermaid/mermaid.js?1524062194"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
