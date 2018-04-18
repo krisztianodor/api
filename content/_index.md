@@ -42,10 +42,7 @@ Third party wrappers:
 
 - [Laravel](https://github.com/messerli90/igdb)
 - [Go](https://github.com/Henry-Sarabia/igdb)
-
-Third party & out of date. Need help :'(
-
-- [Ruby](https://github.com/tastycake/igdb_api) 
+- [Ruby](https://github.com/darkstego/igdb_client) 
 
 ### Need support?
 
