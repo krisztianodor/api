@@ -64,18 +64,6 @@ Example response
     </item>
     
     <item>
-      <title>External Games</title>
-      <link>https://igdb.github.com/api/endpoints/external-games/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://igdb.github.com/api/endpoints/external-games/</guid>
-      <description> URL path: /external_games/
-Example response
-{ &amp;quot;id&amp;quot;: 1, &amp;quot;name&amp;quot;: &amp;quot;Crappy Day Enhanced Edition&amp;quot;, &amp;quot;uid&amp;quot;: &amp;quot;636700&amp;quot;, &amp;quot;category&amp;quot;: 1, &amp;quot;game&amp;quot;: 28590, &amp;quot;year&amp;quot;: 2017, &amp;quot;url&amp;quot;: &amp;quot;http://store.com/app/636700/Crappy_Day_Enhanced_Edition/&amp;quot;, &amp;quot;created_at&amp;quot;: 1494493225413, &amp;quot;updated_at&amp;quot;: 1494580982384 }  Fields
-   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string + Name of the game according to the external source   uid string + The external source&amp;rsquo;s ID for the game   category integer + The external source (see list below)   game unsigned 64-bit integer  ID of an IGDB Game record   year integer  The release year   url string  A game or reference URL   updated_at 64-bit integer + Unix epoch   created_at 64-bit integer + Unix epoch    Category IDs Steam: 1 TheGamesDB: 2 GiantBomb: 3 Cooptimus: 4 GOG: 5 PushSquare: 6 isThereAnyDeal: 7 GamersGate: 8 GreenManGaming: 9 Youtube: 10 Microsoft: 11 NintendoLife: 12 Apple: 13 Twitch: 14 Android: 15 PlaystationStore: 16 PlaystationClient: 17  </description>
-    </item>
-    
-    <item>
       <title>External Review</title>
       <link>https://igdb.github.com/api/endpoints/external-review/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
