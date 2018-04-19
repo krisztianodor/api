@@ -96,6 +96,10 @@
   </url>
   
   <url>
+    <loc>https://igdb.github.com/api/endpoints/external-games/</loc>
+  </url>
+  
+  <url>
     <loc>https://igdb.github.com/api/endpoints/external-review/</loc>
   </url>
   

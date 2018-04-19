@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://www.igdb.com/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="https://www.igdb.com/favicon.ico" type="image/x-icon" />
 
-    <title>Character :: IGDB.com API Documentation</title>
+    <title>External Games :: IGDB.com API Documentation</title>
     
     
     <link href="/api/css/nucleus.css?1524136736" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     <link href="/api/css/igdb.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/api/endpoints/character/">
+  <body class="" data-url="/api/endpoints/external-games/">
     <nav id="sidebar" class="">
 
 
@@ -132,7 +132,7 @@ API
  
   
     
-      <li data-nav-id="/api/endpoints/character/" title="Character" class="dd-item active">
+      <li data-nav-id="/api/endpoints/character/" title="Character" class="dd-item ">
         <a href="/api/endpoints/character/">
         Character
         
@@ -208,7 +208,7 @@ API
  
   
     
-      <li data-nav-id="/api/endpoints/external-games/" title="External Games" class="dd-item ">
+      <li data-nav-id="/api/endpoints/external-games/" title="External Games" class="dd-item active">
         <a href="/api/endpoints/external-games/">
         External Games
         
@@ -1614,7 +1614,7 @@ API
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" href="https://github.com/igdb/api/blob/master/content/endpoints/character.md" target="blank">
+                    <a class="github-link" href="https://github.com/igdb/api/blob/master/content/endpoints/external-games.md" target="blank">
                       <i class="fa fa-code-fork"></i>
                       Edit this page
                     </a>
@@ -1643,7 +1643,7 @@ API
             
           
           
-            <a href='/api/'>Welcome</a> > <a href='/api/endpoints/'>Endpoints</a> > Character
+            <a href='/api/'>Welcome</a> > <a href='/api/endpoints/'>Endpoints</a> > External Games
           
          
           
@@ -1655,7 +1655,14 @@ API
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#category-ids">Category IDs</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -1667,28 +1674,31 @@ API
         
         <div id="body-inner">
           
-            <h1>Character</h1>
+            <h1>External Games</h1>
           
 
         
 
-<p><strong><em>URL path:</em></strong> /characters/</p>
 
-<p><strong><em>Description:</em></strong> Video game characters</p>
+
+<p><strong><em>URL path:</em></strong> /external_games/</p>
 
 <p><strong><em>Example response</em></strong></p>
 
 <pre><code class="language-json">{
     &quot;id&quot;: 1,
-    &quot;name&quot;: &quot;Urdnot Wrex&quot;,
-    &quot;slug&quot;: &quot;urdnot-wrex&quot;,
-    &quot;url&quot;: &quot;https://www.igdb.com/characters/urdnot-wrex&quot;,
-    &quot;created_at&quot;: 123456789,
-    &quot;updated_at&quot;: 123456789
+    &quot;name&quot;: &quot;Crappy Day Enhanced Edition&quot;,
+    &quot;uid&quot;: &quot;636700&quot;,
+    &quot;category&quot;: 1,
+    &quot;game&quot;: 28590,
+    &quot;year&quot;: 2017,
+    &quot;url&quot;: &quot;http://store.com/app/636700/Crappy_Day_Enhanced_Edition/&quot;,
+    &quot;created_at&quot;: 1494493225413,
+    &quot;updated_at&quot;: 1494580982384
 }
 </code></pre>
 
-<p><strong><em>Used fields</em></strong></p>
+<p><strong><em>Fields</em></strong></p>
 
 <table>
 <thead>
@@ -1712,28 +1722,42 @@ API
 <td>name</td>
 <td align="center">string</td>
 <td align="center">+</td>
-<td></td>
+<td>Name of the game according to the external source</td>
 </tr>
 
 <tr>
-<td>slug</td>
+<td>uid</td>
 <td align="center">string</td>
 <td align="center">+</td>
-<td></td>
+<td>The external source&rsquo;s ID for the game</td>
+</tr>
+
+<tr>
+<td>category</td>
+<td align="center">integer</td>
+<td align="center">+</td>
+<td>The external source (see list below)</td>
+</tr>
+
+<tr>
+<td>game</td>
+<td align="center">unsigned 64-bit integer</td>
+<td align="center"></td>
+<td>ID of an IGDB <a href="../game">Game</a> record</td>
+</tr>
+
+<tr>
+<td>year</td>
+<td align="center">integer</td>
+<td align="center"></td>
+<td>The release year</td>
 </tr>
 
 <tr>
 <td>url</td>
 <td align="center">string</td>
-<td align="center">+</td>
-<td></td>
-</tr>
-
-<tr>
-<td>created_at</td>
-<td align="center">64-bit integer</td>
-<td align="center">+</td>
-<td>Unix epoch</td>
+<td align="center"></td>
+<td>A game or reference URL</td>
 </tr>
 
 <tr>
@@ -1744,66 +1768,34 @@ API
 </tr>
 
 <tr>
-<td>mug_shot</td>
-<td align="center">object</td>
-<td align="center">-</td>
-<td>See the <a href="../../misc-objects/image">Image</a> object reference</td>
-</tr>
-
-<tr>
-<td>gender</td>
-<td align="center">integer</td>
-<td align="center">-</td>
-<td>See the <a href="../../enum-fields/gender">Gender</a> value reference</td>
-</tr>
-
-<tr>
-<td>akas</td>
-<td align="center">array of strings</td>
-<td align="center">-</td>
-<td>Name aliases - &lsquo;also known as&rsquo;</td>
-</tr>
-
-<tr>
-<td>species</td>
-<td align="center">integer</td>
-<td align="center">-</td>
-<td>See the <a href="../../enum-fields/species">Species</a> value reference</td>
-</tr>
-
-<tr>
-<td>games</td>
-<td align="center">array of unsigned 64-bit integers</td>
-<td align="center">-</td>
-<td>IDs of <a href="../game">Game</a> records</td>
-</tr>
-
-<tr>
-<td>people</td>
-<td align="center">array of unsigned 64-bit integers</td>
-<td align="center">-</td>
-<td>IDs of <a href="../person">Person</a> records</td>
+<td>created_at</td>
+<td align="center">64-bit integer</td>
+<td align="center">+</td>
+<td>Unix epoch</td>
 </tr>
 </tbody>
 </table>
 
-<p><strong><em>Unused fields</em></strong></p>
+<h2 id="category-ids">Category IDs</h2>
 
-<p>These fields are present in the meta field list but has no data for any of the entities.</p>
-
-<table>
-<thead>
-<tr>
-<th>Name</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>country_name</td>
-</tr>
-</tbody>
-</table>
+<pre><code>Steam: 1
+TheGamesDB: 2
+GiantBomb: 3
+Cooptimus: 4
+GOG: 5
+PushSquare: 6
+isThereAnyDeal: 7
+GamersGate: 8
+GreenManGaming: 9
+Youtube: 10
+Microsoft: 11
+NintendoLife: 12
+Apple: 13
+Twitch: 14
+Android: 15
+PlaystationStore: 16
+PlaystationClient: 17
+</code></pre>
 
 
 <footer class=" footline" >
@@ -1873,6 +1865,8 @@ API
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -1889,9 +1883,6 @@ API
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1940,6 +1931,7 @@ API
             
             
                 
+                    
                     
                 
                 
@@ -1956,6 +1948,9 @@ API
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -3050,10 +3045,10 @@ API
 
 
         
-            <a class="nav nav-prev" href="/api/endpoints/" title="Endpoints"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/api/endpoints/credit/" title="Credits"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/api/endpoints/collection/" title="Collection" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/api/endpoints/external-review/" title="External Review" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
