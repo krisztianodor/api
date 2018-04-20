@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://www.igdb.com/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="https://www.igdb.com/favicon.ico" type="image/x-icon" />
 
-    <title>Welcome :: IGDB.com API Documentation</title>
+    <title>Change Log :: IGDB.com API Documentation</title>
     
     
     <link href="/api/css/nucleus.css?1524232211" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     <link href="/api/css/igdb.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/api/">
+  <body class="" data-url="/api/changelog/">
     <nav id="sidebar" class="">
 
 
@@ -78,8 +78,8 @@ API
   
     
     <li data-nav-id="/api/changelog/" title="Change Log" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/api/changelog/">
@@ -1602,80 +1602,176 @@ API
         <div id="overlay"></div>
         <div class="padding highlightable sticky-parent">
               
+              <div class="sticky-spacer">
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" href="https://github.com/igdb/api/blob/master/content/changelog/_index.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      Edit this page
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/api/'>Welcome</a> > Change Log
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#20th-april-2018">20th April, 2018</a></li>
+<li><a href="#13th-february-2018">13th February, 2018</a></li>
+<li><a href="#16th-november-2017">16th November, 2017</a></li>
+<li><a href="#1st-november-2017">1st November, 2017</a></li>
+<li><a href="#18th-september-2017">18th September, 2017</a></li>
+<li><a href="#4th-september-2017">4th September, 2017</a></li>
+<li><a href="#30th-august-2017">30th August, 2017</a></li>
+<li><a href="#18th-august-2017">18th August, 2017</a></li>
+<li><a href="#16th-august-2017">16th August, 2017</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
 
-        
-          <div id="chapter">
+                
+              </div>
+            </div>
+            
+
         
         <div id="body-inner">
           
+            <h1>Change Log</h1>
+          
 
         
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
-</span>
-
- 
 
 
-<h1 id="internet-game-database-api-documentation">Internet Game Database API Documentation</h1>
 
-<p>One of the principles behind IGDB.com is accessibility of data. We wish to share the data with anyone who wants to build cool video game oriented websites, apps and services.</p>
-
-<p>This means that you are not only contributing to the value of this IGDB but to thousands of other projects as well. We are looking forward to see what exciting game related projects you come up with. Happy coding!</p>
-
-<p>For a high level overview of our juicy data, check out the <a href="/api/endpoints/">endpoints section</a>.</p>
-
-<a  href="https://api.igdb.com/signup" target="_blank"  class="btn btn-default">
-  
-  
-  
-  GET FREE KEY
-  
-</a>
-
-
-<hr />
-
-<h3 id="the-basics">The Basics</h3>
-
-<p>In order to use our API, you must have an <a href="https://api.igdb.com/signup">account and key</a>.</p>
-
-<p>The IGDB.com API is free for <strong>non-commercial</strong> &amp; <strong>commercial</strong> usage.</p>
-
-<h3 id="rest-examples">REST Examples</h3>
-
-<p>You can find some examples by <a href="/api/examples">clicking here</a>.</p>
-
-<h3 id="api-wrappers">API Wrappers</h3>
-
-<p>Wrappers:</p>
+<h2 id="20th-april-2018">20th April, 2018</h2>
 
 <ul>
-<li><a href="https://github.com/igdb/igdb-api-node">NodeJS</a></li>
-<li><a href="https://github.com/igdb/igdb-api-python">Python</a></li>
-<li><a href="https://github.com/igdb/api-android-java">Java/Android</a></li>
-<li><a href="https://github.com/igdb/api-java">Java</a></li>
+<li>Added <a href="https://igdb.github.io/api/private-endpoints/">private endpoints</a> to authenticate, get and set info for IGDB users.</li>
+<li>Added artwork to <a href="https://igdb.github.io/api/endpoints/game/">games</a></li>
+<li>Added <a href="https://igdb.github.io/api/examples/#get-versions-editions-of-a-game">examples when dealing with editions</a></li>
 </ul>
 
-<p>Third party wrappers:</p>
+<h2 id="13th-february-2018">13th February, 2018</h2>
+
+<p>Finally, we have added support for <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> and other headers in the API. You can read about how to enable it for your project here: <a href="https://igdb.github.io/api/references/cors/">https://igdb.github.io/api/references/cors/</a>. If you&rsquo;re using Ionic or Browser javascript, this is good news for you!</p>
+
+<p>The limit has been increased to 3000 for pro tiers. The catch is you will need to prefix your URLs with <code>/pro/</code> to enable this limit. You can read more about how to use the new limit here: <a href="https://igdb.github.io/api/references/pagination/">https://igdb.github.io/api/references/pagination/</a></p>
+
+<h2 id="16th-november-2017">16th November, 2017</h2>
+
+<p>Webhooks allow us to push data to you when it is added or updated. Instead of polling the API for changes, you can listen on your HTTP endpoint (Webhook) and we will deliver the data to you.</p>
+
+<p>Check out the documentation here: <a href="https://igdb.github.io/api/references/webhooks/">https://igdb.github.io/api/references/webhooks/</a></p>
+
+<p>Webhooks are only available on <a href="https://api.igdb.com/pricing">Pro, Ultra and Enterprise plans</a>.</p>
+
+<h2 id="1st-november-2017">1st November, 2017</h2>
+
+<p>We added the <code>version_parent</code> field to games which you can use to differentiate between version/editions and main games.</p>
+
+<p>To filter them out, check out the example here: <a href="https://igdb.github.io/api/examples/#search-games-but-exclude-versions-editions">https://igdb.github.io/api/examples/#search-games-but-exclude-versions-editions</a></p>
+
+<p>We added the versions/editions feature which allows you to clearly see the various release editions of each game and their features. <a href="https://www.igdb.com/games/assassins-creed-origins/versions">https://www.igdb.com/games/assassins-creed-origins/versions</a></p>
+
+<p>We have made this data available through our API via the game_versions endpoint.</p>
+
+<p><a href="https://igdb.github.io/api/endpoints/versions/">https://igdb.github.io/api/endpoints/versions/</a></p>
+
+<h2 id="18th-september-2017">18th September, 2017</h2>
+
+<p>The external field connects external service Ids to ours. You can now access Steam IDs by adding <code>external.steam</code> to your fields parameter.</p>
+
+<h2 id="4th-september-2017">4th September, 2017</h2>
 
 <ul>
-<li><a href="https://github.com/messerli90/igdb">Laravel</a></li>
-<li><a href="https://github.com/Henry-Sarabia/igdb">Go</a></li>
-<li><a href="https://github.com/darkstego/igdb_client">Ruby</a></li>
+<li>No filters can currently be used for the <code>id</code> field. We updated the docs to let everyone know.</li>
+<li>However, since there was no way to remove specific games from results, the <code>not_in</code> postfix is now supported.</li>
 </ul>
 
-<h3 id="need-support">Need support?</h3>
+<p>You can read more here: <a href="https://igdb.github.io/api/references/filters/#available-postfixes">https://igdb.github.io/api/references/filters/#available-postfixes</a></p>
 
-<p><a href="/api/references/cors">Click here</a> if you are using <strong>Browser Javascript</strong> or <strong>Ionic framework</strong> and have CORS issues.</p>
+<h2 id="30th-august-2017">30th August, 2017</h2>
 
-<p><a href="/api/references/response-codes/">Click here</a> if you are experiencing <strong>400, 401, 403 or 500 errors</strong>.</p>
+<p>API</p>
 
-<p>Access community support by either using our <a href="https://discord.gg/JKsh9R7">Discord</a> channel or contact us directly by chatting with us - <a href="https://api.igdb.com/">Go here and click the little orange box on the bottom right</a>.</p>
+<ul>
+<li>Fixed bug where filtering by ISO release date (YYYY-MM-DD) returned error.</li>
+<li>Fixed a bug where the <code>eq</code> postfix had no matches.</li>
+<li>Fixed a bug where ordering by name had no matches.</li>
+<li>Added game-&gt;publisher and game-&gt;developer expand support.</li>
+<li>Added <code>franchises</code> field to games which will replace <code>franchise</code> in the next major version.</li>
+<li>Updated the search algorithm to be more relevant and forgiving.</li>
+</ul>
+
+<p>Documentation</p>
+
+<ul>
+<li><a href="https://igdb.github.io/api/references/expander/">Added a list of expandable items</a></li>
+<li><a href="https://igdb.github.io/api/references/errors/">Added some error code descriptions</a></li>
+<li><a href="https://igdb.github.io/api/references/pagination/">Added a more detailed explanation of how pagination works</a></li>
+</ul>
+
+<h2 id="18th-august-2017">18th August, 2017</h2>
+
+<ul>
+<li>The credits endpoint has been added and documented here: <a href="https://igdb.github.io/api/endpoints/credit/">https://igdb.github.io/api/endpoints/credit/</a></li>
+<li>The titles (Job Titles) endpoint has been added and documented here: <a href="https://igdb.github.io/api/endpoints/title/">https://igdb.github.io/api/endpoints/title/</a></li>
+<li>Updated games documentation to describe the &ldquo;games&rdquo; field which is a list of similar games: <a href="https://igdb.github.io/api/endpoints/game/">https://igdb.github.io/api/endpoints/game/</a></li>
+</ul>
+
+<h2 id="16th-august-2017">16th August, 2017</h2>
+
+<p>Big news today, we&rsquo;re starting a public changelog so you&rsquo;re always
+up to date with all the updates, improvements and fixes that are
+made in api.</p>
+
+<p>Even though we work on the api all the time, sometimes
+it may seem that not much is happening. This changelog is here to
+improve that very important part of the communication between you and us.</p>
+
+<p>You&rsquo;ll always receive an update when we change something, or if needed, all things we&rsquo;ve changed is available on our
+<a href="https://igdb.github.io/api/changelog/">public changelog page</a>.</p>
+
+
+<footer class=" footline" >
 	
-  
-        
-            </div> 
+</footer>
+
         
         </div> 
       </div>
@@ -1705,8 +1801,6 @@ API
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1723,6 +1817,9 @@ API
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2909,9 +3006,11 @@ API
         
 
 
+        
+            <a class="nav nav-prev" href="/api/" title="Welcome"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/api/changelog/" title="Change Log" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/api/examples/" title="Examples" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
