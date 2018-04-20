@@ -13,14 +13,6 @@
 
     <div class="highlightable">
     <ul class="topics">
-      <li class="dd-item">
-        <a href="#">
-          <span>
-            <i id="changelog" style="float: left;margin-left: -8px;"></i>
-            <span onClick="setTimeout(function(){Headway.show();},1);">Change Log</span>
-          </span>
-        </a>
-      </li>
         {{if eq .Site.Params.ordersectionsby "title"}}  
           {{range .Site.Home.Sections.ByTitle}}
           {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks}}
