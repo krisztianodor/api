@@ -36,7 +36,7 @@ On registering your webhook you will receive a response like this...
 }
 ```
 
-That’s it! The data will now be sent to your webhook.
+That’s it! The data will now be sent to your webhook in the body of a post request. The data is a single json object representing an unexpanded entity, click anything in the category list below for examples.
 
 You can ensure security by checking the `X-Secret` header in our request against your chosen secret.
 
@@ -47,28 +47,25 @@ You can ensure security by checking the `X-Secret` header in our request against
 - You can manually unregister your webhook by sending a `DELETE` request to `/webhooks/ID` where ID is the ID returned during the registration process.
 
 ## Category keys
-```
-Game: 1
-GameVersion: 2
-SocialMetricSource: 3
-SocialMetric: 4
-PulseSource: 5
-Category: 6
-Character: 7
-Company: 8
-GameEngine: 9
-GameMode: 10
-Person: 11
-Platform: 12
-PulseGroup: 13
-Pulse: 14
-Theme: 15
-Collection: 16
-PlayerPerspective: 17
-Page: 18
-Review: 19
-Franchise: 20
-Genre: 21
-Release Date: 22
-Title (Job Title): 23
-```
+
+- [Game](../../endpoints/game): 1
+- [GameVersion](../../endpoints/versions): 2
+- [PulseSource](../../endpoints/pulse-source): 5
+- [Keywords](../../endpoints/keyword): 6
+- [Character](../../endpoints/character): 7
+- [Company](../../endpoints/company): 8
+- [GameEngine](../../endpoints/game-engine): 9
+- [GameMode](../../endpoints/game-mode): 10
+- [Person](../../endpoints/person): 11
+- [Platform](../../endpoints/platform): 12
+- [PulseGroup](../../endpoints/pulse-group): 13
+- [Pulse](../../endpoints/pulse): 14
+- [Theme](../../endpoints/theme): 15
+- [Series](../../endpoints/collection): 16
+- [PlayerPerspective](../../endpoints/player-perspective): 17
+- [Page](../../endpoints/page): 18
+- [Review](../../endpoints/review): 19
+- [Franchise](../../endpoints/franchise): 20
+- [Genre](../../endpoints/genre): 21
+- [Release Date](../../endpoints/release-date): 22
+- [Title (Job Title)](../../endpoints/title): 23
