@@ -13,17 +13,17 @@
     <title>Webhooks :: IGDB.com API Documentation</title>
     
     
-    <link href="/api/css/nucleus.css?1524232211" rel="stylesheet">
-    <link href="/api/css/font-awesome.min.css?1524232211" rel="stylesheet">
-    <link href="/api/css/hybrid.css?1524232211" rel="stylesheet">
-    <link href="/api/css/featherlight.min.css?1524232211" rel="stylesheet">
-    <link href="/api/css/perfect-scrollbar.min.css?1524232211" rel="stylesheet">
-    <link href="/api/css/horsey.css?1524232211" rel="stylesheet">
-    <link href="/api/css/theme.css?1524232211" rel="stylesheet">
-    <link href="/api/css/hugo-theme.css?1524232211" rel="stylesheet">
+    <link href="/api/css/nucleus.css?1524233286" rel="stylesheet">
+    <link href="/api/css/font-awesome.min.css?1524233286" rel="stylesheet">
+    <link href="/api/css/hybrid.css?1524233286" rel="stylesheet">
+    <link href="/api/css/featherlight.min.css?1524233286" rel="stylesheet">
+    <link href="/api/css/perfect-scrollbar.min.css?1524233286" rel="stylesheet">
+    <link href="/api/css/horsey.css?1524233286" rel="stylesheet">
+    <link href="/api/css/theme.css?1524233286" rel="stylesheet">
+    <link href="/api/css/hugo-theme.css?1524233286" rel="stylesheet">
     
 
-    <script src="/api/js/jquery-2.x.min.js?1524232211"></script>
+    <script src="/api/js/jquery-2.x.min.js?1524233286"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -1711,7 +1711,7 @@ API
 }
 </code></pre>
 
-<p>That’s it! The data will now be sent to your webhook.</p>
+<p>That’s it! The data will now be sent to your webhook in the body of a post request. The data is a single json object representing an unexpanded entity, click anything in the category list below for examples.</p>
 
 <p>You can ensure security by checking the <code>X-Secret</code> header in our request against your chosen secret.</p>
 
@@ -1725,30 +1725,29 @@ API
 
 <h2 id="category-keys">Category keys</h2>
 
-<pre><code>Game: 1
-GameVersion: 2
-SocialMetricSource: 3
-SocialMetric: 4
-PulseSource: 5
-Category: 6
-Character: 7
-Company: 8
-GameEngine: 9
-GameMode: 10
-Person: 11
-Platform: 12
-PulseGroup: 13
-Pulse: 14
-Theme: 15
-Collection: 16
-PlayerPerspective: 17
-Page: 18
-Review: 19
-Franchise: 20
-Genre: 21
-Release Date: 22
-Title (Job Title): 23
-</code></pre>
+<ul>
+<li><a href="../../endpoints/game">Game</a>: 1</li>
+<li><a href="../../endpoints/versions">GameVersion</a>: 2</li>
+<li><a href="../../endpoints/pulse-source">PulseSource</a>: 5</li>
+<li><a href="../../endpoints/keyword">Keywords</a>: 6</li>
+<li><a href="../../endpoints/character">Character</a>: 7</li>
+<li><a href="../../endpoints/company">Company</a>: 8</li>
+<li><a href="../../endpoints/game-engine">GameEngine</a>: 9</li>
+<li><a href="../../endpoints/game-mode">GameMode</a>: 10</li>
+<li><a href="../../endpoints/person">Person</a>: 11</li>
+<li><a href="../../endpoints/platform">Platform</a>: 12</li>
+<li><a href="../../endpoints/pulse-group">PulseGroup</a>: 13</li>
+<li><a href="../../endpoints/pulse">Pulse</a>: 14</li>
+<li><a href="../../endpoints/theme">Theme</a>: 15</li>
+<li><a href="../../endpoints/collection">Series</a>: 16</li>
+<li><a href="../../endpoints/player-perspective">PlayerPerspective</a>: 17</li>
+<li><a href="../../endpoints/page">Page</a>: 18</li>
+<li><a href="../../endpoints/review">Review</a>: 19</li>
+<li><a href="../../endpoints/franchise">Franchise</a>: 20</li>
+<li><a href="../../endpoints/genre">Genre</a>: 21</li>
+<li><a href="../../endpoints/release-date">Release Date</a>: 22</li>
+<li><a href="../../endpoints/title">Title (Job Title)</a>: 23</li>
+</ul>
 
 
 <footer class=" footline" >
@@ -3010,20 +3009,20 @@ Title (Job Title): 23
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/api/js/clipboard.min.js?1524232211"></script>
-    <script src="/api/js/perfect-scrollbar.min.js?1524232211"></script>
-    <script src="/api/js/perfect-scrollbar.jquery.min.js?1524232211"></script>
-    <script src="/api/js/jquery.sticky-kit.min.js?1524232211"></script>
-    <script src="/api/js/featherlight.min.js?1524232211"></script>
-    <script src="/api/js/html5shiv-printshiv.min.js?1524232211"></script>
-    <script src="/api/js/highlight.pack.js?1524232211"></script>
+    <script src="/api/js/clipboard.min.js?1524233286"></script>
+    <script src="/api/js/perfect-scrollbar.min.js?1524233286"></script>
+    <script src="/api/js/perfect-scrollbar.jquery.min.js?1524233286"></script>
+    <script src="/api/js/jquery.sticky-kit.min.js?1524233286"></script>
+    <script src="/api/js/featherlight.min.js?1524233286"></script>
+    <script src="/api/js/html5shiv-printshiv.min.js?1524233286"></script>
+    <script src="/api/js/highlight.pack.js?1524233286"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/api/js/modernizr.custom.71422.js?1524232211"></script>
-    <script src="/api/js/learn.js?1524232211"></script>
-    <script src="/api/js/hugo-learn.js?1524232211"></script>
+    <script src="/api/js/modernizr.custom.71422.js?1524233286"></script>
+    <script src="/api/js/learn.js?1524233286"></script>
+    <script src="/api/js/hugo-learn.js?1524233286"></script>
 
-    <link href="/api/mermaid/mermaid.css?1524232211" type="text/css" rel="stylesheet" />
-    <script src="/api/mermaid/mermaid.js?1524232211"></script>
+    <link href="/api/mermaid/mermaid.css?1524233286" type="text/css" rel="stylesheet" />
+    <script src="/api/mermaid/mermaid.js?1524233286"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
