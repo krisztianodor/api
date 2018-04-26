@@ -30,3 +30,7 @@ To enable CORS, you need to register your domain by sending a POST request to th
 Future responses from the API will contain the special header required to access the API. `Access-Control-Allow-Origin: yourdomain.com`
 
 To delete the header, send a DELETE request to `/headers/?header=Access-Control-Allow-Origin`.
+
+{{% notice warning %}}
+**IMPORTANT NOTE!** Regenerating your API Key (user-key) will invalidate all existing headers. Please ensure your application registers these headers on start up to ensure they are always associated with the current user-key.
+{{% /notice %}}
