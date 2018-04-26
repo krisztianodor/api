@@ -33,8 +33,8 @@ title: "Game"
 | name                | string                            |     +     ||
 | slug                | string                            |     +     ||
 | url                 | string                            |     +     ||
-| created_at          | 64-bit integer                    |     +     | Unix epoch (nanoseconds) |
-| updated_at          | 64-bit integer                    |     +     | Unix epoch (nanoseconds) |
+| created_at          | 64-bit integer                    |     +     | Unix epoch (milliseconds) |
+| updated_at          | 64-bit integer                    |     +     | Unix epoch (milliseconds) |
 | summary             | text (long string)                |     -     ||
 | storyline           | text (long string)                |     -     ||
 | collection          | unsigned 64-bit integer           |     -     | ID of a [Collection](../collection) record |
@@ -60,7 +60,7 @@ title: "Game"
 | themes              | array of unsigned 64-bit integers |     -     | IDs of [Theme](../theme) records |
 | genres              | array of unsigned 64-bit integers |     -     | IDs of [Genre](../genre) records |
 | platforms           | array of unsigned 64-bit integers |     -     | IDs of [Platform](../platform) records |
-| first_release_date  | 64-bit integer                    |     -     | Unix epoch (nanoseconds) |
+| first_release_date  | 64-bit integer                    |     -     | Unix epoch (milliseconds) |
 | status              | integer                           |     -     | See the [Game status](../../enum-fields/game-status) value reference |
 | release_dates       | array of objects                  |     -     | See the [Release date](../../misc-objects/release-date) object reference |
 | alternative_names   | array of objects                  |     -     | See the [Alternative name](../../misc-objects/alternative-name) object reference |
