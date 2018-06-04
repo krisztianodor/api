@@ -32,9 +32,9 @@ We try to find all the pulses which relate to the Shooter genre. The tag number 
 
 ```
 // Javascript
-const genreTypeID: 1 // The type ID from the table above
-const shooterGenreID: 5 // The Shooter genre's ID, coming from the genres endpoint.
-let tagNumber: genreTypeID << 28 // Bit-shifting the genre's type ID by 28 bits, ensuring that it will get into the first four bits. The result will be 268435456
+const genreTypeID = 1 // The type ID from the table above
+const shooterGenreID = 5 // The Shooter genre's ID, coming from the genres endpoint.
+let tagNumber = genreTypeID << 28 // Bit-shifting the genre's type ID by 28 bits, ensuring that it will get into the first four bits. The result will be 268435456
 tagNumber |= shooterGenreID // Adding the Shooter genre ID to the tag number with a bitwise OR operation. The result will be 268435461.
 ```
 
