@@ -13,6 +13,24 @@ HttpResponse<JsonNode> response: Unirest.get("https://api-endpoint.igdb.com/char
 .asJson();
 ```
 
+#### An example request using [axios](https://github.com/axios/axios)
+----------
+```
+axios.get("https://api-endpoint.igdb.com/games/1942?fields=*", {
+    headers: {
+      "user-key": "YOUR_API_KEY",
+      Accept: "application/json"
+    }
+  })
+  .then(response => {
+    // Do work here
+    console.log(response.data);
+  })
+  .catch(e => {
+    console.log("error", e);
+  });
+```
+
 #### Get all information from a specific game
 ----------
 
