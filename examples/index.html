@@ -13,17 +13,17 @@
     <title>Examples :: IGDB.com API Documentation</title>
     
     
-    <link href="/api/css/nucleus.css?1524732859" rel="stylesheet">
-    <link href="/api/css/font-awesome.min.css?1524732859" rel="stylesheet">
-    <link href="/api/css/hybrid.css?1524732859" rel="stylesheet">
-    <link href="/api/css/featherlight.min.css?1524732859" rel="stylesheet">
-    <link href="/api/css/perfect-scrollbar.min.css?1524732859" rel="stylesheet">
-    <link href="/api/css/horsey.css?1524732859" rel="stylesheet">
-    <link href="/api/css/theme.css?1524732859" rel="stylesheet">
-    <link href="/api/css/hugo-theme.css?1524732859" rel="stylesheet">
+    <link href="/api/css/nucleus.css?1528708694" rel="stylesheet">
+    <link href="/api/css/font-awesome.min.css?1528708694" rel="stylesheet">
+    <link href="/api/css/hybrid.css?1528708694" rel="stylesheet">
+    <link href="/api/css/featherlight.min.css?1528708694" rel="stylesheet">
+    <link href="/api/css/perfect-scrollbar.min.css?1528708694" rel="stylesheet">
+    <link href="/api/css/horsey.css?1528708694" rel="stylesheet">
+    <link href="/api/css/theme.css?1528708694" rel="stylesheet">
+    <link href="/api/css/hugo-theme.css?1528708694" rel="stylesheet">
     
 
-    <script src="/api/js/jquery-2.x.min.js?1524732859"></script>
+    <script src="/api/js/jquery-2.x.min.js?1528708694"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -1665,6 +1665,7 @@ API
 <li>
 <ul>
 <li><a href="#an-example-request-in-java">An example request in Java</a></li>
+<li><a href="#an-example-request-using-axios-https-github-com-axios-axios">An example request using <a href="https://github.com/axios/axios">axios</a></a></li>
 <li><a href="#get-all-information-from-a-specific-game">Get all information from a specific game</a></li>
 <li><a href="#get-all-games-from-specific-genres">Get all games from specific genres</a></li>
 <li><a href="#count-total-games-that-have-a-rating-higher-than-75">Count total games that have a rating higher than 75</a></li>
@@ -1706,6 +1707,25 @@ API
 .header(&quot;user-key&quot;, &quot;YOUR_KEY&quot;)
 .header(&quot;Accept&quot;, &quot;application/json&quot;)
 .asJson();
+</code></pre>
+
+<h4 id="an-example-request-using-axios-https-github-com-axios-axios">An example request using <a href="https://github.com/axios/axios">axios</a></h4>
+
+<hr />
+
+<pre><code>axios.get(&quot;https://api-endpoint.igdb.com/games/1942?fields=*&quot;, {
+    headers: {
+      &quot;user-key&quot;: &quot;YOUR_API_KEY&quot;,
+      Accept: &quot;application/json&quot;
+    }
+  })
+  .then(response =&gt; {
+    // Do work here
+    console.log(response.data);
+  })
+  .catch(e =&gt; {
+    console.log(&quot;error&quot;, e);
+  });
 </code></pre>
 
 <h4 id="get-all-information-from-a-specific-game">Get all information from a specific game</h4>
@@ -3045,20 +3065,20 @@ If you want to return certain fields of the game or even all, do the following:<
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/api/js/clipboard.min.js?1524732859"></script>
-    <script src="/api/js/perfect-scrollbar.min.js?1524732859"></script>
-    <script src="/api/js/perfect-scrollbar.jquery.min.js?1524732859"></script>
-    <script src="/api/js/jquery.sticky-kit.min.js?1524732859"></script>
-    <script src="/api/js/featherlight.min.js?1524732859"></script>
-    <script src="/api/js/html5shiv-printshiv.min.js?1524732859"></script>
-    <script src="/api/js/highlight.pack.js?1524732859"></script>
+    <script src="/api/js/clipboard.min.js?1528708694"></script>
+    <script src="/api/js/perfect-scrollbar.min.js?1528708694"></script>
+    <script src="/api/js/perfect-scrollbar.jquery.min.js?1528708694"></script>
+    <script src="/api/js/jquery.sticky-kit.min.js?1528708694"></script>
+    <script src="/api/js/featherlight.min.js?1528708694"></script>
+    <script src="/api/js/html5shiv-printshiv.min.js?1528708694"></script>
+    <script src="/api/js/highlight.pack.js?1528708694"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/api/js/modernizr.custom.71422.js?1524732859"></script>
-    <script src="/api/js/learn.js?1524732859"></script>
-    <script src="/api/js/hugo-learn.js?1524732859"></script>
+    <script src="/api/js/modernizr.custom.71422.js?1528708694"></script>
+    <script src="/api/js/learn.js?1528708694"></script>
+    <script src="/api/js/hugo-learn.js?1528708694"></script>
 
-    <link href="/api/mermaid/mermaid.css?1524732859" type="text/css" rel="stylesheet" />
-    <script src="/api/mermaid/mermaid.js?1524732859"></script>
+    <link href="/api/mermaid/mermaid.css?1528708694" type="text/css" rel="stylesheet" />
+    <script src="/api/mermaid/mermaid.js?1528708694"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
