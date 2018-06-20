@@ -20,6 +20,42 @@
     </item>
     
     <item>
+      <title>Achievement Rank</title>
+      <link>https://igdb.github.com/api/enum-fields/achievement-rank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/enum-fields/achievement-rank/</guid>
+      <description> Description: The rank of the achievement
+Playstation Values
+   Value Rank Name     1 Bronze   2 Silver   3 Gold   4 Platinum    </description>
+    </item>
+    
+    <item>
+      <title>Achievement Source</title>
+      <link>https://igdb.github.com/api/enum-fields/achievement-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/enum-fields/achievement-source/</guid>
+      <description>Description: The service where the achievement is located
+Values
+   Value Service Name     1 Playstation   2 GOG   3 Steam    </description>
+    </item>
+    
+    <item>
+      <title>Achievements</title>
+      <link>https://igdb.github.com/api/endpoints/achievement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://igdb.github.com/api/endpoints/achievement/</guid>
+      <description>This endpoint is only available for paid tiers.
+ URL path: /achievements/
+Description: Achievement data
+Example response
+{ &amp;quot;id&amp;quot;: 1234, &amp;quot;name&amp;quot;: &amp;quot;Boss Killer&amp;quot;, &amp;quot;category&amp;quot;: 1, &amp;quot;created_at&amp;quot;: 1529500723000, &amp;quot;updated_at&amp;quot;: 1529500723000, &amp;quot;icon&amp;quot;: { &amp;quot;url&amp;quot;: &amp;quot;https://images.igdb.com/igdb/uploads/t_thumb/dadsajj2jdda2.jpg&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;dadsajj2jdda2&amp;quot;, &amp;quot;width&amp;quot;: 1240, &amp;quot;height&amp;quot;: 768 }, &amp;quot;game&amp;quot;: 41233, &amp;quot;rank&amp;quot;: 3, &amp;quot;external_id&amp;quot;: &amp;quot;AKM_E123DDD&amp;quot;, &amp;quot;description&amp;quot;: &amp;quot;Defeat the end boss!&amp;quot;, &amp;quot;owners&amp;quot;: 32321, &amp;quot;owners_percentage&amp;quot;: 42.31233, &amp;quot;tags&amp;quot;: [&amp;quot;Tag1&amp;quot;, &amp;quot;Tag2&amp;quot;, &amp;quot;Tag3&amp;quot;] }  Fields
+   Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    category unsigned 64-bit integer + ID of an Achievement Source (steam, playstation etc)   icon object - See the Image object reference   game array of unsigned 64-bit integers - IDs of Game records   rank unsigned 64-bit integer - ID of an Achievement Rank   description string - Description of the achievement.</description>
+    </item>
+    
+    <item>
       <title>Alternative name</title>
       <link>https://igdb.github.com/api/misc-objects/alternative-name/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -349,14 +385,11 @@ Example response
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://igdb.github.com/api/references/images/</guid>
-      <description>Examples /games/1942?fields=screenshots
+      <description>Images that are removed or replaced from IGDB.com exist for 30 days before they are removed. Keep that in mind when designing cache logic.
+ Examples /games/1942?fields=screenshots
 Here we retrieve the image properties of the game with the id &amp;ldquo;1942&amp;rdquo;
 Response:
-[ { &amp;quot;id&amp;quot;: 1942, &amp;quot;screenshots&amp;quot;: [ { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;z5t0yuhyiiui1ickwhgj&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 }, { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;mnljdjtrh44x4snmierh&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 } ] } ]  Image url structure:
-https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dfgkfivjrhcksyymh9vw.jpg
-Break down:
-https://images.igdb.com/igdb/image/upload/t_{size}/{hash}.jpg
-size is one of the interchangeable size types listed below. hash is the id of the image.</description>
+[ { &amp;quot;id&amp;quot;: 1942, &amp;quot;screenshots&amp;quot;: [ { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/z5t0yuhyiiui1ickwhgj.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;z5t0yuhyiiui1ickwhgj&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 }, { &amp;quot;url&amp;quot;: &amp;quot;//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.png&amp;quot;, &amp;quot;cloudinary_id&amp;quot;: &amp;quot;mnljdjtrh44x4snmierh&amp;quot;, &amp;quot;width&amp;quot;: 1920, &amp;quot;height&amp;quot;: 1080 } ] } ]  Image url structure:</description>
     </item>
     
     <item>
@@ -480,7 +513,7 @@ Example response
       <description>URL path: /platforms/
 Description: The hardware used to run the game or game delivery network
 Example response
-{ &amp;quot;id&amp;quot;: 2, &amp;quot;name&amp;quot;: &amp;quot;Wii&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;wii&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/platform/wii&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
+{ &amp;quot;id&amp;quot;: 2, &amp;quot;name&amp;quot;: &amp;quot;Wii&amp;quot;, &amp;quot;slug&amp;quot;: &amp;quot;wii&amp;quot;, &amp;quot;url&amp;quot;: &amp;quot;https://www.igdb.com/platforms/wii&amp;quot;, &amp;quot;created_at&amp;quot;: 123456789, &amp;quot;updated_at&amp;quot;: 123456789, &amp;quot;games&amp;quot;: [ 1, 2, 3, ... ] }  Fields
    Name Type Mandatory Comment     id unsigned 64-bit integer +    name string +    slug string +    url string +    created_at 64-bit integer + Unix epoch   updated_at 64-bit integer + Unix epoch   logo object - See the Image object reference   website string -    summary text (long string) -    alternative_name string -    generation integer -    games array of unsigned 64-bit integers - IDs of Game records   versions array of objects - See the Platform version object reference    Unused fields</description>
     </item>
     

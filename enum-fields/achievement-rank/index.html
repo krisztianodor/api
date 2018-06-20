@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://www.igdb.com/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="https://www.igdb.com/favicon.ico" type="image/x-icon" />
 
-    <title>CORS for JS &amp; Ionic :: IGDB.com API Documentation</title>
+    <title>Achievement Rank :: IGDB.com API Documentation</title>
     
     
     <link href="/api/css/nucleus.css?1529506200" rel="stylesheet">
@@ -41,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
 <link href="/api/css/igdb.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/api/references/cors/">
+  <body class="" data-url="/api/enum-fields/achievement-rank/">
     
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55XHB52"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -844,7 +844,7 @@ API
   
     
     <li data-nav-id="/api/enum-fields/" title="Enumerated fields" class="dd-item 
-        
+        parent
         
         
         ">
@@ -868,7 +868,7 @@ API
  
   
     
-      <li data-nav-id="/api/enum-fields/achievement-rank/" title="Achievement Rank" class="dd-item ">
+      <li data-nav-id="/api/enum-fields/achievement-rank/" title="Achievement Rank" class="dd-item active">
         <a href="/api/enum-fields/achievement-rank/">
         Achievement Rank
         
@@ -1383,7 +1383,7 @@ API
   
     
     <li data-nav-id="/api/references/" title="Reference" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1407,7 +1407,7 @@ API
  
   
     
-      <li data-nav-id="/api/references/cors/" title="CORS for JS &amp; Ionic" class="dd-item active">
+      <li data-nav-id="/api/references/cors/" title="CORS for JS &amp; Ionic" class="dd-item ">
         <a href="/api/references/cors/">
         CORS for JS &amp; Ionic
         
@@ -1678,7 +1678,7 @@ API
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" href="https://github.com/igdb/api/blob/master/content/references/cors.md" target="blank">
+                    <a class="github-link" href="https://github.com/igdb/api/blob/master/content/enum-fields/achievement-rank.md" target="blank">
                       <i class="fa fa-code-fork"></i>
                       Edit this page
                     </a>
@@ -1707,7 +1707,7 @@ API
             
           
           
-            <a href='/api/'>Welcome</a> > <a href='/api/references/'>Reference</a> > CORS for JS & Ionic
+            <a href='/api/'>Welcome</a> > <a href='/api/enum-fields/'>Enumerated fields</a> > Achievement Rank
           
          
           
@@ -1723,10 +1723,7 @@ API
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li><a href="#cross-origin-resource-sharing">Cross-Origin Resource Sharing</a></li>
-</ul></li>
+<li><a href="#playstation">Playstation</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1741,48 +1738,49 @@ API
         
         <div id="body-inner">
           
-            <h1>CORS for JS &amp; Ionic</h1>
+            <h1>Achievement Rank</h1>
           
 
         
 
 
 
-<h3 id="cross-origin-resource-sharing">Cross-Origin Resource Sharing</h3>
+<p><strong><em>Description:</em></strong> The rank of the achievement</p>
 
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">Cross-Origin Resource Sharing</a> (CORS) is a mechanism that uses additional HTTP headers to let a user agent gain permission to access selected resources from a server on a different origin (domain) than the site currently in use. These security restrictions only affect browser-based javascript and mobile javascript frameworks like Ionic.</p>
+<h2 id="playstation">Playstation</h2>
 
-<div class="notices info" ><p>Enabling CORS is only available in <a href="https://api.igdb.com/pricing">premium tiers</a>. For free users you can set up a <a href="https://stackoverflow.com/questions/25468100/simple-php-proxy-with-persistent-url">proxy server</a>, <a href="https://blog.ionicframework.com/handling-cors-issues-in-ionic/">Ionic</a> also has a guide for this.</p>
-</div>
+<p><strong><em>Values</em></strong></p>
 
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th align="center">Rank Name</th>
+</tr>
+</thead>
 
-<p>To enable CORS, you need to register your domain by sending a POST request to the headers endpoint. To achieve this in <a href="https://www.getpostman.com/">Postman</a>&hellip;</p>
+<tbody>
+<tr>
+<td>1</td>
+<td align="center">Bronze</td>
+</tr>
 
-<ul>
-<li>Set the POST request url to <code>https://api-endpoint.igdb.com/headers/</code>.</li>
-<li>Set the body to the following json&hellip;</li>
-</ul>
+<tr>
+<td>2</td>
+<td align="center">Silver</td>
+</tr>
 
-<pre><code>{
-    &quot;api_header&quot;: {
-        &quot;header&quot;: &quot;Access-Control-Allow-Origin&quot;,
-        &quot;value&quot;: &quot;yourdomain.com&quot;
-    }
-}
-</code></pre>
+<tr>
+<td>3</td>
+<td align="center">Gold</td>
+</tr>
 
-<ul>
-<li>Change <code>yourdomain.com</code> to your domain or <code>localhost:8100</code> for Ionic.</li>
-<li>Send!</li>
-</ul>
-
-<p>Future responses from the API will contain the special header required to access the API. <code>Access-Control-Allow-Origin: yourdomain.com</code></p>
-
-<p>To delete the header, send a DELETE request to <code>/headers/?header=Access-Control-Allow-Origin</code>.</p>
-
-<div class="notices warning" ><p><strong>IMPORTANT NOTE!</strong> Regenerating your API Key (user-key) will invalidate all existing headers. Please ensure your application registers these headers on start up to ensure they are always associated with the current user-key.</p>
-</div>
-
+<tr>
+<td>4</td>
+<td align="center">Platinum</td>
+</tr>
+</tbody>
+</table>
 
 
 <footer class=" footline" >
@@ -2430,6 +2428,7 @@ API
             
                 
                     
+                    
                 
                 
 
@@ -2442,6 +2441,7 @@ API
             
             
                 
+                    
                     
                 
                 
@@ -2459,213 +2459,8 @@ API
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -2862,7 +2657,6 @@ API
             
                 
                     
-                    
                 
                 
 
@@ -2875,26 +2669,6 @@ API
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -3035,6 +2809,230 @@ API
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -3077,10 +3075,10 @@ API
 
 
         
-            <a class="nav nav-prev" href="/api/references/" title="Reference"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/api/enum-fields/" title="Enumerated fields"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/api/references/expander/" title="Expander" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/api/enum-fields/achievement-source/" title="Achievement Source" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

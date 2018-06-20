@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://www.igdb.com/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="https://www.igdb.com/favicon.ico" type="image/x-icon" />
 
-    <title>CORS for JS &amp; Ionic :: IGDB.com API Documentation</title>
+    <title>Achievements :: IGDB.com API Documentation</title>
     
     
     <link href="/api/css/nucleus.css?1529506200" rel="stylesheet">
@@ -41,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
 <link href="/api/css/igdb.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/api/references/cors/">
+  <body class="" data-url="/api/endpoints/achievement/">
     
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55XHB52"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -134,7 +134,7 @@ API
   
     
     <li data-nav-id="/api/endpoints/" title="Endpoints" class="dd-item 
-        
+        parent
         
         
         ">
@@ -158,7 +158,7 @@ API
  
   
     
-      <li data-nav-id="/api/endpoints/achievement/" title="Achievements" class="dd-item ">
+      <li data-nav-id="/api/endpoints/achievement/" title="Achievements" class="dd-item active">
         <a href="/api/endpoints/achievement/">
         Achievements
         
@@ -1383,7 +1383,7 @@ API
   
     
     <li data-nav-id="/api/references/" title="Reference" class="dd-item 
-        parent
+        
         
         
         ">
@@ -1407,7 +1407,7 @@ API
  
   
     
-      <li data-nav-id="/api/references/cors/" title="CORS for JS &amp; Ionic" class="dd-item active">
+      <li data-nav-id="/api/references/cors/" title="CORS for JS &amp; Ionic" class="dd-item ">
         <a href="/api/references/cors/">
         CORS for JS &amp; Ionic
         
@@ -1678,7 +1678,7 @@ API
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" href="https://github.com/igdb/api/blob/master/content/references/cors.md" target="blank">
+                    <a class="github-link" href="https://github.com/igdb/api/blob/master/content/endpoints/achievement.md" target="blank">
                       <i class="fa fa-code-fork"></i>
                       Edit this page
                     </a>
@@ -1707,7 +1707,7 @@ API
             
           
           
-            <a href='/api/'>Welcome</a> > <a href='/api/references/'>Reference</a> > CORS for JS & Ionic
+            <a href='/api/'>Welcome</a> > <a href='/api/endpoints/'>Endpoints</a> > Achievements
           
          
           
@@ -1719,17 +1719,7 @@ API
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#cross-origin-resource-sharing">Cross-Origin Resource Sharing</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -1741,48 +1731,148 @@ API
         
         <div id="body-inner">
           
-            <h1>CORS for JS &amp; Ionic</h1>
+            <h1>Achievements</h1>
           
 
         
 
-
-
-<h3 id="cross-origin-resource-sharing">Cross-Origin Resource Sharing</h3>
-
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">Cross-Origin Resource Sharing</a> (CORS) is a mechanism that uses additional HTTP headers to let a user agent gain permission to access selected resources from a server on a different origin (domain) than the site currently in use. These security restrictions only affect browser-based javascript and mobile javascript frameworks like Ionic.</p>
-
-<div class="notices info" ><p>Enabling CORS is only available in <a href="https://api.igdb.com/pricing">premium tiers</a>. For free users you can set up a <a href="https://stackoverflow.com/questions/25468100/simple-php-proxy-with-persistent-url">proxy server</a>, <a href="https://blog.ionicframework.com/handling-cors-issues-in-ionic/">Ionic</a> also has a guide for this.</p>
+<div class="notices info" ><p>This endpoint is only available for <a href="https://api.igdb.com/pricing">paid tiers</a>.</p>
 </div>
 
 
-<p>To enable CORS, you need to register your domain by sending a POST request to the headers endpoint. To achieve this in <a href="https://www.getpostman.com/">Postman</a>&hellip;</p>
+<p><strong><em>URL path:</em></strong> /achievements/</p>
 
-<ul>
-<li>Set the POST request url to <code>https://api-endpoint.igdb.com/headers/</code>.</li>
-<li>Set the body to the following json&hellip;</li>
-</ul>
+<p><strong><em>Description:</em></strong> Achievement data</p>
 
-<pre><code>{
-    &quot;api_header&quot;: {
-        &quot;header&quot;: &quot;Access-Control-Allow-Origin&quot;,
-        &quot;value&quot;: &quot;yourdomain.com&quot;
-    }
+<p><strong><em>Example response</em></strong></p>
+
+<pre><code class="language-json">{
+    &quot;id&quot;: 1234,
+    &quot;name&quot;: &quot;Boss Killer&quot;,
+    &quot;category&quot;: 1,
+    &quot;created_at&quot;: 1529500723000,
+    &quot;updated_at&quot;: 1529500723000,
+    &quot;icon&quot;: {
+        &quot;url&quot;: &quot;https://images.igdb.com/igdb/uploads/t_thumb/dadsajj2jdda2.jpg&quot;,
+        &quot;cloudinary_id&quot;: &quot;dadsajj2jdda2&quot;,
+        &quot;width&quot;: 1240,
+        &quot;height&quot;: 768
+    },
+    &quot;game&quot;: 41233,
+    &quot;rank&quot;: 3,
+    &quot;external_id&quot;: &quot;AKM_E123DDD&quot;,
+    &quot;description&quot;: &quot;Defeat the end boss!&quot;,
+    &quot;owners&quot;: 32321,
+    &quot;owners_percentage&quot;: 42.31233,
+    &quot;tags&quot;: [&quot;Tag1&quot;, &quot;Tag2&quot;, &quot;Tag3&quot;]
 }
 </code></pre>
 
-<ul>
-<li>Change <code>yourdomain.com</code> to your domain or <code>localhost:8100</code> for Ionic.</li>
-<li>Send!</li>
-</ul>
+<p><strong><em>Fields</em></strong></p>
 
-<p>Future responses from the API will contain the special header required to access the API. <code>Access-Control-Allow-Origin: yourdomain.com</code></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th align="center">Type</th>
+<th align="center">Mandatory</th>
+<th>Comment</th>
+</tr>
+</thead>
 
-<p>To delete the header, send a DELETE request to <code>/headers/?header=Access-Control-Allow-Origin</code>.</p>
+<tbody>
+<tr>
+<td>id</td>
+<td align="center">unsigned 64-bit integer</td>
+<td align="center">+</td>
+<td></td>
+</tr>
 
-<div class="notices warning" ><p><strong>IMPORTANT NOTE!</strong> Regenerating your API Key (user-key) will invalidate all existing headers. Please ensure your application registers these headers on start up to ensure they are always associated with the current user-key.</p>
-</div>
+<tr>
+<td>name</td>
+<td align="center">string</td>
+<td align="center">+</td>
+<td></td>
+</tr>
 
+<tr>
+<td>category</td>
+<td align="center">unsigned 64-bit integer</td>
+<td align="center">+</td>
+<td>ID of an <a href="../../enum-fields/achievement-source">Achievement Source</a> (steam, playstation etc)</td>
+</tr>
+
+<tr>
+<td>icon</td>
+<td align="center">object</td>
+<td align="center">-</td>
+<td>See the <a href="../../misc-objects/image">Image</a> object reference</td>
+</tr>
+
+<tr>
+<td>game</td>
+<td align="center">array of unsigned 64-bit integers</td>
+<td align="center">-</td>
+<td>IDs of <a href="../game">Game</a> records</td>
+</tr>
+
+<tr>
+<td>rank</td>
+<td align="center">unsigned 64-bit integer</td>
+<td align="center">-</td>
+<td>ID of an <a href="../../enum-fields/achievement-rank">Achievement Rank</a></td>
+</tr>
+
+<tr>
+<td>description</td>
+<td align="center">string</td>
+<td align="center">-</td>
+<td>Description of the achievement. Usually how to obtain it.</td>
+</tr>
+
+<tr>
+<td>external_id</td>
+<td align="center">string</td>
+<td align="center">+</td>
+<td>The ID given to the achievement by the external service</td>
+</tr>
+
+<tr>
+<td>owners</td>
+<td align="center">64-bit integer</td>
+<td align="center">-</td>
+<td>Number of people who own that achievement</td>
+</tr>
+
+<tr>
+<td>owners_percentage</td>
+<td align="center">float</td>
+<td align="center">-</td>
+<td>Percent of people who own the game and own the achievement</td>
+</tr>
+
+<tr>
+<td>tags</td>
+<td align="center">array of strings</td>
+<td align="center">-</td>
+<td>Relevant words and terms associated with this achievement</td>
+</tr>
+
+<tr>
+<td>created_at</td>
+<td align="center">64-bit integer</td>
+<td align="center">+</td>
+<td>Unix epoch</td>
+</tr>
+
+<tr>
+<td>updated_at</td>
+<td align="center">64-bit integer</td>
+<td align="center">+</td>
+<td>Unix epoch</td>
+</tr>
+</tbody>
+</table>
 
 
 <footer class=" footline" >
@@ -1854,6 +1944,7 @@ API
             
                 
                     
+                    
                 
                 
 
@@ -1866,6 +1957,7 @@ API
             
             
                 
+                    
                     
                 
                 
@@ -1882,6 +1974,9 @@ API
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -2862,7 +2957,6 @@ API
             
                 
                     
-                    
                 
                 
 
@@ -2875,7 +2969,6 @@ API
             
             
                 
-                    
                     
                 
                 
@@ -2892,9 +2985,6 @@ API
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -3077,10 +3167,10 @@ API
 
 
         
-            <a class="nav nav-prev" href="/api/references/" title="Reference"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/api/endpoints/" title="Endpoints"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/api/references/expander/" title="Expander" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/api/endpoints/character/" title="Character" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

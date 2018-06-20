@@ -43,6 +43,18 @@
   </url>
   
   <url>
+    <loc>https://igdb.github.com/api/enum-fields/achievement-rank/</loc>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.com/api/enum-fields/achievement-source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://igdb.github.com/api/endpoints/achievement/</loc>
+  </url>
+  
+  <url>
     <loc>https://igdb.github.com/api/misc-objects/alternative-name/</loc>
   </url>
   
