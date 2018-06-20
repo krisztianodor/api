@@ -1,11 +1,5 @@
 ---
-
-
-
-
-
 title: "Collection"
-
 ---
 
 ***URL path:*** /collections/
