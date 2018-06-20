@@ -1,12 +1,10 @@
 ---
 title: "Images"
-
-
-
-
-
-
 ---
+
+{{% notice info %}}
+Images that are removed or replaced from IGDB.com exist for 30 days before they are removed. Keep that in mind when designing cache logic.
+{{% /notice %}}
 
 ## Examples
 
@@ -59,7 +57,3 @@ The image sizes are all maximum size but by appending `_2x` to any size, you can
 | micro | 35 x 35 | Thumb, Center gravity  |
 | 720p | 1280 x 720 | Fit, Center gravity  |
 | 1080p | 1920 x 1080 | Fit, Center gravity  |
-
-{{% notice info %}}
-Images that are removed or replaced from IGDB.com exist for 30 days before they are removed. Keep that in mind when caching.
-{{% /notice %}}

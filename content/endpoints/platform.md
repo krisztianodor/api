@@ -19,7 +19,7 @@ title: "Platform"
     "id": 2,
     "name": "Wii",
     "slug": "wii",
-    "url": "https://www.igdb.com/platform/wii",
+    "url": "https://www.igdb.com/platforms/wii",
     "created_at": 123456789,
     "updated_at": 123456789,
     "games": [
