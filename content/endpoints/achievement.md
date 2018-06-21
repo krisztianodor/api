@@ -1,9 +1,9 @@
 ---
-title: "Achievements"
+title: "Achievements (Coming Soon)"
 ---
 
 {{% notice info %}}
-This endpoint is only available for [paid tiers](https://api.igdb.com/pricing).
+This endpoint is not yet available. Once it is done it will be available for [paid tiers](https://api.igdb.com/pricing).
 {{% /notice %}}
 
 ***URL path:*** /achievements/
