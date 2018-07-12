@@ -29,7 +29,7 @@ Playstation Values
       <guid>https://igdb.github.com/api/enum-fields/achievement-source/</guid>
       <description>Description: The service where the achievement is located
 Values
-   Value Service Name     1 Playstation   2 GOG   3 Steam    </description>
+   Value Service Name     1 Playstation   2 XBOX   3 Steam    </description>
     </item>
     
     <item>
