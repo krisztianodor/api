@@ -11,5 +11,5 @@ title: "Achievement Source"
 | Value | Service Name |
 | ----- |:----:|
 | 1 | Playstation |
-| 2 | GOG |
+| 2 | XBOX |
 | 3 | Steam |

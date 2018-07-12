@@ -1,5 +1,5 @@
 ---
-title: "Achievements (Coming Soon)"
+title: "Achievements"
 ---
 
 {{% notice info %}}
