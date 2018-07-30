@@ -24,7 +24,10 @@ To enable CORS, you need to register your domain by sending a POST request to th
 }
 ```
 
-- Change `yourdomain.com` to your domain or `localhost:8100` for Ionic.
+- Change the value to...
+    - For production on a specific domain, use `yourdomain.com` (of course, change to your actual domain).
+    - For local development (localhost) or any domain, use `*`.
+    - For Ionic, use `localhost:8100`.
 - Send!
 
 Future responses from the API will contain the special header required to access the API. `Access-Control-Allow-Origin: yourdomain.com`
