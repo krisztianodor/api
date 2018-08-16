@@ -120,7 +120,7 @@ Values
       
       <guid>https://igdb.github.com/api/enum-fields/region/</guid>
       <description>Values
-   Value Region     1 Europe (EU)   2 North America (NA)   3 Australia (AU)   4 New Zealand (NZ)   5 Japan (JP)   6 China (CH)   7 Asia (AS)   8 Worldwide    </description>
+   Value Region     1 Europe (EU)   2 North America (NA)   3 Australia (AU)   4 New Zealand (NZ)   5 Japan (JP)   6 China (CH)   7 Asia (AS)   8 Worldwide   9 Hong Kong (HK)   10 South Korea (KR)    </description>
     </item>
     
     <item>
