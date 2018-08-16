@@ -31,7 +31,8 @@ This endpoint is not yet available. Once it is done it will be available for [pa
     "description": "Defeat the end boss!",
     "owners": 32321,
     "owners_percentage": 42.31233,
-    "tags": ["Tag1", "Tag2", "Tag3"]
+    "tags": ["Tag1", "Tag2", "Tag3"],
+    "language": 1
 }
 ```
 
@@ -50,5 +51,6 @@ This endpoint is not yet available. Once it is done it will be available for [pa
 | owners     | 64-bit integer                    |     -     | Number of people who own that achievement |
 | owners_percentage | float                      |     -     | Percent of people who own the game and own the achievement |
 | tags       | array of strings                  |     -     | Relevant words and terms associated with this achievement |
+| language   | unsigned integer                  |     -     | ID of a [Region](../../enum-fields/region) |
 | created_at | 64-bit integer                    |     +     | Unix epoch |
 | updated_at | 64-bit integer                    |     +     | Unix epoch |

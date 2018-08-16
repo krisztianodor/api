@@ -20,3 +20,5 @@ title: "Region"
 | 6     | China (CH) |
 | 7     | Asia (AS) |
 | 8     | Worldwide |
+| 9     | Hong Kong (HK) |
+| 10    | South Korea (KR) |
