@@ -3,7 +3,7 @@ toc: true
 weight: 1
 title: "Change Log"
 pre: "<b class='fa fa-line-chart'></b> "
-post: " <b class='menu-label'>20th April, 2018</b>"
+post: " <b class='menu-label'>16th August, 2018</b>"
 ---
 
 16th August, 2018
