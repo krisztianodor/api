@@ -6,6 +6,15 @@ pre: "<b class='fa fa-line-chart'></b> "
 post: " <b class='menu-label'>20th April, 2018</b>"
 ---
 
+16th August, 2018
+---
+
+- Added language (region) to [achievements](https://igdb.github.io/api/endpoints/achievement/)
+
+12th July, 2018
+
+- Added [achievements](https://igdb.github.io/api/endpoints/achievement/)
+
 20th April, 2018
 ---
 
