@@ -8,7 +8,7 @@ title: "External Review Source"
 
 ---
 
-***URL path:*** /external_review_source/
+***URL path:*** /external_review_sources/
 
 ***Example response***
 
