@@ -2,10 +2,6 @@
 title: "Achievements"
 ---
 
-{{% notice info %}}
-This endpoint is not yet available. Once it is done it will be available for [paid tiers](https://api.igdb.com/pricing).
-{{% /notice %}}
-
 ***URL path:*** /achievements/
 
 ***Description:*** Achievement data
