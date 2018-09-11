@@ -21,6 +21,12 @@ title: "Achievements"
         "width": 1240,
         "height": 768
     },
+    "locked_icon": {
+        "url": "https://images.igdb.com/igdb/uploads/t_thumb/dadsajj2jdda2.jpg",
+        "cloudinary_id": "dadsajj2jdda2",
+        "width": 1240,
+        "height": 768
+    },
     "game": 41233,
     "rank": 3,
     "external_id": "AKM_E123DDD",
@@ -40,6 +46,7 @@ title: "Achievements"
 | name       | string                            |     +     ||
 | category   | unsigned 64-bit integer           |     +     | ID of an [Achievement Source](../../enum-fields/achievement-source) (steam, playstation etc) |
 | icon       | object                            |     -     | See the [Image](../../misc-objects/image) object reference |
+| locked_icon | object                            |     -     | See the [Image](../../misc-objects/image) object reference |
 | game       | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records |
 | rank       | unsigned 64-bit integer           |     -     | ID of an [Achievement Rank](../../enum-fields/achievement-rank) |
 | description | string                           |     -     | Description of the achievement. Usually how to obtain it. |
