@@ -6,6 +6,11 @@ pre: "<b class='fa fa-line-chart'></b> "
 post: " <b class='menu-label'>16th August, 2018</b>"
 ---
 
+11th September, 2018
+---
+
+- Added locked_icon to [achievements](https://igdb.github.io/api/endpoints/achievement/). Available only for steam achievements.
+
 16th August, 2018
 ---
 
