@@ -12,7 +12,7 @@ Webhooks are only available on [Pro, Ultra and Enterprise plans](https://api.igd
 
 ## How to register your webhook
 
-Make a POST request to `/webhooks` via the IGDB API and include the following as the BODY of the request or as url encoded form parameters...
+Make a POST request to `/webhooks` via the IGDB API and include the following HEADER `Content-Type: application/json` and add a BODY to the request or as url encoded form parameters...
 
 ```javascript
 {
@@ -34,6 +34,23 @@ On registering your webhook you will receive a response like this...
     "last_failed_at": 1510826647000, // When the webhook last failed in unix time
     "secret": "YOUR_SECRET" // Your chosen secret
 }
+```
+
+Here is an example request using curl...
+
+```bash
+curl -X POST \
+  https://api-endpoint.igdb.com/webhooks \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'user-key: YOUR_KEY' \
+  -d '{
+    "webhook": {
+        "url": "https://www.igdb.com/test",
+        "category": 1,
+        "secret": "YOUR_SUPER_SECRET"
+    }
+}'
 ```
 
 That’s it! The data will now be sent to your webhook in the body of a post request. The data is a single json object representing an unexpanded entity, click anything in the category list below for examples.
