@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.42.2" />
+    <meta name="generator" content="Hugo 0.48" />
     <meta name="description" content="">
 
 
@@ -13,17 +13,17 @@
     <title>Webhooks :: IGDB.com API Documentation</title>
     
     
-    <link href="/api/css/nucleus.css?1536818048" rel="stylesheet">
-    <link href="/api/css/font-awesome.min.css?1536818048" rel="stylesheet">
-    <link href="/api/css/hybrid.css?1536818048" rel="stylesheet">
-    <link href="/api/css/featherlight.min.css?1536818048" rel="stylesheet">
-    <link href="/api/css/perfect-scrollbar.min.css?1536818048" rel="stylesheet">
-    <link href="/api/css/horsey.css?1536818048" rel="stylesheet">
-    <link href="/api/css/theme.css?1536818048" rel="stylesheet">
-    <link href="/api/css/hugo-theme.css?1536818048" rel="stylesheet">
+    <link href="/api/css/nucleus.css?1537431528" rel="stylesheet">
+    <link href="/api/css/font-awesome.min.css?1537431528" rel="stylesheet">
+    <link href="/api/css/hybrid.css?1537431528" rel="stylesheet">
+    <link href="/api/css/featherlight.min.css?1537431528" rel="stylesheet">
+    <link href="/api/css/perfect-scrollbar.min.css?1537431528" rel="stylesheet">
+    <link href="/api/css/horsey.css?1537431528" rel="stylesheet">
+    <link href="/api/css/theme.css?1537431528" rel="stylesheet">
+    <link href="/api/css/hugo-theme.css?1537431528" rel="stylesheet">
     
 
-    <script src="/api/js/jquery-2.x.min.js?1536818048"></script>
+    <script src="/api/js/jquery-2.x.min.js?1537431528"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -1758,7 +1758,7 @@ API
 
 <h2 id="how-to-register-your-webhook">How to register your webhook</h2>
 
-<p>Make a POST request to <code>/webhooks</code> via the IGDB API and include the following as the BODY of the request or as url encoded form parameters&hellip;</p>
+<p>Make a POST request to <code>/webhooks</code> via the IGDB API and include the following HEADER <code>Content-Type: application/json</code> and add a BODY to the request or as url encoded form parameters&hellip;</p>
 
 <pre><code class="language-javascript">{
     &quot;webhook&quot;: {
@@ -1778,6 +1778,22 @@ API
     &quot;last_failed_at&quot;: 1510826647000, // When the webhook last failed in unix time
     &quot;secret&quot;: &quot;YOUR_SECRET&quot; // Your chosen secret
 }
+</code></pre>
+
+<p>Here is an example request using curl&hellip;</p>
+
+<pre><code class="language-bash">curl -X POST \
+  https://api-endpoint.igdb.com/webhooks \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'user-key: YOUR_KEY' \
+  -d '{
+    &quot;webhook&quot;: {
+        &quot;url&quot;: &quot;https://www.igdb.com/test&quot;,
+        &quot;category&quot;: 1,
+        &quot;secret&quot;: &quot;YOUR_SUPER_SECRET&quot;
+    }
+}'
 </code></pre>
 
 <p>That’s it! The data will now be sent to your webhook in the body of a post request. The data is a single json object representing an unexpanded entity, click anything in the category list below for examples.</p>
@@ -3126,20 +3142,20 @@ API
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/api/js/clipboard.min.js?1536818048"></script>
-    <script src="/api/js/perfect-scrollbar.min.js?1536818048"></script>
-    <script src="/api/js/perfect-scrollbar.jquery.min.js?1536818048"></script>
-    <script src="/api/js/jquery.sticky-kit.min.js?1536818048"></script>
-    <script src="/api/js/featherlight.min.js?1536818048"></script>
-    <script src="/api/js/html5shiv-printshiv.min.js?1536818048"></script>
-    <script src="/api/js/highlight.pack.js?1536818048"></script>
+    <script src="/api/js/clipboard.min.js?1537431528"></script>
+    <script src="/api/js/perfect-scrollbar.min.js?1537431528"></script>
+    <script src="/api/js/perfect-scrollbar.jquery.min.js?1537431528"></script>
+    <script src="/api/js/jquery.sticky-kit.min.js?1537431528"></script>
+    <script src="/api/js/featherlight.min.js?1537431528"></script>
+    <script src="/api/js/html5shiv-printshiv.min.js?1537431528"></script>
+    <script src="/api/js/highlight.pack.js?1537431528"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/api/js/modernizr.custom.71422.js?1536818048"></script>
-    <script src="/api/js/learn.js?1536818048"></script>
-    <script src="/api/js/hugo-learn.js?1536818048"></script>
+    <script src="/api/js/modernizr.custom.71422.js?1537431528"></script>
+    <script src="/api/js/learn.js?1537431528"></script>
+    <script src="/api/js/hugo-learn.js?1537431528"></script>
 
-    <link href="/api/mermaid/mermaid.css?1536818048" type="text/css" rel="stylesheet" />
-    <script src="/api/mermaid/mermaid.js?1536818048"></script>
+    <link href="/api/mermaid/mermaid.css?1537431528" type="text/css" rel="stylesheet" />
+    <script src="/api/mermaid/mermaid.js?1537431528"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -805,7 +805,7 @@ Example response
       <guid>https://igdb.github.com/api/references/webhooks/</guid>
       <description>What? Webhooks allow us to push data to you when it is added or updated. Instead of polling the API for changes, you can listen on your HTTP endpoint (Webhook) and we will deliver the data to you.
 Webhooks are only available on Pro, Ultra and Enterprise plans.
- How to register your webhook Make a POST request to /webhooks via the IGDB API and include the following as the BODY of the request or as url encoded form parameters&amp;hellip;</description>
+ How to register your webhook Make a POST request to /webhooks via the IGDB API and include the following HEADER Content-Type: application/json and add a BODY to the request or as url encoded form parameters&amp;hellip;</description>
     </item>
     
     <item>
