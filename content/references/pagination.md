@@ -30,7 +30,7 @@ In order to bypass the limits of simple pagination and get blazing fast response
 
 **X-Next-Page** includes a special scroll path: `/games/scroll/cXVlcnlBbmRGZXRjaDsxOzE5OkhBck1wUUZsUnpPUDgwMGtDN0hSdEE7MDs=` This path actually never changes so you can repeatedly query the same URL to get the next page.
 
-**X-Count** includes the total number of results: `1337` You can work out the number of pages with a simple calculation: `Math.round(X-Count / limit)`
+**X-Count** includes the total number of results: `1337` You can work out the number of pages with a simple calculation: `Math.ceil(X-Count / limit)`
 
 {{% notice info %}}
 There is a timeout on the Scroll API of **3 minutes** and for each subsequent scroll request it refreshes this timeout.
