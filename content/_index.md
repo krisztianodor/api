@@ -15,13 +15,13 @@ This means that you are not only contributing to the value of this IGDB but to t
 
 For a high level overview of our juicy data, check out the [endpoints section](/api/endpoints/).
 
-{{% button href="https://api.igdb.com/signup" %}}GET FREE KEY{{% /button %}}
+{{% button href="https://api.igdb.com/signup?plan_ids[]=2357355916792" %}}GET FREE KEY{{% /button %}}
 
 ---
 
 ### The Basics
 
-In order to use our API, you must have an [account and key](https://api.igdb.com/signup).
+In order to use our API, you must have an [account and key](https://api.igdb.com/signup?plan_ids[]=2357355916792).
   
 The IGDB.com API is free for **non-commercial** & **commercial** usage.
 
