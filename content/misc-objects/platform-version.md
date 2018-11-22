@@ -43,6 +43,7 @@ title: "Platform version"
 | output        | string             |     -     ||
 | storage       | string             |     -     ||
 | graphics      | string             |     -     ||
+| sound         | string             |     -     ||
 | resolutions   | string             |     -     ||
 | connectivity   | string             |     -     ||
 | logo          | object             |     -     | See the [Image](../../misc-objects/image) object reference |
