@@ -22,4 +22,4 @@ title: "Platform version release date"
 | Name   | Type             | Mandatory | Comment |
 | ------ |:----------------:|:---------:| ------- |
 | date   | 64-bit integer   |     +     | Unix epoch |
-| region | unsigned integer |     +     | See the [Region](../../enum-fields/region) value reference |
+| region | unsigned integer |     -     | See the [Region](../../enum-fields/region) value reference |
