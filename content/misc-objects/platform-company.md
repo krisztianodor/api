@@ -22,4 +22,4 @@ title: "Platform company"
 | Name | Type   | Mandatory | Comment |
 | ---- |:------:|:---------:| ------- |
 | company | unsigned 64-bit integer  |     +     ||
-| comment   | string |     +     | What does that company do. |
+| comment   | string |     -     | What does that company do. |
