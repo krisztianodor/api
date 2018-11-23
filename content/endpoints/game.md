@@ -77,4 +77,4 @@ title: "Game"
 | bundles             | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records (expandable) |
 | games               | array of unsigned 64-bit integers |     -     | IDs of [Game](../game) records that are similar to this game. (expandable) |
 | external            | object                            |     -     | See the [External](../../misc-objects/external) object reference |
-| artworks            | object                            |     -     | See the [Image](../../misc-objects/image) object reference |
+| artworks            | array of objects                            |     -     | See the [Image](../../misc-objects/image) object reference |
